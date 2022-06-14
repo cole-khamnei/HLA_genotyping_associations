@@ -376,160 +376,160 @@ column	count	type	counts	frequency	description	udi	simple_name
 2737	150951	Continuous	2945	0.29452945294529453	Pack years of smoking	20161-0.0	tobacco_smoking_pack_years
 2740	150951	Continuous	2945	0.29452945294529453	Pack years adult smoking as proportion of life span exposed to smoking	20162-0.0	tobacco_smoking_pack_years_life_proportion
 2743	501645	Categorical (single)	9969	0.996999699969997	Ethnic backgroundUses data-coding 1001 comprises 22 Integer-valued members in a hierarchical tree.	21000-0.0	ethnic_background
-2746	502543	Integer	9999	1.0	Age when attended assessment centre	21003-0.0	age_assessment
-2749	502543	Integer	9999	1.0	Age at recruitment	21022-0.0	age_recruitment
-2750	488295	Categorical (single)	9743	0.9743974397439744	Genotype measurement batchUses data-coding 22000 comprises 108 Integer-valued members in a hierarchical tree.	22000-0.0	_
-2751	488295	Categorical (single)	9743	0.9743974397439744	Genetic sexUses data-coding 9 comprises 2 Integer-valued members in a simple list.	22001-0.0	_
-2752	488295	Text	9743	0.9743974397439744	CEL files	22002-0.0	_
-2753	488295	Continuous	9743	0.9743974397439744	Heterozygosity	22003-0.0	_
-2754	488295	Continuous	9743	0.9743974397439744	Heterozygosity, PCA corrected	22004-0.0	_
-2755	488295	Continuous	9743	0.9743974397439744	Missingness	22005-0.0	_
-2756	409634	Categorical (single)	8152	0.8152815281528153	Genetic ethnic groupingUses data-coding 1002 comprises 1 Integer-valued members in a simple list.	22006-0.0	_
-2757	488295	Text	9743	0.9743974397439744	Genotype measurement plate	22007-0.0	_
-2758	488295	Text	9743	0.9743974397439744	Genotype measurement well	22008-0.0	_
-2799	651	Categorical (single)	13	0.0013001300130013002	Sex chromosome aneuploidyUses data-coding 1 comprises 1 Integer-valued members in a simple list.	22019-0.0	_
-2800	407152	Categorical (single)	8124	0.8124812481248125	Used in genetic principal componentsUses data-coding 1 comprises 1 Integer-valued members in a simple list.	22020-0.0	_
-2801	488295	Categorical (single)	9743	0.9743974397439744	Genetic kinship to other participantsUses data-coding 682 comprises 4 Integer-valued members in a simple list.	22021-0.0	_
-2802	488295	Continuous	9743	0.9743974397439744	Sex inference X probe-intensity	22022-0.0	_
-2803	488295	Continuous	9743	0.9743974397439744	Sex inference Y probe-intensity	22023-0.0	_
-2804	488295	Continuous	9743	0.9743974397439744	DNA concentration	22024-0.0	_
-2805	488295	Continuous	9743	0.9743974397439744	"Affymetrix quality control metric ""Cluster.CR"""	22025-0.0	_
-2806	488295	Continuous	9743	0.9743974397439744	"Affymetrix quality control metric ""dQC"""	22026-0.0	_
-2807	968	Categorical (single)	27	0.0027002700270027003	Outliers for heterozygosity or missing rateUses data-coding 1 comprises 1 Integer-valued members in a simple list.	22027-0.0	_
-2808	488295	Categorical (single)	9743	0.9743974397439744	Use in phasing Chromosomes 1-22Uses data-coding 100264 comprises 2 Integer-valued members in a simple list.	22028-0.0	_
-2809	488295	Categorical (single)	9743	0.9743974397439744	Use in phasing Chromosome XUses data-coding 100264 comprises 2 Integer-valued members in a simple list.	22029-0.0	_
-2810	488295	Categorical (single)	9743	0.9743974397439744	Use in phasing Chromosome XYUses data-coding 100264 comprises 2 Integer-valued members in a simple list.	22030-0.0	_
-2811	488295	Text	9743	0.9743974397439744	Chromosome XY genotype results	22100-0.0	_
-2812	488295	Text	9743	0.9743974397439744	Chromosome 1 genotype results	22101-0.0	_
-2813	488295	Text	9743	0.9743974397439744	Chromosome 2 genotype results	22102-0.0	_
-2814	488295	Text	9743	0.9743974397439744	Chromosome 3 genotype results	22103-0.0	_
-2815	488295	Text	9743	0.9743974397439744	Chromosome 4 genotype results	22104-0.0	_
-2816	488295	Text	9743	0.9743974397439744	Chromosome 5 genotype results	22105-0.0	_
-2817	488295	Text	9743	0.9743974397439744	Chromosome 6 genotype results	22106-0.0	_
-2818	488295	Text	9743	0.9743974397439744	Chromosome 7 genotype results	22107-0.0	_
-2819	488295	Text	9743	0.9743974397439744	Chromosome 8 genotype results	22108-0.0	_
-2820	488295	Text	9743	0.9743974397439744	Chromosome 9 genotype results	22109-0.0	_
-2821	488295	Text	9743	0.9743974397439744	Chromosome 10 genotype results	22110-0.0	_
-2822	488295	Text	9743	0.9743974397439744	Chromosome 11 genotype results	22111-0.0	_
-2823	488295	Text	9743	0.9743974397439744	Chromosome 12 genotype results	22112-0.0	_
-2824	488295	Text	9743	0.9743974397439744	Chromosome 13 genotype results	22113-0.0	_
-2825	488295	Text	9743	0.9743974397439744	Chromosome 14 genotype results	22114-0.0	_
-2826	488295	Text	9743	0.9743974397439744	Chromosome 15 genotype results	22115-0.0	_
-2827	488295	Text	9743	0.9743974397439744	Chromosome 16 genotype results	22116-0.0	_
-2828	488295	Text	9743	0.9743974397439744	Chromosome 17 genotype results	22117-0.0	_
-2829	488295	Text	9743	0.9743974397439744	Chromosome 18 genotype results	22118-0.0	_
-2830	488295	Text	9743	0.9743974397439744	Chromosome 19 genotype results	22119-0.0	_
-2831	488295	Text	9743	0.9743974397439744	Chromosome 20 genotype results	22120-0.0	_
-2832	488295	Text	9743	0.9743974397439744	Chromosome 21 genotype results	22121-0.0	_
-2833	488295	Text	9743	0.9743974397439744	Chromosome 22 genotype results	22122-0.0	_
-2834	488295	Text	9743	0.9743974397439744	Chromosome X genotype results	22123-0.0	_
-2835	488295	Text	9743	0.9743974397439744	Chromosome Y genotype results	22124-0.0	_
-2836	488295	Text	9743	0.9743974397439744	Mitochondrial genotype results	22125-0.0	_
-2837	488295	Curve	9743	0.9743974397439744	HLA imputation values	22182-0.0	_
-2838	486362	Text	9696	0.9696969696969697	Chromosome XY imputation and haplotype results	22800-0.0	_
-2839	0	Text	0	0.0	Chromosome 1 imputation and haplotype results	22801-0.0	_
-2840	0	Text	0	0.0	Chromosome 2 imputation and haplotype results	22802-0.0	_
-2841	0	Text	0	0.0	Chromosome 3 imputation and haplotype results	22803-0.0	_
-2842	0	Text	0	0.0	Chromosome 4 imputation and haplotype results	22804-0.0	_
-2843	0	Text	0	0.0	Chromosome 5 imputation and haplotype results	22805-0.0	_
-2844	0	Text	0	0.0	Chromosome 6 imputation and haplotype results	22806-0.0	_
-2845	0	Text	0	0.0	Chromosome 7 imputation and haplotype results	22807-0.0	_
-2846	0	Text	0	0.0	Chromosome 8 imputation and haplotype results	22808-0.0	_
-2847	0	Text	0	0.0	Chromosome 9 imputation and haplotype results	22809-0.0	_
-2848	0	Text	0	0.0	Chromosome 10 imputation and haplotype results	22810-0.0	_
-2849	0	Text	0	0.0	Chromosome 11 imputation and haplotype results	22811-0.0	_
-2850	0	Text	0	0.0	Chromosome 12 imputation and haplotype results	22812-0.0	_
-2851	0	Text	0	0.0	Chromosome 13 imputation and haplotype results	22813-0.0	_
-2852	0	Text	0	0.0	Chromosome 14 imputation and haplotype results	22814-0.0	_
-2853	0	Text	0	0.0	Chromosome 15 imputation and haplotype results	22815-0.0	_
-2854	0	Text	0	0.0	Chromosome 16 imputation and haplotype results	22816-0.0	_
-2855	0	Text	0	0.0	Chromosome 17 imputation and haplotype results	22817-0.0	_
-2856	0	Text	0	0.0	Chromosome 18 imputation and haplotype results	22818-0.0	_
-2857	0	Text	0	0.0	Chromosome 19 imputation and haplotype results	22819-0.0	_
-2858	0	Text	0	0.0	Chromosome 20 imputation and haplotype results	22820-0.0	_
-2859	0	Text	0	0.0	Chromosome 21 imputation and haplotype results	22821-0.0	_
-2860	0	Text	0	0.0	Chromosome 22 imputation and haplotype results	22822-0.0	_
-2861	486676	Text	9703	0.9703970397039704	Chromosome X imputation and haplotype results	22823-0.0	_
+2746	502543	Integer	9999	1.0	Age when attended assessment centre	21003-0.0	assessment_age
+2749	502543	Integer	9999	1.0	Age at recruitment	21022-0.0	recruitment_age
+2750	488295	Categorical (single)	9743	0.9743974397439744	Genotype measurement batchUses data-coding 22000 comprises 108 Integer-valued members in a hierarchical tree.	22000-0.0	genotype_measurement_batch
+2751	488295	Categorical (single)	9743	0.9743974397439744	Genetic sexUses data-coding 9 comprises 2 Integer-valued members in a simple list.	22001-0.0	genetic_sex
+2752	488295	Text	9743	0.9743974397439744	CEL files	22002-0.0	CEL_files
+2753	488295	Continuous	9743	0.9743974397439744	Heterozygosity	22003-0.0	heterozygosity
+2754	488295	Continuous	9743	0.9743974397439744	Heterozygosity, PCA corrected	22004-0.0	heterozygosity_PCA_corrected
+2755	488295	Continuous	9743	0.9743974397439744	Missingness	22005-0.0	missingness
+2756	409634	Categorical (single)	8152	0.8152815281528153	Genetic ethnic groupingUses data-coding 1002 comprises 1 Integer-valued members in a simple list.	22006-0.0	genetic_ethnic_grouping
+2757	488295	Text	9743	0.9743974397439744	Genotype measurement plate	22007-0.0	gentoype_measurement_plate
+2758	488295	Text	9743	0.9743974397439744	Genotype measurement well	22008-0.0	gentoype_measurement_well
+2799	651	Categorical (single)	13	0.0013001300130013002	Sex chromosome aneuploidyUses data-coding 1 comprises 1 Integer-valued members in a simple list.	22019-0.0	aneuploidy_sex_chromosomes
+2800	407152	Categorical (single)	8124	0.8124812481248125	Used in genetic principal componentsUses data-coding 1 comprises 1 Integer-valued members in a simple list.	22020-0.0	used_genetic_PCs
+2801	488295	Categorical (single)	9743	0.9743974397439744	Genetic kinship to other participantsUses data-coding 682 comprises 4 Integer-valued members in a simple list.	22021-0.0	genetic_kinship_to_other_participants
+2802	488295	Continuous	9743	0.9743974397439744	Sex inference X probe-intensity	22022-0.0	sex_inference_X_probe_intensity
+2803	488295	Continuous	9743	0.9743974397439744	Sex inference Y probe-intensity	22023-0.0	sex_inference_Y_probe_intensity
+2804	488295	Continuous	9743	0.9743974397439744	DNA concentration	22024-0.0	DNA_concentration
+2805	488295	Continuous	9743	0.9743974397439744	"Affymetrix quality control metric ""Cluster.CR"""	22025-0.0	affymetric_QC_cluster_cr
+2806	488295	Continuous	9743	0.9743974397439744	"Affymetrix quality control metric ""dQC"""	22026-0.0	affymetric_QC_dQC
+2807	968	Categorical (single)	27	0.0027002700270027003	Outliers for heterozygosity or missing rateUses data-coding 1 comprises 1 Integer-valued members in a simple list.	22027-0.0	heterozygosity_outliers_missing_rate
+2808	488295	Categorical (single)	9743	0.9743974397439744	Use in phasing Chromosomes 1-22Uses data-coding 100264 comprises 2 Integer-valued members in a simple list.	22028-0.0	phasing_use_chr_1_22
+2809	488295	Categorical (single)	9743	0.9743974397439744	Use in phasing Chromosome XUses data-coding 100264 comprises 2 Integer-valued members in a simple list.	22029-0.0	phasing_use_chr_X
+2810	488295	Categorical (single)	9743	0.9743974397439744	Use in phasing Chromosome XYUses data-coding 100264 comprises 2 Integer-valued members in a simple list.	22030-0.0	phasing_use_chr_XY
+2811	488295	Text	9743	0.9743974397439744	Chromosome XY genotype results	22100-0.0	chr_XY_genotype
+2812	488295	Text	9743	0.9743974397439744	Chromosome 1 genotype results	22101-0.0	chr_1_genotype
+2813	488295	Text	9743	0.9743974397439744	Chromosome 2 genotype results	22102-0.0	chr_2_genotype
+2814	488295	Text	9743	0.9743974397439744	Chromosome 3 genotype results	22103-0.0	chr_3_genotype
+2815	488295	Text	9743	0.9743974397439744	Chromosome 4 genotype results	22104-0.0	chr_4_genotype
+2816	488295	Text	9743	0.9743974397439744	Chromosome 5 genotype results	22105-0.0	chr_5_genotype
+2817	488295	Text	9743	0.9743974397439744	Chromosome 6 genotype results	22106-0.0	chr_6_genotype
+2818	488295	Text	9743	0.9743974397439744	Chromosome 7 genotype results	22107-0.0	chr_7_genotype
+2819	488295	Text	9743	0.9743974397439744	Chromosome 8 genotype results	22108-0.0	chr_8_genotype
+2820	488295	Text	9743	0.9743974397439744	Chromosome 9 genotype results	22109-0.0	chr_9_genotype
+2821	488295	Text	9743	0.9743974397439744	Chromosome 10 genotype results	22110-0.0	chr_10_genotype
+2822	488295	Text	9743	0.9743974397439744	Chromosome 11 genotype results	22111-0.0	chr_11_genotype
+2823	488295	Text	9743	0.9743974397439744	Chromosome 12 genotype results	22112-0.0	chr_12_genotype
+2824	488295	Text	9743	0.9743974397439744	Chromosome 13 genotype results	22113-0.0	chr_13_genotype
+2825	488295	Text	9743	0.9743974397439744	Chromosome 14 genotype results	22114-0.0	chr_14_genotype
+2826	488295	Text	9743	0.9743974397439744	Chromosome 15 genotype results	22115-0.0	chr_15_genotype
+2827	488295	Text	9743	0.9743974397439744	Chromosome 16 genotype results	22116-0.0	chr_16_genotype
+2828	488295	Text	9743	0.9743974397439744	Chromosome 17 genotype results	22117-0.0	chr_17_genotype
+2829	488295	Text	9743	0.9743974397439744	Chromosome 18 genotype results	22118-0.0	chr_18_genotype
+2830	488295	Text	9743	0.9743974397439744	Chromosome 19 genotype results	22119-0.0	chr_19_genotype
+2831	488295	Text	9743	0.9743974397439744	Chromosome 20 genotype results	22120-0.0	chr_20_genotype
+2832	488295	Text	9743	0.9743974397439744	Chromosome 21 genotype results	22121-0.0	chr_21_genotype
+2833	488295	Text	9743	0.9743974397439744	Chromosome 22 genotype results	22122-0.0	chr_22_genotype
+2834	488295	Text	9743	0.9743974397439744	Chromosome X genotype results	22123-0.0	chr_X_genotype
+2835	488295	Text	9743	0.9743974397439744	Chromosome Y genotype results	22124-0.0	chr_Y_genotype
+2836	488295	Text	9743	0.9743974397439744	Mitochondrial genotype results	22125-0.0	chr_M_genotype
+2837	488295	Curve	9743	0.9743974397439744	HLA imputation values	22182-0.0	HLA_imputation
+2838	486362	Text	9696	0.9696969696969697	Chromosome XY imputation and haplotype results	22800-0.0	chr_XY_imputation_haplotype
+2839	0	Text	0	0.0	Chromosome 1 imputation and haplotype results	22801-0.0	chr_1_imputation_haplotype
+2840	0	Text	0	0.0	Chromosome 2 imputation and haplotype results	22802-0.0	chr_2_imputation_haplotype
+2841	0	Text	0	0.0	Chromosome 3 imputation and haplotype results	22803-0.0	chr_3_imputation_haplotype
+2842	0	Text	0	0.0	Chromosome 4 imputation and haplotype results	22804-0.0	chr_4_imputation_haplotype
+2843	0	Text	0	0.0	Chromosome 5 imputation and haplotype results	22805-0.0	chr_5_imputation_haplotype
+2844	0	Text	0	0.0	Chromosome 6 imputation and haplotype results	22806-0.0	chr_6_imputation_haplotype
+2845	0	Text	0	0.0	Chromosome 7 imputation and haplotype results	22807-0.0	chr_7_imputation_haplotype
+2846	0	Text	0	0.0	Chromosome 8 imputation and haplotype results	22808-0.0	chr_8_imputation_haplotype
+2847	0	Text	0	0.0	Chromosome 9 imputation and haplotype results	22809-0.0	chr_9_imputation_haplotype
+2848	0	Text	0	0.0	Chromosome 10 imputation and haplotype results	22810-0.0	chr_10_imputation_haplotype
+2849	0	Text	0	0.0	Chromosome 11 imputation and haplotype results	22811-0.0	chr_11_imputation_haplotype
+2850	0	Text	0	0.0	Chromosome 12 imputation and haplotype results	22812-0.0	chr_12_imputation_haplotype
+2851	0	Text	0	0.0	Chromosome 13 imputation and haplotype results	22813-0.0	chr_13_imputation_haplotype
+2852	0	Text	0	0.0	Chromosome 14 imputation and haplotype results	22814-0.0	chr_14_imputation_haplotype
+2853	0	Text	0	0.0	Chromosome 15 imputation and haplotype results	22815-0.0	chr_15_imputation_haplotype
+2854	0	Text	0	0.0	Chromosome 16 imputation and haplotype results	22816-0.0	chr_16_imputation_haplotype
+2855	0	Text	0	0.0	Chromosome 17 imputation and haplotype results	22817-0.0	chr_17_imputation_haplotype
+2856	0	Text	0	0.0	Chromosome 18 imputation and haplotype results	22818-0.0	chr_18_imputation_haplotype
+2857	0	Text	0	0.0	Chromosome 19 imputation and haplotype results	22819-0.0	chr_19_imputation_haplotype
+2858	0	Text	0	0.0	Chromosome 20 imputation and haplotype results	22820-0.0	chr_20_imputation_haplotype
+2859	0	Text	0	0.0	Chromosome 21 imputation and haplotype results	22821-0.0	chr_21_imputation_haplotype
+2860	0	Text	0	0.0	Chromosome 22 imputation and haplotype results	22822-0.0	chr_22_imputation_haplotype
+2861	486676	Text	9703	0.9703970397039704	Chromosome X imputation and haplotype results	22823-0.0	chr_X_imputation_haplotype
 2862	478201	Continuous	9522	0.9522952295229523	White blood cell (leukocyte) count	30000-0.0	WBC_count
 2865	478206	Continuous	9522	0.9522952295229523	Red blood cell (erythrocyte) count	30010-0.0	RBC_count
 2868	478206	Continuous	9522	0.9522952295229523	Haemoglobin concentration	30020-0.0	hemoglobin_concentration
 2871	478206	Continuous	9522	0.9522952295229523	Haematocrit percentage	30030-0.0	hematocrit_percent
-2874	478204	Continuous	9522	0.9522952295229523	Mean corpuscular volume	30040-0.0	_
-2877	478203	Continuous	9522	0.9522952295229523	Mean corpuscular haemoglobin	30050-0.0	_
-2880	478199	Continuous	9522	0.9522952295229523	Mean corpuscular haemoglobin concentration	30060-0.0	_
-2883	478204	Continuous	9522	0.9522952295229523	Red blood cell (erythrocyte) distribution width	30070-0.0	_
+2874	478204	Continuous	9522	0.9522952295229523	Mean corpuscular volume	30040-0.0	MCV
+2877	478203	Continuous	9522	0.9522952295229523	Mean corpuscular haemoglobin	30050-0.0	MC_hemoglobin
+2880	478199	Continuous	9522	0.9522952295229523	Mean corpuscular haemoglobin concentration	30060-0.0	MC_hemoglobin_concentration
+2883	478204	Continuous	9522	0.9522952295229523	Red blood cell (erythrocyte) distribution width	30070-0.0	RBC_distribution_width
 2886	478203	Continuous	9522	0.9522952295229523	Platelet count	30080-0.0	platelet_count
 2889	478199	Continuous	9522	0.9522952295229523	Platelet crit	30090-0.0	platelet_crit
-2892	478198	Continuous	9522	0.9522952295229523	Mean platelet (thrombocyte) volume	30100-0.0	_
-2895	478198	Continuous	9522	0.9522952295229523	Platelet distribution width	30110-0.0	_
+2892	478198	Continuous	9522	0.9522952295229523	Mean platelet (thrombocyte) volume	30100-0.0	mean_platelet_volume
+2895	478198	Continuous	9522	0.9522952295229523	Platelet distribution width	30110-0.0	platelet_distribution_width
 2898	477317	Continuous	9502	0.9502950295029503	Lymphocyte count	30120-0.0	lymphocyte_count
 2901	477317	Continuous	9502	0.9502950295029503	Monocyte count	30130-0.0	monocyte_count
 2904	477317	Continuous	9502	0.9502950295029503	Neutrophill count	30140-0.0	neutrophil_count
 2907	477317	Continuous	9502	0.9502950295029503	Eosinophill count	30150-0.0	eosinophil_count
 2910	477317	Continuous	9502	0.9502950295029503	Basophill count	30160-0.0	basophil_count
-2913	477306	Continuous	9502	0.9502950295029503	Nucleated red blood cell count	30170-0.0	_
+2913	477306	Continuous	9502	0.9502950295029503	Nucleated red blood cell count	30170-0.0	nucleated_RBC_count
 2916	477323	Continuous	9502	0.9502950295029503	Lymphocyte percentage	30180-0.0	lymphocyte_percent
 2919	477323	Continuous	9502	0.9502950295029503	Monocyte percentage	30190-0.0	monocyte_percent
 2922	477323	Continuous	9502	0.9502950295029503	Neutrophill percentage	30200-0.0	neutrophil_percent
 2925	477323	Continuous	9502	0.9502950295029503	Eosinophill percentage	30210-0.0	eosinophil_percent
 2928	477323	Continuous	9502	0.9502950295029503	Basophill percentage	30220-0.0	basophil_percent
-2931	477302	Continuous	9502	0.9502950295029503	Nucleated red blood cell percentage	30230-0.0	_
+2931	477302	Continuous	9502	0.9502950295029503	Nucleated red blood cell percentage	30230-0.0	nucleated_RBC_percent
 2934	469884	Continuous	9349	0.934993499349935	Reticulocyte percentage	30240-0.0	reticulocyte_percent
 2937	469884	Continuous	9349	0.934993499349935	Reticulocyte count	30250-0.0	reticulocyte_count
-2940	469883	Continuous	9349	0.934993499349935	Mean reticulocyte volume	30260-0.0	_
-2943	469885	Continuous	9349	0.934993499349935	Mean sphered cell volume	30270-0.0	_
-2946	469883	Continuous	9349	0.934993499349935	Immature reticulocyte fraction	30280-0.0	_
-2949	469885	Continuous	9349	0.934993499349935	High light scatter reticulocyte percentage	30290-0.0	_
-2952	469884	Continuous	9349	0.934993499349935	High light scatter reticulocyte count	30300-0.0	_
+2940	469883	Continuous	9349	0.934993499349935	Mean reticulocyte volume	30260-0.0	mean_reticulocyte_volume
+2943	469885	Continuous	9349	0.934993499349935	Mean sphered cell volume	30270-0.0	mean_sphered_cell_volume
+2946	469883	Continuous	9349	0.934993499349935	Immature reticulocyte fraction	30280-0.0	immature_reticulocyte_fraction
+2949	469885	Continuous	9349	0.934993499349935	High light scatter reticulocyte percentage	30290-0.0	reticulocyte_high_light_scatter_percentage
+2952	469884	Continuous	9349	0.934993499349935	High light scatter reticulocyte count	30300-0.0	reticulocyte_high_light_scatter_count
 2955	152907	Continuous	2997	0.29972997299729975	Microalbumin in urine	30500-0.0	urine_microalbumin
-2957	331418	Categorical (single)	6640	0.6640664066406641	Microalbumin in urine result flagUses data-coding 198 comprises 1 String-valued members in a simple list.	30505-0.0	urine_microalbumin_result
+2957	331418	Categorical (single)	6640	0.6640664066406641	Microalbumin in urine result flagUses data-coding 198 comprises 1 String-valued members in a simple list.	30505-0.0	urine_microalbumin_result_flag
 2959	484345	Continuous	9639	0.963996399639964	Creatinine (enzymatic) in urine	30510-0.0	urine_cr
 2961	4	Categorical (single)	0	0.0	Creatinine (enzymatic) in urine result flagUses data-coding 199 comprises 1 String-valued members in a simple list.	30515-0.0	urine_cr_result
-2962	483323	Continuous	9617	0.9617961796179618	Potassium in urine	30520-0.0	urine_k
-2964	1020	Categorical (single)	22	0.0022002200220022	Potassium in urine result flagUses data-coding 197 comprises 2 String-valued members in a simple list.	30525-0.0	urine_k_result
-2966	483312	Continuous	9613	0.9613961396139614	Sodium in urine	30530-0.0	urine_na
-2968	1029	Categorical (single)	26	0.0026002600260026003	Sodium in urine result flagUses data-coding 196 comprises 2 String-valued members in a simple list.	30535-0.0	urine_k_result
+2962	483323	Continuous	9617	0.9617961796179618	Potassium in urine	30520-0.0	urine_K
+2964	1020	Categorical (single)	22	0.0022002200220022	Potassium in urine result flagUses data-coding 197 comprises 2 String-valued members in a simple list.	30525-0.0	urine_k_result_flag
+2966	483312	Continuous	9613	0.9613961396139614	Sodium in urine	30530-0.0	urine_Na
+2968	1029	Categorical (single)	26	0.0026002600260026003	Sodium in urine result flagUses data-coding 196 comprises 2 String-valued members in a simple list.	30535-0.0	urine_Na_result_flag
 2970	14420	Date	279	0.0279027902790279	Date of death	40000-0.0	death_date
 2973	14416	Categorical (single)	279	0.0279027902790279	Underlying (primary) cause of death: ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	40001-0.0	death_cause_primary
 2976	8767	Categorical (single)	155	0.015501550155015502	Contributory (secondary) causes of death: ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	40002-0.0	death_causes_secondary
 3018	14420	Continuous	279	0.0279027902790279	Age at death	40007-0.0	death_age
-3021	11517	Curve	215	0.0215021502150215	Description of cause of death	40010-0.0	death_cause
-3023	14422	Categorical (single)	279	0.0279027902790279	Death report formatUses data-coding 261 comprises 5 Integer-valued members in a simple list.	40018-0.0	death_report
-3026	8715	Integer	171	0.017101710171017102	"Episodes containing ""Diagnoses - secondary ICD9"" data"	41076-0.0	_
-3027	320404	Integer	6342	0.6342634263426342	"Episodes containing ""Diagnoses - secondary ICD10"" data"	41078-0.0	_
-3028	3798	Integer	83	0.0083008300830083	"Episodes containing ""Diagnoses - secondary ICD10 addendum"" data"	41079-0.0	_
-3029	343276	Integer	6821	0.6821682168216822	"Episodes containing ""Operative procedures - secondary OPCS"" data"	41080-0.0	_
-3030	329682	Integer	6541	0.6541654165416542	"Episodes containing ""Dates of operations"" data"	41082-0.0	_
-3031	391915	Integer	7786	0.7786778677867787	"Episodes containing ""Episode start date"" data"	41083-0.0	_
-3032	391907	Integer	7786	0.7786778677867787	"Episodes containing ""Episode end date"" data"	41084-0.0	_
-3033	395872	Integer	7865	0.7865786578657866	"Episodes containing ""Duration of episode"" data"	41085-0.0	_
-3034	364915	Integer	7257	0.7257725772577258	"Episodes containing ""Episode order"" data"	41086-0.0	_
-3035	348668	Integer	6921	0.6921692169216922	"Episodes containing ""Episode status"" data"	41087-0.0	_
-3036	348659	Integer	6921	0.6921692169216922	"Episodes containing ""Duration of episode within HES data year"" data"	41088-0.0	_
-3037	348660	Integer	6921	0.6921692169216922	"Episodes containing ""Beginning of spell indicator"" data"	41089-0.0	_
-3038	348668	Integer	6921	0.6921692169216922	"Episodes containing ""End of spell indicator"" data"	41090-0.0	_
-3039	364812	Integer	7254	0.7254725472547254	"Episodes containing ""Duration of spell"" data"	41091-0.0	_
-3040	341885	Integer	6799	0.67996799679968	"Episodes containing ""Date of decision to admit to hospital"" data"	41095-0.0	_
-3041	385449	Integer	7653	0.7653765376537653	"Episodes containing ""Date of admission to hospital"" data"	41096-0.0	_
-3042	385361	Integer	7651	0.7651765176517652	"Episodes containing ""Date of discharge from hospital"" data"	41101-0.0	_
-3043	66343	Integer	1319	0.1319131913191319	"Episodes containing ""External cause - ICD10"" data"	41104-0.0	_
-3044	176	Integer	4	0.00040004000400040005	"Episodes containing ""External cause - ICD10 addendum"" data"	41105-0.0	_
-3045	359348	Integer	7131	0.7131713171317132	"Episodes containing ""Patient classification on admission"" data (polymorphic)"	41109-0.0	_
-3046	364910	Integer	7257	0.7257725772577258	"Episodes containing ""Intended management of patient"" data (polymorphic)"	41110-0.0	_
-3047	348668	Integer	6921	0.6921692169216922	"Episodes containing ""Episode type"" data"	41132-0.0	_
-3048	392242	Integer	7787	0.7787778777877787	"Episodes containing ""Diagnoses - main ICD10"" data"	41142-0.0	_
-3049	2733	Integer	48	0.004800480048004801	"Episodes containing ""Diagnoses - main ICD10 - addendum"" data"	41143-0.0	_
-3050	20307	Integer	401	0.040104010401040106	"Episodes containing ""Diagnoses - main ICD9"" data"	41144-0.0	_
-3051	392230	Integer	7789	0.778977897789779	"Episodes containing ""Operative procedure - main OPCS"" data"	41146-0.0	_
-3052	377693	Integer	7522	0.7522752275227522	"Episodes containing ""Date of operation"" data"	41148-0.0	_
-3053	66343	Categorical (multiple)	1319	0.1319131913191319	External causesUses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	41201-0.0	_
-3085	392242	Categorical (multiple)	7787	0.7787778777877787	Diagnoses - main ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	41202-0.0	_
-3465	20307	Categorical (multiple)	401	0.040104010401040106	Diagnoses - main ICD9Uses data-coding 87 comprises 13710 String-valued members in a hierarchical tree.	41203-0.0	_
-3493	320404	Categorical (multiple)	6342	0.6342634263426342	Diagnoses - secondary ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	41204-0.0	_
-3928	8715	Categorical (multiple)	171	0.017101710171017102	Diagnoses - secondary ICD9Uses data-coding 87 comprises 13710 String-valued members in a hierarchical tree.	41205-0.0	_
-3958	348668	Categorical (multiple)	6921	0.6921692169216922	Hospital episode typeUses data-coding 238 comprises 6 Integer-valued members in a simple list.	41231-0.0	_
-3962	330471	Integer	6525	0.6525652565256526	Spells in hospital	41235-0.0	_
-3963	277019	Integer	5456	0.5456545654565457	"Episodes containing ""Patient classification on admission"" data (recoded)"	41240-0.0	_
-3964	305421	Integer	6028	0.6028602860286029	"Episodes containing ""Intended management of patient"" data (recoded)"	41241-0.0	_
-3965	277019	Categorical (multiple)	5456	0.5456545654565457	Patient classification on admission (recoded)Uses data-coding 266 comprises 13 Integer-valued members in a hierarchical tree.	41247-0.0	_
-3972	395885	Integer	7865	0.7865786578657866	"Episodes containing ""Inpatient record format"" data"	41252-0.0	_
+3021	11517	Curve	215	0.0215021502150215	Description of cause of death	40010-0.0	death_cause_2
+3023	14422	Categorical (single)	279	0.0279027902790279	Death report formatUses data-coding 261 comprises 5 Integer-valued members in a simple list.	40018-0.0	death_report_format
+3026	8715	Integer	171	0.017101710171017102	"Episodes containing ""Diagnoses - secondary ICD9"" data"	41076-0.0	important_unlabeled_1
+3027	320404	Integer	6342	0.6342634263426342	"Episodes containing ""Diagnoses - secondary ICD10"" data"	41078-0.0	important_unlabeled_2
+3028	3798	Integer	83	0.0083008300830083	"Episodes containing ""Diagnoses - secondary ICD10 addendum"" data"	41079-0.0	important_unlabeled_3
+3029	343276	Integer	6821	0.6821682168216822	"Episodes containing ""Operative procedures - secondary OPCS"" data"	41080-0.0	important_unlabeled_4
+3030	329682	Integer	6541	0.6541654165416542	"Episodes containing ""Dates of operations"" data"	41082-0.0	important_unlabeled_5
+3031	391915	Integer	7786	0.7786778677867787	"Episodes containing ""Episode start date"" data"	41083-0.0	important_unlabeled_6
+3032	391907	Integer	7786	0.7786778677867787	"Episodes containing ""Episode end date"" data"	41084-0.0	important_unlabeled_7
+3033	395872	Integer	7865	0.7865786578657866	"Episodes containing ""Duration of episode"" data"	41085-0.0	important_unlabeled_8
+3034	364915	Integer	7257	0.7257725772577258	"Episodes containing ""Episode order"" data"	41086-0.0	important_unlabeled_9
+3035	348668	Integer	6921	0.6921692169216922	"Episodes containing ""Episode status"" data"	41087-0.0	important_unlabeled_10
+3036	348659	Integer	6921	0.6921692169216922	"Episodes containing ""Duration of episode within HES data year"" data"	41088-0.0	important_unlabeled_11
+3037	348660	Integer	6921	0.6921692169216922	"Episodes containing ""Beginning of spell indicator"" data"	41089-0.0	important_unlabeled_12
+3038	348668	Integer	6921	0.6921692169216922	"Episodes containing ""End of spell indicator"" data"	41090-0.0	important_unlabeled_13
+3039	364812	Integer	7254	0.7254725472547254	"Episodes containing ""Duration of spell"" data"	41091-0.0	important_unlabeled_14
+3040	341885	Integer	6799	0.67996799679968	"Episodes containing ""Date of decision to admit to hospital"" data"	41095-0.0	important_unlabeled_15
+3041	385449	Integer	7653	0.7653765376537653	"Episodes containing ""Date of admission to hospital"" data"	41096-0.0	important_unlabeled_16
+3042	385361	Integer	7651	0.7651765176517652	"Episodes containing ""Date of discharge from hospital"" data"	41101-0.0	important_unlabeled_17
+3043	66343	Integer	1319	0.1319131913191319	"Episodes containing ""External cause - ICD10"" data"	41104-0.0	important_unlabeled_18
+3044	176	Integer	4	0.00040004000400040005	"Episodes containing ""External cause - ICD10 addendum"" data"	41105-0.0	important_unlabeled_19
+3045	359348	Integer	7131	0.7131713171317132	"Episodes containing ""Patient classification on admission"" data (polymorphic)"	41109-0.0	important_unlabeled_20
+3046	364910	Integer	7257	0.7257725772577258	"Episodes containing ""Intended management of patient"" data (polymorphic)"	41110-0.0	important_unlabeled_21
+3047	348668	Integer	6921	0.6921692169216922	"Episodes containing ""Episode type"" data"	41132-0.0	important_unlabeled_22
+3048	392242	Integer	7787	0.7787778777877787	"Episodes containing ""Diagnoses - main ICD10"" data"	41142-0.0	important_unlabeled_23
+3049	2733	Integer	48	0.004800480048004801	"Episodes containing ""Diagnoses - main ICD10 - addendum"" data"	41143-0.0	important_unlabeled_24
+3050	20307	Integer	401	0.040104010401040106	"Episodes containing ""Diagnoses - main ICD9"" data"	41144-0.0	important_unlabeled_25
+3051	392230	Integer	7789	0.778977897789779	"Episodes containing ""Operative procedure - main OPCS"" data"	41146-0.0	important_unlabeled_26
+3052	377693	Integer	7522	0.7522752275227522	"Episodes containing ""Date of operation"" data"	41148-0.0	important_unlabeled_27
+3053	66343	Categorical (multiple)	1319	0.1319131913191319	External causesUses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	41201-0.0	external_causes
+3085	392242	Categorical (multiple)	7787	0.7787778777877787	Diagnoses - main ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	41202-0.0	important_unlabeled_28
+3465	20307	Categorical (multiple)	401	0.040104010401040106	Diagnoses - main ICD9Uses data-coding 87 comprises 13710 String-valued members in a hierarchical tree.	41203-0.0	important_unlabeled_29
+3493	320404	Categorical (multiple)	6342	0.6342634263426342	Diagnoses - secondary ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	41204-0.0	important_unlabeled_30
+3928	8715	Categorical (multiple)	171	0.017101710171017102	Diagnoses - secondary ICD9Uses data-coding 87 comprises 13710 String-valued members in a hierarchical tree.	41205-0.0	important_unlabeled_31
+3958	348668	Categorical (multiple)	6921	0.6921692169216922	Hospital episode typeUses data-coding 238 comprises 6 Integer-valued members in a simple list.	41231-0.0	hospital_episode_type
+3962	330471	Integer	6525	0.6525652565256526	Spells in hospital	41235-0.0	hospital_spells
+3963	277019	Integer	5456	0.5456545654565457	"Episodes containing ""Patient classification on admission"" data (recoded)"	41240-0.0	important_unlabeled_32
+3964	305421	Integer	6028	0.6028602860286029	"Episodes containing ""Intended management of patient"" data (recoded)"	41241-0.0	important_unlabeled_33
+3965	277019	Categorical (multiple)	5456	0.5456545654565457	Patient classification on admission (recoded)Uses data-coding 266 comprises 13 Integer-valued members in a hierarchical tree.	41247-0.0	patient_classification_on_admission
+3972	395885	Integer	7865	0.7865786578657866	"Episodes containing ""Inpatient record format"" data"	41252-0.0	important_unlabeled_34
