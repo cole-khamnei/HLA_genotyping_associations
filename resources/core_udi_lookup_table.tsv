@@ -287,7 +287,7 @@ column	count	type	counts	frequency	description	udi	name
 1192	265638	Categorical (multiple)	5304	0.5304530453045304	Transport type for commuting to job workplaceUses data-coding 100299 comprises 6 Integer-valued members in a simple list.	6143-0.0	work_commute_transport_type
 1204	497871	Categorical (multiple)	9894	0.9894989498949895	Never eat eggs, dairy, wheat, sugarUses data-coding 100385 comprises 6 Integer-valued members in a simple list.	6144-0.0	diet_never_eat_eggs_dairy_wheat_sugar
 1216	497855	Categorical (multiple)	9894	0.9894989498949895	Illness, injury, bereavement, stress in last 2 yearsUses data-coding 100502 comprises 8 Integer-valued members in a simple list.	6145-0.0	past_2_years_injurt_illness_bereacement_stress
-1234	501625	Categorical (multiple)	9969	0.996999699969997	Attendance/disability/mobility allowanceUses data-coding 100510 comprises 6 Integer-valued members in a simple list.	6146-0.0	_
+1234	501625	Categorical (multiple)	9969	0.996999699969997	Attendance/disability/mobility allowanceUses data-coding 100510 comprises 6 Integer-valued members in a simple list.	6146-0.0	attendance_disability_mobility_allowance
 1243	497849	Categorical (multiple)	9894	0.9894989498949895	Mouth/teeth dental problemsUses data-coding 100538 comprises 8 Integer-valued members in a simple list.	6149-0.0	oral_problems
 1261	501614	Categorical (multiple)	9969	0.996999699969997	Vascular/heart problems diagnosed by doctorUses data-coding 100605 comprises 6 Integer-valued members in a simple list.	6150-0.0	cardiovascular_problems_dx
 1273	47466	Categorical (multiple)	1035	0.1035103510351035	Fractured bone site(s)Uses data-coding 100622 comprises 9 Integer-valued members in a simple list.	6151-0.0	bone_fracture_sites
