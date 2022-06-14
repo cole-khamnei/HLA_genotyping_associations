@@ -1,24 +1,24 @@
-column	count	type	counts	frequency	description	udi	simple_name
+column	count	type	counts	frequency	description	udi	name
 0	502543	Sequence	9999	1.0	Encoded anonymised participant ID	eid	eid
-1	456606	Categorical (single)	9056	0.9056905690569057	Spirometry methodUses data-coding 100270 comprises 5 Integer-valued members in a simple list.	23-0.0	_
-4	502543	Categorical (single)	9999	1.0	SexUses data-coding 9 comprises 2 Integer-valued members in a simple list.	31-0.0	_
+1	456606	Categorical (single)	9056	0.9056905690569057	Spirometry methodUses data-coding 100270 comprises 5 Integer-valued members in a simple list.	23-0.0	spirometry_method
+4	502543	Categorical (single)	9999	1.0	SexUses data-coding 9 comprises 2 Integer-valued members in a simple list.	31-0.0	sex
 5	502543	Integer	9999	1.0	Year of birth	34-0.0	birth_year
-6	501328	Categorical (single)	9978	0.9978997899789979	Was blood sampling attemptedUses data-coding 7 comprises 2 Integer-valued members in a simple list.	35-0.0	_
-9	497907	Text	9907	0.9907990799079908	Blood pressure device ID	36-0.0	_
-12	497907	Text	176	0.0176017601760176	Blood pressure manual sphygmomanometer device ID	37-0.0	_
-15	497077	Text	9672	0.9672967296729673	Spirometer device ID	42-0.0	_
+6	501328	Categorical (single)	9978	0.9978997899789979	Was blood sampling attemptedUses data-coding 7 comprises 2 Integer-valued members in a simple list.	35-0.0	blood_sample_attempted
+9	497907	Text	9907	0.9907990799079908	Blood pressure device ID	36-0.0	bp_device
+12	497907	Text	176	0.0176017601760176	Blood pressure manual sphygmomanometer device ID	37-0.0	bp_manual_device_ID
+15	497077	Text	9672	0.9672967296729673	Spirometer device ID	42-0.0	spirometry_device_ID
 18	502543	Categorical (single)	9999	1.0	Month of birthUses data-coding 8 comprises 12 Integer-valued members in a simple list.	52-0.0	birth_month
-19	502543	Date	9999	1.0	Date of attending assessment centre	53-0.0	_
-22	502543	Categorical (single)	9999	1.0	UK Biobank assessment centreUses data-coding 10 comprises 26 Integer-valued members in a simple list.	54-0.0	_
+19	502543	Date	9999	1.0	Date of attending assessment centre	53-0.0	assessment_date
+22	502543	Categorical (single)	9999	1.0	UK Biobank assessment centreUses data-coding 10 comprises 26 Integer-valued members in a simple list.	54-0.0	assessment_center
 25	501328	Integer	9978	0.9978997899789979	Number of blood samples taken	68-0.0	n_blood_samples
 28	501310	Integer	9978	0.9978997899789979	Fasting time	74-0.0	fasting_time
-31	41700	Integer	840	0.08400840084008401	Cancer year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.	84-0.0	_
-49	375064	Integer	7463	0.7463746374637463	Non-cancer illness year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.	87-0.0	_
-148	391305	Integer	7810	0.7810781078107811	Operation year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.	92-0.0	_
+31	41700	Integer	840	0.08400840084008401	Cancer year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.	84-0.0	cancer_first_year_age
+49	375064	Integer	7463	0.7463746374637463	Non-cancer illness year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.	87-0.0	illness_first_year_age
+148	391305	Integer	7810	0.7810781078107811	Operation year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.	92-0.0	operation_first_year_age
 244	33113	Integer	656	0.06560656065606561	Systolic blood pressure, manual reading	93-0.0	systolic_bp_manual
 250	33113	Integer	656	0.06560656065606561	Diastolic blood pressure, manual reading	94-0.0	systolic_bp_manual
 256	33113	Integer	656	0.06560656065606561	Pulse rate (during blood-pressure measurement)	95-0.0	pulse_rate_manual
-262	501681	Integer	9982	0.9982998299829983	Time since interview start at which blood pressure screen(s) shown	96-0.0	_
+262	501681	Integer	9982	0.9982998299829983	Time since interview start at which blood pressure screen(s) shown	96-0.0	bp_start_time
 268	468106	Integer	9320	0.9320932093209321	Pulse rate, automated reading	102-0.0	pulse_rate_auto
 274	501681	Categorical (single)	9982	0.9982998299829983	Birth weight knownUses data-coding 100258 comprises 3 Integer-valued members in a simple list.	120-0.0	birth_weight
 277	452282	Integer	8999	0.8999899989999	Place of birth in UK - north co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.	129-0.0	birth_place_north
@@ -237,7 +237,7 @@ column	count	type	counts	frequency	description	udi	simple_name
 976	87245	Integer	1759	0.17591759175917593	Number of pregnancy terminationsUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	3849-0.0	pregnancy_n_terminations
 979	17969	Categorical (single)	342	0.034203420342034205	Reason former drinker stopped drinking alcoholUses data-coding 100418 comprises 7 Integer-valued members in a simple list.	3859-0.0	alcohol_former_use_stop_reason
 982	36468	Integer	711	0.0711071107110711	Age of primiparous women at birth of childUses data-coding 100586 comprises 2 Integer-valued members in a simple list.	3872-0.0	pregnancy_primiparous_birth_age
-985	21764	Integer	405	0.0405040504050405	Age at bilateral oophorectomy (both ovaries removed)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.	3882-0.0	oophorectomy_bilateral_age_2
+985	21764	Integer	405	0.0405040504050405	Age at bilateral oophorectomy (both ovaries removed)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.	3882-0.0	oophorectomy_bilateral_age_integer
 988	11545	Integer	225	0.022502250225022502	Age heart attack diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	3894-0.0	myocardial_infarction_dx_age
 991	7295	Categorical (single)	150	0.015001500150015001	Adopted father still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	3912-0.0	father_adopted_alive
 994	7295	Categorical (single)	150	0.015001500150015001	Adopted mother still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	3942-0.0	mother_adopted_alive
@@ -300,7 +300,7 @@ column	count	type	counts	frequency	description	udi	simple_name
 1384	16757	Categorical (multiple)	297	0.0297029702970297	Why reduced smokingUses data-coding 100361 comprises 7 Integer-valued members in a simple list.	6158-0.0	tobacco_smoking_reduction_reason
 1396	501661	Categorical (multiple)	9969	0.996999699969997	Leisure/social activitiesUses data-coding 100328 comprises 7 Integer-valued members in a simple list.	6160-0.0	activities_leisure
 1411	226951	Categorical (multiple)	4518	0.45184518451845185	Medication for cholesterol, blood pressure or diabetesUses data-coding 100625 comprises 6 Integer-valued members in a simple list.	6177-0.0	medications_HLD_HTN_diabetes
-1420	497835	Categorical (multiple)	9894	0.9894989498949895	Mineral and other dietary supplementsUses data-coding 100630 comprises 8 Integer-valued members in a simple list.	6179-0.0	medications_supplements_2
+1420	497835	Categorical (multiple)	9894	0.9894989498949895	Mineral and other dietary supplementsUses data-coding 100630 comprises 8 Integer-valued members in a simple list.	6179-0.0	medications_other_supplements
 1438	1786	Integer	36	0.0036003600360036	Number of cigarettes previously smoked daily (current cigar/pipe smokers)Uses data-coding 100353 comprises 2 Integer-valued members in a simple list.	6183-0.0	tobacco_smoking_current_pipe_cigar_n_daily_cigarettes
 1441	1786	Integer	36	0.0036003600360036	Age stopped smoking cigarettes (current cigar/pipe or previous cigarette smoker)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.	6194-0.0	tobacco_smoking_current_pipe_cigar_stop_agge
 1444	3775	Categorical (multiple)	75	0.007500750075007501	Medication for pain relief, constipation, heartburn (pilot)Uses data-coding 100688 comprises 8 Integer-valued members in a simple list.	10004-0.0	medications_pain_constipation_heartburn_pilot
@@ -356,7 +356,7 @@ column	count	type	counts	frequency	description	udi	simple_name
 2654	5043	Categorical (single)	107	0.0107010701070107	Illnesses of adopted fatherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20112-0.0	father_adopted_illnesses
 2675	5431	Categorical (single)	113	0.011301130113011301	Illnesses of adopted motherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20113-0.0	mother_adopted_illnesses
 2693	3717	Categorical (single)	75	0.007500750075007501	Illnesses of adopted siblingsUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20114-0.0	sibling_adopted_illnesses
-2714	40583	Categorical (single)	812	0.0812081208120812	Country of Birth (non-UK origin)Uses data-coding 89 comprises 201 Integer-valued members in a hierarchical tree.	20115-0.0	birth_country_2
+2714	40583	Categorical (single)	812	0.0812081208120812	Country of Birth (non-UK origin)Uses data-coding 89 comprises 201 Integer-valued members in a hierarchical tree.	20115-0.0	birth_country_duplicate
 2715	501652	Categorical (single)	9969	0.996999699969997	Smoking statusUses data-coding 90 comprises 4 Integer-valued members in a simple list.	20116-0.0	tobacco_smoking_status
 2718	501646	Categorical (single)	9969	0.996999699969997	Alcohol drinker statusUses data-coding 90 comprises 4 Integer-valued members in a simple list.	20117-0.0	alcohol_use_status
 2721	3364	Categorical (single)	78	0.007800780078007801	Current employment status - correctedUses data-coding 100295 comprises 9 Integer-valued members in a simple list.	20119-0.0	work_current_employment_status_corrected
@@ -493,7 +493,7 @@ column	count	type	counts	frequency	description	udi	simple_name
 2973	14416	Categorical (single)	279	0.0279027902790279	Underlying (primary) cause of death: ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	40001-0.0	death_cause_primary
 2976	8767	Categorical (single)	155	0.015501550155015502	Contributory (secondary) causes of death: ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.	40002-0.0	death_causes_secondary
 3018	14420	Continuous	279	0.0279027902790279	Age at death	40007-0.0	death_age
-3021	11517	Curve	215	0.0215021502150215	Description of cause of death	40010-0.0	death_cause_2
+3021	11517	Curve	215	0.0215021502150215	Description of cause of death	40010-0.0	death_cause_curve
 3023	14422	Categorical (single)	279	0.0279027902790279	Death report formatUses data-coding 261 comprises 5 Integer-valued members in a simple list.	40018-0.0	death_report_format
 3026	8715	Integer	171	0.017101710171017102	"Episodes containing ""Diagnoses - secondary ICD9"" data"	41076-0.0	important_unlabeled_1
 3027	320404	Integer	6342	0.6342634263426342	"Episodes containing ""Diagnoses - secondary ICD10"" data"	41078-0.0	important_unlabeled_2
