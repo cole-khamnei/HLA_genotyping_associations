@@ -10,7 +10,7 @@ column	count	type	counts	frequency	description	udi	simple_name
 18	502543	Categorical (single)	9999	1.0	Month of birthUses data-coding 8 comprises 12 Integer-valued members in a simple list.	52-0.0	birth_month
 19	502543	Date	9999	1.0	Date of attending assessment centre	53-0.0	_
 22	502543	Categorical (single)	9999	1.0	UK Biobank assessment centreUses data-coding 10 comprises 26 Integer-valued members in a simple list.	54-0.0	_
-25	501328	Integer	9978	0.9978997899789979	Number of blood samples taken	68-0.0	_
+25	501328	Integer	9978	0.9978997899789979	Number of blood samples taken	68-0.0	n_blood_samples
 28	501310	Integer	9978	0.9978997899789979	Fasting time	74-0.0	fasting_time
 31	41700	Integer	840	0.08400840084008401	Cancer year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.	84-0.0	_
 49	375064	Integer	7463	0.7463746374637463	Non-cancer illness year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.	87-0.0	_
@@ -20,139 +20,139 @@ column	count	type	counts	frequency	description	udi	simple_name
 256	33113	Integer	656	0.06560656065606561	Pulse rate (during blood-pressure measurement)	95-0.0	pulse_rate_manual
 262	501681	Integer	9982	0.9982998299829983	Time since interview start at which blood pressure screen(s) shown	96-0.0	_
 268	468106	Integer	9320	0.9320932093209321	Pulse rate, automated reading	102-0.0	pulse_rate_auto
-274	501681	Categorical (single)	9982	0.9982998299829983	Birth weight knownUses data-coding 100258 comprises 3 Integer-valued members in a simple list.	120-0.0	_
-277	452282	Integer	8999	0.8999899989999	Place of birth in UK - north co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.	129-0.0	_
-280	452282	Integer	8999	0.8999899989999	Place of birth in UK - east co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.	130-0.0	_
-283	328846	Categorical (single)	6613	0.6613661366136614	Job codeUses data-coding 2 comprises 26408 Integer-valued members in a hierarchical tree.	132-0.0	_
-286	501681	Integer	9982	0.9982998299829983	Number of self-reported cancers	134-0.0	_
-289	501681	Integer	9982	0.9982998299829983	Number of self-reported non-cancer illnesses	135-0.0	_
-292	501681	Integer	9982	0.9982998299829983	Number of operations, self-reported	136-0.0	_
-295	501681	Integer	9982	0.9982998299829983	Number of treatments/medications taken	137-0.0	_
-298	501920	Continuous	9993	0.9993999399939995	Townsend deprivation index at recruitment	189-0.0	_
-299	1299	Categorical (single)	26	0.0026002600260026003	Reason lost to follow-upUses data-coding 1965 comprises 5 Integer-valued members in a simple list.	190-0.0	_
-300	1299	Date	26	0.0026002600260026003	Date lost to follow-up	191-0.0	_
-301	501680	Categorical (single)	9969	0.996999699969997	Type of accommodation lived inUses data-coding 100286 comprises 7 Integer-valued members in a simple list.	670-0.0	_
-304	500287	Categorical (single)	9936	0.9936993699369937	Own or rent accommodation lived inUses data-coding 100287 comprises 8 Integer-valued members in a simple list.	680-0.0	_
-307	501676	Integer	9969	0.996999699969997	Length of time at current addressUses data-coding 100290 comprises 3 Integer-valued members in a simple list.	699-0.0	_
-310	500283	Integer	9936	0.9936993699369937	Number in householdUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	709-0.0	_
-313	500283	Categorical (single)	9936	0.9936993699369937	Number of vehicles in householdUses data-coding 100293 comprises 7 Integer-valued members in a simple list.	728-0.0	_
-316	496526	Categorical (single)	9861	0.9861986198619862	Average total household income before taxUses data-coding 100294 comprises 7 Integer-valued members in a simple list.	738-0.0	_
-319	287174	Integer	5750	0.575057505750575	Time employed in main current jobUses data-coding 100290 comprises 3 Integer-valued members in a simple list.	757-0.0	_
-322	287176	Integer	5750	0.575057505750575	Length of working week for main jobUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	767-0.0	_
-325	284837	Integer	5709	0.570957095709571	Frequency of travelling from home to job workplaceUses data-coding 100298 comprises 3 Integer-valued members in a simple list.	777-0.0	_
-328	265638	Integer	5304	0.5304530453045304	Distance between home and job workplaceUses data-coding 100300 comprises 3 Integer-valued members in a simple list.	796-0.0	_
-331	287176	Categorical (single)	5750	0.575057505750575	Job involves mainly walking or standingUses data-coding 100301 comprises 6 Integer-valued members in a simple list.	806-0.0	_
-334	287176	Categorical (single)	5750	0.575057505750575	Job involves heavy manual or physical workUses data-coding 100301 comprises 6 Integer-valued members in a simple list.	816-0.0	_
-337	287176	Categorical (single)	5750	0.575057505750575	Job involves shift workUses data-coding 100301 comprises 6 Integer-valued members in a simple list.	826-0.0	_
-340	336773	Integer	6607	0.6607660766076607	Age completed full time educationUses data-coding 100306 comprises 3 Integer-valued members in a simple list.	845-0.0	_
-343	497886	Categorical (single)	9894	0.9894989498949895	Frequency of friend/family visitsUses data-coding 100327 comprises 9 Integer-valued members in a simple list.	1031-0.0	_
-346	497886	Integer	9894	0.9894989498949895	Time spend outdoors in summerUses data-coding 100329 comprises 3 Integer-valued members in a simple list.	1050-0.0	_
-349	497886	Integer	9894	0.9894989498949895	Time spent outdoors in winterUses data-coding 100329 comprises 3 Integer-valued members in a simple list.	1060-0.0	_
-352	501656	Integer	9969	0.996999699969997	Sleep durationUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1160-0.0	_
-355	497881	Categorical (single)	9894	0.9894989498949895	Getting up in morningUses data-coding 100341 comprises 6 Integer-valued members in a simple list.	1170-0.0	_
-358	497879	Categorical (single)	9894	0.9894989498949895	Morning/evening person (chronotype)Uses data-coding 100342 comprises 6 Integer-valued members in a simple list.	1180-0.0	_
-361	501653	Categorical (single)	9969	0.996999699969997	Nap during dayUses data-coding 100343 comprises 4 Integer-valued members in a simple list.	1190-0.0	_
-364	501652	Categorical (single)	9969	0.996999699969997	Sleeplessness / insomniaUses data-coding 100343 comprises 4 Integer-valued members in a simple list.	1200-0.0	_
-367	501652	Categorical (single)	9969	0.996999699969997	SnoringUses data-coding 100345 comprises 4 Integer-valued members in a simple list.	1210-0.0	_
-370	501652	Categorical (single)	9969	0.996999699969997	Daytime dozing / sleeping (narcolepsy)Uses data-coding 100346 comprises 6 Integer-valued members in a simple list.	1220-0.0	_
-373	501652	Categorical (single)	9969	0.996999699969997	Current tobacco smokingUses data-coding 100347 comprises 4 Integer-valued members in a simple list.	1239-0.0	_
-376	462408	Categorical (single)	9186	0.9186918691869187	Past tobacco smokingUses data-coding 100348 comprises 5 Integer-valued members in a simple list.	1249-0.0	_
-379	459033	Categorical (single)	9122	0.9122912291229123	Smoking/smokers in householdUses data-coding 100370 comprises 4 Integer-valued members in a simple list.	1259-0.0	_
-382	462808	Integer	9197	0.9197919791979198	Exposure to tobacco smoke at homeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1269-0.0	_
-385	462808	Integer	9197	0.9197919791979198	Exposure to tobacco smoke outside homeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1279-0.0	_
-388	501650	Integer	9969	0.996999699969997	Cooked vegetable intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1289-0.0	_
-391	501650	Integer	9969	0.996999699969997	Salad / raw vegetable intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1299-0.0	_
-394	501650	Integer	9969	0.996999699969997	Fresh fruit intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1309-0.0	_
-397	501649	Integer	9969	0.996999699969997	Dried fruit intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1319-0.0	_
-400	501649	Categorical (single)	9969	0.996999699969997	Oily fish intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1329-0.0	_
-403	501649	Categorical (single)	9969	0.996999699969997	Non-oily fish intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1339-0.0	_
-406	501648	Categorical (single)	9969	0.996999699969997	Processed meat intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1349-0.0	_
-409	501648	Categorical (single)	9969	0.996999699969997	Poultry intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1359-0.0	_
-412	501648	Categorical (single)	9969	0.996999699969997	Beef intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1369-0.0	_
-415	501648	Categorical (single)	9969	0.996999699969997	Lamb/mutton intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1379-0.0	_
-418	501646	Categorical (single)	9969	0.996999699969997	Pork intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1389-0.0	_
-421	489661	Categorical (single)	9735	0.9735973597359736	Cheese intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1408-0.0	_
-424	501563	Categorical (single)	9965	0.9965996599659966	Milk type usedUses data-coding 100387 comprises 8 Integer-valued members in a simple list.	1418-0.0	_
-427	497871	Categorical (single)	9894	0.9894989498949895	Spread typeUses data-coding 100388 comprises 6 Integer-valued members in a simple list.	1428-0.0	_
-430	497871	Integer	9894	0.9894989498949895	Bread intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1438-0.0	_
-433	481411	Categorical (single)	9578	0.9578957895789579	Bread typeUses data-coding 100391 comprises 6 Integer-valued members in a simple list.	1448-0.0	_
-436	501529	Integer	9965	0.9965996599659966	Cereal intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1458-0.0	_
-439	415243	Categorical (single)	8246	0.8246824682468247	Cereal typeUses data-coding 100393 comprises 7 Integer-valued members in a simple list.	1468-0.0	_
-442	501646	Categorical (single)	9969	0.996999699969997	Salt added to foodUses data-coding 100394 comprises 5 Integer-valued members in a simple list.	1478-0.0	_
-445	501646	Integer	9969	0.996999699969997	Tea intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1488-0.0	_
-448	501646	Integer	9969	0.996999699969997	Coffee intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1498-0.0	_
-451	386250	Categorical (single)	7686	0.7686768676867687	Coffee typeUses data-coding 100397 comprises 6 Integer-valued members in a simple list.	1508-0.0	_
-454	501646	Categorical (single)	9969	0.996999699969997	Hot drink temperatureUses data-coding 100398 comprises 5 Integer-valued members in a simple list.	1518-0.0	_
-457	501646	Integer	9969	0.996999699969997	Water intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1528-0.0	_
-460	501646	Categorical (single)	9969	0.996999699969997	Major dietary changes in the last 5 yearsUses data-coding 100400 comprises 4 Integer-valued members in a simple list.	1538-0.0	_
-463	497871	Categorical (single)	9894	0.9894989498949895	Variation in dietUses data-coding 100401 comprises 5 Integer-valued members in a simple list.	1548-0.0	_
-466	501646	Categorical (single)	9969	0.996999699969997	Alcohol intake frequency.Uses data-coding 100402 comprises 7 Integer-valued members in a simple list.	1558-0.0	_
-469	346519	Integer	6981	0.6981698169816982	Average weekly red wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1568-0.0	_
-472	346518	Integer	6981	0.6981698169816982	Average weekly champagne plus white wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1578-0.0	_
-475	346518	Integer	6981	0.6981698169816982	Average weekly beer plus cider intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1588-0.0	_
-478	346518	Integer	6981	0.6981698169816982	Average weekly spirits intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1598-0.0	_
-481	346518	Integer	6981	0.6981698169816982	Average weekly fortified wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1608-0.0	_
-484	387354	Categorical (single)	7779	0.7779777977797779	Alcohol usually taken with mealsUses data-coding 100416 comprises 5 Integer-valued members in a simple list.	1618-0.0	_
-487	460391	Categorical (single)	9183	0.9183918391839184	Alcohol intake versus 10 years previouslyUses data-coding 100417 comprises 5 Integer-valued members in a simple list.	1628-0.0	_
-490	501645	Categorical (single)	9969	0.996999699969997	Country of birth (UK/elsewhere)Uses data-coding 100420 comprises 8 Integer-valued members in a simple list.	1647-0.0	_
-493	501645	Categorical (single)	9969	0.996999699969997	Breastfed as a babyUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1677-0.0	_
-496	501645	Categorical (single)	9969	0.996999699969997	Comparative body size at age 10Uses data-coding 100428 comprises 5 Integer-valued members in a simple list.	1687-0.0	_
-499	501645	Categorical (single)	9969	0.996999699969997	Comparative height size at age 10Uses data-coding 100429 comprises 5 Integer-valued members in a simple list.	1697-0.0	_
-502	501645	Categorical (single)	9969	0.996999699969997	Handedness (chirality/laterality)Uses data-coding 100430 comprises 4 Integer-valued members in a simple list.	1707-0.0	_
-505	501644	Categorical (single)	9969	0.996999699969997	Skin colourUses data-coding 100431 comprises 8 Integer-valued members in a simple list.	1717-0.0	_
-508	497869	Categorical (single)	9894	0.9894989498949895	Ease of skin tanningUses data-coding 100432 comprises 6 Integer-valued members in a simple list.	1727-0.0	_
-511	497869	Integer	9894	0.9894989498949895	Childhood sunburn occasionsUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1737-0.0	_
-514	501644	Categorical (single)	9969	0.996999699969997	Hair colour (natural, before greying)Uses data-coding 100434 comprises 8 Integer-valued members in a simple list.	1747-0.0	_
-517	497868	Categorical (single)	9894	0.9894989498949895	Facial ageingUses data-coding 100435 comprises 5 Integer-valued members in a simple list.	1757-0.0	_
-520	501643	Categorical (single)	9969	0.996999699969997	Adopted as a childUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1767-0.0	_
-523	494284	Categorical (single)	9817	0.9817981798179818	Part of a multiple birthUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1777-0.0	_
-526	494284	Categorical (single)	9817	0.9817981798179818	Maternal smoking around birthUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1787-0.0	_
-529	494283	Categorical (single)	9817	0.9817981798179818	Father still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1797-0.0	_
-532	378094	Integer	7536	0.7536753675367537	Father's age at deathUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1807-0.0	_
-535	494283	Categorical (single)	9817	0.9817981798179818	Mother still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1835-0.0	_
-538	199351	Integer	3948	0.39483948394839485	Mother's ageUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1845-0.0	_
-541	494280	Integer	9817	0.9817981798179818	Number of full brothersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1873-0.0	_
-544	494280	Integer	9817	0.9817981798179818	Number of full sistersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1883-0.0	_
-547	501639	Categorical (single)	9969	0.996999699969997	Mood swingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1920-0.0	_
-550	501639	Categorical (single)	9969	0.996999699969997	MiserablenessUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1930-0.0	_
-553	501639	Categorical (single)	9969	0.996999699969997	IrritabilityUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1940-0.0	_
-556	501638	Categorical (single)	9969	0.996999699969997	Sensitivity / hurt feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1950-0.0	_
-559	501638	Categorical (single)	9969	0.996999699969997	Fed-up feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1960-0.0	_
-562	501638	Categorical (single)	9969	0.996999699969997	Nervous feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1970-0.0	_
-565	501637	Categorical (single)	9969	0.996999699969997	Worrier / anxious feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1980-0.0	_
-568	501637	Categorical (single)	9969	0.996999699969997	Tense / 'highly strung'Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1990-0.0	_
-571	501637	Categorical (single)	9969	0.996999699969997	Worry too long after embarrassmentUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2000-0.0	_
-574	501637	Categorical (single)	9969	0.996999699969997	Suffer from 'nerves'Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2010-0.0	_
-577	501636	Categorical (single)	9969	0.996999699969997	Loneliness, isolationUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2020-0.0	_
-580	501636	Categorical (single)	9969	0.996999699969997	Guilty feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2030-0.0	_
-583	501636	Categorical (single)	9969	0.996999699969997	Risk takingUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2040-0.0	_
-586	501636	Categorical (single)	9969	0.996999699969997	Frequency of depressed mood in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.	2050-0.0	_
-589	501635	Categorical (single)	9969	0.996999699969997	Frequency of unenthusiasm / disinterest in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.	2060-0.0	_
-592	501634	Categorical (single)	9969	0.996999699969997	Frequency of tenseness / restlessness in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.	2070-0.0	_
-595	501633	Categorical (single)	9969	0.996999699969997	Frequency of tiredness / lethargy in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.	2080-0.0	_
-598	501632	Categorical (single)	9969	0.996999699969997	Seen doctor (GP) for nerves, anxiety, tension or depressionUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2090-0.0	_
-601	501632	Categorical (single)	9969	0.996999699969997	Seen a psychiatrist for nerves, anxiety, tension or depressionUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2100-0.0	_
-604	501631	Categorical (single)	9969	0.996999699969997	Able to confideUses data-coding 100501 comprises 8 Integer-valued members in a simple list.	2110-0.0	_
-607	501629	Categorical (single)	9969	0.996999699969997	Answered sexual history questionsUses data-coding 100503 comprises 2 Integer-valued members in a simple list.	2129-0.0	_
-610	455525	Integer	9066	0.9066906690669067	Age first had sexual intercourseUses data-coding 100504 comprises 3 Integer-valued members in a simple list.	2139-0.0	_
-613	451295	Integer	8986	0.8986898689868987	Lifetime number of sexual partnersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	2149-0.0	_
-616	451295	Categorical (single)	8986	0.8986898689868987	Ever had same-sex intercourseUses data-coding 100352 comprises 3 Integer-valued members in a simple list.	2159-0.0	_
-619	501625	Categorical (single)	9969	0.996999699969997	Overall health ratingUses data-coding 100508 comprises 6 Integer-valued members in a simple list.	2178-0.0	_
-622	501625	Categorical (single)	9969	0.996999699969997	Long-standing illness, disability or infirmityUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2188-0.0	_
-625	497849	Categorical (single)	9894	0.9894989498949895	Use of sun/uv protectionUses data-coding 100536 comprises 7 Integer-valued members in a simple list.	2267-0.0	_
-628	497849	Integer	9894	0.9894989498949895	Frequency of solarium/sunlamp useUses data-coding 100537 comprises 3 Integer-valued members in a simple list.	2277-0.0	_
-631	501624	Categorical (single)	9969	0.996999699969997	Falls in the last yearUses data-coding 100539 comprises 4 Integer-valued members in a simple list.	2296-0.0	_
-634	501623	Categorical (single)	9969	0.996999699969997	Weight change compared with 1 year agoUses data-coding 100540 comprises 5 Integer-valued members in a simple list.	2306-0.0	_
-637	501622	Categorical (single)	9969	0.996999699969997	Wheeze or whistling in the chest in last yearUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2316-0.0	_
-640	501620	Categorical (single)	9969	0.996999699969997	Chest pain or discomfortUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2335-0.0	_
-643	226953	Categorical (single)	4518	0.45184518451845185	Relative age of first facial hairUses data-coding 100570 comprises 5 Integer-valued members in a simple list.	2375-0.0	_
-646	226953	Categorical (single)	4518	0.45184518451845185	Relative age voice brokeUses data-coding 100570 comprises 5 Integer-valued members in a simple list.	2385-0.0	_
-649	226953	Categorical (single)	4518	0.45184518451845185	Hair/balding patternUses data-coding 100572 comprises 6 Integer-valued members in a simple list.	2395-0.0	_
-652	226953	Integer	4518	0.45184518451845185	Number of children fatheredUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	2405-0.0	_
-655	228670	Categorical (single)	4556	0.45564556455645566	Had major operationsUses data-coding 100603 comprises 4 Integer-valued members in a simple list.	2415-0.0	_
-658	501612	Categorical (single)	9969	0.996999699969997	Diabetes diagnosed by doctorUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2443-0.0	_
-661	501612	Categorical (single)	9969	0.996999699969997	Cancer diagnosed by doctorUses data-coding 100603 comprises 4 Integer-valued members in a simple list.	2453-0.0	_
-664	501612	Categorical (single)	9969	0.996999699969997	Fractured/broken bones in last 5 yearsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2463-0.0	_
+274	501681	Categorical (single)	9982	0.9982998299829983	Birth weight knownUses data-coding 100258 comprises 3 Integer-valued members in a simple list.	120-0.0	birth_weight
+277	452282	Integer	8999	0.8999899989999	Place of birth in UK - north co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.	129-0.0	birth_place_north
+280	452282	Integer	8999	0.8999899989999	Place of birth in UK - east co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.	130-0.0	birth_place_east
+283	328846	Categorical (single)	6613	0.6613661366136614	Job codeUses data-coding 2 comprises 26408 Integer-valued members in a hierarchical tree.	132-0.0	job
+286	501681	Integer	9982	0.9982998299829983	Number of self-reported cancers	134-0.0	n_cancers
+289	501681	Integer	9982	0.9982998299829983	Number of self-reported non-cancer illnesses	135-0.0	n_non_cancer_illnesses
+292	501681	Integer	9982	0.9982998299829983	Number of operations, self-reported	136-0.0	n_operations
+295	501681	Integer	9982	0.9982998299829983	Number of treatments/medications taken	137-0.0	n_treatments
+298	501920	Continuous	9993	0.9993999399939995	Townsend deprivation index at recruitment	189-0.0	deprivation_index
+299	1299	Categorical (single)	26	0.0026002600260026003	Reason lost to follow-upUses data-coding 1965 comprises 5 Integer-valued members in a simple list.	190-0.0	lost_to_follow_reason
+300	1299	Date	26	0.0026002600260026003	Date lost to follow-up	191-0.0	lost_to_follow_up_date
+301	501680	Categorical (single)	9969	0.996999699969997	Type of accommodation lived inUses data-coding 100286 comprises 7 Integer-valued members in a simple list.	670-0.0	living_accomodation
+304	500287	Categorical (single)	9936	0.9936993699369937	Own or rent accommodation lived inUses data-coding 100287 comprises 8 Integer-valued members in a simple list.	680-0.0	own_or_rent_accomodation
+307	501676	Integer	9969	0.996999699969997	Length of time at current addressUses data-coding 100290 comprises 3 Integer-valued members in a simple list.	699-0.0	time_at_current_address
+310	500283	Integer	9936	0.9936993699369937	Number in householdUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	709-0.0	n_household_inhabitants
+313	500283	Categorical (single)	9936	0.9936993699369937	Number of vehicles in householdUses data-coding 100293 comprises 7 Integer-valued members in a simple list.	728-0.0	n_household_vehicles
+316	496526	Categorical (single)	9861	0.9861986198619862	Average total household income before taxUses data-coding 100294 comprises 7 Integer-valued members in a simple list.	738-0.0	average_household_income
+319	287174	Integer	5750	0.575057505750575	Time employed in main current jobUses data-coding 100290 comprises 3 Integer-valued members in a simple list.	757-0.0	time_at_current_job
+322	287176	Integer	5750	0.575057505750575	Length of working week for main jobUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	767-0.0	work_week_length
+325	284837	Integer	5709	0.570957095709571	Frequency of travelling from home to job workplaceUses data-coding 100298 comprises 3 Integer-valued members in a simple list.	777-0.0	n_trips_to_work
+328	265638	Integer	5304	0.5304530453045304	Distance between home and job workplaceUses data-coding 100300 comprises 3 Integer-valued members in a simple list.	796-0.0	distance_to_work
+331	287176	Categorical (single)	5750	0.575057505750575	Job involves mainly walking or standingUses data-coding 100301 comprises 6 Integer-valued members in a simple list.	806-0.0	work_standing_and_walking
+334	287176	Categorical (single)	5750	0.575057505750575	Job involves heavy manual or physical workUses data-coding 100301 comprises 6 Integer-valued members in a simple list.	816-0.0	work_heavy_physical_labor
+337	287176	Categorical (single)	5750	0.575057505750575	Job involves shift workUses data-coding 100301 comprises 6 Integer-valued members in a simple list.	826-0.0	work_shift_status
+340	336773	Integer	6607	0.6607660766076607	Age completed full time educationUses data-coding 100306 comprises 3 Integer-valued members in a simple list.	845-0.0	education_completion_age
+343	497886	Categorical (single)	9894	0.9894989498949895	Frequency of friend/family visitsUses data-coding 100327 comprises 9 Integer-valued members in a simple list.	1031-0.0	frequency_family_friend_visits
+346	497886	Integer	9894	0.9894989498949895	Time spend outdoors in summerUses data-coding 100329 comprises 3 Integer-valued members in a simple list.	1050-0.0	outdoors_time_summer
+349	497886	Integer	9894	0.9894989498949895	Time spent outdoors in winterUses data-coding 100329 comprises 3 Integer-valued members in a simple list.	1060-0.0	outdoors_time_winter
+352	501656	Integer	9969	0.996999699969997	Sleep durationUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1160-0.0	sleep_duration
+355	497881	Categorical (single)	9894	0.9894989498949895	Getting up in morningUses data-coding 100341 comprises 6 Integer-valued members in a simple list.	1170-0.0	morning_wake_up
+358	497879	Categorical (single)	9894	0.9894989498949895	Morning/evening person (chronotype)Uses data-coding 100342 comprises 6 Integer-valued members in a simple list.	1180-0.0	morning_evening_person
+361	501653	Categorical (single)	9969	0.996999699969997	Nap during dayUses data-coding 100343 comprises 4 Integer-valued members in a simple list.	1190-0.0	day_naps
+364	501652	Categorical (single)	9969	0.996999699969997	Sleeplessness / insomniaUses data-coding 100343 comprises 4 Integer-valued members in a simple list.	1200-0.0	insomnia
+367	501652	Categorical (single)	9969	0.996999699969997	SnoringUses data-coding 100345 comprises 4 Integer-valued members in a simple list.	1210-0.0	snoring
+370	501652	Categorical (single)	9969	0.996999699969997	Daytime dozing / sleeping (narcolepsy)Uses data-coding 100346 comprises 6 Integer-valued members in a simple list.	1220-0.0	narcolepsy
+373	501652	Categorical (single)	9969	0.996999699969997	Current tobacco smokingUses data-coding 100347 comprises 4 Integer-valued members in a simple list.	1239-0.0	tobacco_smoking_current
+376	462408	Categorical (single)	9186	0.9186918691869187	Past tobacco smokingUses data-coding 100348 comprises 5 Integer-valued members in a simple list.	1249-0.0	tobacco_smoking_past
+379	459033	Categorical (single)	9122	0.9122912291229123	Smoking/smokers in householdUses data-coding 100370 comprises 4 Integer-valued members in a simple list.	1259-0.0	n_household_smokers
+382	462808	Integer	9197	0.9197919791979198	Exposure to tobacco smoke at homeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1269-0.0	tobacco_exposure_home
+385	462808	Integer	9197	0.9197919791979198	Exposure to tobacco smoke outside homeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1279-0.0	tobacco_exposure_outside_home
+388	501650	Integer	9969	0.996999699969997	Cooked vegetable intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1289-0.0	vegetable_intake_cooked
+391	501650	Integer	9969	0.996999699969997	Salad / raw vegetable intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1299-0.0	vegetable_intake_raw
+394	501650	Integer	9969	0.996999699969997	Fresh fruit intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1309-0.0	fruit_intake_fresh
+397	501649	Integer	9969	0.996999699969997	Dried fruit intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1319-0.0	fruit_intake_dried
+400	501649	Categorical (single)	9969	0.996999699969997	Oily fish intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1329-0.0	fish_intake_oily
+403	501649	Categorical (single)	9969	0.996999699969997	Non-oily fish intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1339-0.0	fish_intake_non_oily
+406	501648	Categorical (single)	9969	0.996999699969997	Processed meat intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1349-0.0	meat_intake_processed
+409	501648	Categorical (single)	9969	0.996999699969997	Poultry intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1359-0.0	meat_intake_poultry
+412	501648	Categorical (single)	9969	0.996999699969997	Beef intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1369-0.0	meat_intake_beef
+415	501648	Categorical (single)	9969	0.996999699969997	Lamb/mutton intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1379-0.0	meat_intake_lamb
+418	501646	Categorical (single)	9969	0.996999699969997	Pork intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1389-0.0	meat_intake_pork
+421	489661	Categorical (single)	9735	0.9735973597359736	Cheese intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.	1408-0.0	dairy_intake_cheese
+424	501563	Categorical (single)	9965	0.9965996599659966	Milk type usedUses data-coding 100387 comprises 8 Integer-valued members in a simple list.	1418-0.0	dairy_intake_milk
+427	497871	Categorical (single)	9894	0.9894989498949895	Spread typeUses data-coding 100388 comprises 6 Integer-valued members in a simple list.	1428-0.0	spread_type
+430	497871	Integer	9894	0.9894989498949895	Bread intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1438-0.0	bread_intake
+433	481411	Categorical (single)	9578	0.9578957895789579	Bread typeUses data-coding 100391 comprises 6 Integer-valued members in a simple list.	1448-0.0	bread_type
+436	501529	Integer	9965	0.9965996599659966	Cereal intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1458-0.0	cereal_intake
+439	415243	Categorical (single)	8246	0.8246824682468247	Cereal typeUses data-coding 100393 comprises 7 Integer-valued members in a simple list.	1468-0.0	cereal_type
+442	501646	Categorical (single)	9969	0.996999699969997	Salt added to foodUses data-coding 100394 comprises 5 Integer-valued members in a simple list.	1478-0.0	salt_added
+445	501646	Integer	9969	0.996999699969997	Tea intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1488-0.0	tea_intake
+448	501646	Integer	9969	0.996999699969997	Coffee intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1498-0.0	coffee_intake
+451	386250	Categorical (single)	7686	0.7686768676867687	Coffee typeUses data-coding 100397 comprises 6 Integer-valued members in a simple list.	1508-0.0	coffee_type
+454	501646	Categorical (single)	9969	0.996999699969997	Hot drink temperatureUses data-coding 100398 comprises 5 Integer-valued members in a simple list.	1518-0.0	hot_drink_temperatures
+457	501646	Integer	9969	0.996999699969997	Water intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.	1528-0.0	water_intake
+460	501646	Categorical (single)	9969	0.996999699969997	Major dietary changes in the last 5 yearsUses data-coding 100400 comprises 4 Integer-valued members in a simple list.	1538-0.0	major_dietary_changes_past_5_years
+463	497871	Categorical (single)	9894	0.9894989498949895	Variation in dietUses data-coding 100401 comprises 5 Integer-valued members in a simple list.	1548-0.0	diet_variations
+466	501646	Categorical (single)	9969	0.996999699969997	Alcohol intake frequency.Uses data-coding 100402 comprises 7 Integer-valued members in a simple list.	1558-0.0	alcohol_intake
+469	346519	Integer	6981	0.6981698169816982	Average weekly red wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1568-0.0	alcohol_intake_red_wine
+472	346518	Integer	6981	0.6981698169816982	Average weekly champagne plus white wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1578-0.0	alcohol_intake_champagne
+475	346518	Integer	6981	0.6981698169816982	Average weekly beer plus cider intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1588-0.0	alcohol_intake_beer_cider
+478	346518	Integer	6981	0.6981698169816982	Average weekly spirits intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1598-0.0	alcohol_intake_spirits
+481	346518	Integer	6981	0.6981698169816982	Average weekly fortified wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1608-0.0	alcohol_intake_fortified_wine
+484	387354	Categorical (single)	7779	0.7779777977797779	Alcohol usually taken with mealsUses data-coding 100416 comprises 5 Integer-valued members in a simple list.	1618-0.0	alcohol_with_meals
+487	460391	Categorical (single)	9183	0.9183918391839184	Alcohol intake versus 10 years previouslyUses data-coding 100417 comprises 5 Integer-valued members in a simple list.	1628-0.0	alcohol_intake_versus_past_10_years
+490	501645	Categorical (single)	9969	0.996999699969997	Country of birth (UK/elsewhere)Uses data-coding 100420 comprises 8 Integer-valued members in a simple list.	1647-0.0	birth_country
+493	501645	Categorical (single)	9969	0.996999699969997	Breastfed as a babyUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1677-0.0	baby_breastfed
+496	501645	Categorical (single)	9969	0.996999699969997	Comparative body size at age 10Uses data-coding 100428 comprises 5 Integer-valued members in a simple list.	1687-0.0	body_size_age_10
+499	501645	Categorical (single)	9969	0.996999699969997	Comparative height size at age 10Uses data-coding 100429 comprises 5 Integer-valued members in a simple list.	1697-0.0	height_age_10
+502	501645	Categorical (single)	9969	0.996999699969997	Handedness (chirality/laterality)Uses data-coding 100430 comprises 4 Integer-valued members in a simple list.	1707-0.0	handedness
+505	501644	Categorical (single)	9969	0.996999699969997	Skin colourUses data-coding 100431 comprises 8 Integer-valued members in a simple list.	1717-0.0	skin_color
+508	497869	Categorical (single)	9894	0.9894989498949895	Ease of skin tanningUses data-coding 100432 comprises 6 Integer-valued members in a simple list.	1727-0.0	ski_tanning_ease
+511	497869	Integer	9894	0.9894989498949895	Childhood sunburn occasionsUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1737-0.0	childhood_sunburn_events
+514	501644	Categorical (single)	9969	0.996999699969997	Hair colour (natural, before greying)Uses data-coding 100434 comprises 8 Integer-valued members in a simple list.	1747-0.0	hair_color
+517	497868	Categorical (single)	9894	0.9894989498949895	Facial ageingUses data-coding 100435 comprises 5 Integer-valued members in a simple list.	1757-0.0	facial_aging
+520	501643	Categorical (single)	9969	0.996999699969997	Adopted as a childUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1767-0.0	adopted
+523	494284	Categorical (single)	9817	0.9817981798179818	Part of a multiple birthUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1777-0.0	birth_part_of_multiple
+526	494284	Categorical (single)	9817	0.9817981798179818	Maternal smoking around birthUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1787-0.0	birth_maternal_smoking
+529	494283	Categorical (single)	9817	0.9817981798179818	Father still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1797-0.0	father_alive
+532	378094	Integer	7536	0.7536753675367537	Father's age at deathUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1807-0.0	father_death_age
+535	494283	Categorical (single)	9817	0.9817981798179818	Mother still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1835-0.0	mother_alive
+538	199351	Integer	3948	0.39483948394839485	Mother's ageUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1845-0.0	mother_death_age
+541	494280	Integer	9817	0.9817981798179818	Number of full brothersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1873-0.0	n_full_brothers
+544	494280	Integer	9817	0.9817981798179818	Number of full sistersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	1883-0.0	n_full_sisters
+547	501639	Categorical (single)	9969	0.996999699969997	Mood swingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1920-0.0	mood_swings
+550	501639	Categorical (single)	9969	0.996999699969997	MiserablenessUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1930-0.0	miserableness
+553	501639	Categorical (single)	9969	0.996999699969997	IrritabilityUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1940-0.0	irritability
+556	501638	Categorical (single)	9969	0.996999699969997	Sensitivity / hurt feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1950-0.0	sensitivity
+559	501638	Categorical (single)	9969	0.996999699969997	Fed-up feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1960-0.0	feelings_fed_up
+562	501638	Categorical (single)	9969	0.996999699969997	Nervous feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1970-0.0	feelings_nervous
+565	501637	Categorical (single)	9969	0.996999699969997	Worrier / anxious feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1980-0.0	feelings_anxious
+568	501637	Categorical (single)	9969	0.996999699969997	Tense / 'highly strung'Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.	1990-0.0	feelings_tense
+571	501637	Categorical (single)	9969	0.996999699969997	Worry too long after embarrassmentUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2000-0.0	persistent_embarrassment
+574	501637	Categorical (single)	9969	0.996999699969997	Suffer from 'nerves'Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2010-0.0	nerve_suffering
+577	501636	Categorical (single)	9969	0.996999699969997	Loneliness, isolationUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2020-0.0	loneliness
+580	501636	Categorical (single)	9969	0.996999699969997	Guilty feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2030-0.0	feelings_guilty
+583	501636	Categorical (single)	9969	0.996999699969997	Risk takingUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2040-0.0	risk_taking
+586	501636	Categorical (single)	9969	0.996999699969997	Frequency of depressed mood in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.	2050-0.0	frequency_depressed_mood
+589	501635	Categorical (single)	9969	0.996999699969997	Frequency of unenthusiasm / disinterest in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.	2060-0.0	frequency_disinterest
+592	501634	Categorical (single)	9969	0.996999699969997	Frequency of tenseness / restlessness in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.	2070-0.0	frequency_tenseness
+595	501633	Categorical (single)	9969	0.996999699969997	Frequency of tiredness / lethargy in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.	2080-0.0	frequency_tiredness
+598	501632	Categorical (single)	9969	0.996999699969997	Seen doctor (GP) for nerves, anxiety, tension or depressionUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2090-0.0	seen_gp_for_nerves_anxiety_tension_depression
+601	501632	Categorical (single)	9969	0.996999699969997	Seen a psychiatrist for nerves, anxiety, tension or depressionUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2100-0.0	seen_psychiastrist_for_nerves_anxiety_tension_depression
+604	501631	Categorical (single)	9969	0.996999699969997	Able to confideUses data-coding 100501 comprises 8 Integer-valued members in a simple list.	2110-0.0	able_to_confide
+607	501629	Categorical (single)	9969	0.996999699969997	Answered sexual history questionsUses data-coding 100503 comprises 2 Integer-valued members in a simple list.	2129-0.0	sex_answered_history
+610	455525	Integer	9066	0.9066906690669067	Age first had sexual intercourseUses data-coding 100504 comprises 3 Integer-valued members in a simple list.	2139-0.0	sex_first_age
+613	451295	Integer	8986	0.8986898689868987	Lifetime number of sexual partnersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	2149-0.0	sex_n_partners
+616	451295	Categorical (single)	8986	0.8986898689868987	Ever had same-sex intercourseUses data-coding 100352 comprises 3 Integer-valued members in a simple list.	2159-0.0	sex_ever_same_sex
+619	501625	Categorical (single)	9969	0.996999699969997	Overall health ratingUses data-coding 100508 comprises 6 Integer-valued members in a simple list.	2178-0.0	overall_health_rating
+622	501625	Categorical (single)	9969	0.996999699969997	Long-standing illness, disability or infirmityUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2188-0.0	chronic_illness_disability
+625	497849	Categorical (single)	9894	0.9894989498949895	Use of sun/uv protectionUses data-coding 100536 comprises 7 Integer-valued members in a simple list.	2267-0.0	sun_uv_protection_use
+628	497849	Integer	9894	0.9894989498949895	Frequency of solarium/sunlamp useUses data-coding 100537 comprises 3 Integer-valued members in a simple list.	2277-0.0	sun_lamp_use_frequency
+631	501624	Categorical (single)	9969	0.996999699969997	Falls in the last yearUses data-coding 100539 comprises 4 Integer-valued members in a simple list.	2296-0.0	n_falls_past_year
+634	501623	Categorical (single)	9969	0.996999699969997	Weight change compared with 1 year agoUses data-coding 100540 comprises 5 Integer-valued members in a simple list.	2306-0.0	weight_change_past_year
+637	501622	Categorical (single)	9969	0.996999699969997	Wheeze or whistling in the chest in last yearUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2316-0.0	chest_wheeze_past_year
+640	501620	Categorical (single)	9969	0.996999699969997	Chest pain or discomfortUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2335-0.0	chest_pain
+643	226953	Categorical (single)	4518	0.45184518451845185	Relative age of first facial hairUses data-coding 100570 comprises 5 Integer-valued members in a simple list.	2375-0.0	age_first_facial_hair
+646	226953	Categorical (single)	4518	0.45184518451845185	Relative age voice brokeUses data-coding 100570 comprises 5 Integer-valued members in a simple list.	2385-0.0	age_voice_broke
+649	226953	Categorical (single)	4518	0.45184518451845185	Hair/balding patternUses data-coding 100572 comprises 6 Integer-valued members in a simple list.	2395-0.0	hair_balding_pattern
+652	226953	Integer	4518	0.45184518451845185	Number of children fatheredUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	2405-0.0	n_children_fathered
+655	228670	Categorical (single)	4556	0.45564556455645566	Had major operationsUses data-coding 100603 comprises 4 Integer-valued members in a simple list.	2415-0.0	had_major_operations
+658	501612	Categorical (single)	9969	0.996999699969997	Diabetes diagnosed by doctorUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2443-0.0	diabetes_dx
+661	501612	Categorical (single)	9969	0.996999699969997	Cancer diagnosed by doctorUses data-coding 100603 comprises 4 Integer-valued members in a simple list.	2453-0.0	cancer_dx
+664	501612	Categorical (single)	9969	0.996999699969997	Fractured/broken bones in last 5 yearsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2463-0.0	n_fractures_breaks_past_year
 667	501612	Categorical (single)	9969	0.996999699969997	Other serious medical condition/disability diagnosed by doctorUses data-coding 100603 comprises 4 Integer-valued members in a simple list.	2473-0.0	_
 670	501612	Categorical (single)	9969	0.996999699969997	Taking other prescription medicationsUses data-coding 100603 comprises 4 Integer-valued members in a simple list.	2492-0.0	_
 673	137573	Categorical (single)	2783	0.27832783278327833	Light smokers, at least 100 smokes in lifetimeUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2644-0.0	_
