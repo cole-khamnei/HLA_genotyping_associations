@@ -36,7 +36,7 @@ column	count	type	counts	frequency	description	udi	simple_name
 307	501676	Integer	9969	0.996999699969997	Length of time at current addressUses data-coding 100290 comprises 3 Integer-valued members in a simple list.	699-0.0	time_at_current_address
 310	500283	Integer	9936	0.9936993699369937	Number in householdUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	709-0.0	n_household_inhabitants
 313	500283	Categorical (single)	9936	0.9936993699369937	Number of vehicles in householdUses data-coding 100293 comprises 7 Integer-valued members in a simple list.	728-0.0	n_household_vehicles
-316	496526	Categorical (single)	9861	0.9861986198619862	Average total household income before taxUses data-coding 100294 comprises 7 Integer-valued members in a simple list.	738-0.0	average_household_income
+316	496526	Categorical (single)	9861	0.9861986198619862	Average total household income before taxUses data-coding 100294 comprises 7 Integer-valued members in a simple list.	738-0.0	household_average_income
 319	287174	Integer	5750	0.575057505750575	Time employed in main current jobUses data-coding 100290 comprises 3 Integer-valued members in a simple list.	757-0.0	time_at_current_job
 322	287176	Integer	5750	0.575057505750575	Length of working week for main jobUses data-coding 100291 comprises 2 Integer-valued members in a simple list.	767-0.0	work_week_length
 325	284837	Integer	5709	0.570957095709571	Frequency of travelling from home to job workplaceUses data-coding 100298 comprises 3 Integer-valued members in a simple list.	777-0.0	n_trips_to_work
@@ -155,7 +155,7 @@ column	count	type	counts	frequency	description	udi	simple_name
 664	501612	Categorical (single)	9969	0.996999699969997	Fractured/broken bones in last 5 yearsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2463-0.0	n_fractures_breaks_past_year
 667	501612	Categorical (single)	9969	0.996999699969997	Other serious medical condition/disability diagnosed by doctorUses data-coding 100603 comprises 4 Integer-valued members in a simple list.	2473-0.0	serious_medical_dx
 670	501612	Categorical (single)	9969	0.996999699969997	Taking other prescription medicationsUses data-coding 100603 comprises 4 Integer-valued members in a simple list.	2492-0.0	other_prescription_medication
-673	137573	Categorical (single)	2783	0.27832783278327833	Light smokers, at least 100 smokes in lifetimeUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2644-0.0	light_smoking_status
+673	137573	Categorical (single)	2783	0.27832783278327833	Light smokers, at least 100 smokes in lifetimeUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2644-0.0	tobacco_smoking_light_status
 676	259836	Categorical (single)	5153	0.5153515351535154	Non-butter spread type detailsUses data-coding 100389 comprises 9 Integer-valued members in a simple list.	2654-0.0	non_butter_spread_use
 679	207095	Categorical (single)	4011	0.40114011401140115	Reason for reducing amount of alcohol drunkUses data-coding 100418 comprises 7 Integer-valued members in a simple list.	2664-0.0	alcohol_reduction_reason
 682	272930	Categorical (single)	5413	0.5413541354135414	Ever had breast cancer screening / mammogramUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	2674-0.0	breast_cancer_screening_ever
@@ -291,59 +291,59 @@ column	count	type	counts	frequency	description	udi	simple_name
 1243	497849	Categorical (multiple)	9894	0.9894989498949895	Mouth/teeth dental problemsUses data-coding 100538 comprises 8 Integer-valued members in a simple list.	6149-0.0	oral_problems
 1261	501614	Categorical (multiple)	9969	0.996999699969997	Vascular/heart problems diagnosed by doctorUses data-coding 100605 comprises 6 Integer-valued members in a simple list.	6150-0.0	cardiovascular_problems_dx
 1273	47466	Categorical (multiple)	1035	0.1035103510351035	Fractured bone site(s)Uses data-coding 100622 comprises 9 Integer-valued members in a simple list.	6151-0.0	bone_fracture_sites
-1294	501612	Categorical (multiple)	9969	0.996999699969997	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctorUses data-coding 100610 comprises 7 Integer-valued members in a simple list.	6152-0.0	_
-1309	270871	Categorical (multiple)	5376	0.5376537653765376	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormonesUses data-coding 100626 comprises 8 Integer-valued members in a simple list.	6153-0.0	_
-1321	497836	Categorical (multiple)	9894	0.9894989498949895	Medication for pain relief, constipation, heartburnUses data-coding 100628 comprises 9 Integer-valued members in a simple list.	6154-0.0	_
-1339	497836	Categorical (multiple)	9894	0.9894989498949895	Vitamin and mineral supplementsUses data-coding 100629 comprises 9 Integer-valued members in a simple list.	6155-0.0	_
-1360	36080	Categorical (multiple)	721	0.07210721072107211	Manic/hyper symptomsUses data-coding 100498 comprises 6 Integer-valued members in a simple list.	6156-0.0	_
-1372	120048	Categorical (multiple)	2331	0.23312331233123312	Why stopped smokingUses data-coding 100361 comprises 7 Integer-valued members in a simple list.	6157-0.0	_
-1384	16757	Categorical (multiple)	297	0.0297029702970297	Why reduced smokingUses data-coding 100361 comprises 7 Integer-valued members in a simple list.	6158-0.0	_
-1396	501661	Categorical (multiple)	9969	0.996999699969997	Leisure/social activitiesUses data-coding 100328 comprises 7 Integer-valued members in a simple list.	6160-0.0	_
-1411	226951	Categorical (multiple)	4518	0.45184518451845185	Medication for cholesterol, blood pressure or diabetesUses data-coding 100625 comprises 6 Integer-valued members in a simple list.	6177-0.0	_
-1420	497835	Categorical (multiple)	9894	0.9894989498949895	Mineral and other dietary supplementsUses data-coding 100630 comprises 8 Integer-valued members in a simple list.	6179-0.0	_
-1438	1786	Integer	36	0.0036003600360036	Number of cigarettes previously smoked daily (current cigar/pipe smokers)Uses data-coding 100353 comprises 2 Integer-valued members in a simple list.	6183-0.0	_
-1441	1786	Integer	36	0.0036003600360036	Age stopped smoking cigarettes (current cigar/pipe or previous cigarette smoker)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.	6194-0.0	_
-1444	3775	Categorical (multiple)	75	0.007500750075007501	Medication for pain relief, constipation, heartburn (pilot)Uses data-coding 100688 comprises 8 Integer-valued members in a simple list.	10004-0.0	_
-1449	3775	Categorical (multiple)	75	0.007500750075007501	Medication for smoking cessation, constipation, heartburn, allergies (pilot)Uses data-coding 100689 comprises 7 Integer-valued members in a simple list.	10005-0.0	_
-1452	3775	Categorical (multiple)	75	0.007500750075007501	Mouth/teeth dental problems (pilot)Uses data-coding 100685 comprises 6 Integer-valued members in a simple list.	10006-0.0	_
-1456	3775	Categorical (multiple)	75	0.007500750075007501	Vitamin and mineral supplements (pilot)Uses data-coding 100692 comprises 8 Integer-valued members in a simple list.	10007-0.0	_
-1462	934	Categorical (single)	18	0.0018001800180018	Why stopped smoking (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.	10115-0.0	_
-1463	44	Categorical (single)	0	0.0	Type of progestan-only oral contraceptive used (pilot)Uses data-coding 100686 comprises 8 Integer-valued members in a simple list.	10132-0.0	_
-1488	3435	Categorical (single)	69	0.006900690069006901	Spirometry method (pilot)Uses data-coding 100282 comprises 3 Integer-valued members in a simple list.	10711-0.0	_
-1489	3430	Text	69	0.006900690069006901	Spirometry device serial number (pilot)	10714-0.0	_
-1490	3430	Integer	69	0.006900690069006901	Number of measurements made (pilot)	10717-0.0	_
-1491	3775	Categorical (multiple)	75	0.007500750075007501	Illness, injury, bereavement, stress in last 2 years (pilot)Uses data-coding 100683 comprises 9 Integer-valued members in a simple list.	10721-0.0	_
-1496	3775	Categorical (multiple)	75	0.007500750075007501	Qualifications (pilot)Uses data-coding 100658 comprises 7 Integer-valued members in a simple list.	10722-0.0	_
-1501	3775	Categorical (multiple)	75	0.007500750075007501	Vitamin supplements (pilot)Uses data-coding 100691 comprises 8 Integer-valued members in a simple list.	10723-0.0	_
-1507	3775	Categorical (single)	75	0.007500750075007501	Frequency of friend/family visits (pilot)Uses data-coding 100662 comprises 8 Integer-valued members in a simple list.	10740-0.0	_
-1508	3775	Categorical (single)	75	0.007500750075007501	Spread type (pilot)Uses data-coding 100673 comprises 8 Integer-valued members in a simple list.	10767-0.0	_
-1509	3658	Categorical (single)	71	0.007100710071007101	Bread type/intake (pilot)Uses data-coding 100674 comprises 7 Integer-valued members in a simple list.	10776-0.0	_
-1510	1516	Categorical (single)	35	0.0035003500350035003	Reason for reducing amount of alcohol drunk (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.	10818-0.0	_
-1511	934	Categorical (single)	18	0.0018001800180018	Ever stopped smoking for 6+ months (pilot)Uses data-coding 100668 comprises 3 Integer-valued members in a simple list.	10827-0.0	_
-1512	63	Categorical (single)	2	0.00020002000200020003	Gestational diabetes only (pilot)Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.	10844-0.0	_
-1513	139	Categorical (single)	6	0.0006000600060006001	Reason former drinker stopped drinking alcohol (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.	10853-0.0	_
-1514	3775	Categorical (multiple)	75	0.007500750075007501	Other dietary supplements (pilot)Uses data-coding 100690 comprises 8 Integer-valued members in a simple list.	10854-0.0	_
-1520	3775	Categorical (multiple)	75	0.007500750075007501	Never eat eggs, dairy, wheat, sugar (pilot)Uses data-coding 100672 comprises 6 Integer-valued members in a simple list.	10855-0.0	_
-1524	3775	Categorical (multiple)	75	0.007500750075007501	Gas or solid-fuel cooking/heating (pilot)Uses data-coding 100656 comprises 6 Integer-valued members in a simple list.	10860-0.0	_
-1527	3755	Categorical (single)	75	0.007500750075007501	Average total household income before tax (pilot)Uses data-coding 100657 comprises 7 Integer-valued members in a simple list.	10877-0.0	_
-1528	935	Categorical (single)	21	0.0021002100210021	Light smokers, at least 100 smokes in lifetime (pilot)Uses data-coding 100352 comprises 3 Integer-valued members in a simple list.	10895-0.0	_
-1529	3775	Categorical (single)	75	0.007500750075007501	Variation in diet (pilot)Uses data-coding 100394 comprises 5 Integer-valued members in a simple list.	10912-0.0	_
-1530	41700	Categorical (multiple)	840	0.08400840084008401	Cancer code, self-reportedUses data-coding 3 comprises 89 Integer-valued members in a hierarchical tree.	20001-0.0	_
-1548	375064	Categorical (multiple)	7463	0.7463746374637463	Non-cancer illness code, self-reportedUses data-coding 6 comprises 474 Integer-valued members in a hierarchical tree.	20002-0.0	_
-1647	364000	Categorical (multiple)	7226	0.7226722672267226	Treatment/medication codeUses data-coding 4 comprises 6745 Integer-valued members in a simple list.	20003-0.0	_
-1791	391305	Categorical (multiple)	7810	0.7810781078107811	Operation codeUses data-coding 5 comprises 270 Integer-valued members in a hierarchical tree.	20004-0.0	_
-1887	317755	Categorical (single)	6378	0.6378637863786378	Email accessUses data-coding 1007 comprises 2 Integer-valued members in a simple list.	20005-0.0	_
-1888	41700	Continuous	840	0.08400840084008401	Interpolated Year when cancer first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.	20006-0.0	_
-1906	41700	Continuous	840	0.08400840084008401	Interpolated Age of participant when cancer first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.	20007-0.0	_
-1924	375061	Continuous	7463	0.7463746374637463	Interpolated Year when non-cancer illness first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.	20008-0.0	_
-2023	375061	Continuous	7463	0.7463746374637463	Interpolated Age of participant when non-cancer illness first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.	20009-0.0	_
-2122	391302	Continuous	7810	0.7810781078107811	Interpolated Year when operation took placeUses data-coding 13 comprises 2 Real-valued members in a simple list.	20010-0.0	_
-2218	391302	Continuous	7810	0.7810781078107811	Interpolated Age of participant when operation took placeUses data-coding 13 comprises 2 Real-valued members in a simple list.	20011-0.0	_
-2314	41700	Categorical (single)	840	0.08400840084008401	Method of recording time when cancer first diagnosedUses data-coding 14 comprises 4 Integer-valued members in a simple list.	20012-0.0	_
-2332	375064	Categorical (single)	7463	0.7463746374637463	Method of recording time when non-cancer illness first diagnosedUses data-coding 14 comprises 4 Integer-valued members in a simple list.	20013-0.0	_
-2431	391305	Categorical (single)	7810	0.7810781078107811	Method of recording time when operation occurredUses data-coding 14 comprises 4 Integer-valued members in a simple list.	20014-0.0	_
+1294	501612	Categorical (multiple)	9969	0.996999699969997	Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctorUses data-coding 100610 comprises 7 Integer-valued members in a simple list.	6152-0.0	TE_DVT_copd_asthma_rhinite_eczema_allergy_dx
+1309	270871	Categorical (multiple)	5376	0.5376537653765376	Medication for cholesterol, blood pressure, diabetes, or take exogenous hormonesUses data-coding 100626 comprises 8 Integer-valued members in a simple list.	6153-0.0	medications_HLD_HTN_diabetes_HRT
+1321	497836	Categorical (multiple)	9894	0.9894989498949895	Medication for pain relief, constipation, heartburnUses data-coding 100628 comprises 9 Integer-valued members in a simple list.	6154-0.0	medications_pain_constipation_heartburn
+1339	497836	Categorical (multiple)	9894	0.9894989498949895	Vitamin and mineral supplementsUses data-coding 100629 comprises 9 Integer-valued members in a simple list.	6155-0.0	medications_supplements
+1360	36080	Categorical (multiple)	721	0.07210721072107211	Manic/hyper symptomsUses data-coding 100498 comprises 6 Integer-valued members in a simple list.	6156-0.0	mania_symptoms
+1372	120048	Categorical (multiple)	2331	0.23312331233123312	Why stopped smokingUses data-coding 100361 comprises 7 Integer-valued members in a simple list.	6157-0.0	tobacco_smoking_stop_reason
+1384	16757	Categorical (multiple)	297	0.0297029702970297	Why reduced smokingUses data-coding 100361 comprises 7 Integer-valued members in a simple list.	6158-0.0	tobacco_smoking_reduction_reason
+1396	501661	Categorical (multiple)	9969	0.996999699969997	Leisure/social activitiesUses data-coding 100328 comprises 7 Integer-valued members in a simple list.	6160-0.0	activities_leisure
+1411	226951	Categorical (multiple)	4518	0.45184518451845185	Medication for cholesterol, blood pressure or diabetesUses data-coding 100625 comprises 6 Integer-valued members in a simple list.	6177-0.0	medications_HLD_HTN_diabetes
+1420	497835	Categorical (multiple)	9894	0.9894989498949895	Mineral and other dietary supplementsUses data-coding 100630 comprises 8 Integer-valued members in a simple list.	6179-0.0	medications_supplements_2
+1438	1786	Integer	36	0.0036003600360036	Number of cigarettes previously smoked daily (current cigar/pipe smokers)Uses data-coding 100353 comprises 2 Integer-valued members in a simple list.	6183-0.0	tobacco_smoking_current_pipe_cigar_n_daily_cigarettes
+1441	1786	Integer	36	0.0036003600360036	Age stopped smoking cigarettes (current cigar/pipe or previous cigarette smoker)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.	6194-0.0	tobacco_smoking_current_pipe_cigar_stop_agge
+1444	3775	Categorical (multiple)	75	0.007500750075007501	Medication for pain relief, constipation, heartburn (pilot)Uses data-coding 100688 comprises 8 Integer-valued members in a simple list.	10004-0.0	medications_pain_constipation_heartburn_pilot
+1449	3775	Categorical (multiple)	75	0.007500750075007501	Medication for smoking cessation, constipation, heartburn, allergies (pilot)Uses data-coding 100689 comprises 7 Integer-valued members in a simple list.	10005-0.0	medications_smoking_cessation_constipation_heartburn_allergies_pilot
+1452	3775	Categorical (multiple)	75	0.007500750075007501	Mouth/teeth dental problems (pilot)Uses data-coding 100685 comprises 6 Integer-valued members in a simple list.	10006-0.0	oral_problems_pilot
+1456	3775	Categorical (multiple)	75	0.007500750075007501	Vitamin and mineral supplements (pilot)Uses data-coding 100692 comprises 8 Integer-valued members in a simple list.	10007-0.0	medications_supplements_pilot
+1462	934	Categorical (single)	18	0.0018001800180018	Why stopped smoking (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.	10115-0.0	tobacco_smoking_stop_reason_pilot
+1463	44	Categorical (single)	0	0.0	Type of progestan-only oral contraceptive used (pilot)Uses data-coding 100686 comprises 8 Integer-valued members in a simple list.	10132-0.0	oral_contraception_progestan_only_type
+1488	3435	Categorical (single)	69	0.006900690069006901	Spirometry method (pilot)Uses data-coding 100282 comprises 3 Integer-valued members in a simple list.	10711-0.0	spirometry_method_pilot
+1489	3430	Text	69	0.006900690069006901	Spirometry device serial number (pilot)	10714-0.0	spirometry_device_serial_number_pilot
+1490	3430	Integer	69	0.006900690069006901	Number of measurements made (pilot)	10717-0.0	spirometry_n_measurements_pilot
+1491	3775	Categorical (multiple)	75	0.007500750075007501	Illness, injury, bereavement, stress in last 2 years (pilot)Uses data-coding 100683 comprises 9 Integer-valued members in a simple list.	10721-0.0	past_2_years_injurt_illness_bereacement_stress_pilot
+1496	3775	Categorical (multiple)	75	0.007500750075007501	Qualifications (pilot)Uses data-coding 100658 comprises 7 Integer-valued members in a simple list.	10722-0.0	qualifications_pilot
+1501	3775	Categorical (multiple)	75	0.007500750075007501	Vitamin supplements (pilot)Uses data-coding 100691 comprises 8 Integer-valued members in a simple list.	10723-0.0	medications_vitamin_supplements_pilot
+1507	3775	Categorical (single)	75	0.007500750075007501	Frequency of friend/family visits (pilot)Uses data-coding 100662 comprises 8 Integer-valued members in a simple list.	10740-0.0	frequency_family_friend_visits_pilot
+1508	3775	Categorical (single)	75	0.007500750075007501	Spread type (pilot)Uses data-coding 100673 comprises 8 Integer-valued members in a simple list.	10767-0.0	spread_type_pilot
+1509	3658	Categorical (single)	71	0.007100710071007101	Bread type/intake (pilot)Uses data-coding 100674 comprises 7 Integer-valued members in a simple list.	10776-0.0	bread_type_intake_pilot
+1510	1516	Categorical (single)	35	0.0035003500350035003	Reason for reducing amount of alcohol drunk (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.	10818-0.0	alcohol_reduction_reason_pilot
+1511	934	Categorical (single)	18	0.0018001800180018	Ever stopped smoking for 6+ months (pilot)Uses data-coding 100668 comprises 3 Integer-valued members in a simple list.	10827-0.0	tobacco_smoking_stopped_more_than_6_months_pilot
+1512	63	Categorical (single)	2	0.00020002000200020003	Gestational diabetes only (pilot)Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.	10844-0.0	diabetes_gestational_only_pilot
+1513	139	Categorical (single)	6	0.0006000600060006001	Reason former drinker stopped drinking alcohol (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.	10853-0.0	alcohol_former_use_stop_reason_pilot
+1514	3775	Categorical (multiple)	75	0.007500750075007501	Other dietary supplements (pilot)Uses data-coding 100690 comprises 8 Integer-valued members in a simple list.	10854-0.0	medications_dietary_supplements_other_pilot
+1520	3775	Categorical (multiple)	75	0.007500750075007501	Never eat eggs, dairy, wheat, sugar (pilot)Uses data-coding 100672 comprises 6 Integer-valued members in a simple list.	10855-0.0	diet_never_eat_eggs_dairy_wheat_sugar_pilot
+1524	3775	Categorical (multiple)	75	0.007500750075007501	Gas or solid-fuel cooking/heating (pilot)Uses data-coding 100656 comprises 6 Integer-valued members in a simple list.	10860-0.0	household_heating_cooking_gas_or_solid_fuel_pilot
+1527	3755	Categorical (single)	75	0.007500750075007501	Average total household income before tax (pilot)Uses data-coding 100657 comprises 7 Integer-valued members in a simple list.	10877-0.0	household_average_income_pilot
+1528	935	Categorical (single)	21	0.0021002100210021	Light smokers, at least 100 smokes in lifetime (pilot)Uses data-coding 100352 comprises 3 Integer-valued members in a simple list.	10895-0.0	tobacco_smoking_light_status_pilot
+1529	3775	Categorical (single)	75	0.007500750075007501	Variation in diet (pilot)Uses data-coding 100394 comprises 5 Integer-valued members in a simple list.	10912-0.0	diet_variations_pilot
+1530	41700	Categorical (multiple)	840	0.08400840084008401	Cancer code, self-reportedUses data-coding 3 comprises 89 Integer-valued members in a hierarchical tree.	20001-0.0	cancer_code
+1548	375064	Categorical (multiple)	7463	0.7463746374637463	Non-cancer illness code, self-reportedUses data-coding 6 comprises 474 Integer-valued members in a hierarchical tree.	20002-0.0	illness_code
+1647	364000	Categorical (multiple)	7226	0.7226722672267226	Treatment/medication codeUses data-coding 4 comprises 6745 Integer-valued members in a simple list.	20003-0.0	treatment_code
+1791	391305	Categorical (multiple)	7810	0.7810781078107811	Operation codeUses data-coding 5 comprises 270 Integer-valued members in a hierarchical tree.	20004-0.0	operation_code
+1887	317755	Categorical (single)	6378	0.6378637863786378	Email accessUses data-coding 1007 comprises 2 Integer-valued members in a simple list.	20005-0.0	email_access
+1888	41700	Continuous	840	0.08400840084008401	Interpolated Year when cancer first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.	20006-0.0	cancer_dx_year_interpolated
+1906	41700	Continuous	840	0.08400840084008401	Interpolated Age of participant when cancer first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.	20007-0.0	cancer_dx_age_interpolated
+1924	375061	Continuous	7463	0.7463746374637463	Interpolated Year when non-cancer illness first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.	20008-0.0	illness_dx_year_interpolated
+2023	375061	Continuous	7463	0.7463746374637463	Interpolated Age of participant when non-cancer illness first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.	20009-0.0	illness_dx_age_interpolated
+2122	391302	Continuous	7810	0.7810781078107811	Interpolated Year when operation took placeUses data-coding 13 comprises 2 Real-valued members in a simple list.	20010-0.0	operation_year_interpolated
+2218	391302	Continuous	7810	0.7810781078107811	Interpolated Age of participant when operation took placeUses data-coding 13 comprises 2 Real-valued members in a simple list.	20011-0.0	operation_age_interpolated
+2314	41700	Categorical (single)	840	0.08400840084008401	Method of recording time when cancer first diagnosedUses data-coding 14 comprises 4 Integer-valued members in a simple list.	20012-0.0	cancer_dx_recording_time_method
+2332	375064	Categorical (single)	7463	0.7463746374637463	Method of recording time when non-cancer illness first diagnosedUses data-coding 14 comprises 4 Integer-valued members in a simple list.	20013-0.0	illness_dx_recording_time_method
+2431	391305	Categorical (single)	7810	0.7810781078107811	Method of recording time when operation occurredUses data-coding 14 comprises 4 Integer-valued members in a simple list.	20014-0.0	operation_recording_time_method
 2527	277012	Continuous	5424	0.5424542454245425	Birth weight	20022-0.0	birth_weight
-2530	14554	Categorical (single)	274	0.027402740274027403	Job code - deducedUses data-coding 2 comprises 26408 Integer-valued members in a hierarchical tree.	20024-0.0	_
+2530	14554	Categorical (single)	274	0.027402740274027403	Job code - deducedUses data-coding 2 comprises 26408 Integer-valued members in a hierarchical tree.	20024-0.0	work_code_deduced
 2531	99703	Text	1947	0.19471947194719472	Acceptability of each blow result (text)	20031-0.0	_
 2544	494811	Time	9850	0.9850985098509851	Time urine sample collected	20035-0.0	urine_collection_time
 2545	2013	Categorical (single)	43	0.004300430043004301	Reason for skipping spirometryUses data-coding 47 comprises 41 Integer-valued members in a hierarchical tree.	20042-0.0	_
