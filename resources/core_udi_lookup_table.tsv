@@ -190,12 +190,12 @@ column	count	type	counts	frequency	description	udi	simple_name
 769	47466	Categorical (single)	1035	0.1035103510351035	Fracture resulting from simple fallUses data-coding 100349 comprises 4 Integer-valued members in a simple list.	3005-0.0	simple_fall_fracture
 772	453731	Categorical (single)	8996	0.8996899689968997	Result rankingUses data-coding 22 comprises 3 Integer-valued members in a simple list.	3059-0.0	result_ranking
 781	453731	Time	8996	0.8996899689968997	Time of blow measurement	3060-0.0	blow_time
-790	453731	Integer	8996	0.8996899689968997	Acceptability of each blow result	3061-0.0	blow_result_acceptability
-799	453731	Continuous	8996	0.8996899689968997	Forced vital capacity (FVC)	3062-0.0	FVC
-808	453731	Continuous	8996	0.8996899689968997	Forced expiratory volume in 1-second (FEV1)	3063-0.0	FEV1
-817	453731	Integer	8996	0.8996899689968997	Peak expiratory flow (PEF)	3064-0.0	PEF
-826	453731	Categorical (single)	8996	0.8996899689968997	Ordering of blowsUses data-coding 23 comprises 3 Integer-valued members in a simple list.	3065-0.0	blow_orders
-835	453731	Curve	8996	0.8996899689968997	Data points for blow	3066-0.0	blow_data_points
+790	453731	Integer	8996	0.8996899689968997	Acceptability of each blow result	3061-0.0	spirometry_blow_result_acceptability
+799	453731	Continuous	8996	0.8996899689968997	Forced vital capacity (FVC)	3062-0.0	spirometry_FVC
+808	453731	Continuous	8996	0.8996899689968997	Forced expiratory volume in 1-second (FEV1)	3063-0.0	spirometry_FEV1
+817	453731	Integer	8996	0.8996899689968997	Peak expiratory flow (PEF)	3064-0.0	spirometry_PEF
+826	453731	Categorical (single)	8996	0.8996899689968997	Ordering of blowsUses data-coding 23 comprises 3 Integer-valued members in a simple list.	3065-0.0	spirometry_blow_orders
+835	453731	Curve	8996	0.8996899689968997	Data points for blow	3066-0.0	spirometry_blow_data_points
 844	500828	Categorical (single)	9968	0.9968996899689969	Pace-makerUses data-coding 7 comprises 2 Integer-valued members in a simple list.	3079-0.0	pace_maker
 847	500818	Categorical (single)	9968	0.9968996899689969	Contra-indications for spirometryUses data-coding 100267 comprises 3 Integer-valued members in a simple list.	3088-0.0	spirometry_contraindications
 850	460041	Categorical (single)	9125	0.9125912591259125	Caffeine drink within last hourUses data-coding 7 comprises 2 Integer-valued members in a simple list.	3089-0.0	caffiene_use_past_hour
@@ -344,37 +344,37 @@ column	count	type	counts	frequency	description	udi	simple_name
 2431	391305	Categorical (single)	7810	0.7810781078107811	Method of recording time when operation occurredUses data-coding 14 comprises 4 Integer-valued members in a simple list.	20014-0.0	operation_recording_time_method
 2527	277012	Continuous	5424	0.5424542454245425	Birth weight	20022-0.0	birth_weight
 2530	14554	Categorical (single)	274	0.027402740274027403	Job code - deducedUses data-coding 2 comprises 26408 Integer-valued members in a hierarchical tree.	20024-0.0	work_code_deduced
-2531	99703	Text	1947	0.19471947194719472	Acceptability of each blow result (text)	20031-0.0	_
+2531	99703	Text	1947	0.19471947194719472	Acceptability of each blow result (text)	20031-0.0	spirometry_blow_result_acceptability_text
 2544	494811	Time	9850	0.9850985098509851	Time urine sample collected	20035-0.0	urine_collection_time
-2545	2013	Categorical (single)	43	0.004300430043004301	Reason for skipping spirometryUses data-coding 47 comprises 41 Integer-valued members in a hierarchical tree.	20042-0.0	_
-2546	2343	Categorical (single)	35	0.0035003500350035003	Blood sample #, note contentsUses data-coding 49 comprises 15 Integer-valued members in a hierarchical tree.	20049-0.0	_
-2553	1583	Categorical (single)	27	0.0027002700270027003	Reason blood sampling not attemptedUses data-coding 50 comprises 14 Integer-valued members in a hierarchical tree.	20050-0.0	_
-2554	3560	Categorical (single)	65	0.0065006500650065	Reason no urine sample collectedUses data-coding 71 comprises 11 Integer-valued members in a hierarchical tree.	20072-0.0	_
-2555	487808	Categorical (single)	9690	0.9690969096909691	Illnesses of fatherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20107-0.0	_
-2585	492946	Categorical (single)	9793	0.9793979397939794	Illnesses of motherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20110-0.0	_
-2618	433939	Categorical (single)	8636	0.8636863686368637	Illnesses of siblingsUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20111-0.0	_
-2654	5043	Categorical (single)	107	0.0107010701070107	Illnesses of adopted fatherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20112-0.0	_
-2675	5431	Categorical (single)	113	0.011301130113011301	Illnesses of adopted motherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20113-0.0	_
-2693	3717	Categorical (single)	75	0.007500750075007501	Illnesses of adopted siblingsUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20114-0.0	_
-2714	40583	Categorical (single)	812	0.0812081208120812	Country of Birth (non-UK origin)Uses data-coding 89 comprises 201 Integer-valued members in a hierarchical tree.	20115-0.0	birth_country
-2715	501652	Categorical (single)	9969	0.996999699969997	Smoking statusUses data-coding 90 comprises 4 Integer-valued members in a simple list.	20116-0.0	_
-2718	501646	Categorical (single)	9969	0.996999699969997	Alcohol drinker statusUses data-coding 90 comprises 4 Integer-valued members in a simple list.	20117-0.0	_
-2721	3364	Categorical (single)	78	0.007800780078007801	Current employment status - correctedUses data-coding 100295 comprises 9 Integer-valued members in a simple list.	20119-0.0	_
-2722	14554	Integer	274	0.027402740274027403	Cascot confidence score	20121-0.0	_
-2723	1615	Categorical (single)	38	0.0038003800380038005	Bipolar disorder statusUses data-coding 100694 comprises 2 Integer-valued members in a simple list.	20122-0.0	_
-2724	9754	Categorical (single)	194	0.0194019401940194	Single episode of probable major depressionUses data-coding 7 comprises 2 Integer-valued members in a simple list.	20123-0.0	_
-2725	15245	Categorical (single)	282	0.028202820282028203	Probable recurrent major depression (moderate)Uses data-coding 7 comprises 2 Integer-valued members in a simple list.	20124-0.0	_
-2726	9401	Categorical (single)	201	0.020102010201020103	Probable recurrent major depression (severe)Uses data-coding 7 comprises 2 Integer-valued members in a simple list.	20125-0.0	_
-2727	122983	Categorical (single)	2451	0.2451245124512451	Bipolar and major depression statusUses data-coding 100695 comprises 6 Integer-valued members in a simple list.	20126-0.0	bipolar_and_MDD
+2545	2013	Categorical (single)	43	0.004300430043004301	Reason for skipping spirometryUses data-coding 47 comprises 41 Integer-valued members in a hierarchical tree.	20042-0.0	spirometry_skip_reason
+2546	2343	Categorical (single)	35	0.0035003500350035003	Blood sample #, note contentsUses data-coding 49 comprises 15 Integer-valued members in a hierarchical tree.	20049-0.0	blood_sample_number
+2553	1583	Categorical (single)	27	0.0027002700270027003	Reason blood sampling not attemptedUses data-coding 50 comprises 14 Integer-valued members in a hierarchical tree.	20050-0.0	blood_sample_not_attempted_reason
+2554	3560	Categorical (single)	65	0.0065006500650065	Reason no urine sample collectedUses data-coding 71 comprises 11 Integer-valued members in a hierarchical tree.	20072-0.0	urine_collection_not_attempted_reason
+2555	487808	Categorical (single)	9690	0.9690969096909691	Illnesses of fatherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20107-0.0	father_illnesses
+2585	492946	Categorical (single)	9793	0.9793979397939794	Illnesses of motherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20110-0.0	mother_illnesses
+2618	433939	Categorical (single)	8636	0.8636863686368637	Illnesses of siblingsUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20111-0.0	sibling_illnesses
+2654	5043	Categorical (single)	107	0.0107010701070107	Illnesses of adopted fatherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20112-0.0	father_adopted_illnesses
+2675	5431	Categorical (single)	113	0.011301130113011301	Illnesses of adopted motherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20113-0.0	mother_adopted_illnesses
+2693	3717	Categorical (single)	75	0.007500750075007501	Illnesses of adopted siblingsUses data-coding 1010 comprises 18 Integer-valued members in a simple list.	20114-0.0	sibling_adopted_illnesses
+2714	40583	Categorical (single)	812	0.0812081208120812	Country of Birth (non-UK origin)Uses data-coding 89 comprises 201 Integer-valued members in a hierarchical tree.	20115-0.0	birth_country_2
+2715	501652	Categorical (single)	9969	0.996999699969997	Smoking statusUses data-coding 90 comprises 4 Integer-valued members in a simple list.	20116-0.0	tobacco_smoking_status
+2718	501646	Categorical (single)	9969	0.996999699969997	Alcohol drinker statusUses data-coding 90 comprises 4 Integer-valued members in a simple list.	20117-0.0	alcohol_use_status
+2721	3364	Categorical (single)	78	0.007800780078007801	Current employment status - correctedUses data-coding 100295 comprises 9 Integer-valued members in a simple list.	20119-0.0	work_current_employment_status_corrected
+2722	14554	Integer	274	0.027402740274027403	Cascot confidence score	20121-0.0	work_cascot_confidence_score
+2723	1615	Categorical (single)	38	0.0038003800380038005	Bipolar disorder statusUses data-coding 100694 comprises 2 Integer-valued members in a simple list.	20122-0.0	bipolar_disorder_status
+2724	9754	Categorical (single)	194	0.0194019401940194	Single episode of probable major depressionUses data-coding 7 comprises 2 Integer-valued members in a simple list.	20123-0.0	major_depression_single_episode
+2725	15245	Categorical (single)	282	0.028202820282028203	Probable recurrent major depression (moderate)Uses data-coding 7 comprises 2 Integer-valued members in a simple list.	20124-0.0	major_depression_recurrent_moderate
+2726	9401	Categorical (single)	201	0.020102010201020103	Probable recurrent major depression (severe)Uses data-coding 7 comprises 2 Integer-valued members in a simple list.	20125-0.0	major_depression_recurrent_severe
+2727	122983	Categorical (single)	2451	0.2451245124512451	Bipolar and major depression statusUses data-coding 100695 comprises 6 Integer-valued members in a simple list.	20126-0.0	bipolar_and_major_depression_status
 2728	401602	Integer	7993	0.7993799379937994	Neuroticism score	20127-0.0	neuroticism_score
-2729	353336	Continuous	7019	0.701970197019702	Forced expiratory volume in 1-second (FEV1), Best measure	20150-0.0	FEV1
-2730	353336	Continuous	7019	0.701970197019702	Forced vital capacity (FVC), Best measure	20151-0.0	FVC
-2731	353336	Categorical (single)	7019	0.701970197019702	Reproduciblity of spirometry measurement using ERS/ATS criteriaUses data-coding 7 comprises 2 Integer-valued members in a simple list.	20152-0.0	_
-2732	151982	Continuous	3021	0.3021302130213021	Forced expiratory volume in 1-second (FEV1), predicted	20153-0.0	FEV1_predicted
-2733	151982	Continuous	3021	0.3021302130213021	Forced expiratory volume in 1-second (FEV1), predicted percentage	20154-0.0	FEV1_predicted_percent
-2734	499657	Categorical (single)	9927	0.9927992799279928	Ever smokedUses data-coding 7 comprises 2 Integer-valued members in a simple list.	20160-0.0	smoked_ever
-2737	150951	Continuous	2945	0.29452945294529453	Pack years of smoking	20161-0.0	smoking_pack_years
-2740	150951	Continuous	2945	0.29452945294529453	Pack years adult smoking as proportion of life span exposed to smoking	20162-0.0	smoking_pack_years_life_proportion
+2729	353336	Continuous	7019	0.701970197019702	Forced expiratory volume in 1-second (FEV1), Best measure	20150-0.0	spirometry_FEV1_best
+2730	353336	Continuous	7019	0.701970197019702	Forced vital capacity (FVC), Best measure	20151-0.0	spirometry_FVC_best
+2731	353336	Categorical (single)	7019	0.701970197019702	Reproduciblity of spirometry measurement using ERS/ATS criteriaUses data-coding 7 comprises 2 Integer-valued members in a simple list.	20152-0.0	spirometry_ERS_ATS_reproducibility
+2732	151982	Continuous	3021	0.3021302130213021	Forced expiratory volume in 1-second (FEV1), predicted	20153-0.0	spirometry_FEV1_predicted
+2733	151982	Continuous	3021	0.3021302130213021	Forced expiratory volume in 1-second (FEV1), predicted percentage	20154-0.0	spirometry_FEV1_predicted_percent
+2734	499657	Categorical (single)	9927	0.9927992799279928	Ever smokedUses data-coding 7 comprises 2 Integer-valued members in a simple list.	20160-0.0	tobacco_smoking_ever
+2737	150951	Continuous	2945	0.29452945294529453	Pack years of smoking	20161-0.0	tobacco_smoking_pack_years
+2740	150951	Continuous	2945	0.29452945294529453	Pack years adult smoking as proportion of life span exposed to smoking	20162-0.0	tobacco_smoking_pack_years_life_proportion
 2743	501645	Categorical (single)	9969	0.996999699969997	Ethnic backgroundUses data-coding 1001 comprises 22 Integer-valued members in a hierarchical tree.	21000-0.0	ethnic_background
 2746	502543	Integer	9999	1.0	Age when attended assessment centre	21003-0.0	age_assessment
 2749	502543	Integer	9999	1.0	Age at recruitment	21022-0.0	age_recruitment
