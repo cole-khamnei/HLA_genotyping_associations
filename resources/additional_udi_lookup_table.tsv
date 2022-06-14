@@ -1,9 +1,0 @@
-column	udi	count	type	description
-1464	10691-0.1	3349	Categorical (single)	Result ranking (pilot)Uses data-coding 22 comprises 3 Integer-valued members in a simple list.
-1468	10693-0.1	3349	Integer	Acceptability of each blow result (pilot)
-1472	10694-0.1	3349	Continuous	Forced vital capacity (FVC) (pilot)
-1476	10695-0.1	3349	Continuous	Forced expiratory volume in 1-second (FEV1) (pilot)
-1859	20004-2.4	1480	Categorical (multiple)	Operation codeUses data-coding 5 comprises 270 Integer-valued members in a hierarchical tree.
-1484	10697-0.1	3349	Curve	Data points for blow (pilot)
-2540	20032-0.1	2317	Text	Acceptability of each blow result (text) (pilot)
-2759	22009-0.1	488295	Continuous	Genetic principal components
