@@ -36,6 +36,20 @@ def clean_biobank_data(biobank_data: pd.DataFrame) -> pd.DataFrame:
     return biobank_data[[feature for feature in biobank_data.columns if feature not in exclude_features]]
 
 
+def create_reduced_feature_set(biobank: pd.DataFrame) -> pd.DataFrame:
+    """ builds the a reduced feature set for easier data exploration."""
+    
+    reduced_feature_set = {}
+    for feature in biobank_data.columns:
+        feature_tokens = feature.split("_")
+        feature_name_root = "_".join(feature_tokens[:-1]) if "." in feature_tokens[-1] else feature
+
+        if feature < reduced_feature_set.get(feature_name_root, "zzz"):
+            reduced_feature_set[feature_name_root] = feature
+
+    return list(reduced_feature_set.values())
+
+
 ####################################################################################################
 ### End ###
 ####################################################################################################

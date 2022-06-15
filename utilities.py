@@ -1,8 +1,17 @@
+import pandas as pd
+
 from typing import Any, Optional
 
 ####################################################################################################
 ### Constants ###
 ####################################################################################################
+
+
+def display_df(df: pd.DataFrame, max_rows: Optional[int] = None, max_columns: Optional[int] = None) -> None:
+    """ Simple function to easily display dataframes"""
+    
+    with pd.option_context('display.max_rows', max_rows, 'display.max_columns', max_columns):
+        display(df)
 
 
 ####################################################################################################
