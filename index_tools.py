@@ -100,55 +100,92 @@ def add_udi_names_to_index(ukbb_index: pd.DataFrame)-> pd.DataFrame:
     return ukbb_index
 
 
-def create_full_udi_lookup_maps(ukbb_index: pd.DataFrame) -> Tuple[dict, dict]:
-    """ creates a full udi look up map"""
+class UDIMap:
 
-    assert "name" in ukbb_index, "'name' column not found in ukbb_index, run add_udi_names_to_index first."
+    def __init__(self, ukbb_index: pd.DataFrame):
+        assert "name" in ukbb_index, "'name' column not found in ukbb_index, run add_udi_names_to_index first."
 
-    global UDI_MAPS_ARE_LOADED, UDI_TO_NAME_MAP, NAME_TO_UDI_MAP
-    UDI_TO_NAME_MAP = dict(zip(ukbb_index["udi"], ukbb_index["name"]))
-    NAME_TO_UDI_MAP = dict(zip(ukbb_index["name"], ukbb_index["udi"]))
-
-    # Set the UDI variable to loaded
-    UDI_MAPS_ARE_LOADED = True
+        self.udi_to_name_map = dict(zip(ukbb_index["udi"], ukbb_index["name"]))
+        self.name_to_udi_map = dict(zip(ukbb_index["name"], ukbb_index["udi"]))
 
 
-def assert_udi_maps_loaded() -> None:
-    """ Ensures all the necessary udi info has been loaded."""
-    global UDI_MAPS_ARE_LOADED
-    assert UDI_MAPS_ARE_LOADED, "udi maps have not been loaded. Run create_full_udi_lookup_maps."
+    def get_udi(self, name: str) -> str:
+        """ gets a UDI from a feature name"""
+
+        if isinstance(name, str):
+            return self.name_to_udi_map.get(name, name)
+
+        return [self.get_udi(name_i) for name_i in name]
 
 
-def get_udi(name: str) -> str:
-    """ gets a UDI from a feature name"""
+    def get_name_from_udi(self, udi: str) -> str:
+        """ gets the feature name from a udi"""
+        
+        if isinstance(udi, str):
+            return self.udi_to_name_map.get(udi, udi)
 
-    assert_udi_maps_loaded()
-
-    if isinstance(name, str):
-        return NAME_TO_UDI_MAP.get(name, name)
-
-    return [get_udi(name_i) for name_i in name]
+        return [self.get_name_from_udi(udi_i) for udi_i in udi]
 
 
-def get_name_from_udi(udi: str) -> str:
-    """ gets the feature name from a udi"""
+    def udi_wrapper(self, function: Callable, *args: Tuple[Any], **kwargs: Dict[str, Any]) -> Any:
+        """ wraps a callable function, converting all feature name strings to udi strings."""
+
+        args = {self.get_udi(arg) for arg in args}
+        kwargs = {key: self.get_udi(value) if isinstance(value, str) else value for key, value in kwargs.items()}
+        return function(*args, **kwargs)
+
+
+
+# def create_full_udi_lookup_maps(ukbb_index: pd.DataFrame) -> Tuple[dict, dict]:
+#     """ creates a full udi look up map"""
+
+#     assert "name" in ukbb_index, "'name' column not found in ukbb_index, run add_udi_names_to_index first."
+
+#     global UDI_MAPS_ARE_LOADED, UDI_TO_NAME_MAP, NAME_TO_UDI_MAP
+#     UDI_TO_NAME_MAP = dict(zip(ukbb_index["udi"], ukbb_index["name"]))
+#     NAME_TO_UDI_MAP = dict(zip(ukbb_index["name"], ukbb_index["udi"]))
+
+#     # Set the UDI variable to loaded
+#     UDI_MAPS_ARE_LOADED = True
+#     return UDIMap(udi_to_name_map, name_to_udi_map)
+
+
+# def assert_udi_maps_loaded() -> None:
+#     """ Ensures all the necessary udi info has been loaded."""
+#     global UDI_MAPS_ARE_LOADED
+#     assert UDI_MAPS_ARE_LOADED, "udi maps have not been loaded. Run create_full_udi_lookup_maps."
+
+
+# def get_udi(name: str) -> str:
+#     """ gets a UDI from a feature name"""
+
+#     assert_udi_maps_loaded()
+
+#     if isinstance(name, str):
+#         return NAME_TO_UDI_MAP.get(name, name)
+
+#     return [get_udi(name_i) for name_i in name]
+
+
+# def get_name_from_udi(udi: str) -> str:
+#     """ gets the feature name from a udi"""
     
-    assert_udi_maps_loaded()
+#     assert_udi_maps_loaded()
 
-    if isinstance(udi, str):
-        return UDI_TO_NAME_MAP.get(udi, udi)
+#     if isinstance(udi, str):
+#         return UDI_TO_NAME_MAP.get(udi, udi)
 
-    return [get_name_from_udi(udi_i) for udi_i in udi]
+#     return [get_name_from_udi(udi_i) for udi_i in udi]
 
 
-def udi_wrapper(function: Callable, *args: Tuple[Any], **kwargs: Dict[str, Any]) -> Any:
-    """ wraps a callable function, converting all feature name strings to udi strings."""
+# def udi_wrapper(function: Callable, *args: Tuple[Any], **kwargs: Dict[str, Any]) -> Any:
+#     """ wraps a callable function, converting all feature name strings to udi strings."""
 
-    assert_udi_maps_loaded()
+#     assert_udi_maps_loaded()
 
-    args = {get_udi(arg) for arg in args}
-    kwargs = {key: get_udi(value) if isinstance(value, str) else value for key, value in kwargs.items()}
-    return function(*args, **kwargs)
+#     args = {get_udi(arg) for arg in args}
+#     kwargs = {key: get_udi(value) if isinstance(value, str) else value for key, value in kwargs.items()}
+#     return function(*args, **kwargs)
 
 
 ####################################################################################################
