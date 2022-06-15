@@ -16,11 +16,11 @@ column,count,type,counts,frequency,description,udi,name
 49,375064,Integer,7463,0.7463746374637463,Non-cancer illness year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.,87-0.0,illness_first_year_age
 148,391305,Integer,7810,0.7810781078107811,Operation year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.,92-0.0,operation_first_year_age
 244,33113,Integer,656,0.0656065606560656,"Systolic blood pressure, manual reading",93-0.0,systolic_bp_manual
-250,33113,Integer,656,0.0656065606560656,"Diastolic blood pressure, manual reading",94-0.0,systolic_bp_manual
+250,33113,Integer,656,0.0656065606560656,"Diastolic blood pressure, manual reading",94-0.0,diastolic_bp_manual
 256,33113,Integer,656,0.0656065606560656,Pulse rate (during blood-pressure measurement),95-0.0,pulse_rate_manual
 262,501681,Integer,9982,0.9982998299829984,Time since interview start at which blood pressure screen(s) shown,96-0.0,bp_start_time
 268,468106,Integer,9320,0.932093209320932,"Pulse rate, automated reading",102-0.0,pulse_rate_auto
-274,501681,Categorical (single),9982,0.9982998299829984,Birth weight knownUses data-coding 100258 comprises 3 Integer-valued members in a simple list.,120-0.0,birth_weight
+274,501681,Categorical (single),9982,0.9982998299829984,Birth weight knownUses data-coding 100258 comprises 3 Integer-valued members in a simple list.,120-0.0,birth_weigh_known
 277,452282,Integer,8999,0.8999899989999,Place of birth in UK - north co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.,129-0.0,birth_place_north
 280,452282,Integer,8999,0.8999899989999,Place of birth in UK - east co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.,130-0.0,birth_place_east
 283,328846,Categorical (single),6613,0.6613661366136614,Job codeUses data-coding 2 comprises 26408 Integer-valued members in a hierarchical tree.,132-0.0,job
@@ -110,7 +110,7 @@ column,count,type,counts,frequency,description,udi,name
 529,494283,Categorical (single),9817,0.9817981798179818,Father still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1797-0.0,father_alive
 532,378094,Integer,7536,0.7536753675367537,Father's age at deathUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1807-0.0,father_death_age
 535,494283,Categorical (single),9817,0.9817981798179818,Mother still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1835-0.0,mother_alive
-538,199351,Integer,3948,0.3948394839483948,Mother's ageUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1845-0.0,mother_death_age
+538,199351,Integer,3948,0.3948394839483948,Mother's ageUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1845-0.0,mother_age
 541,494280,Integer,9817,0.9817981798179818,Number of full brothersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1873-0.0,brothers_n_full
 544,494280,Integer,9817,0.9817981798179818,Number of full sistersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1883-0.0,sisters_n_full
 547,501639,Categorical (single),9969,0.996999699969997,Mood swingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1920-0.0,mood_swings

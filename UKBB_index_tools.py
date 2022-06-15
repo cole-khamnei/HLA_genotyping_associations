@@ -1,10 +1,11 @@
 
 import os
-from typing import Any, Dioct, Callable, Optional, Tuple
+from typing import Any, Dict, Callable, Optional, Tuple
 
 import pandas as pd
 import numpy as np
 from bs4 import BeautifulSoup as bsoup
+from thefuzz import fuzz
 
 import constants
 
@@ -12,7 +13,9 @@ import constants
 ### Constants ###
 ####################################################################################################
 
-
+UDI_MAPS_ARE_LOADED = False
+UDI_TO_NAME_MAP = {}
+NAME_TO_UDI_MAP = {}
 
 ####################################################################################################
 ### UK BioBank Index Helpers ###
@@ -49,36 +52,112 @@ def load_index() -> pd.DataFrame:
     return ukbb_index
 
 
+def add_biobank_info_to_index(ukbb_index: pd.DataFrame, ukbb_data: pd.DataFrame) -> pd.DataFrame:
+    """ Adds relevant statistics from the ukbb data to the index"""
+
+    ukbb_index["counts"] = np.array(ukbb_data.count().tolist())
+    ukbb_index["frequency"] = ukbb_index["counts"] / len(ukbb_data)
+    return ukbb_index
+
 ####################################################################################################
 ### UK BioBank UDI Helpers ###
 ####################################################################################################
 
 
+def load_partial_udi_lookup_map() -> dict:
+    """ Loads the UDI lookup tables"""
+    core_udi_lookup = pd.read_csv(constants.UDI_LOOKUP_CORE_CSV)
+    outlier_udi_lookup = pd.read_csv(constants.UDI_LOOKUP_OUTLIERS_CSV)
+    
+    partial_udi_lookup = pd.concat([core_udi_lookup, outlier_udi_lookup])
+
+    partial_labeled_udis = partial_udi_lookup.loc[partial_udi_lookup["name"] != "_"]
+    partial_udi_to_name_map = dict(zip(partial_labeled_udis["udi"], partial_labeled_udis["name"]))
+    return partial_udi_to_name_map
+
+
+def add_udi_names_to_index(ukbb_index: pd.DataFrame)-> pd.DataFrame:
+    """ Adds the names to the index based on udi"""
+
+    partial_udi_to_name_map = load_partial_udi_lookup_map()
+
+    names = []
+    for udi in ukbb_index["udi"]:
+        if "-" not in udi or udi.endswith("-0.0"):
+            names.append(partial_udi_to_name_map.get(udi, None))
+        else:
+            udi_stem, udi_modifier = udi.split("-")
+            new_name = None
+
+            if udi_stem + "-0.0" in partial_udi_to_name_map:
+                names.append(f"{partial_udi_to_name_map[udi_stem + '-0.0']}_{udi_modifier}")
+            elif udi_stem + "-0.1" in partial_udi_to_name_map:
+                names.append(f"{partial_udi_to_name_map[udi_stem + '-0.1']}_{udi_modifier}")
+            else:
+                names.append(None)
+
+    ukbb_index["name"] = names
+    return ukbb_index
+
+
+def create_full_udi_lookup_maps(ukbb_index: pd.DataFrame) -> Tuple[dict, dict]:
+    """ creates a full udi look up map"""
+
+    assert "name" in ukbb_index, "'name' column not found in ukbb_index, run add_udi_names_to_index first."
+
+    global UDI_MAPS_ARE_LOADED, UDI_TO_NAME_MAP, NAME_TO_UDI_MAP
+    UDI_TO_NAME_MAP = dict(zip(ukbb_index["udi"], ukbb_index["name"]))
+    NAME_TO_UDI_MAP = dict(zip(ukbb_index["name"], ukbb_index["udi"]))
+
+    # Set the UDI variable to loaded
+    UDI_MAPS_ARE_LOADED = True
+
+
+def assert_udi_maps_loaded() -> None:
+    """ Ensures all the necessary udi info has been loaded."""
+    global UDI_MAPS_ARE_LOADED
+    assert UDI_MAPS_ARE_LOADED, "udi maps have not been loaded. Run create_full_udi_lookup_maps."
+
+
 def get_udi(name: str) -> str:
-    """ """
+    """ gets a UDI from a feature name"""
+
+    assert_udi_maps_loaded()
+
     if isinstance(name, str):
-        return name_to_udi_map.get(name, name)
+        return NAME_TO_UDI_MAP.get(name, name)
 
     return [get_udi(name_i) for name_i in name]
 
 
 def get_name_from_udi(udi: str) -> str:
-    """ """
+    """ gets the feature name from a udi"""
+    
+    assert_udi_maps_loaded()
+
     if isinstance(udi, str):
-        return udi_to_name_map.get(udi, udi)
+        return UDI_TO_NAME_MAP.get(udi, udi)
 
     return [get_name_from_udi(udi_i) for udi_i in udi]
 
 
 def udi_wrapper(function: Callable, *args: Tuple[Any], **kwargs: Dict[str, Any]) -> Any:
-    """ """
+    """ wraps a callable function, converting all feature name strings to udi strings."""
+
+    assert_udi_maps_loaded()
+
     args = {get_udi(arg) for arg in args}
     kwargs = {key: get_udi(value) if isinstance(value, str) else value for key, value in kwargs.items()}
     return function(*args, **kwargs)
 
 
+####################################################################################################
+### UK BioBank Feature Helpers ###
+####################################################################################################
+
+
 def relevant_feature_search(ukbb_index: pd.DataFrame, term: str) -> pd.DataFrame:
-    """ """
+    """ finds  features relevant to the search term."""
     modified_names = ukbb_index["name"].apply(lambda s: s.replace("_", " ") + " " if s else "")
     found_indices = [i for (i, description) in enumerate(modified_names + ukbb_index["description"])
                      if fuzz.partial_ratio(description.lower(), term.lower()) > 95]
