@@ -1,5 +1,3 @@
-import matplotlib
-
 from typing import Any, Optional
 
 ####################################################################################################
@@ -12,20 +10,15 @@ from typing import Any, Optional
 ####################################################################################################
 
 
-
 def titleize(label: str) -> str:
-    """ Test"""
+    """ Makes label into title format"""
     return label.replace("_", " ").title()
 
 
-def add_plt_labels(ax: Ax, x: str, y: str, title: Optional[str] = None, **kwargs) -> None:
-    """"""
+def add_plt_labels(ax, x: str, y: str, title: Optional[str] = None, **kwargs) -> None:
+    """ Adds plot labels"""
     ax.set_xlabel(titleize(x))
-    ax.set_ylabel(titleize(y))+1
-
-
-
-
+    ax.set_ylabel(titleize(y))
     
     if title:
         ax.set_title(titleize(title))
