@@ -1,6 +1,6 @@
 
 import os
-from typing import Any, Dict, Callable, Optional, Tuple
+from typing import Any, Dict, Callable, Iterable, List, Optional, TypeVar, Tuple, Union
 
 import pandas as pd
 import numpy as np
@@ -9,17 +9,16 @@ from thefuzz import fuzz
 
 import constants
 
-####################################################################################################
+########################################################################################################################
 ### Constants ###
-####################################################################################################
+########################################################################################################################
 
-UDI_MAPS_ARE_LOADED = False
-UDI_TO_NAME_MAP = {}
-NAME_TO_UDI_MAP = {}
+S = TypeVar('S')
+ArrayOrItem = Union[Iterable[S], S]
 
-####################################################################################################
+########################################################################################################################
 ### UK BioBank Index Helpers ###
-####################################################################################################
+########################################################################################################################
 
 
 def split_data_coding(data_coding: str) -> Tuple[Optional[int], Optional[int], Optional[str], Optional[str]]:
@@ -34,34 +33,34 @@ def split_data_coding(data_coding: str) -> Tuple[Optional[int], Optional[int], O
 def load_index() -> pd.DataFrame:
     """ Loads the UK BioBank index csv and if does not exist, creates it."""
     if os.path.exists(constants.UK_BIOBANK_INDEX_CSV_PATH):
-        ukbb_index = pd.read_csv(constants.UK_BIOBANK_INDEX_CSV_PATH)
+        biobank_index = pd.read_csv(constants.UK_BIOBANK_INDEX_CSV_PATH)
     else:
         ukbb_html = bsoup(open(constants.UK_BIOBANK_INDEX_HTML_PATH,'r').read())
-        ukbb_index_html = ukbb_html.find_all("table")[1]
-        ukbb_index = pd.read_html(str(ukbb_index_html))[0]
-        ukbb_index.columns = [col.lower() for col in ukbb_index.columns]
-        ukbb_index.to_csv(constants.UK_BIOBANK_INDEX_CSV_PATH, index=False)
+        biobank_index_html = ukbb_html.find_all("table")[1]
+        biobank_index = pd.read_html(str(biobank_index_html))[0]
+        biobank_index.columns = [col.lower() for col in biobank_index.columns]
+        biobank_index.to_csv(constants.UK_BIOBANK_INDEX_CSV_PATH, index=False)
 
-    ukbb_index["data_coding"] = ukbb_index["description"].apply(lambda desc: desc.split("Uses")[1] if "Uses" in desc else "")
-    ukbb_index["description"] = ukbb_index["description"].apply(lambda desc: desc.split("Uses")[0])
+    biobank_index["data_coding"] = biobank_index["description"].apply(lambda desc: desc.split("Uses")[1] if "Uses" in desc else "")
+    biobank_index["description"] = biobank_index["description"].apply(lambda desc: desc.split("Uses")[0])
 
-    data_coding_info = np.array(ukbb_index["data_coding"].apply(split_data_coding).to_list())
+    data_coding_info = np.array(biobank_index["data_coding"].apply(split_data_coding).to_list())
     data_info = pd.DataFrame(data_coding_info, columns=["data_code", "data_n_members", "data_type", "data_structure"])
-    ukbb_index = pd.concat([ukbb_index, data_info], axis=1).drop(["data_coding"], axis=1)
+    biobank_index = pd.concat([biobank_index, data_info], axis=1).drop(["data_coding"], axis=1)
 
-    return ukbb_index
+    return biobank_index
 
 
-def add_biobank_info_to_index(ukbb_index: pd.DataFrame, ukbb_data: pd.DataFrame) -> pd.DataFrame:
+def add_biobank_info_to_index(biobank_index: pd.DataFrame, ukbb_data: pd.DataFrame) -> pd.DataFrame:
     """ Adds relevant statistics from the ukbb data to the index"""
 
-    ukbb_index["counts"] = np.array(ukbb_data.count().tolist())
-    ukbb_index["frequency"] = ukbb_index["counts"] / len(ukbb_data)
-    return ukbb_index
+    biobank_index["counts"] = np.array(ukbb_data.count().tolist())
+    biobank_index["frequency"] = biobank_index["counts"] / len(ukbb_data)
+    return biobank_index
 
-####################################################################################################
+########################################################################################################################
 ### UK BioBank UDI Helpers ###
-####################################################################################################
+########################################################################################################################
 
 
 def load_partial_udi_lookup_map() -> dict:
@@ -76,13 +75,13 @@ def load_partial_udi_lookup_map() -> dict:
     return partial_udi_to_name_map
 
 
-def add_udi_names_to_index(ukbb_index: pd.DataFrame)-> pd.DataFrame:
+def add_udi_names_to_index(biobank_index: pd.DataFrame)-> pd.DataFrame:
     """ Adds the names to the index based on udi"""
 
     partial_udi_to_name_map = load_partial_udi_lookup_map()
 
     names = []
-    for udi in ukbb_index["udi"]:
+    for udi in biobank_index["udi"]:
         if "-" not in udi or udi.endswith("-0.0"):
             names.append(partial_udi_to_name_map.get(udi, None))
         else:
@@ -96,20 +95,19 @@ def add_udi_names_to_index(ukbb_index: pd.DataFrame)-> pd.DataFrame:
             else:
                 names.append(None)
 
-    ukbb_index["name"] = names
-    return ukbb_index
+    biobank_index["name"] = names
+    return biobank_index
 
 
 class UDIMap:
 
-    def __init__(self, ukbb_index: pd.DataFrame):
-        assert "name" in ukbb_index, "'name' column not found in ukbb_index, run add_udi_names_to_index first."
+    def __init__(self, biobank_index: pd.DataFrame):
+        assert "name" in biobank_index, "'name' column not found in biobank_index, run add_udi_names_to_index first."
 
-        self.udi_to_name_map = dict(zip(ukbb_index["udi"], ukbb_index["name"]))
-        self.name_to_udi_map = dict(zip(ukbb_index["name"], ukbb_index["udi"]))
+        self.udi_to_name_map = dict(zip(biobank_index["udi"], biobank_index["name"]))
+        self.name_to_udi_map = dict(zip(biobank_index["name"], biobank_index["udi"]))
 
-
-    def get_udi(self, name: str) -> str:
+    def get_udi(self, name: ArrayOrItem[str]) -> ArrayOrItem[str]:
         """ gets a UDI from a feature name"""
 
         if isinstance(name, str):
@@ -118,7 +116,7 @@ class UDIMap:
         return [self.get_udi(name_i) for name_i in name]
 
 
-    def get_name(self, udi: str) -> str:
+    def get_name(self, udi: ArrayOrItem[str]) -> ArrayOrItem[str]:
         """ gets the feature name from a udi"""
         
         if isinstance(udi, str):
@@ -135,19 +133,44 @@ class UDIMap:
         return function(*args, **kwargs)
 
 
-####################################################################################################
+########################################################################################################################
 ### UK BioBank Feature Helpers ###
-####################################################################################################
+########################################################################################################################
 
 
-def relevant_feature_search(ukbb_index: pd.DataFrame, term: str) -> pd.DataFrame:
-    """ finds  features relevant to the search term."""
-    modified_names = ukbb_index["name"].apply(lambda s: s.replace("_", " ") + " " if s else "")
-    found_indices = [i for (i, description) in enumerate(modified_names + ukbb_index["description"])
-                     if fuzz.partial_ratio(description.lower(), term.lower()) > 95]
-    return ukbb_index.iloc[found_indices]
+def fuzzy_index_search(term: str, descriptions: Iterable[str], fuzzy_threshold: int = 95,
+                       and_search: bool = False) -> List[int]:
+    """ Searches a list of descriptions and returns any with a fuzzy index above a threshold."""
+
+    if isinstance(term, str):
+        term = term.lower()
+        return [i for (i, desc) in enumerate(descriptions) if fuzz.partial_ratio(desc.lower(), term) > fuzzy_threshold]
+
+    index_sets = [set(fuzzy_index_search(term_i, descriptions, fuzzy_threshold=fuzzy_threshold)) for term_i in term]
 
 
-####################################################################################################
+    final_indices = index_sets[0]
+    for indices in index_sets[1:]:
+        if and_search:
+            final_indices = final_indices.intersection(indices)
+        else:
+            final_indices = final_indices.union(indices)
+
+
+    return sorted(final_indices)
+
+def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str],
+                fuzzy_threshold: int = 95, and_search: bool = False) -> pd.DataFrame:
+    """ searches the biobank_index for relevant features."""
+
+    search_terms = [search_terms] if isinstance(search_terms, str) else search_terms
+    descriptions = biobank_index["name"].apply(lambda s: s.replace("_", " ") + " " if s else "")
+    descriptions = descriptions + biobank_index["description"]
+
+    indices = fuzzy_index_search(search_terms, descriptions, fuzzy_threshold=fuzzy_threshold, and_search=and_search)
+    return biobank_index["name"].iloc[indices].tolist()
+
+
+########################################################################################################################
 ### End ###
-####################################################################################################
+########################################################################################################################
