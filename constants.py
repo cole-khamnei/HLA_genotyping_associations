@@ -17,6 +17,14 @@ else:
     raise NotImplementedError("Unsupported OS")
 
 ########################################################################################################################
+### Version Constants (EDIT these) ###
+########################################################################################################################
+
+# UK_BIOBANK_VERSION = "24512"
+UK_BIOBANK_VERSION = "31127"
+DEV_MODE = True
+
+########################################################################################################################
 ### Path Constants ###
 ########################################################################################################################
 
@@ -26,13 +34,14 @@ RESOURCES_DIR_PATH = os.path.join(HLA_GENOTYPING_DIR_PATH, "resources")
 COVER_PLOTS_DIR_PATH = os.path.join(HLA_GENOTYPING_DIR_PATH, "cover_plots")
 COVER_PLOTS_GENERIC_FILE_PATH = os.path.join(COVER_PLOTS_DIR_PATH, "{}")
 
-UK_BIOBANK_DATA_PATH = DATA_PATH + f"{dir_divider}uk_biobank"
+UK_BIOBANK_DATA_PATH = DATA_PATH + f"{dir_divider}uk_biobank_{UK_BIOBANK_VERSION}"
 
-UK_BIOBANK_DEV_DATA_CSV = os.path.join(UK_BIOBANK_DATA_PATH, "small_ukbiobank.csv")
-UK_BIOBANK_DATA_CSV = os.path.join(UK_BIOBANK_DATA_PATH, "ukbiobank.csv")
+UK_BIOBANK_DEV_DATA_CSV = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}_small.csv")
+UK_BIOBANK_DATA_CSV = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}.csv")
+UK_BIOBANK_DATA_CSV_PATH = UK_BIOBANK_DEV_DATA_CSV if DEV_MODE else UK_BIOBANK_DATA_CSV
 
-UK_BIOBANK_INDEX_HTML_PATH = os.path.join(UK_BIOBANK_DATA_PATH, "ukbiobank.html")
-UK_BIOBANK_INDEX_CSV_PATH = os.path.join(UK_BIOBANK_DATA_PATH, "ukbiobank_index.csv")
+UK_BIOBANK_INDEX_HTML_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}.html")
+UK_BIOBANK_INDEX_CSV_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}_index.csv")
 
 UDI_LOOKUP_OUTLIERS_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_outliers.csv")
 UDI_LOOKUP_CORE_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_core.csv")

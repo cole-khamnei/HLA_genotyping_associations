@@ -1,4 +1,5 @@
 
+import argparse
 import os
 import requests
 
@@ -25,33 +26,37 @@ ArrayOrItem = Union[Iterable[S], S]
 ########################################################################################################################
 
 
-def split_data_coding(data_coding: str) -> Tuple[Optional[int], Optional[int], Optional[str], Optional[str]]:
-    """ Splits the UKBB index coding str into parts"""
-    if len(data_coding) == 0:
-        return [None, None, None, None]
+def create_biobank_index(biobank_html_path: str, overwrite: bool = False) -> None:
+    """ Creates a csv with the index information for the biobank."""
 
-    _, data_coding, _, n_members, data_type, _, _, _, pretype, type_ = data_coding.lower().split()
-    return [int(data_coding), int(n_members), data_type, pretype + "_" + type_.rstrip(".")]
+    biobank_index_path = biobank_html_path.replace(".html", "_index.csv")
+    if os.path.exists(biobank_index_path) and not overwrite:
+        print(f"\n{biobank_index_path} already exists.\nIt can be overwritten with the 'overwrite' argument")
+        return
+
+    biobank_html = bsoup(open(biobank_html_path, 'r').read(), features="lxml")
+    biobank_index_html = biobank_html.find_all("table")[1]
+    biobank_index = pd.read_html(str(biobank_index_html))[0]
+    biobank_index.columns = [col.lower() for col in biobank_index.columns]
+    biobank_index.to_csv(biobank_index_path, index=False)
+    print(f"\nSuccessflly created {biobank_index_path}")
+
+
+def extract_data_coding(description: str) -> str:
+    """ Extracts the data code from the description."""
+    if "data-coding" not in description:
+        return None
+
+    return description.split("data-coding ")[1].split()[0]
 
 
 def load_index() -> pd.DataFrame:
     """ Loads the UK BioBank index csv and if does not exist, creates it."""
-    if os.path.exists(constants.UK_BIOBANK_INDEX_CSV_PATH):
-        biobank_index = pd.read_csv(constants.UK_BIOBANK_INDEX_CSV_PATH)
-    else:
-        ukbb_html = bsoup(open(constants.UK_BIOBANK_INDEX_HTML_PATH, 'r').read())
-        biobank_index_html = ukbb_html.find_all("table")[1]
-        biobank_index = pd.read_html(str(biobank_index_html))[0]
-        biobank_index.columns = [col.lower() for col in biobank_index.columns]
-        biobank_index.to_csv(constants.UK_BIOBANK_INDEX_CSV_PATH, index=False)
 
-    biobank_index["data_coding"] = biobank_index["description"].apply(lambda desc: desc.split("Uses")[1]
-                                                                      if "Uses" in desc else "")
+    biobank_index = pd.read_csv(constants.UK_BIOBANK_INDEX_CSV_PATH)
+
+    biobank_index["data_code"] = biobank_index["description"].apply(extract_data_coding)
     biobank_index["description"] = biobank_index["description"].apply(lambda desc: desc.split("Uses")[0])
-
-    data_coding_info = np.array(biobank_index["data_coding"].apply(split_data_coding).to_list())
-    data_info = pd.DataFrame(data_coding_info, columns=["data_code", "data_n_members", "data_type", "data_structure"])
-    biobank_index = pd.concat([biobank_index, data_info], axis=1).drop(["data_coding"], axis=1)
 
     return biobank_index
 
@@ -180,27 +185,26 @@ def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str],
 
 def download_biobank_code_data(code: int, overwrite: bool = False) -> None:
     """ Downloads the coding information for a data code."""
-    
+
     lookup_path = os.path.join(constants.CODING_INFO_DIR_PATH, f"code_lookup_{code}.csv")
     description_path = os.path.join(constants.CODING_INFO_DIR_PATH, f"code_description_{code}.txt")
-    
+
     if os.path.exists(lookup_path) and os.path.exists(description_path) and not overwrite:
         print(f"code {code} files already exist.")
         return
-    
+
     # Parse the description to provide variable description info
     r_desc = requests.get(constants.UK_BIOBANK_CODING_URL.format(code=code)).text
     assert not r_desc.startswith(constants.NDPH_DATABASE_ERROR_TOKEN), "NDPH database is down. Please wait."
 
     # Parse description here.
     code_description = r_desc
-    
+
     # Download coding information and format as csv.
     r_code = requests.post(constants.UK_BIOBANK_CODING_DOWNLOAD_URL, data={"id":3}).text
     assert not r_code.startswith(constants.NDPH_DATABASE_ERROR_TOKEN), "NDPH database is down. Please wait."
     r_code = r_code.replace('\t', ',')
-    
-    
+
     with open(lookup_path, 'w') as code_lookup_file:
         code_lookup_file.write(r_code)
 
@@ -213,9 +217,34 @@ def download_all_biobank_codes(biobank_index: pd.DataFrame, overwrite: bool = Fa
 
     biobank_codes = sorted(biobank_index["data_code"].dropna().unique())
     for code in tqdm(biobank_codes, desc="Downloading BioBank code info", unit=" code"):
-    #     download_biobank_coding_data(code, overwrite=False)
         pass
+    #     download_biobank_coding_data(code, overwrite=False)
 
+
+########################################################################################################################
+### Main ###
+########################################################################################################################
+
+
+def argument_parser() -> str:
+    """"""
+    parser = argparse.ArgumentParser(description='Index biobank csv')
+    parser.add_argument('--biobank-html', dest="biobank_html_path", help='Path to biobank html',
+                        type=str, required=True)
+    parser.add_argument('--overwrite', dest="overwrite", action="store_true", help='overwrite existing index.')
+    inputs = parser.parse_args()
+
+    return inputs.biobank_html_path, inputs.overwrite
+
+
+def main():
+    biobank_html_path, overwrite = argument_parser()
+
+    create_biobank_index(biobank_html_path, overwrite=overwrite)
+
+
+if __name__ == '__main__':
+    main()
 
 ########################################################################################################################
 ### End ###
