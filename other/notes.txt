@@ -1,0 +1,9 @@
+- set up zotero drive
+	- probably create google drive folder with all pdfs? -> link zotero to that drive?
+
+- HLA homozygozity -> cancer + illness
+	- calculate grantham distance for all bb, lookup hospital codes for cancers + ebv associated cancers -> calculate OR
+
+	- next steps:
+		- download the biobank codings
+		- switch to new version of biobank
