@@ -2,6 +2,7 @@
 import argparse
 import os
 import requests
+import glob
 
 from typing import Any, Dict, Callable, Iterable, List, Optional, TypeVar, Tuple, Union
 
@@ -20,6 +21,17 @@ import constants
 
 S = TypeVar('S')
 ArrayOrItem = Union[Iterable[S], S]
+
+########################################################################################################################
+### UK BioBank Index Helpers ###
+########################################################################################################################
+
+
+def overwrite_override(file: Optional[str] = ""):
+    """ Checks the version of biobank used and prevents overwrites of any files that are *finalized*"""
+    if constants.UK_BIOBANK_VERSION in constants.UK_BIOBANK_FINALIZED_VERSIONS:
+        assert False, f"Overwrite attempt of file {file} for version {constants.UK_BIOBANK_VERSION} which is finalized."
+
 
 ########################################################################################################################
 ### UK BioBank Index Helpers ###
@@ -69,16 +81,50 @@ def add_biobank_info_to_index(biobank_index: pd.DataFrame, ukbb_data: pd.DataFra
     return biobank_index
 
 ########################################################################################################################
+### UK BioBank UDI Lookup Creators ###
+########################################################################################################################
+
+
+def get_indices_missing_names(biobank_index: pd.DataFrame) -> pd.DataFrame:
+    """ Finds all the indices that are missing a name variable."""
+
+    missing_name_index = biobank_index.loc[biobank_index["name"].isna()].copy(deep=True)
+    missing_name_index["primary_udi"] = missing_name_index["udi"].apply(lambda s: s.split("-")[0])
+    missing_name_index = missing_name_index.drop_duplicates(["primary_udi"])
+    missing_name_index["name"] = "_"
+    udi_lookup_columns = ["column", "count", "type", "description", "udi", "name"]
+    return missing_name_index[udi_lookup_columns]
+
+
+def create_udi_lookup_file(version: str, missing_name_index: pd.DataFrame, overwrite: bool = False) -> None:
+    """ Writes the udi lookup file to be filled out."""
+
+    if overwrite:
+        overwrite_override()
+
+    udi_lookup_file = constants.UDI_LOOKUP_VERSION_GENERIC_PATH.format(version=version)
+
+    if os.path.exists(udi_lookup_file):
+        print(f"Version {version} UDI lookup file already exists.")
+        if not overwrite:
+            print("If you want to overwrite, use 'overwrite=True'")
+            return
+
+        print(f"Overwriting existing version {version} UDI lookup file.")
+    missing_name_index.to_csv(udi_lookup_file, index=False)
+    print(f"Successfully created UDI lookup file:\n{udi_lookup_file}")
+
+
+########################################################################################################################
 ### UK BioBank UDI Helpers ###
 ########################################################################################################################
 
 
 def load_partial_udi_lookup_map() -> dict:
     """ Loads the UDI lookup tables"""
-    core_udi_lookup = pd.read_csv(constants.UDI_LOOKUP_CORE_CSV)
-    outlier_udi_lookup = pd.read_csv(constants.UDI_LOOKUP_OUTLIERS_CSV)
 
-    partial_udi_lookup = pd.concat([core_udi_lookup, outlier_udi_lookup])
+    udi_lookup_paths = glob.glob(os.path.join(constants.UDI_LOOKUP_DIR_PATH, "udi_lookup_*.csv"))
+    partial_udi_lookup = pd.concat([pd.read_csv(udi_lookup_path) for udi_lookup_path in udi_lookup_paths])
 
     partial_labeled_udis = partial_udi_lookup.loc[partial_udi_lookup["name"] != "_"]
     partial_udi_to_name_map = dict(zip(partial_labeled_udis["udi"], partial_labeled_udis["name"]))
@@ -229,18 +275,45 @@ def download_all_biobank_codes(biobank_index: pd.DataFrame, overwrite: bool = Fa
 def argument_parser() -> str:
     """"""
     parser = argparse.ArgumentParser(description='Index biobank csv')
-    parser.add_argument('--biobank-html', dest="biobank_html_path", help='Path to biobank html',
+    parser.add_argument('--biobank', dest="biobank_path", help='Path to biobank csv',
                         type=str, required=True)
-    parser.add_argument('--overwrite', dest="overwrite", action="store_true", help='overwrite existing index.')
+    parser.add_argument('--overwrite', dest="overwrite", action="store_true",
+                        help='overwrites existing index / UDI lookup csv.')
+    parser.add_argument('--create-index', dest="create_index", action="store_true", help='create index.')
+    parser.add_argument('--create-udi-lookup', dest="create_udi_lookup", action="store_true", help='create UDI lookup.')
+    parser.add_argument('--full', dest="full_prep", action="store_true", help='create index and UDI lookup.')
+
     inputs = parser.parse_args()
 
-    return inputs.biobank_html_path, inputs.overwrite
+    assert inputs.biobank_path.endswith(".csv"), f"Biobank path must be a csv, given:'{inputs.biobank_path}'."
+    assert os.path.exists(inputs.biobank_path), f"BioBank CSV '{inputs.biobank_path}' does not exist."
+
+    if inputs.full_prep:
+        mode = "full"
+    elif inputs.create_udi_lookup:
+        mode = "udi_lookup_creation"
+    elif inputs.create_index:
+        mode = "index_creation"
+    else:
+        raise ValueError("No mode specified use flags '--full', '--create-index', or '--create-udi-lookup'")
+
+    return inputs.biobank_path, mode, inputs.overwrite
 
 
 def main():
-    biobank_html_path, overwrite = argument_parser()
+    biobank_path, mode, overwrite = argument_parser()
 
-    create_biobank_index(biobank_html_path, overwrite=overwrite)
+    if mode in ["full", "index_creation"]:
+        biobank_html_path = biobank_path.replace(".csv", ".html")
+        create_biobank_index(biobank_html_path, overwrite=overwrite)
+
+    if mode in ["full", "udi_lookup_creation"]:
+        biobank_index_full = load_index()
+        biobank_index_full = add_udi_names_to_index(biobank_index_full)
+
+        missing_name_index = get_indices_missing_names(biobank_index_full)
+        if len(missing_name_index) > 0:
+            create_udi_lookup_file(constants.UK_BIOBANK_VERSION, missing_name_index, overwrite=overwrite)
 
 
 if __name__ == '__main__':

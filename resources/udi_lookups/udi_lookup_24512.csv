@@ -533,3 +533,11 @@ column,count,type,counts,frequency,description,udi,name
 3964,305421,Integer,6028,0.6028602860286029,"Episodes containing ""Intended management of patient"" data (recoded)",41241-0.0,important_unlabeled_33
 3965,277019,Categorical (multiple),5456,0.5456545654565457,Patient classification on admission (recoded)Uses data-coding 266 comprises 13 Integer-valued members in a hierarchical tree.,41247-0.0,patient_classification_on_admission
 3972,395885,Integer,7865,0.7865786578657866,"Episodes containing ""Inpatient record format"" data",41252-0.0,important_unlabeled_34
+1464,3349,Categorical (single),67,0.0067006700670067,Result ranking (pilot)Uses data-coding 22 comprises 3 Integer-valued members in a simple list.,10691-0.1,spirometry_result_ranking_pilot
+1468,3349,Integer,67,0.0067006700670067,Acceptability of each blow result (pilot),10693-0.1,spirometry_low_result_acceptability_pilot
+1472,3349,Continuous,67,0.0067006700670067,Forced vital capacity (FVC) (pilot),10694-0.1,spirometry_FVC_pilot
+1476,3349,Continuous,67,0.0067006700670067,Forced expiratory volume in 1-second (FEV1) (pilot),10695-0.1,spirometry_FEV1_pilot
+1480,3349,Integer,67,0.0067006700670067,Peak expiratory flow (PEF) (pilot),10696-0.1,spirometry_PEF_pilot
+1484,3349,Curve,67,0.0067006700670067,Data points for blow (pilot),10697-0.1,spirometry_blow_data_points_pilot
+2540,2317,Text,52,0.005200520052005201,Acceptability of each blow result (text) (pilot),20032-0.1,spirometry_low_result_acceptability_text_pilot
+2759,488295,Continuous,9743,0.9743974397439744,Genetic principal components,22009-0.1,genetic_PCs
