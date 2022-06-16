@@ -26,7 +26,7 @@ def load_biobank_data(data_csv_path: str, udi_map: index_tools.UDIMap) -> pd.Dat
 
 def clean_biobank_data(biobank_data: pd.DataFrame) -> pd.DataFrame:
     """ cleans the UK BioBank dataframe."""
-    
+
     exclude_features = [column for column in biobank_data.columns
                         if any(token in column for token in constants.TEMPORARILY_EXCLUDE_FEATURE_TOKENS)]
     biobank_data_length = len(biobank_data)
@@ -38,7 +38,7 @@ def clean_biobank_data(biobank_data: pd.DataFrame) -> pd.DataFrame:
 
 def create_reduced_feature_set(biobank_data: pd.DataFrame) -> pd.DataFrame:
     """ builds the a reduced feature set for easier data exploration."""
-    
+
     reduced_feature_set = {}
     for feature in biobank_data.columns:
         feature_tokens = feature.split("_")

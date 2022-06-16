@@ -35,13 +35,14 @@ def load_index() -> pd.DataFrame:
     if os.path.exists(constants.UK_BIOBANK_INDEX_CSV_PATH):
         biobank_index = pd.read_csv(constants.UK_BIOBANK_INDEX_CSV_PATH)
     else:
-        ukbb_html = bsoup(open(constants.UK_BIOBANK_INDEX_HTML_PATH,'r').read())
+        ukbb_html = bsoup(open(constants.UK_BIOBANK_INDEX_HTML_PATH, 'r').read())
         biobank_index_html = ukbb_html.find_all("table")[1]
         biobank_index = pd.read_html(str(biobank_index_html))[0]
         biobank_index.columns = [col.lower() for col in biobank_index.columns]
         biobank_index.to_csv(constants.UK_BIOBANK_INDEX_CSV_PATH, index=False)
 
-    biobank_index["data_coding"] = biobank_index["description"].apply(lambda desc: desc.split("Uses")[1] if "Uses" in desc else "")
+    biobank_index["data_coding"] = biobank_index["description"].apply(lambda desc: desc.split("Uses")[1]
+                                                                      if "Uses" in desc else "")
     biobank_index["description"] = biobank_index["description"].apply(lambda desc: desc.split("Uses")[0])
 
     data_coding_info = np.array(biobank_index["data_coding"].apply(split_data_coding).to_list())
@@ -67,7 +68,7 @@ def load_partial_udi_lookup_map() -> dict:
     """ Loads the UDI lookup tables"""
     core_udi_lookup = pd.read_csv(constants.UDI_LOOKUP_CORE_CSV)
     outlier_udi_lookup = pd.read_csv(constants.UDI_LOOKUP_OUTLIERS_CSV)
-    
+
     partial_udi_lookup = pd.concat([core_udi_lookup, outlier_udi_lookup])
 
     partial_labeled_udis = partial_udi_lookup.loc[partial_udi_lookup["name"] != "_"]
@@ -75,7 +76,7 @@ def load_partial_udi_lookup_map() -> dict:
     return partial_udi_to_name_map
 
 
-def add_udi_names_to_index(biobank_index: pd.DataFrame)-> pd.DataFrame:
+def add_udi_names_to_index(biobank_index: pd.DataFrame) -> pd.DataFrame:
     """ Adds the names to the index based on udi"""
 
     partial_udi_to_name_map = load_partial_udi_lookup_map()
@@ -115,15 +116,13 @@ class UDIMap:
 
         return [self.get_udi(name_i) for name_i in name]
 
-
     def get_name(self, udi: ArrayOrItem[str]) -> ArrayOrItem[str]:
         """ gets the feature name from a udi"""
-        
+
         if isinstance(udi, str):
             return self.udi_to_name_map.get(udi, udi)
 
         return [self.get_name(udi_i) for udi_i in udi]
-
 
     def udi_wrapper(self, function: Callable, *args: Tuple[Any], **kwargs: Dict[str, Any]) -> Any:
         """ wraps a callable function, converting all feature name strings to udi strings."""
@@ -148,7 +147,6 @@ def fuzzy_index_search(term: str, descriptions: Iterable[str], fuzzy_threshold: 
 
     index_sets = [set(fuzzy_index_search(term_i, descriptions, fuzzy_threshold=fuzzy_threshold)) for term_i in term]
 
-
     final_indices = index_sets[0]
     for indices in index_sets[1:]:
         if and_search:
@@ -156,8 +154,8 @@ def fuzzy_index_search(term: str, descriptions: Iterable[str], fuzzy_threshold: 
         else:
             final_indices = final_indices.union(indices)
 
-
     return sorted(final_indices)
+
 
 def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str],
                 fuzzy_threshold: int = 95, and_search: bool = False) -> pd.DataFrame:
