@@ -1,0 +1,6 @@
+column,udi,count,type,description,data_code,data_n_members,data_type,data_structure,name,counts,frequency
+0,eid,502543,Sequence,Encoded anonymised participant ID,,,,,eid,9999,1.0
+1,23-0.0,456606,Categorical (single),Spirometry method,100270,5,integer-valued,simple_list,spirometry_method,9056,0.9056905690569057
+4,31-0.0,502543,Categorical (single),Sex,9,2,integer-valued,simple_list,sex,9999,1.0
+5,34-0.0,502543,Integer,Year of birth,,,,,birth_year,9999,1.0
+6,35-0.0,501328,Categorical (single),Was blood sampling attempted,7,2,integer-valued,simple_list,blood_sample_attempted,9978,0.9978997899789979

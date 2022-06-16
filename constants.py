@@ -16,7 +16,6 @@ elif platform.system() == 'Windows':
 else:
     raise NotImplementedError("Unsupported OS")
 
-
 ########################################################################################################################
 ### Path Constants ###
 ########################################################################################################################
@@ -26,7 +25,6 @@ HLA_GENOTYPING_DIR_PATH = pathlib.Path(__file__).parent.resolve()
 RESOURCES_DIR_PATH = os.path.join(HLA_GENOTYPING_DIR_PATH, "resources")
 COVER_PLOTS_DIR_PATH = os.path.join(HLA_GENOTYPING_DIR_PATH, "cover_plots")
 COVER_PLOTS_GENERIC_FILE_PATH = os.path.join(COVER_PLOTS_DIR_PATH, "{}")
-
 
 UK_BIOBANK_DATA_PATH = DATA_PATH + f"{dir_divider}uk_biobank"
 
@@ -38,6 +36,17 @@ UK_BIOBANK_INDEX_CSV_PATH = os.path.join(UK_BIOBANK_DATA_PATH, "ukbiobank_index.
 
 UDI_LOOKUP_OUTLIERS_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_outliers.csv")
 UDI_LOOKUP_CORE_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_core.csv")
+
+CODING_INFO_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "code_info")
+
+########################################################################################################################
+### URL Path Constants ###
+########################################################################################################################
+
+UK_BIOBANK_CODING_URL = "https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id={code}"
+UK_BIOBANK_CODING_DOWNLOAD_URL = "https://biobank.ndph.ox.ac.uk/showcase/codown.cgi"
+
+NDPH_DATABASE_ERROR_TOKEN = "<!--\nDATABASE ERROR"
 
 ########################################################################################################################
 ### UK BioBank Feature Constants ###
