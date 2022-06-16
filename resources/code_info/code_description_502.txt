@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 502</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=502&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 502</span><br>
+<br>Name: TAF answer-set 502
+<p>Description: Multiple choice answers from Thoughts and Feelings questionnaire
+<p>This is a flat (unstructured) list which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="502"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>4 Categories</h2>
+<table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th></tr>
+<tr class="row_odd"><td class="int">-818</td><td class="txt">Prefer not to answer</td></tr>
+<tr class="row_even"><td class="int">-121</td><td class="txt">Do not know</td></tr>
+<tr class="row_odd"><td class="int">0</td><td class="txt">No</td></tr>
+<tr class="row_even"><td class="int">1</td><td class="txt">Yes</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>83 Data-Fields</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f21066"><td class="txt"><a class="basic" href="field.cgi?id=21066">21066</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21066">Born by caesarian section</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120046"><td class="txt"><a class="basic" href="field.cgi?id=120046">120046</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120046">Burning pain present in pain that bothers the most</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120012"><td class="txt"><a class="basic" href="field.cgi?id=120012">120012</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120012">Currently experiencing a gout flare</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21068"><td class="txt"><a class="basic" href="field.cgi?id=21068">21068</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21068">Diagnosed with coeliac disease or gluten sensitivity</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20532"><td class="txt"><a class="basic" href="field.cgi?id=20532">20532</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20532">Did your sleep change?</a></td><td class="txt"><a class="subtle" href="label.cgi?id=138">Depression</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20435"><td class="txt"><a class="basic" href="field.cgi?id=20435">20435</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20435">Difficulty concentrating during worst depression</a></td><td class="txt"><a class="subtle" href="label.cgi?id=138">Depression</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20541"><td class="txt"><a class="basic" href="field.cgi?id=20541">20541</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20541">Difficulty stopping worrying during worst period of anxiety</a></td><td class="txt"><a class="subtle" href="label.cgi?id=140">Anxiety</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120048"><td class="txt"><a class="basic" href="field.cgi?id=120048">120048</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120048">Electric shocks present in pain that bothers the most</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20431"><td class="txt"><a class="basic" href="field.cgi?id=20431">20431</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20431">Ever addicted to a behaviour or miscellanous</a></td><td class="txt"><a class="subtle" href="label.cgi?id=141">Addictions</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20406"><td class="txt"><a class="basic" href="field.cgi?id=20406">20406</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20406">Ever addicted to alcohol</a></td><td class="txt"><a class="subtle" href="label.cgi?id=141">Addictions</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20401"><td class="txt"><a class="basic" href="field.cgi?id=20401">20401</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20401">Ever addicted to any substance or behaviour</a></td><td class="txt"><a class="subtle" href="label.cgi?id=141">Addictions</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20456"><td class="txt"><a class="basic" href="field.cgi?id=20456">20456</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20456">Ever addicted to illicit or recreational drugs</a></td><td class="txt"><a class="subtle" href="label.cgi?id=141">Addictions</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20503"><td class="txt"><a class="basic" href="field.cgi?id=20503">20503</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20503">Ever addicted to prescription or over-the-counter medication</a></td><td class="txt"><a class="subtle" href="label.cgi?id=141">Addictions</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20468"><td class="txt"><a class="basic" href="field.cgi?id=20468">20468</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20468">Ever believed in an un-real conspiracy against self</a></td><td class="txt"><a class="subtle" href="label.cgi?id=144">Unusual and psychotic experiences</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20474"><td class="txt"><a class="basic" href="field.cgi?id=20474">20474</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20474">Ever believed in un-real communications or signs</a></td><td class="txt"><a class="subtle" href="label.cgi?id=144">Unusual and psychotic experiences</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21024"><td class="txt"><a class="basic" href="field.cgi?id=21024">21024</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21024">Ever diagnosed with IBS</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20421"><td class="txt"><a class="basic" href="field.cgi?id=20421">20421</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20421">Ever felt worried, tense, or anxious for most of a month or longer</a></td><td class="txt"><a class="subtle" href="label.cgi?id=140">Anxiety</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120085"><td class="txt"><a class="basic" href="field.cgi?id=120085">120085</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120085">Ever had an amputation</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120078"><td class="txt"><a class="basic" href="field.cgi?id=120078">120078</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120078">Ever had an open sore on foot</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120008"><td class="txt"><a class="basic" href="field.cgi?id=120008">120008</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120008">Ever had any cause of nerve damage/neuropathy other than diabetic neuropathy</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120002"><td class="txt"><a class="basic" href="field.cgi?id=120002">120002</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120002">Ever had cancer pain</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120003"><td class="txt"><a class="basic" href="field.cgi?id=120003">120003</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120003">Ever had carpal tunnel syndrome</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120010"><td class="txt"><a class="basic" href="field.cgi?id=120010">120010</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120010">Ever had chronic Fatigue Syndrome or Myalgic Encephalomyelitis (M.E.)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120005"><td class="txt"><a class="basic" href="field.cgi?id=120005">120005</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120005">Ever had chronic post-surgical pain</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120004"><td class="txt"><a class="basic" href="field.cgi?id=120004">120004</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120004">Ever had complex regional pain syndrome (also known as CRPS)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120007"><td class="txt"><a class="basic" href="field.cgi?id=120007">120007</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120007">Ever had diabetes (Type I or Type II)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120079"><td class="txt"><a class="basic" href="field.cgi?id=120079">120079</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120079">Ever had diabetic neuropathy</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120009"><td class="txt"><a class="basic" href="field.cgi?id=120009">120009</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120009">Ever had fibromyalgia syndrome</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120011"><td class="txt"><a class="basic" href="field.cgi?id=120011">120011</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120011">Ever had gout</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120016"><td class="txt"><a class="basic" href="field.cgi?id=120016">120016</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120016">Ever had migraine</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120000"><td class="txt"><a class="basic" href="field.cgi?id=120000">120000</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120000">Ever had osteoarthritis affecting one or more joints (e.g. hip, knee, shoulder)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120017"><td class="txt"><a class="basic" href="field.cgi?id=120017">120017</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120017">Ever had pelvic pain</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20502"><td class="txt"><a class="basic" href="field.cgi?id=20502">20502</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20502">Ever had period extreme irritability</a></td><td class="txt"><a class="subtle" href="label.cgi?id=139">Mania</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20501"><td class="txt"><a class="basic" href="field.cgi?id=20501">20501</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20501">Ever had period of mania / excitability</a></td><td class="txt"><a class="subtle" href="label.cgi?id=139">Mania</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120018"><td class="txt"><a class="basic" href="field.cgi?id=120018">120018</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120018">Ever had post herpetic neuralgia (pain after shingles)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120001"><td class="txt"><a class="basic" href="field.cgi?id=120001">120001</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120001">Ever had rheumatoid arthritis affecting one or more joints</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20463"><td class="txt"><a class="basic" href="field.cgi?id=20463">20463</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20463">Ever heard an un-real voice</a></td><td class="txt"><a class="subtle" href="label.cgi?id=144">Unusual and psychotic experiences</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20404"><td class="txt"><a class="basic" href="field.cgi?id=20404">20404</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20404">Ever physically dependent on alcohol</a></td><td class="txt"><a class="subtle" href="label.cgi?id=141">Addictions</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20466"><td class="txt"><a class="basic" href="field.cgi?id=20466">20466</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20466">Ever prescribed a medication for unusual or psychotic experiences</a></td><td class="txt"><a class="subtle" href="label.cgi?id=144">Unusual and psychotic experiences</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20471"><td class="txt"><a class="basic" href="field.cgi?id=20471">20471</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20471">Ever seen an un-real vision</a></td><td class="txt"><a class="subtle" href="label.cgi?id=144">Unusual and psychotic experiences</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20499"><td class="txt"><a class="basic" href="field.cgi?id=20499">20499</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20499">Ever sought or received professional help for mental distress</a></td><td class="txt"><a class="subtle" href="label.cgi?id=137">Mental distress</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20500"><td class="txt"><a class="basic" href="field.cgi?id=20500">20500</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20500">Ever suffered mental distress preventing usual activities</a></td><td class="txt"><a class="subtle" href="label.cgi?id=137">Mental distress</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20477"><td class="txt"><a class="basic" href="field.cgi?id=20477">20477</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20477">Ever talked to a health professional about unusual or psychotic experiences</a></td><td class="txt"><a class="subtle" href="label.cgi?id=144">Unusual and psychotic experiences</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20425"><td class="txt"><a class="basic" href="field.cgi?id=20425">20425</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20425">Ever worried more than most people would in similar situation</a></td><td class="txt"><a class="subtle" href="label.cgi?id=140">Anxiety</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21065"><td class="txt"><a class="basic" href="field.cgi?id=21065">21065</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21065">Family history of IBS</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120080"><td class="txt"><a class="basic" href="field.cgi?id=120080">120080</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120080">Feel weak all over most of the time</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120081"><td class="txt"><a class="basic" href="field.cgi?id=120081">120081</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120081">Feeling in feet and legs: symptoms are worse at night</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20449"><td class="txt"><a class="basic" href="field.cgi?id=20449">20449</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20449">Feelings of tiredness during worst episode of depression</a></td><td class="txt"><a class="subtle" href="label.cgi?id=138">Depression</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20450"><td class="txt"><a class="basic" href="field.cgi?id=20450">20450</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20450">Feelings of worthlessness during worst period of depression</a></td><td class="txt"><a class="subtle" href="label.cgi?id=138">Depression</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120073"><td class="txt"><a class="basic" href="field.cgi?id=120073">120073</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120073">Feet usually too sensitive to touch</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120013"><td class="txt"><a class="basic" href="field.cgi?id=120013">120013</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120013">Gout causing a swollen joint now</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120014"><td class="txt"><a class="basic" href="field.cgi?id=120014">120014</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120014">Gout causing a warm joint now</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120052"><td class="txt"><a class="basic" href="field.cgi?id=120052">120052</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120052">Itching present in pain that bothers the most</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120076"><td class="txt"><a class="basic" href="field.cgi?id=120076">120076</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120076">Legs and feet usually hurt when the bed covers touch skin</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120071"><td class="txt"><a class="basic" href="field.cgi?id=120071">120071</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120071">Legs and/or feet are usually numb</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120082"><td class="txt"><a class="basic" href="field.cgi?id=120082">120082</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120082">Legs usually hurt when walking</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21067"><td class="txt"><a class="basic" href="field.cgi?id=21067">21067</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21067">Long-term/recurrent antibiotics as child or teenager</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20540"><td class="txt"><a class="basic" href="field.cgi?id=20540">20540</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20540">Multiple worries during worst period of anxiety</a></td><td class="txt"><a class="subtle" href="label.cgi?id=140">Anxiety</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120051"><td class="txt"><a class="basic" href="field.cgi?id=120051">120051</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120051">Numbness present in pain that bothers the most</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120021"><td class="txt"><a class="basic" href="field.cgi?id=120021">120021</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120021">Pain or discomfort all over the body in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120032"><td class="txt"><a class="basic" href="field.cgi?id=120032">120032</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120032">Pain or discomfort in both feet in last three months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120038"><td class="txt"><a class="basic" href="field.cgi?id=120038">120038</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120038">Pain or tenderness during the past week</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120047"><td class="txt"><a class="basic" href="field.cgi?id=120047">120047</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120047">Painful cold present in pain that bothers the most</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120114"><td class="txt"><a class="basic" href="field.cgi?id=120114">120114</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120114">Persistent or recurrent tiredness, weariness or fatigue that has lasted for at least 6 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120050"><td class="txt"><a class="basic" href="field.cgi?id=120050">120050</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120050">Pins and needles present in pain that bothers the most</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20428"><td class="txt"><a class="basic" href="field.cgi?id=20428">20428</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20428">Professional informed about anxiety</a></td><td class="txt"><a class="subtle" href="label.cgi?id=140">Anxiety</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20448"><td class="txt"><a class="basic" href="field.cgi?id=20448">20448</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20448">Professional informed about depression</a></td><td class="txt"><a class="subtle" href="label.cgi?id=138">Depression</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21064"><td class="txt"><a class="basic" href="field.cgi?id=21064">21064</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21064">Sensitive stomach</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120084"><td class="txt"><a class="basic" href="field.cgi?id=120084">120084</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120084">Skin on feet usually so dry that it cracks open</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20542"><td class="txt"><a class="basic" href="field.cgi?id=20542">20542</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20542">Stronger worrying (than other people) during period of worst anxiety</a></td><td class="txt"><a class="subtle" href="label.cgi?id=140">Anxiety</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120118"><td class="txt"><a class="basic" href="field.cgi?id=120118">120118</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120118">Suffered from fatigue or exhaustion in the last week</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f20437"><td class="txt"><a class="basic" href="field.cgi?id=20437">20437</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20437">Thoughts of death during worst depression</a></td><td class="txt"><a class="subtle" href="label.cgi?id=138">Depression</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120049"><td class="txt"><a class="basic" href="field.cgi?id=120049">120049</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120049">Tingling present in pain that bothers the most</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120117"><td class="txt"><a class="basic" href="field.cgi?id=120117">120117</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120117">Tired after minimal physical or mental exertion</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120115"><td class="txt"><a class="basic" href="field.cgi?id=120115">120115</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120115">Tiredness, weariness or fatigue goes away when resting</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120116"><td class="txt"><a class="basic" href="field.cgi?id=120116">120116</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120116">Tiredness, weariness or fatigue happening only because of exercising and/or working too much</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120019"><td class="txt"><a class="basic" href="field.cgi?id=120019">120019</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120019">Troubled by pain or discomfort present for more than 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120083"><td class="txt"><a class="basic" href="field.cgi?id=120083">120083</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120083">Usually able to sense feet when walking</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120077"><td class="txt"><a class="basic" href="field.cgi?id=120077">120077</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120077">Usually able to tell the hot water from the cold water</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120074"><td class="txt"><a class="basic" href="field.cgi?id=120074">120074</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120074">Usually get muscle cramps in legs and/or feet</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f120072"><td class="txt"><a class="basic" href="field.cgi?id=120072">120072</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120072">Usually have burning pain in legs and/or feet</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_even" id="f120075"><td class="txt"><a class="basic" href="field.cgi?id=120075">120075</a></td><td class="txt"><a class="subtle" href="field.cgi?id=120075">Usually have prickling feelings in legs or feet</a></td><td class="txt"><a class="subtle" href="label.cgi?id=154">Experience of pain</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f20538"><td class="txt"><a class="basic" href="field.cgi?id=20538">20538</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20538">Worried most days during period of worst anxiety</a></td><td class="txt"><a class="subtle" href="label.cgi?id=140">Anxiety</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.04s
+Thu Jun 16 21:27:55 2022
+
+-->
+</div>
+</body>
+</html>

@@ -24,7 +24,7 @@ else:
 UK_BIOBANK_VERSION = "31127"
 DEV_MODE = True
 
-UK_BIOBANK_FINALIZED_VERSIONS = ["24512"]
+UK_BIOBANK_FINALIZED_VERSIONS = ["24512", "31127"]
 
 ########################################################################################################################
 ### Path Constants ###

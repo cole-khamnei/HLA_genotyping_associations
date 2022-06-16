@@ -3,6 +3,7 @@ import argparse
 import os
 import requests
 import glob
+import time
 
 from typing import Any, Dict, Callable, Iterable, List, Optional, TypeVar, Tuple, Union
 
@@ -11,7 +12,13 @@ import numpy as np
 
 from bs4 import BeautifulSoup as bsoup
 from thefuzz import fuzz
-from tqdm import tqdm
+
+import utilities
+
+if utilities.is_jupyter_notebook():
+    from tqdm.notebook import tqdm
+else:
+    from tqdm import tqdm
 
 import constants
 
@@ -247,7 +254,8 @@ def download_biobank_code_data(code: int, overwrite: bool = False) -> None:
     code_description = r_desc
 
     # Download coding information and format as csv.
-    r_code = requests.post(constants.UK_BIOBANK_CODING_DOWNLOAD_URL, data={"id":3}).text
+    r_code = requests.post(constants.UK_BIOBANK_CODING_DOWNLOAD_URL, data={"id": code}).text
+    time.sleep(1)
     assert not r_code.startswith(constants.NDPH_DATABASE_ERROR_TOKEN), "NDPH database is down. Please wait."
     r_code = r_code.replace('\t', ',')
 
@@ -263,8 +271,7 @@ def download_all_biobank_codes(biobank_index: pd.DataFrame, overwrite: bool = Fa
 
     biobank_codes = sorted(biobank_index["data_code"].dropna().unique())
     for code in tqdm(biobank_codes, desc="Downloading BioBank code info", unit=" code"):
-        pass
-    #     download_biobank_coding_data(code, overwrite=False)
+        download_biobank_code_data(code, overwrite=overwrite)
 
 
 ########################################################################################################################

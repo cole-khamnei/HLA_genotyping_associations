@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 22000</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=22000&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 22000</span><br>
+<br>Name: Genotyping array
+<p>Description: This encoding categorises the particular types of arrays used to measure genotypes in UK Biobank participants.
+<p>This is a hierarchical tree-structured dictionary which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="22000"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>108 Categories</h2>All items were selectable
+<p><table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th><th>Node</th><th>Parent</th></tr>
+<tr class="row_odd"><td class="int">-11</td><td class="txt">UKBiLEVEAX_b11</td><td class="int">-11</td><td class="int">1000</td></tr>
+<tr class="row_even"><td class="int">-10</td><td class="txt">UKBiLEVEAX_b10</td><td class="int">-10</td><td class="int">1000</td></tr>
+<tr class="row_odd"><td class="int">-9</td><td class="txt">UKBiLEVEAX_b9</td><td class="int">-9</td><td class="int">1000</td></tr>
+<tr class="row_even"><td class="int">-8</td><td class="txt">UKBiLEVEAX_b8</td><td class="int">-8</td><td class="int">1000</td></tr>
+<tr class="row_odd"><td class="int">-7</td><td class="txt">UKBiLEVEAX_b7</td><td class="int">-7</td><td class="int">1000</td></tr>
+<tr class="row_even"><td class="int">-6</td><td class="txt">UKBiLEVEAX_b6</td><td class="int">-6</td><td class="int">1000</td></tr>
+<tr class="row_odd"><td class="int">-5</td><td class="txt">UKBiLEVEAX_b5</td><td class="int">-5</td><td class="int">1000</td></tr>
+<tr class="row_even"><td class="int">-4</td><td class="txt">UKBiLEVEAX_b4</td><td class="int">-4</td><td class="int">1000</td></tr>
+<tr class="row_odd"><td class="int">-3</td><td class="txt">UKBiLEVEAX_b3</td><td class="int">-3</td><td class="int">1000</td></tr>
+<tr class="row_even"><td class="int">-2</td><td class="txt">UKBiLEVEAX_b2</td><td class="int">-2</td><td class="int">1000</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">UKBiLEVEAX_b1</td><td class="int">-1</td><td class="int">1000</td></tr>
+<tr class="row_even"><td class="int">1</td><td class="txt">Batch_b001</td><td class="int">1</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">2</td><td class="txt">Batch_b002</td><td class="int">2</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">3</td><td class="txt">Batch_b003</td><td class="int">3</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">4</td><td class="txt">Batch_b004</td><td class="int">4</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">5</td><td class="txt">Batch_b005</td><td class="int">5</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">6</td><td class="txt">Batch_b006</td><td class="int">6</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">7</td><td class="txt">Batch_b007</td><td class="int">7</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">8</td><td class="txt">Batch_b008</td><td class="int">8</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">9</td><td class="txt">Batch_b009</td><td class="int">9</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">10</td><td class="txt">Batch_b010</td><td class="int">10</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">11</td><td class="txt">Batch_b011</td><td class="int">11</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">12</td><td class="txt">Batch_b012</td><td class="int">12</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">13</td><td class="txt">Batch_b013</td><td class="int">13</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">14</td><td class="txt">Batch_b014</td><td class="int">14</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">15</td><td class="txt">Batch_b015</td><td class="int">15</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">16</td><td class="txt">Batch_b016</td><td class="int">16</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">17</td><td class="txt">Batch_b017</td><td class="int">17</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">18</td><td class="txt">Batch_b018</td><td class="int">18</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">19</td><td class="txt">Batch_b019</td><td class="int">19</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">20</td><td class="txt">Batch_b020</td><td class="int">20</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">21</td><td class="txt">Batch_b021</td><td class="int">21</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">22</td><td class="txt">Batch_b022</td><td class="int">22</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">23</td><td class="txt">Batch_b023</td><td class="int">23</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">24</td><td class="txt">Batch_b024</td><td class="int">24</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">25</td><td class="txt">Batch_b025</td><td class="int">25</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">26</td><td class="txt">Batch_b026</td><td class="int">26</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">27</td><td class="txt">Batch_b027</td><td class="int">27</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">28</td><td class="txt">Batch_b028</td><td class="int">28</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">29</td><td class="txt">Batch_b029</td><td class="int">29</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">30</td><td class="txt">Batch_b030</td><td class="int">30</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">31</td><td class="txt">Batch_b031</td><td class="int">31</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">32</td><td class="txt">Batch_b032</td><td class="int">32</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">33</td><td class="txt">Batch_b033</td><td class="int">33</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">34</td><td class="txt">Batch_b034</td><td class="int">34</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">35</td><td class="txt">Batch_b035</td><td class="int">35</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">36</td><td class="txt">Batch_b036</td><td class="int">36</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">37</td><td class="txt">Batch_b037</td><td class="int">37</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">38</td><td class="txt">Batch_b038</td><td class="int">38</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">39</td><td class="txt">Batch_b039</td><td class="int">39</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">40</td><td class="txt">Batch_b040</td><td class="int">40</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">41</td><td class="txt">Batch_b041</td><td class="int">41</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">42</td><td class="txt">Batch_b042</td><td class="int">42</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">43</td><td class="txt">Batch_b043</td><td class="int">43</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">44</td><td class="txt">Batch_b044</td><td class="int">44</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">45</td><td class="txt">Batch_b045</td><td class="int">45</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">46</td><td class="txt">Batch_b046</td><td class="int">46</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">47</td><td class="txt">Batch_b047</td><td class="int">47</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">48</td><td class="txt">Batch_b048</td><td class="int">48</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">49</td><td class="txt">Batch_b049</td><td class="int">49</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">50</td><td class="txt">Batch_b050</td><td class="int">50</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">51</td><td class="txt">Batch_b051</td><td class="int">51</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">52</td><td class="txt">Batch_b052</td><td class="int">52</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">53</td><td class="txt">Batch_b053</td><td class="int">53</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">54</td><td class="txt">Batch_b054</td><td class="int">54</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">55</td><td class="txt">Batch_b055</td><td class="int">55</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">56</td><td class="txt">Batch_b056</td><td class="int">56</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">57</td><td class="txt">Batch_b057</td><td class="int">57</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">58</td><td class="txt">Batch_b058</td><td class="int">58</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">59</td><td class="txt">Batch_b059</td><td class="int">59</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">60</td><td class="txt">Batch_b060</td><td class="int">60</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">61</td><td class="txt">Batch_b061</td><td class="int">61</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">62</td><td class="txt">Batch_b062</td><td class="int">62</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">63</td><td class="txt">Batch_b063</td><td class="int">63</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">64</td><td class="txt">Batch_b064</td><td class="int">64</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">65</td><td class="txt">Batch_b065</td><td class="int">65</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">66</td><td class="txt">Batch_b066</td><td class="int">66</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">67</td><td class="txt">Batch_b067</td><td class="int">67</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">68</td><td class="txt">Batch_b068</td><td class="int">68</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">69</td><td class="txt">Batch_b069</td><td class="int">69</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">70</td><td class="txt">Batch_b070</td><td class="int">70</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">71</td><td class="txt">Batch_b071</td><td class="int">71</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">72</td><td class="txt">Batch_b072</td><td class="int">72</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">73</td><td class="txt">Batch_b073</td><td class="int">73</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">74</td><td class="txt">Batch_b074</td><td class="int">74</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">75</td><td class="txt">Batch_b075</td><td class="int">75</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">76</td><td class="txt">Batch_b076</td><td class="int">76</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">77</td><td class="txt">Batch_b077</td><td class="int">77</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">78</td><td class="txt">Batch_b078</td><td class="int">78</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">79</td><td class="txt">Batch_b079</td><td class="int">79</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">80</td><td class="txt">Batch_b080</td><td class="int">80</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">81</td><td class="txt">Batch_b081</td><td class="int">81</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">82</td><td class="txt">Batch_b082</td><td class="int">82</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">83</td><td class="txt">Batch_b083</td><td class="int">83</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">84</td><td class="txt">Batch_b084</td><td class="int">84</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">85</td><td class="txt">Batch_b085</td><td class="int">85</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">86</td><td class="txt">Batch_b086</td><td class="int">86</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">87</td><td class="txt">Batch_b087</td><td class="int">87</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">88</td><td class="txt">Batch_b088</td><td class="int">88</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">89</td><td class="txt">Batch_b089</td><td class="int">89</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">90</td><td class="txt">Batch_b090</td><td class="int">90</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">91</td><td class="txt">Batch_b091</td><td class="int">91</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">92</td><td class="txt">Batch_b092</td><td class="int">92</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">93</td><td class="txt">Batch_b093</td><td class="int">93</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">94</td><td class="txt">Batch_b094</td><td class="int">94</td><td class="int">2000</td></tr>
+<tr class="row_even"><td class="int">95</td><td class="txt">Batch_b095</td><td class="int">95</td><td class="int">2000</td></tr>
+<tr class="row_odd"><td class="int">1000</td><td class="txt">BiLEVE</td><td class="int">1000</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">2000</td><td class="txt">Axiom</td><td class="int">2000</td><td class="int">Top</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>1 Data-Field</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f22000"><td class="txt"><a class="basic" href="field.cgi?id=22000">22000</a></td><td class="txt"><a class="subtle" href="field.cgi?id=22000">Genotype measurement batch</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100313">Genotyping process and sample QC</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.03s
+Thu Jun 16 21:27:46 2022
+
+-->
+</div>
+</body>
+</html>

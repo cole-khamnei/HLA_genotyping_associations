@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 10</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=10&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 10</span><br>
+<br>Name: Assessment Centre
+<p>Description: The assessment centre at which a participant consented
+<p>This is a flat (unstructured) list which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="10"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>27 Categories</h2>
+<table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th></tr>
+<tr class="row_odd"><td class="int">11012</td><td class="txt">Barts</td></tr>
+<tr class="row_even"><td class="int">11021</td><td class="txt">Birmingham</td></tr>
+<tr class="row_odd"><td class="int">11011</td><td class="txt">Bristol</td></tr>
+<tr class="row_even"><td class="int">11008</td><td class="txt">Bury</td></tr>
+<tr class="row_odd"><td class="int">11003</td><td class="txt">Cardiff</td></tr>
+<tr class="row_even"><td class="int">11024</td><td class="txt">Cheadle (revisit)</td></tr>
+<tr class="row_odd"><td class="int">11020</td><td class="txt">Croydon</td></tr>
+<tr class="row_even"><td class="int">11005</td><td class="txt">Edinburgh</td></tr>
+<tr class="row_odd"><td class="int">11004</td><td class="txt">Glasgow</td></tr>
+<tr class="row_even"><td class="int">11018</td><td class="txt">Hounslow</td></tr>
+<tr class="row_odd"><td class="int">11010</td><td class="txt">Leeds</td></tr>
+<tr class="row_even"><td class="int">11016</td><td class="txt">Liverpool</td></tr>
+<tr class="row_odd"><td class="int">11001</td><td class="txt">Manchester</td></tr>
+<tr class="row_even"><td class="int">11017</td><td class="txt">Middlesborough</td></tr>
+<tr class="row_odd"><td class="int">11009</td><td class="txt">Newcastle</td></tr>
+<tr class="row_even"><td class="int">11013</td><td class="txt">Nottingham</td></tr>
+<tr class="row_odd"><td class="int">11002</td><td class="txt">Oxford</td></tr>
+<tr class="row_even"><td class="int">11007</td><td class="txt">Reading</td></tr>
+<tr class="row_odd"><td class="int">11014</td><td class="txt">Sheffield</td></tr>
+<tr class="row_even"><td class="int">10003</td><td class="txt">Stockport (pilot)</td></tr>
+<tr class="row_odd"><td class="int">11006</td><td class="txt">Stoke</td></tr>
+<tr class="row_even"><td class="int">11022</td><td class="txt">Swansea</td></tr>
+<tr class="row_odd"><td class="int">11023</td><td class="txt">Wrexham</td></tr>
+<tr class="row_even"><td class="int">11025</td><td class="txt">Cheadle (imaging)</td></tr>
+<tr class="row_odd"><td class="int">11026</td><td class="txt">Reading (imaging)</td></tr>
+<tr class="row_even"><td class="int">11027</td><td class="txt">Newcastle (imaging)</td></tr>
+<tr class="row_odd"><td class="int">11028</td><td class="txt">Bristol (imaging)</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>1 Data-Field</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f54"><td class="txt"><a class="basic" href="field.cgi?id=54">54</a></td><td class="txt"><a class="subtle" href="field.cgi?id=54">UK Biobank assessment centre</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100024">Reception</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.05s
+Thu Jun 16 21:24:37 2022
+
+-->
+</div>
+</body>
+</html>

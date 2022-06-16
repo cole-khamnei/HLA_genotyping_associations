@@ -27,6 +27,7 @@ def load_biobank_data(data_csv_path: str, udi_map: index_tools.UDIMap) -> pd.Dat
 def clean_biobank_data(biobank_data: pd.DataFrame) -> pd.DataFrame:
     """ cleans the UK BioBank dataframe."""
 
+    biobank_data = biobank_data.loc[:, biobank_data.columns.notna()]
     exclude_features = [column for column in biobank_data.columns
                         if any(token in column for token in constants.TEMPORARILY_EXCLUDE_FEATURE_TOKENS)]
     biobank_data_length = len(biobank_data)

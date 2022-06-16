@@ -1,0 +1,543 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 6</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=6&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 6</span><br>
+<br>Name: Non-cancer Illness
+<p>Description: Tree-structured list used by clinic nurses to code non-cancer illness<p>Note that myasthenia gravis appears twice (under codes 1260 and 1437) and both these should be treated identically.
+<p>This is a hierarchical tree-structured dictionary which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="6"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>474 Categories</h2>Some items were NOT selectable
+<p><table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th><th>Selectable</th><th>Node</th><th>Parent</th></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">cardiovascular</td><td class="txt">No</td><td class="int">1071</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">respiratory/ent</td><td class="txt">No</td><td class="int">1072</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">gastrointestinal/abdominal</td><td class="txt">No</td><td class="int">1073</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">renal/urology</td><td class="txt">No</td><td class="int">1074</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">endocrine/diabetes</td><td class="txt">No</td><td class="int">1075</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">neurology/eye/psychiatry</td><td class="txt">No</td><td class="int">1076</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">musculoskeletal/trauma</td><td class="txt">No</td><td class="int">1077</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">haematology/dermatology</td><td class="txt">No</td><td class="int">1078</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">gynaecology/breast</td><td class="txt">No</td><td class="int">1079</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">immunological/systemic disorders</td><td class="txt">No</td><td class="int">1080</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">1065</td><td class="txt">hypertension</td><td class="txt">Yes</td><td class="int">1081</td><td class="int">1071</td></tr>
+<tr class="row_even"><td class="int">1066</td><td class="txt">heart/cardiac problem</td><td class="txt">Yes</td><td class="int">1082</td><td class="int">1071</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">cerebrovascular disease</td><td class="txt">No</td><td class="int">1083</td><td class="int">1071</td></tr>
+<tr class="row_even"><td class="int">1067</td><td class="txt">peripheral vascular disease</td><td class="txt">Yes</td><td class="int">1084</td><td class="int">1071</td></tr>
+<tr class="row_odd"><td class="int">1068</td><td class="txt">venous thromboembolic disease</td><td class="txt">Yes</td><td class="int">1085</td><td class="int">1071</td></tr>
+<tr class="row_even"><td class="int">1072</td><td class="txt">essential hypertension</td><td class="txt">Yes</td><td class="int">1089</td><td class="int">1081</td></tr>
+<tr class="row_odd"><td class="int">1073</td><td class="txt">gestational hypertension/pre-eclampsia</td><td class="txt">Yes</td><td class="int">1090</td><td class="int">1081</td></tr>
+<tr class="row_even"><td class="int">1074</td><td class="txt">angina</td><td class="txt">Yes</td><td class="int">1091</td><td class="int">1082</td></tr>
+<tr class="row_odd"><td class="int">1075</td><td class="txt">heart attack/myocardial infarction</td><td class="txt">Yes</td><td class="int">1092</td><td class="int">1082</td></tr>
+<tr class="row_even"><td class="int">1076</td><td class="txt">heart failure/pulmonary odema</td><td class="txt">Yes</td><td class="int">1093</td><td class="int">1082</td></tr>
+<tr class="row_odd"><td class="int">1077</td><td class="txt">heart arrhythmia</td><td class="txt">Yes</td><td class="int">1094</td><td class="int">1082</td></tr>
+<tr class="row_even"><td class="int">1078</td><td class="txt">heart valve problem/heart murmur</td><td class="txt">Yes</td><td class="int">1095</td><td class="int">1082</td></tr>
+<tr class="row_odd"><td class="int">1079</td><td class="txt">cardiomyopathy</td><td class="txt">Yes</td><td class="int">1096</td><td class="int">1082</td></tr>
+<tr class="row_even"><td class="int">1080</td><td class="txt">pericardial problem</td><td class="txt">Yes</td><td class="int">1097</td><td class="int">1082</td></tr>
+<tr class="row_odd"><td class="int">1081</td><td class="txt">stroke</td><td class="txt">Yes</td><td class="int">1098</td><td class="int">1083</td></tr>
+<tr class="row_even"><td class="int">1082</td><td class="txt">transient ischaemic attack (tia)</td><td class="txt">Yes</td><td class="int">1099</td><td class="int">1083</td></tr>
+<tr class="row_odd"><td class="int">1083</td><td class="txt">subdural haemorrhage/haematoma</td><td class="txt">Yes</td><td class="int">1100</td><td class="int">1083</td></tr>
+<tr class="row_even"><td class="int">1086</td><td class="txt">subarachnoid haemorrhage</td><td class="txt">Yes</td><td class="int">1103</td><td class="int">1098</td></tr>
+<tr class="row_odd"><td class="int">1087</td><td class="txt">leg claudication/ intermittent claudication</td><td class="txt">Yes</td><td class="int">1104</td><td class="int">1084</td></tr>
+<tr class="row_even"><td class="int">1088</td><td class="txt">arterial embolism</td><td class="txt">Yes</td><td class="int">1105</td><td class="int">1084</td></tr>
+<tr class="row_odd"><td class="int">1093</td><td class="txt">pulmonary embolism +/- dvt</td><td class="txt">Yes</td><td class="int">1111</td><td class="int">1085</td></tr>
+<tr class="row_even"><td class="int">1094</td><td class="txt">deep venous thrombosis (dvt)</td><td class="txt">Yes</td><td class="int">1112</td><td class="int">1085</td></tr>
+<tr class="row_odd"><td class="int">1111</td><td class="txt">asthma</td><td class="txt">Yes</td><td class="int">1130</td><td class="int">1072</td></tr>
+<tr class="row_even"><td class="int">1112</td><td class="txt">chronic obstructive airways disease/copd</td><td class="txt">Yes</td><td class="int">1131</td><td class="int">1072</td></tr>
+<tr class="row_odd"><td class="int">1113</td><td class="txt">emphysema/chronic bronchitis</td><td class="txt">Yes</td><td class="int">1132</td><td class="int">1072</td></tr>
+<tr class="row_even"><td class="int">1114</td><td class="txt">bronchiectasis</td><td class="txt">Yes</td><td class="int">1133</td><td class="int">1072</td></tr>
+<tr class="row_odd"><td class="int">1115</td><td class="txt">interstitial lung disease</td><td class="txt">Yes</td><td class="int">1134</td><td class="int">1072</td></tr>
+<tr class="row_even"><td class="int">1117</td><td class="txt">other respiratory problems</td><td class="txt">Yes</td><td class="int">1136</td><td class="int">1072</td></tr>
+<tr class="row_odd"><td class="int">1120</td><td class="txt">asbestosis</td><td class="txt">Yes</td><td class="int">1139</td><td class="int">1134</td></tr>
+<tr class="row_even"><td class="int">1121</td><td class="txt">pulmonary fibrosis</td><td class="txt">Yes</td><td class="int">1140</td><td class="int">1134</td></tr>
+<tr class="row_odd"><td class="int">1122</td><td class="txt">fibrosing alveolitis/unspecified alveolitis</td><td class="txt">Yes</td><td class="int">1141</td><td class="int">1134</td></tr>
+<tr class="row_even"><td class="int">1123</td><td class="txt">sleep apnoea</td><td class="txt">Yes</td><td class="int">1142</td><td class="int">1136</td></tr>
+<tr class="row_odd"><td class="int">1124</td><td class="txt">respiratory failure</td><td class="txt">Yes</td><td class="int">1143</td><td class="int">1136</td></tr>
+<tr class="row_even"><td class="int">1125</td><td class="txt">pleurisy</td><td class="txt">Yes</td><td class="int">1144</td><td class="int">1136</td></tr>
+<tr class="row_odd"><td class="int">1126</td><td class="txt">spontaneous pneumothorax/recurrent pneumothorax</td><td class="txt">Yes</td><td class="int">1145</td><td class="int">1560</td></tr>
+<tr class="row_even"><td class="int">1134</td><td class="txt">oesophageal disorder</td><td class="txt">Yes</td><td class="int">1153</td><td class="int">1073</td></tr>
+<tr class="row_odd"><td class="int">1135</td><td class="txt">stomach disorder</td><td class="txt">Yes</td><td class="int">1154</td><td class="int">1073</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">bowel problem</td><td class="txt">No</td><td class="int">1155</td><td class="int">1073</td></tr>
+<tr class="row_odd"><td class="int">1136</td><td class="txt">liver/biliary/pancreas problem</td><td class="txt">Yes</td><td class="int">1156</td><td class="int">1073</td></tr>
+<tr class="row_even"><td class="int">1137</td><td class="txt">other abdominal problem</td><td class="txt">Yes</td><td class="int">1158</td><td class="int">1073</td></tr>
+<tr class="row_odd"><td class="int">1138</td><td class="txt">gastro-oesophageal reflux (gord) / gastric reflux</td><td class="txt">Yes</td><td class="int">1159</td><td class="int">1153</td></tr>
+<tr class="row_even"><td class="int">1139</td><td class="txt">oesophagitis/barretts oesophagus</td><td class="txt">Yes</td><td class="int">1160</td><td class="int">1153</td></tr>
+<tr class="row_odd"><td class="int">1140</td><td class="txt">oesophageal stricture</td><td class="txt">Yes</td><td class="int">1161</td><td class="int">1153</td></tr>
+<tr class="row_even"><td class="int">1141</td><td class="txt">oesophageal varicies</td><td class="txt">Yes</td><td class="int">1162</td><td class="int">1153</td></tr>
+<tr class="row_odd"><td class="int">1142</td><td class="txt">gastric/stomach ulcers</td><td class="txt">Yes</td><td class="int">1163</td><td class="int">1154</td></tr>
+<tr class="row_even"><td class="int">1143</td><td class="txt">gastritis/gastric erosions</td><td class="txt">Yes</td><td class="int">1164</td><td class="int">1154</td></tr>
+<tr class="row_odd"><td class="int">1154</td><td class="txt">irritable bowel syndrome</td><td class="txt">Yes</td><td class="int">1175</td><td class="int">1155</td></tr>
+<tr class="row_even"><td class="int">1155</td><td class="txt">hepatitis</td><td class="txt">Yes</td><td class="int">1176</td><td class="int">1156</td></tr>
+<tr class="row_odd"><td class="int">1156</td><td class="txt">infective/viral hepatitis</td><td class="txt">Yes</td><td class="int">1177</td><td class="int">1176</td></tr>
+<tr class="row_even"><td class="int">1157</td><td class="txt">non-infective hepatitis</td><td class="txt">Yes</td><td class="int">1178</td><td class="int">1176</td></tr>
+<tr class="row_odd"><td class="int">1158</td><td class="txt">liver failure/cirrhosis</td><td class="txt">Yes</td><td class="int">1179</td><td class="int">1156</td></tr>
+<tr class="row_even"><td class="int">1159</td><td class="txt">bile duct disease</td><td class="txt">Yes</td><td class="int">1180</td><td class="int">1156</td></tr>
+<tr class="row_odd"><td class="int">1160</td><td class="txt">bile duct obstruction/ascending cholangitis</td><td class="txt">Yes</td><td class="int">1181</td><td class="int">1180</td></tr>
+<tr class="row_even"><td class="int">1161</td><td class="txt">gall bladder disease</td><td class="txt">Yes</td><td class="int">1182</td><td class="int">1156</td></tr>
+<tr class="row_odd"><td class="int">1162</td><td class="txt">cholelithiasis/gall stones</td><td class="txt">Yes</td><td class="int">1183</td><td class="int">1182</td></tr>
+<tr class="row_even"><td class="int">1163</td><td class="txt">cholecystitis</td><td class="txt">Yes</td><td class="int">1184</td><td class="int">1182</td></tr>
+<tr class="row_odd"><td class="int">1164</td><td class="txt">pancreatic disease</td><td class="txt">Yes</td><td class="int">1185</td><td class="int">1156</td></tr>
+<tr class="row_even"><td class="int">1165</td><td class="txt">pancreatitis</td><td class="txt">Yes</td><td class="int">1186</td><td class="int">1185</td></tr>
+<tr class="row_odd"><td class="int">1190</td><td class="txt">peritonitis</td><td class="txt">Yes</td><td class="int">1211</td><td class="int">1158</td></tr>
+<tr class="row_even"><td class="int">1191</td><td class="txt">gastrointestinal bleeding</td><td class="txt">Yes</td><td class="int">1212</td><td class="int">1158</td></tr>
+<tr class="row_odd"><td class="int">1192</td><td class="txt">renal/kidney failure</td><td class="txt">Yes</td><td class="int">1213</td><td class="int">1074</td></tr>
+<tr class="row_even"><td class="int">1193</td><td class="txt">renal failure requiring dialysis</td><td class="txt">Yes</td><td class="int">1214</td><td class="int">1213</td></tr>
+<tr class="row_odd"><td class="int">1194</td><td class="txt">renal failure not requiring dialysis</td><td class="txt">Yes</td><td class="int">1215</td><td class="int">1213</td></tr>
+<tr class="row_even"><td class="int">1196</td><td class="txt">urinary tract infection/kidney infection</td><td class="txt">Yes</td><td class="int">1217</td><td class="int">1074</td></tr>
+<tr class="row_odd"><td class="int">1197</td><td class="txt">kidney stone/ureter stone/bladder stone</td><td class="txt">Yes</td><td class="int">1218</td><td class="int">1074</td></tr>
+<tr class="row_even"><td class="int">1200</td><td class="txt">ureteric obstruction/hydronephrosis</td><td class="txt">Yes</td><td class="int">1221</td><td class="int">1074</td></tr>
+<tr class="row_odd"><td class="int">1201</td><td class="txt">bladder problem (not cancer)</td><td class="txt">Yes</td><td class="int">1222</td><td class="int">1074</td></tr>
+<tr class="row_even"><td class="int">1202</td><td class="txt">urinary frequency / incontinence</td><td class="txt">Yes</td><td class="int">1223</td><td class="int">1222</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">other urological problem (male)</td><td class="txt">No</td><td class="int">1231</td><td class="int">1074</td></tr>
+<tr class="row_even"><td class="int">1207</td><td class="txt">prostate problem (not cancer)</td><td class="txt">Yes</td><td class="int">1232</td><td class="int">1231</td></tr>
+<tr class="row_odd"><td class="int">1210</td><td class="txt">scrotal problem (not cancer)</td><td class="txt">Yes</td><td class="int">1235</td><td class="int">1231</td></tr>
+<tr class="row_even"><td class="int">1214</td><td class="txt">testicular problems (not cancer)</td><td class="txt">Yes</td><td class="int">1239</td><td class="int">1231</td></tr>
+<tr class="row_odd"><td class="int">1220</td><td class="txt">diabetes</td><td class="txt">Yes</td><td class="int">1245</td><td class="int">1075</td></tr>
+<tr class="row_even"><td class="int">1221</td><td class="txt">gestational diabetes</td><td class="txt">Yes</td><td class="int">1246</td><td class="int">1245</td></tr>
+<tr class="row_odd"><td class="int">1222</td><td class="txt">type 1 diabetes</td><td class="txt">Yes</td><td class="int">1247</td><td class="int">1245</td></tr>
+<tr class="row_even"><td class="int">1223</td><td class="txt">type 2 diabetes</td><td class="txt">Yes</td><td class="int">1248</td><td class="int">1245</td></tr>
+<tr class="row_odd"><td class="int">1224</td><td class="txt">thyroid problem (not cancer)</td><td class="txt">Yes</td><td class="int">1249</td><td class="int">1075</td></tr>
+<tr class="row_even"><td class="int">1225</td><td class="txt">hyperthyroidism/thyrotoxicosis</td><td class="txt">Yes</td><td class="int">1250</td><td class="int">1249</td></tr>
+<tr class="row_odd"><td class="int">1226</td><td class="txt">hypothyroidism/myxoedema</td><td class="txt">Yes</td><td class="int">1251</td><td class="int">1249</td></tr>
+<tr class="row_even"><td class="int">1228</td><td class="txt">thyroid radioablation therapy</td><td class="txt">Yes</td><td class="int">1253</td><td class="int">1249</td></tr>
+<tr class="row_odd"><td class="int">1229</td><td class="txt">parathyroid gland problem (not cancer)</td><td class="txt">Yes</td><td class="int">1254</td><td class="int">1075</td></tr>
+<tr class="row_even"><td class="int">1230</td><td class="txt">parathyroid hyperplasia/adenoma</td><td class="txt">Yes</td><td class="int">1255</td><td class="int">1254</td></tr>
+<tr class="row_odd"><td class="int">1232</td><td class="txt">disorder of adrenal gland</td><td class="txt">Yes</td><td class="int">1257</td><td class="int">1075</td></tr>
+<tr class="row_even"><td class="int">1233</td><td class="txt">adrenal tumour</td><td class="txt">Yes</td><td class="int">1258</td><td class="int">1257</td></tr>
+<tr class="row_odd"><td class="int">1234</td><td class="txt">adrenocortical insufficiency/addison&apos;s disease</td><td class="txt">Yes</td><td class="int">1259</td><td class="int">1257</td></tr>
+<tr class="row_even"><td class="int">1235</td><td class="txt">hyperaldosteronism/conn&apos;s syndrome</td><td class="txt">Yes</td><td class="int">1260</td><td class="int">1257</td></tr>
+<tr class="row_odd"><td class="int">1236</td><td class="txt">phaeochromocytoma</td><td class="txt">Yes</td><td class="int">1261</td><td class="int">1257</td></tr>
+<tr class="row_even"><td class="int">1237</td><td class="txt">disorder or pituitary gland</td><td class="txt">Yes</td><td class="int">1262</td><td class="int">1075</td></tr>
+<tr class="row_odd"><td class="int">1238</td><td class="txt">pituitary adenoma/tumour</td><td class="txt">Yes</td><td class="int">1263</td><td class="int">1262</td></tr>
+<tr class="row_even"><td class="int">1239</td><td class="txt">cushings syndrome</td><td class="txt">Yes</td><td class="int">1264</td><td class="int">1075</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">neurology</td><td class="txt">No</td><td class="int">1265</td><td class="int">1076</td></tr>
+<tr class="row_even"><td class="int">1240</td><td class="txt">neurological injury/trauma</td><td class="txt">Yes</td><td class="int">1266</td><td class="int">1076</td></tr>
+<tr class="row_odd"><td class="int">1242</td><td class="txt">eye/eyelid problem</td><td class="txt">Yes</td><td class="int">1268</td><td class="int">1076</td></tr>
+<tr class="row_even"><td class="int">1243</td><td class="txt">psychological/psychiatric problem</td><td class="txt">Yes</td><td class="int">1269</td><td class="int">1076</td></tr>
+<tr class="row_odd"><td class="int">1244</td><td class="txt">infection of nervous system</td><td class="txt">Yes</td><td class="int">1270</td><td class="int">1265</td></tr>
+<tr class="row_even"><td class="int">1245</td><td class="txt">brain abscess/intracranial abscess</td><td class="txt">Yes</td><td class="int">1271</td><td class="int">1270</td></tr>
+<tr class="row_odd"><td class="int">1246</td><td class="txt">encephalitis</td><td class="txt">Yes</td><td class="int">1272</td><td class="int">1270</td></tr>
+<tr class="row_even"><td class="int">1247</td><td class="txt">meningitis</td><td class="txt">Yes</td><td class="int">1273</td><td class="int">1270</td></tr>
+<tr class="row_odd"><td class="int">1248</td><td class="txt">spinal abscess</td><td class="txt">Yes</td><td class="int">1274</td><td class="int">1270</td></tr>
+<tr class="row_even"><td class="int">1249</td><td class="txt">cranial nerve problem/palsy</td><td class="txt">Yes</td><td class="int">1275</td><td class="int">1265</td></tr>
+<tr class="row_odd"><td class="int">1250</td><td class="txt">bell&apos;s palsy/facial nerve palsy</td><td class="txt">Yes</td><td class="int">1276</td><td class="int">1275</td></tr>
+<tr class="row_even"><td class="int">1251</td><td class="txt">spinal cord disorder</td><td class="txt">Yes</td><td class="int">1277</td><td class="int">1265</td></tr>
+<tr class="row_odd"><td class="int">1252</td><td class="txt">paraplegia</td><td class="txt">Yes</td><td class="int">1278</td><td class="int">1277</td></tr>
+<tr class="row_even"><td class="int">1254</td><td class="txt">peripheral nerve disorder</td><td class="txt">Yes</td><td class="int">1280</td><td class="int">1265</td></tr>
+<tr class="row_odd"><td class="int">1255</td><td class="txt">peripheral neuropathy</td><td class="txt">Yes</td><td class="int">1281</td><td class="int">1280</td></tr>
+<tr class="row_even"><td class="int">1256</td><td class="txt">acute infective polyneuritis/guillain-barre syndrome</td><td class="txt">Yes</td><td class="int">1282</td><td class="int">1280</td></tr>
+<tr class="row_odd"><td class="int">1257</td><td class="txt">trapped nerve/compressed nerve</td><td class="txt">Yes</td><td class="int">1283</td><td class="int">1280</td></tr>
+<tr class="row_even"><td class="int">1258</td><td class="txt">chronic/degenerative neurological problem</td><td class="txt">Yes</td><td class="int">1284</td><td class="int">1265</td></tr>
+<tr class="row_odd"><td class="int">1259</td><td class="txt">motor neurone disease</td><td class="txt">Yes</td><td class="int">1285</td><td class="int">1284</td></tr>
+<tr class="row_even"><td class="int">1260</td><td class="txt">myasthenia gravis</td><td class="txt">Yes</td><td class="int">1286</td><td class="int">1284</td></tr>
+<tr class="row_odd"><td class="int">1261</td><td class="txt">multiple sclerosis</td><td class="txt">Yes</td><td class="int">1287</td><td class="int">1284</td></tr>
+<tr class="row_even"><td class="int">1262</td><td class="txt">parkinsons disease</td><td class="txt">Yes</td><td class="int">1288</td><td class="int">1284</td></tr>
+<tr class="row_odd"><td class="int">1263</td><td class="txt">dementia/alzheimers/cognitive impairment</td><td class="txt">Yes</td><td class="int">1289</td><td class="int">1284</td></tr>
+<tr class="row_even"><td class="int">1264</td><td class="txt">epilepsy</td><td class="txt">Yes</td><td class="int">1290</td><td class="int">1265</td></tr>
+<tr class="row_odd"><td class="int">1265</td><td class="txt">migraine</td><td class="txt">Yes</td><td class="int">1291</td><td class="int">1265</td></tr>
+<tr class="row_even"><td class="int">1266</td><td class="txt">head injury</td><td class="txt">Yes</td><td class="int">1292</td><td class="int">1266</td></tr>
+<tr class="row_odd"><td class="int">1267</td><td class="txt">spinal injury</td><td class="txt">Yes</td><td class="int">1293</td><td class="int">1266</td></tr>
+<tr class="row_even"><td class="int">1274</td><td class="txt">eye infection</td><td class="txt">Yes</td><td class="int">1300</td><td class="int">1268</td></tr>
+<tr class="row_odd"><td class="int">1275</td><td class="txt">retinal problem</td><td class="txt">Yes</td><td class="int">1301</td><td class="int">1268</td></tr>
+<tr class="row_even"><td class="int">1276</td><td class="txt">diabetic eye disease</td><td class="txt">Yes</td><td class="int">1302</td><td class="int">1268</td></tr>
+<tr class="row_odd"><td class="int">1277</td><td class="txt">glaucoma</td><td class="txt">Yes</td><td class="int">1303</td><td class="int">1268</td></tr>
+<tr class="row_even"><td class="int">1278</td><td class="txt">cataract</td><td class="txt">Yes</td><td class="int">1304</td><td class="int">1268</td></tr>
+<tr class="row_odd"><td class="int">1279</td><td class="txt">eye trauma</td><td class="txt">Yes</td><td class="int">1305</td><td class="int">1268</td></tr>
+<tr class="row_even"><td class="int">1281</td><td class="txt">retinal detachment</td><td class="txt">Yes</td><td class="int">1307</td><td class="int">1301</td></tr>
+<tr class="row_odd"><td class="int">1282</td><td class="txt">retinal artery/vein occlusion</td><td class="txt">Yes</td><td class="int">1308</td><td class="int">1301</td></tr>
+<tr class="row_even"><td class="int">1286</td><td class="txt">depression</td><td class="txt">Yes</td><td class="int">1312</td><td class="int">1269</td></tr>
+<tr class="row_odd"><td class="int">1287</td><td class="txt">anxiety/panic attacks</td><td class="txt">Yes</td><td class="int">1313</td><td class="int">1269</td></tr>
+<tr class="row_even"><td class="int">1288</td><td class="txt">nervous breakdown</td><td class="txt">Yes</td><td class="int">1314</td><td class="int">1269</td></tr>
+<tr class="row_odd"><td class="int">1289</td><td class="txt">schizophrenia</td><td class="txt">Yes</td><td class="int">1315</td><td class="int">1269</td></tr>
+<tr class="row_even"><td class="int">1290</td><td class="txt">deliberate self-harm/suicide attempt</td><td class="txt">Yes</td><td class="int">1316</td><td class="int">1269</td></tr>
+<tr class="row_odd"><td class="int">1291</td><td class="txt">mania/bipolar disorder/manic depression</td><td class="txt">Yes</td><td class="int">1317</td><td class="int">1269</td></tr>
+<tr class="row_even"><td class="int">1293</td><td class="txt">bone disorder</td><td class="txt">Yes</td><td class="int">1319</td><td class="int">1077</td></tr>
+<tr class="row_odd"><td class="int">1294</td><td class="txt">back problem</td><td class="txt">Yes</td><td class="int">1320</td><td class="int">1077</td></tr>
+<tr class="row_even"><td class="int">1295</td><td class="txt">joint disorder</td><td class="txt">Yes</td><td class="int">1321</td><td class="int">1077</td></tr>
+<tr class="row_odd"><td class="int">1297</td><td class="txt">muscle/soft tissue problem</td><td class="txt">Yes</td><td class="int">1323</td><td class="int">1077</td></tr>
+<tr class="row_even"><td class="int">1308</td><td class="txt">osteomyelitis</td><td class="txt">Yes</td><td class="int">1347</td><td class="int">1319</td></tr>
+<tr class="row_odd"><td class="int">1309</td><td class="txt">osteoporosis</td><td class="txt">Yes</td><td class="int">1348</td><td class="int">1319</td></tr>
+<tr class="row_even"><td class="int">1310</td><td class="txt">paget&apos;s disease</td><td class="txt">Yes</td><td class="int">1349</td><td class="int">1319</td></tr>
+<tr class="row_odd"><td class="int">1311</td><td class="txt">spine arthritis/spondylitis</td><td class="txt">Yes</td><td class="int">1350</td><td class="int">1320</td></tr>
+<tr class="row_even"><td class="int">1312</td><td class="txt">prolapsed disc/slipped disc</td><td class="txt">Yes</td><td class="int">1351</td><td class="int">1595</td></tr>
+<tr class="row_odd"><td class="int">1313</td><td class="txt">ankylosing spondylitis</td><td class="txt">Yes</td><td class="int">1352</td><td class="int">1320</td></tr>
+<tr class="row_even"><td class="int">1322</td><td class="txt">myositis/myopathy</td><td class="txt">Yes</td><td class="int">1361</td><td class="int">1323</td></tr>
+<tr class="row_odd"><td class="int">1327</td><td class="txt">low platelets/platelet disorder</td><td class="txt">Yes</td><td class="int">1366</td><td class="int">1503</td></tr>
+<tr class="row_even"><td class="int">1328</td><td class="txt">haemophilia</td><td class="txt">Yes</td><td class="int">1367</td><td class="int">1503</td></tr>
+<tr class="row_odd"><td class="int">1330</td><td class="txt">iron deficiency anaemia</td><td class="txt">Yes</td><td class="int">1369</td><td class="int">1504</td></tr>
+<tr class="row_even"><td class="int">1331</td><td class="txt">pernicious anaemia</td><td class="txt">Yes</td><td class="int">1370</td><td class="int">1504</td></tr>
+<tr class="row_odd"><td class="int">1332</td><td class="txt">aplastic anaemia</td><td class="txt">Yes</td><td class="int">1371</td><td class="int">1504</td></tr>
+<tr class="row_even"><td class="int">1339</td><td class="txt">sickle cell disease</td><td class="txt">Yes</td><td class="int">1378</td><td class="int">1509</td></tr>
+<tr class="row_odd"><td class="int">1340</td><td class="txt">thalassaemia</td><td class="txt">Yes</td><td class="int">1379</td><td class="int">1509</td></tr>
+<tr class="row_even"><td class="int">1344</td><td class="txt">stevens johnson syndrome</td><td class="txt">Yes</td><td class="int">1386</td><td class="int">1513</td></tr>
+<tr class="row_odd"><td class="int">1345</td><td class="txt">pemphigoid/pemphigus</td><td class="txt">Yes</td><td class="int">1387</td><td class="int">1513</td></tr>
+<tr class="row_even"><td class="int">1348</td><td class="txt">gynaecological disorder (not cancer)</td><td class="txt">Yes</td><td class="int">1390</td><td class="int">1079</td></tr>
+<tr class="row_odd"><td class="int">1349</td><td class="txt">ovarian cyst or cysts</td><td class="txt">Yes</td><td class="int">1391</td><td class="int">1614</td></tr>
+<tr class="row_even"><td class="int">1350</td><td class="txt">polycystic ovaries/polycystic ovarian syndrome</td><td class="txt">Yes</td><td class="int">1392</td><td class="int">1614</td></tr>
+<tr class="row_odd"><td class="int">1351</td><td class="txt">uterine fibroids</td><td class="txt">Yes</td><td class="int">1393</td><td class="int">1615</td></tr>
+<tr class="row_even"><td class="int">1352</td><td class="txt">uterine polyps</td><td class="txt">Yes</td><td class="int">1394</td><td class="int">1615</td></tr>
+<tr class="row_odd"><td class="int">1353</td><td class="txt">vaginal prolapse/uterine prolapse</td><td class="txt">Yes</td><td class="int">1395</td><td class="int">1615</td></tr>
+<tr class="row_even"><td class="int">1364</td><td class="txt">breast disease (not cancer)</td><td class="txt">Yes</td><td class="int">1407</td><td class="int">1079</td></tr>
+<tr class="row_odd"><td class="int">1366</td><td class="txt">fibrocystic disease</td><td class="txt">Yes</td><td class="int">1409</td><td class="int">1407</td></tr>
+<tr class="row_even"><td class="int">1367</td><td class="txt">breast cysts</td><td class="txt">Yes</td><td class="int">1410</td><td class="int">1407</td></tr>
+<tr class="row_odd"><td class="int">1371</td><td class="txt">sarcoidosis</td><td class="txt">Yes</td><td class="int">1414</td><td class="int">1080</td></tr>
+<tr class="row_even"><td class="int">1372</td><td class="txt">vasculitis</td><td class="txt">Yes</td><td class="int">1415</td><td class="int">1416</td></tr>
+<tr class="row_odd"><td class="int">1373</td><td class="txt">connective tissue disorder</td><td class="txt">Yes</td><td class="int">1416</td><td class="int">1080</td></tr>
+<tr class="row_even"><td class="int">1374</td><td class="txt">allergy/hypersensitivity/anaphylaxis</td><td class="txt">Yes</td><td class="int">1417</td><td class="int">1080</td></tr>
+<tr class="row_odd"><td class="int">1376</td><td class="txt">giant cell/temporal arteritis</td><td class="txt">Yes</td><td class="int">1419</td><td class="int">1415</td></tr>
+<tr class="row_even"><td class="int">1377</td><td class="txt">polymyalgia rheumatica</td><td class="txt">Yes</td><td class="int">1420</td><td class="int">1415</td></tr>
+<tr class="row_odd"><td class="int">1378</td><td class="txt">wegners granulmatosis</td><td class="txt">Yes</td><td class="int">1421</td><td class="int">1415</td></tr>
+<tr class="row_even"><td class="int">1379</td><td class="txt">microscopic polyarteritis</td><td class="txt">Yes</td><td class="int">1422</td><td class="int">1415</td></tr>
+<tr class="row_odd"><td class="int">1380</td><td class="txt">polyartertis nodosa</td><td class="txt">Yes</td><td class="int">1423</td><td class="int">1415</td></tr>
+<tr class="row_even"><td class="int">1381</td><td class="txt">systemic lupus erythematosis/sle</td><td class="txt">Yes</td><td class="int">1424</td><td class="int">1416</td></tr>
+<tr class="row_odd"><td class="int">1382</td><td class="txt">sjogren&apos;s syndrome/sicca syndrome</td><td class="txt">Yes</td><td class="int">1425</td><td class="int">1416</td></tr>
+<tr class="row_even"><td class="int">1383</td><td class="txt">dermatopolymyositis</td><td class="txt">Yes</td><td class="int">1426</td><td class="int">1416</td></tr>
+<tr class="row_odd"><td class="int">1384</td><td class="txt">scleroderma/systemic sclerosis</td><td class="txt">Yes</td><td class="int">1427</td><td class="int">1416</td></tr>
+<tr class="row_even"><td class="int">1385</td><td class="txt">allergy or anaphylactic reaction to food</td><td class="txt">Yes</td><td class="int">1428</td><td class="int">1417</td></tr>
+<tr class="row_odd"><td class="int">1386</td><td class="txt">allergy or anaphylactic reaction to drug</td><td class="txt">Yes</td><td class="int">1429</td><td class="int">1417</td></tr>
+<tr class="row_even"><td class="int">1387</td><td class="txt">hayfever/allergic rhinitis</td><td class="txt">Yes</td><td class="int">1430</td><td class="int">1417</td></tr>
+<tr class="row_odd"><td class="int">1394</td><td class="txt">peripheral nerve injury</td><td class="txt">Yes</td><td class="int">1438</td><td class="int">1266</td></tr>
+<tr class="row_even"><td class="int">1396</td><td class="txt">enlarged prostate</td><td class="txt">Yes</td><td class="int">1441</td><td class="int">1232</td></tr>
+<tr class="row_odd"><td class="int">1397</td><td class="txt">other demyelinating disease (not multiple sclerosis)</td><td class="txt">Yes</td><td class="int">1442</td><td class="int">1284</td></tr>
+<tr class="row_even"><td class="int">1398</td><td class="txt">pneumonia</td><td class="txt">Yes</td><td class="int">1443</td><td class="int">1660</td></tr>
+<tr class="row_odd"><td class="int">1400</td><td class="txt">peptic ulcer</td><td class="txt">Yes</td><td class="int">1445</td><td class="int">1158</td></tr>
+<tr class="row_even"><td class="int">1402</td><td class="txt">endometriosis</td><td class="txt">Yes</td><td class="int">1451</td><td class="int">1615</td></tr>
+<tr class="row_odd"><td class="int">1403</td><td class="txt">female infertility</td><td class="txt">Yes</td><td class="int">1452</td><td class="int">1390</td></tr>
+<tr class="row_even"><td class="int">1404</td><td class="txt">male infertility</td><td class="txt">Yes</td><td class="int">1453</td><td class="int">1231</td></tr>
+<tr class="row_odd"><td class="int">1405</td><td class="txt">other renal/kidney problem</td><td class="txt">Yes</td><td class="int">1454</td><td class="int">1074</td></tr>
+<tr class="row_even"><td class="int">1406</td><td class="txt">muscle or soft tissue injuries</td><td class="txt">Yes</td><td class="int">1457</td><td class="int">1323</td></tr>
+<tr class="row_odd"><td class="int">1407</td><td class="txt">burns</td><td class="txt">Yes</td><td class="int">1458</td><td class="int">1077</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">substance abuse/dependency</td><td class="txt">No</td><td class="int">1460</td><td class="int">1269</td></tr>
+<tr class="row_odd"><td class="int">1408</td><td class="txt">alcohol dependency</td><td class="txt">Yes</td><td class="int">1461</td><td class="int">1460</td></tr>
+<tr class="row_even"><td class="int">1409</td><td class="txt">opioid dependency</td><td class="txt">Yes</td><td class="int">1462</td><td class="int">1460</td></tr>
+<tr class="row_odd"><td class="int">1410</td><td class="txt">other substance abuse/dependency</td><td class="txt">Yes</td><td class="int">1463</td><td class="int">1460</td></tr>
+<tr class="row_even"><td class="int">1411</td><td class="txt">lung abscess</td><td class="txt">Yes</td><td class="int">1464</td><td class="int">1660</td></tr>
+<tr class="row_odd"><td class="int">1412</td><td class="txt">bronchitis</td><td class="txt">Yes</td><td class="int">1465</td><td class="int">1132</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">ent disorder/not cancer</td><td class="txt">No</td><td class="int">1466</td><td class="int">1072</td></tr>
+<tr class="row_odd"><td class="int">1413</td><td class="txt">nasal/sinus disorder</td><td class="txt">Yes</td><td class="int">1467</td><td class="int">1466</td></tr>
+<tr class="row_even"><td class="int">1414</td><td class="txt">throat or larynx disorder</td><td class="txt">Yes</td><td class="int">1468</td><td class="int">1466</td></tr>
+<tr class="row_odd"><td class="int">1415</td><td class="txt">ear/vestibular disorder</td><td class="txt">Yes</td><td class="int">1469</td><td class="int">1466</td></tr>
+<tr class="row_even"><td class="int">1416</td><td class="txt">chronic sinusitis</td><td class="txt">Yes</td><td class="int">1470</td><td class="int">1467</td></tr>
+<tr class="row_odd"><td class="int">1417</td><td class="txt">nasal polyps</td><td class="txt">Yes</td><td class="int">1471</td><td class="int">1467</td></tr>
+<tr class="row_even"><td class="int">1418</td><td class="txt">chronic laryngitis</td><td class="txt">Yes</td><td class="int">1472</td><td class="int">1468</td></tr>
+<tr class="row_odd"><td class="int">1419</td><td class="txt">vocal cord polyp</td><td class="txt">Yes</td><td class="int">1473</td><td class="int">1468</td></tr>
+<tr class="row_even"><td class="int">1420</td><td class="txt">otosclerosis</td><td class="txt">Yes</td><td class="int">1474</td><td class="int">1469</td></tr>
+<tr class="row_odd"><td class="int">1421</td><td class="txt">meniere&apos;s disease</td><td class="txt">Yes</td><td class="int">1475</td><td class="int">1469</td></tr>
+<tr class="row_even"><td class="int">1425</td><td class="txt">cerebral aneurysm</td><td class="txt">Yes</td><td class="int">1480</td><td class="int">1083</td></tr>
+<tr class="row_odd"><td class="int">1426</td><td class="txt">myocarditis</td><td class="txt">Yes</td><td class="int">1481</td><td class="int">1082</td></tr>
+<tr class="row_even"><td class="int">1427</td><td class="txt">polycystic kidney</td><td class="txt">Yes</td><td class="int">1482</td><td class="int">1454</td></tr>
+<tr class="row_odd"><td class="int">1428</td><td class="txt">thyroiditis</td><td class="txt">Yes</td><td class="int">1483</td><td class="int">1249</td></tr>
+<tr class="row_even"><td class="int">1429</td><td class="txt">acromegaly</td><td class="txt">Yes</td><td class="int">1484</td><td class="int">1262</td></tr>
+<tr class="row_odd"><td class="int">1430</td><td class="txt">hypopituitarism</td><td class="txt">Yes</td><td class="int">1485</td><td class="int">1262</td></tr>
+<tr class="row_even"><td class="int">1431</td><td class="txt">hyperprolactinaemia</td><td class="txt">Yes</td><td class="int">1486</td><td class="int">1262</td></tr>
+<tr class="row_odd"><td class="int">1432</td><td class="txt">carcinoid syndrome/tumour</td><td class="txt">Yes</td><td class="int">1487</td><td class="int">1075</td></tr>
+<tr class="row_even"><td class="int">1433</td><td class="txt">cerebral palsy</td><td class="txt">Yes</td><td class="int">1488</td><td class="int">1265</td></tr>
+<tr class="row_odd"><td class="int">1434</td><td class="txt">other neurological problem</td><td class="txt">Yes</td><td class="int">1489</td><td class="int">1265</td></tr>
+<tr class="row_even"><td class="int">1435</td><td class="txt">optic neuritis</td><td class="txt">Yes</td><td class="int">1490</td><td class="int">1268</td></tr>
+<tr class="row_odd"><td class="int">1436</td><td class="txt">headaches (not migraine)</td><td class="txt">Yes</td><td class="int">1491</td><td class="int">1489</td></tr>
+<tr class="row_even"><td class="int">1437</td><td class="txt">myasthenia gravis</td><td class="txt">Yes</td><td class="int">1492</td><td class="int">1489</td></tr>
+<tr class="row_odd"><td class="int">1438</td><td class="txt">polycythaemia vera</td><td class="txt">Yes</td><td class="int">1493</td><td class="int">1507</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">infections</td><td class="txt">No</td><td class="int">1495</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">haematology</td><td class="txt">No</td><td class="int">1502</td><td class="int">1078</td></tr>
+<tr class="row_even"><td class="int">1445</td><td class="txt">clotting disorder/excessive bleeding</td><td class="txt">Yes</td><td class="int">1503</td><td class="int">1502</td></tr>
+<tr class="row_odd"><td class="int">1446</td><td class="txt">anaemia</td><td class="txt">Yes</td><td class="int">1504</td><td class="int">1502</td></tr>
+<tr class="row_even"><td class="int">1447</td><td class="txt">pancytopenia</td><td class="txt">Yes</td><td class="int">1505</td><td class="int">1502</td></tr>
+<tr class="row_odd"><td class="int">1448</td><td class="txt">neutropenia/lymphopenia</td><td class="txt">Yes</td><td class="int">1506</td><td class="int">1502</td></tr>
+<tr class="row_even"><td class="int">1449</td><td class="txt">myeloproliferative disorder</td><td class="txt">Yes</td><td class="int">1507</td><td class="int">1502</td></tr>
+<tr class="row_odd"><td class="int">1450</td><td class="txt">monoclonal gammopathy/not myeloma</td><td class="txt">Yes</td><td class="int">1508</td><td class="int">1502</td></tr>
+<tr class="row_even"><td class="int">1451</td><td class="txt">hereditary/genetic haematological disorder</td><td class="txt">Yes</td><td class="int">1509</td><td class="int">1502</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">dermatology</td><td class="txt">No</td><td class="int">1510</td><td class="int">1078</td></tr>
+<tr class="row_even"><td class="int">1452</td><td class="txt">eczema/dermatitis</td><td class="txt">Yes</td><td class="int">1511</td><td class="int">1510</td></tr>
+<tr class="row_odd"><td class="int">1453</td><td class="txt">psoriasis</td><td class="txt">Yes</td><td class="int">1512</td><td class="int">1510</td></tr>
+<tr class="row_even"><td class="int">1454</td><td class="txt">blistering/desquamating skin disorder</td><td class="txt">Yes</td><td class="int">1513</td><td class="int">1510</td></tr>
+<tr class="row_odd"><td class="int">1455</td><td class="txt">chronic skin ulcers</td><td class="txt">Yes</td><td class="int">1514</td><td class="int">1510</td></tr>
+<tr class="row_even"><td class="int">1456</td><td class="txt">malabsorption/coeliac disease</td><td class="txt">Yes</td><td class="int">1516</td><td class="int">1155</td></tr>
+<tr class="row_odd"><td class="int">1457</td><td class="txt">duodenal ulcer</td><td class="txt">Yes</td><td class="int">1517</td><td class="int">1155</td></tr>
+<tr class="row_even"><td class="int">1458</td><td class="txt">diverticular disease/diverticulitis</td><td class="txt">Yes</td><td class="int">1518</td><td class="int">1155</td></tr>
+<tr class="row_odd"><td class="int">1459</td><td class="txt">colitis/not crohns or ulcerative colitis</td><td class="txt">Yes</td><td class="int">1519</td><td class="int">1155</td></tr>
+<tr class="row_even"><td class="int">1460</td><td class="txt">rectal or colon adenoma/polyps</td><td class="txt">Yes</td><td class="int">1520</td><td class="int">1155</td></tr>
+<tr class="row_odd"><td class="int">1461</td><td class="txt">inflammatory bowel disease</td><td class="txt">Yes</td><td class="int">1521</td><td class="int">1155</td></tr>
+<tr class="row_even"><td class="int">1462</td><td class="txt">crohns disease</td><td class="txt">Yes</td><td class="int">1522</td><td class="int">1521</td></tr>
+<tr class="row_odd"><td class="int">1463</td><td class="txt">ulcerative colitis</td><td class="txt">Yes</td><td class="int">1523</td><td class="int">1521</td></tr>
+<tr class="row_even"><td class="int">1464</td><td class="txt">rheumatoid arthritis</td><td class="txt">Yes</td><td class="int">1524</td><td class="int">1321</td></tr>
+<tr class="row_odd"><td class="int">1465</td><td class="txt">osteoarthritis</td><td class="txt">Yes</td><td class="int">1525</td><td class="int">1321</td></tr>
+<tr class="row_even"><td class="int">1466</td><td class="txt">gout</td><td class="txt">Yes</td><td class="int">1526</td><td class="int">1321</td></tr>
+<tr class="row_odd"><td class="int">1467</td><td class="txt">other joint disorder</td><td class="txt">Yes</td><td class="int">1527</td><td class="int">1321</td></tr>
+<tr class="row_even"><td class="int">1468</td><td class="txt">diabetic neuropathy/ulcers</td><td class="txt">Yes</td><td class="int">1528</td><td class="int">1280</td></tr>
+<tr class="row_odd"><td class="int">1469</td><td class="txt">post-traumatic stress disorder</td><td class="txt">Yes</td><td class="int">1530</td><td class="int">1269</td></tr>
+<tr class="row_even"><td class="int">1470</td><td class="txt">anorexia/bulimia/other eating disorder</td><td class="txt">Yes</td><td class="int">1531</td><td class="int">1269</td></tr>
+<tr class="row_odd"><td class="int">1471</td><td class="txt">atrial fibrillation</td><td class="txt">Yes</td><td class="int">1532</td><td class="int">1094</td></tr>
+<tr class="row_even"><td class="int">1472</td><td class="txt">emphysema</td><td class="txt">Yes</td><td class="int">1534</td><td class="int">1132</td></tr>
+<tr class="row_odd"><td class="int">1473</td><td class="txt">high cholesterol</td><td class="txt">Yes</td><td class="int">1536</td><td class="int">1071</td></tr>
+<tr class="row_even"><td class="int">1474</td><td class="txt">hiatus hernia</td><td class="txt">Yes</td><td class="int">1537</td><td class="int">1153</td></tr>
+<tr class="row_odd"><td class="int">1475</td><td class="txt">sclerosing cholangitis</td><td class="txt">Yes</td><td class="int">1538</td><td class="int">1180</td></tr>
+<tr class="row_even"><td class="int">1476</td><td class="txt">sciatica</td><td class="txt">Yes</td><td class="int">1539</td><td class="int">1320</td></tr>
+<tr class="row_odd"><td class="int">1477</td><td class="txt">psoriatic arthropathy</td><td class="txt">Yes</td><td class="int">1540</td><td class="int">1321</td></tr>
+<tr class="row_even"><td class="int">1478</td><td class="txt">cervical spondylosis</td><td class="txt">Yes</td><td class="int">1541</td><td class="int">1608</td></tr>
+<tr class="row_odd"><td class="int">1479</td><td class="txt">rheumatic fever</td><td class="txt">Yes</td><td class="int">1542</td><td class="int">1082</td></tr>
+<tr class="row_even"><td class="int">1480</td><td class="txt">dermatomyositis</td><td class="txt">Yes</td><td class="int">1543</td><td class="int">1426</td></tr>
+<tr class="row_odd"><td class="int">1481</td><td class="txt">polymyositis</td><td class="txt">Yes</td><td class="int">1544</td><td class="int">1426</td></tr>
+<tr class="row_even"><td class="int">1482</td><td class="txt">chronic fatigue syndrome</td><td class="txt">Yes</td><td class="int">1545</td><td class="int">1080</td></tr>
+<tr class="row_odd"><td class="int">1483</td><td class="txt">atrial flutter</td><td class="txt">Yes</td><td class="int">1546</td><td class="int">1094</td></tr>
+<tr class="row_even"><td class="int">1484</td><td class="txt">wolff parkinson white / wpw syndrome</td><td class="txt">Yes</td><td class="int">1547</td><td class="int">1094</td></tr>
+<tr class="row_odd"><td class="int">1485</td><td class="txt">irregular heart beat</td><td class="txt">Yes</td><td class="int">1548</td><td class="int">1094</td></tr>
+<tr class="row_even"><td class="int">1486</td><td class="txt">sick sinus syndrome</td><td class="txt">Yes</td><td class="int">1549</td><td class="int">1094</td></tr>
+<tr class="row_odd"><td class="int">1487</td><td class="txt">svt / supraventricular tachycardia</td><td class="txt">Yes</td><td class="int">1550</td><td class="int">1094</td></tr>
+<tr class="row_even"><td class="int">1488</td><td class="txt">mitral valve prolapse</td><td class="txt">Yes</td><td class="int">1551</td><td class="int">1650</td></tr>
+<tr class="row_odd"><td class="int">1489</td><td class="txt">mitral stenosis</td><td class="txt">Yes</td><td class="int">1552</td><td class="int">1650</td></tr>
+<tr class="row_even"><td class="int">1490</td><td class="txt">aortic stenosis</td><td class="txt">Yes</td><td class="int">1553</td><td class="int">1652</td></tr>
+<tr class="row_odd"><td class="int">1491</td><td class="txt">brain haemorrhage</td><td class="txt">Yes</td><td class="int">1554</td><td class="int">1098</td></tr>
+<tr class="row_even"><td class="int">1492</td><td class="txt">aortic aneurysm</td><td class="txt">Yes</td><td class="int">1555</td><td class="int">1084</td></tr>
+<tr class="row_odd"><td class="int">1493</td><td class="txt">other venous/lymphatic disease</td><td class="txt">Yes</td><td class="int">1556</td><td class="int">1071</td></tr>
+<tr class="row_even"><td class="int">1494</td><td class="txt">varicose veins</td><td class="txt">Yes</td><td class="int">1557</td><td class="int">1556</td></tr>
+<tr class="row_odd"><td class="int">1495</td><td class="txt">lymphoedema</td><td class="txt">Yes</td><td class="int">1558</td><td class="int">1556</td></tr>
+<tr class="row_even"><td class="int">1496</td><td class="txt">alpha-1 antitrypsin deficiency</td><td class="txt">Yes</td><td class="int">1559</td><td class="int">1132</td></tr>
+<tr class="row_odd"><td class="int">1497</td><td class="txt">pneumothorax</td><td class="txt">Yes</td><td class="int">1560</td><td class="int">1136</td></tr>
+<tr class="row_even"><td class="int">1498</td><td class="txt">empyema</td><td class="txt">Yes</td><td class="int">1561</td><td class="int">1660</td></tr>
+<tr class="row_odd"><td class="int">1499</td><td class="txt">labyrinthitis</td><td class="txt">Yes</td><td class="int">1562</td><td class="int">1469</td></tr>
+<tr class="row_even"><td class="int">1500</td><td class="txt">vertigo</td><td class="txt">Yes</td><td class="int">1563</td><td class="int">1469</td></tr>
+<tr class="row_odd"><td class="int">1501</td><td class="txt">pyloric stenosis</td><td class="txt">Yes</td><td class="int">1564</td><td class="int">1154</td></tr>
+<tr class="row_even"><td class="int">1502</td><td class="txt">appendicitis</td><td class="txt">Yes</td><td class="int">1565</td><td class="int">1155</td></tr>
+<tr class="row_odd"><td class="int">1503</td><td class="txt">anal problem</td><td class="txt">Yes</td><td class="int">1566</td><td class="int">1155</td></tr>
+<tr class="row_even"><td class="int">1504</td><td class="txt">anal fissure</td><td class="txt">Yes</td><td class="int">1567</td><td class="int">1566</td></tr>
+<tr class="row_odd"><td class="int">1505</td><td class="txt">haemorrhoids / piles</td><td class="txt">Yes</td><td class="int">1568</td><td class="int">1566</td></tr>
+<tr class="row_even"><td class="int">1506</td><td class="txt">primary biliary cirrhosis</td><td class="txt">Yes</td><td class="int">1569</td><td class="int">1179</td></tr>
+<tr class="row_odd"><td class="int">1507</td><td class="txt">haemochromatosis</td><td class="txt">Yes</td><td class="int">1570</td><td class="int">1156</td></tr>
+<tr class="row_even"><td class="int">1508</td><td class="txt">jaundice (unknown cause)</td><td class="txt">Yes</td><td class="int">1571</td><td class="int">1156</td></tr>
+<tr class="row_odd"><td class="int">1509</td><td class="txt">gastroenteritis/dysentry</td><td class="txt">Yes</td><td class="int">1572</td><td class="int">1158</td></tr>
+<tr class="row_even"><td class="int">1510</td><td class="txt">dyspepsia / indigestion</td><td class="txt">Yes</td><td class="int">1573</td><td class="int">1158</td></tr>
+<tr class="row_odd"><td class="int">1511</td><td class="txt">abdominal hernia</td><td class="txt">Yes</td><td class="int">1574</td><td class="int">1158</td></tr>
+<tr class="row_even"><td class="int">1512</td><td class="txt">umbilical hernia</td><td class="txt">Yes</td><td class="int">1575</td><td class="int">1574</td></tr>
+<tr class="row_odd"><td class="int">1513</td><td class="txt">inguinal hernia</td><td class="txt">Yes</td><td class="int">1576</td><td class="int">1574</td></tr>
+<tr class="row_even"><td class="int">1514</td><td class="txt">cystitis</td><td class="txt">Yes</td><td class="int">1577</td><td class="int">1217</td></tr>
+<tr class="row_odd"><td class="int">1515</td><td class="txt">pyelonephritis</td><td class="txt">Yes</td><td class="int">1578</td><td class="int">1217</td></tr>
+<tr class="row_even"><td class="int">1516</td><td class="txt">bph / benign prostatic hypertrophy</td><td class="txt">Yes</td><td class="int">1579</td><td class="int">1232</td></tr>
+<tr class="row_odd"><td class="int">1517</td><td class="txt">prostatitis</td><td class="txt">Yes</td><td class="int">1580</td><td class="int">1232</td></tr>
+<tr class="row_even"><td class="int">1518</td><td class="txt">erectile dysfunction / impotence</td><td class="txt">Yes</td><td class="int">1581</td><td class="int">1231</td></tr>
+<tr class="row_odd"><td class="int">1519</td><td class="txt">kidney nephropathy</td><td class="txt">Yes</td><td class="int">1582</td><td class="int">1454</td></tr>
+<tr class="row_even"><td class="int">1520</td><td class="txt">iga nephropathy</td><td class="txt">Yes</td><td class="int">1583</td><td class="int">1582</td></tr>
+<tr class="row_odd"><td class="int">1521</td><td class="txt">diabetes insipidus</td><td class="txt">Yes</td><td class="int">1584</td><td class="int">1245</td></tr>
+<tr class="row_even"><td class="int">1522</td><td class="txt">grave&apos;s disease</td><td class="txt">Yes</td><td class="int">1585</td><td class="int">1249</td></tr>
+<tr class="row_odd"><td class="int">1523</td><td class="txt">trigemminal neuralgia</td><td class="txt">Yes</td><td class="int">1586</td><td class="int">1275</td></tr>
+<tr class="row_even"><td class="int">1524</td><td class="txt">spina bifida</td><td class="txt">Yes</td><td class="int">1587</td><td class="int">1277</td></tr>
+<tr class="row_odd"><td class="int">1525</td><td class="txt">benign / essential tremor</td><td class="txt">Yes</td><td class="int">1588</td><td class="int">1489</td></tr>
+<tr class="row_even"><td class="int">1526</td><td class="txt">polio / poliomyelitis</td><td class="txt">Yes</td><td class="int">1589</td><td class="int">1489</td></tr>
+<tr class="row_odd"><td class="int">1527</td><td class="txt">retinitis pigmentosa</td><td class="txt">Yes</td><td class="int">1590</td><td class="int">1301</td></tr>
+<tr class="row_even"><td class="int">1528</td><td class="txt">macular degeneration</td><td class="txt">Yes</td><td class="int">1591</td><td class="int">1301</td></tr>
+<tr class="row_odd"><td class="int">1529</td><td class="txt">dry eyes</td><td class="txt">Yes</td><td class="int">1592</td><td class="int">1268</td></tr>
+<tr class="row_even"><td class="int">1530</td><td class="txt">iritis</td><td class="txt">Yes</td><td class="int">1593</td><td class="int">1268</td></tr>
+<tr class="row_odd"><td class="int">1531</td><td class="txt">post-natal depression</td><td class="txt">Yes</td><td class="int">1594</td><td class="int">1312</td></tr>
+<tr class="row_even"><td class="int">1532</td><td class="txt">disc problem</td><td class="txt">Yes</td><td class="int">1595</td><td class="int">1320</td></tr>
+<tr class="row_odd"><td class="int">1533</td><td class="txt">disc degeneration</td><td class="txt">Yes</td><td class="int">1596</td><td class="int">1595</td></tr>
+<tr class="row_even"><td class="int">1534</td><td class="txt">back pain</td><td class="txt">Yes</td><td class="int">1597</td><td class="int">1320</td></tr>
+<tr class="row_odd"><td class="int">1535</td><td class="txt">scoliosis</td><td class="txt">Yes</td><td class="int">1598</td><td class="int">1320</td></tr>
+<tr class="row_even"><td class="int">1536</td><td class="txt">spinal stenosis</td><td class="txt">Yes</td><td class="int">1599</td><td class="int">1320</td></tr>
+<tr class="row_odd"><td class="int">1537</td><td class="txt">joint pain</td><td class="txt">Yes</td><td class="int">1600</td><td class="int">1527</td></tr>
+<tr class="row_even"><td class="int">1538</td><td class="txt">arthritis (nos)</td><td class="txt">Yes</td><td class="int">1601</td><td class="int">1321</td></tr>
+<tr class="row_odd"><td class="int">1540</td><td class="txt">plantar fascitis</td><td class="txt">Yes</td><td class="int">1603</td><td class="int">1323</td></tr>
+<tr class="row_even"><td class="int">1541</td><td class="txt">carpal tunnel syndrome</td><td class="txt">Yes</td><td class="int">1604</td><td class="int">1323</td></tr>
+<tr class="row_odd"><td class="int">1542</td><td class="txt">fibromyalgia</td><td class="txt">Yes</td><td class="int">1605</td><td class="int">1323</td></tr>
+<tr class="row_even"><td class="int">1544</td><td class="txt">dupuytren&apos;s contracture</td><td class="txt">Yes</td><td class="int">1607</td><td class="int">1323</td></tr>
+<tr class="row_odd"><td class="int">1545</td><td class="txt">neck problem/injury</td><td class="txt">Yes</td><td class="int">1608</td><td class="int">1077</td></tr>
+<tr class="row_even"><td class="int">1546</td><td class="txt">essential thrombocytosis</td><td class="txt">Yes</td><td class="int">1609</td><td class="int">1503</td></tr>
+<tr class="row_odd"><td class="int">1548</td><td class="txt">acne/acne vulgaris</td><td class="txt">Yes</td><td class="int">1611</td><td class="int">1510</td></tr>
+<tr class="row_even"><td class="int">1549</td><td class="txt">lichen planus</td><td class="txt">Yes</td><td class="int">1612</td><td class="int">1510</td></tr>
+<tr class="row_odd"><td class="int">1550</td><td class="txt">lichen sclerosis</td><td class="txt">Yes</td><td class="int">1613</td><td class="int">1510</td></tr>
+<tr class="row_even"><td class="int">1551</td><td class="txt">ovarian problem</td><td class="txt">Yes</td><td class="int">1614</td><td class="int">1390</td></tr>
+<tr class="row_odd"><td class="int">1552</td><td class="txt">uterine problem</td><td class="txt">Yes</td><td class="int">1615</td><td class="int">1390</td></tr>
+<tr class="row_even"><td class="int">1553</td><td class="txt">cervical problem</td><td class="txt">Yes</td><td class="int">1616</td><td class="int">1390</td></tr>
+<tr class="row_odd"><td class="int">1554</td><td class="txt">cervical intra-epithelial neoplasia (cin) / precancerous cells cervix</td><td class="txt">Yes</td><td class="int">1617</td><td class="int">1616</td></tr>
+<tr class="row_even"><td class="int">1555</td><td class="txt">cervical polyps</td><td class="txt">Yes</td><td class="int">1618</td><td class="int">1616</td></tr>
+<tr class="row_odd"><td class="int">1556</td><td class="txt">menorrhagia (unknown cause)</td><td class="txt">Yes</td><td class="int">1619</td><td class="int">1390</td></tr>
+<tr class="row_even"><td class="int">1557</td><td class="txt">pelvic inflammatory disease/ pid</td><td class="txt">Yes</td><td class="int">1620</td><td class="int">1390</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">obstetric problem</td><td class="txt">No</td><td class="int">1621</td><td class="int">1079</td></tr>
+<tr class="row_even"><td class="int">1558</td><td class="txt">ectopic pregnancy</td><td class="txt">Yes</td><td class="int">1622</td><td class="int">1621</td></tr>
+<tr class="row_odd"><td class="int">1559</td><td class="txt">miscarriage</td><td class="txt">Yes</td><td class="int">1623</td><td class="int">1621</td></tr>
+<tr class="row_even"><td class="int">1560</td><td class="txt">breast fibroadenoma</td><td class="txt">Yes</td><td class="int">1624</td><td class="int">1407</td></tr>
+<tr class="row_odd"><td class="int">1561</td><td class="txt">raynaud&apos;s phenomenon/disease</td><td class="txt">Yes</td><td class="int">1625</td><td class="int">1416</td></tr>
+<tr class="row_even"><td class="int">1562</td><td class="txt">food intolerance</td><td class="txt">Yes</td><td class="int">1626</td><td class="int">1417</td></tr>
+<tr class="row_odd"><td class="int">1563</td><td class="txt">urticaria</td><td class="txt">Yes</td><td class="int">1627</td><td class="int">1417</td></tr>
+<tr class="row_even"><td class="int">1564</td><td class="txt">antiphospholipid syndrome</td><td class="txt">Yes</td><td class="int">1628</td><td class="int">1080</td></tr>
+<tr class="row_odd"><td class="int">1578</td><td class="txt">hepatitis a</td><td class="txt">Yes</td><td class="int">1642</td><td class="int">1177</td></tr>
+<tr class="row_even"><td class="int">1579</td><td class="txt">hepatitis b</td><td class="txt">Yes</td><td class="int">1643</td><td class="int">1177</td></tr>
+<tr class="row_odd"><td class="int">1580</td><td class="txt">hepatitis c</td><td class="txt">Yes</td><td class="int">1644</td><td class="int">1177</td></tr>
+<tr class="row_even"><td class="int">1581</td><td class="txt">hepatitis d</td><td class="txt">Yes</td><td class="int">1645</td><td class="int">1177</td></tr>
+<tr class="row_odd"><td class="int">1582</td><td class="txt">hepatitis e</td><td class="txt">Yes</td><td class="int">1646</td><td class="int">1177</td></tr>
+<tr class="row_even"><td class="int">1583</td><td class="txt">ischaemic stroke</td><td class="txt">Yes</td><td class="int">1649</td><td class="int">1098</td></tr>
+<tr class="row_odd"><td class="int">1584</td><td class="txt">mitral valve disease</td><td class="txt">Yes</td><td class="int">1650</td><td class="int">1095</td></tr>
+<tr class="row_even"><td class="int">1585</td><td class="txt">mitral regurgitation / incompetence</td><td class="txt">Yes</td><td class="int">1651</td><td class="int">1650</td></tr>
+<tr class="row_odd"><td class="int">1586</td><td class="txt">aortic valve disease</td><td class="txt">Yes</td><td class="int">1652</td><td class="int">1095</td></tr>
+<tr class="row_even"><td class="int">1587</td><td class="txt">aortic regurgitation / incompetence</td><td class="txt">Yes</td><td class="int">1653</td><td class="int">1652</td></tr>
+<tr class="row_odd"><td class="int">1588</td><td class="txt">hypertrophic cardiomyopathy (hcm / hocm)</td><td class="txt">Yes</td><td class="int">1654</td><td class="int">1096</td></tr>
+<tr class="row_even"><td class="int">1589</td><td class="txt">pericarditis</td><td class="txt">Yes</td><td class="int">1655</td><td class="int">1097</td></tr>
+<tr class="row_odd"><td class="int">1590</td><td class="txt">pericardial effusion</td><td class="txt">Yes</td><td class="int">1656</td><td class="int">1097</td></tr>
+<tr class="row_even"><td class="int">1591</td><td class="txt">aortic aneurysm rupture</td><td class="txt">Yes</td><td class="int">1657</td><td class="int">1555</td></tr>
+<tr class="row_odd"><td class="int">1592</td><td class="txt">aortic dissection</td><td class="txt">Yes</td><td class="int">1658</td><td class="int">1555</td></tr>
+<tr class="row_even"><td class="int">1593</td><td class="txt">varicose ulcer</td><td class="txt">Yes</td><td class="int">1659</td><td class="int">1556</td></tr>
+<tr class="row_odd"><td class="int">1594</td><td class="txt">respiratory infection</td><td class="txt">Yes</td><td class="int">1660</td><td class="int">1072</td></tr>
+<tr class="row_even"><td class="int">1595</td><td class="txt">pleural plaques (not known asbestosis)</td><td class="txt">Yes</td><td class="int">1662</td><td class="int">1136</td></tr>
+<tr class="row_odd"><td class="int">1596</td><td class="txt">pleural effusion</td><td class="txt">Yes</td><td class="int">1663</td><td class="int">1136</td></tr>
+<tr class="row_even"><td class="int">1597</td><td class="txt">tinnitus / tiniitis</td><td class="txt">Yes</td><td class="int">1664</td><td class="int">1469</td></tr>
+<tr class="row_odd"><td class="int">1598</td><td class="txt">tonsiltis</td><td class="txt">Yes</td><td class="int">1665</td><td class="int">1468</td></tr>
+<tr class="row_even"><td class="int">1599</td><td class="txt">constipation</td><td class="txt">Yes</td><td class="int">1666</td><td class="int">1155</td></tr>
+<tr class="row_odd"><td class="int">1600</td><td class="txt">bowel / intestinal perforation</td><td class="txt">Yes</td><td class="int">1667</td><td class="int">1155</td></tr>
+<tr class="row_even"><td class="int">1601</td><td class="txt">bowel / intestinal infarction</td><td class="txt">Yes</td><td class="int">1668</td><td class="int">1155</td></tr>
+<tr class="row_odd"><td class="int">1602</td><td class="txt">bowel / intestinal obstruction</td><td class="txt">Yes</td><td class="int">1670</td><td class="int">1155</td></tr>
+<tr class="row_even"><td class="int">1603</td><td class="txt">rectal prolapse</td><td class="txt">Yes</td><td class="int">1671</td><td class="int">1155</td></tr>
+<tr class="row_odd"><td class="int">1604</td><td class="txt">alcoholic liver disease / alcoholic cirrhosis</td><td class="txt">Yes</td><td class="int">1672</td><td class="int">1179</td></tr>
+<tr class="row_even"><td class="int">1605</td><td class="txt">femoral hernia</td><td class="txt">Yes</td><td class="int">1673</td><td class="int">1574</td></tr>
+<tr class="row_odd"><td class="int">1606</td><td class="txt">incisional hernia</td><td class="txt">Yes</td><td class="int">1674</td><td class="int">1574</td></tr>
+<tr class="row_even"><td class="int">1607</td><td class="txt">diabetic nephropathy</td><td class="txt">Yes</td><td class="int">1675</td><td class="int">1582</td></tr>
+<tr class="row_odd"><td class="int">1608</td><td class="txt">nephritis</td><td class="txt">Yes</td><td class="int">1676</td><td class="int">1454</td></tr>
+<tr class="row_even"><td class="int">1609</td><td class="txt">glomerulnephritis</td><td class="txt">Yes</td><td class="int">1677</td><td class="int">1676</td></tr>
+<tr class="row_odd"><td class="int">1610</td><td class="txt">thyroid goitre</td><td class="txt">Yes</td><td class="int">1678</td><td class="int">1249</td></tr>
+<tr class="row_even"><td class="int">1611</td><td class="txt">hyperparathyroidism</td><td class="txt">Yes</td><td class="int">1679</td><td class="int">1254</td></tr>
+<tr class="row_odd"><td class="int">1613</td><td class="txt">blepharitis / eyelid infection</td><td class="txt">Yes</td><td class="int">1681</td><td class="int">1268</td></tr>
+<tr class="row_even"><td class="int">1614</td><td class="txt">stress</td><td class="txt">Yes</td><td class="int">1682</td><td class="int">1269</td></tr>
+<tr class="row_odd"><td class="int">1615</td><td class="txt">obsessive compulsive disorder (ocd)</td><td class="txt">Yes</td><td class="int">1683</td><td class="int">1269</td></tr>
+<tr class="row_even"><td class="int">1616</td><td class="txt">insomnia</td><td class="txt">Yes</td><td class="int">1684</td><td class="int">1269</td></tr>
+<tr class="row_odd"><td class="int">1617</td><td class="txt">osteopenia</td><td class="txt">Yes</td><td class="int">1685</td><td class="int">1319</td></tr>
+<tr class="row_even"><td class="int">1618</td><td class="txt">soft tissue inflammation</td><td class="txt">Yes</td><td class="int">1686</td><td class="int">1323</td></tr>
+<tr class="row_odd"><td class="int">1619</td><td class="txt">tendonitis / tendinitis / tenosynovitis</td><td class="txt">Yes</td><td class="int">1687</td><td class="int">1686</td></tr>
+<tr class="row_even"><td class="int">1620</td><td class="txt">bursitis</td><td class="txt">Yes</td><td class="int">1688</td><td class="int">1686</td></tr>
+<tr class="row_odd"><td class="int">1621</td><td class="txt">synovitis</td><td class="txt">Yes</td><td class="int">1689</td><td class="int">1686</td></tr>
+<tr class="row_even"><td class="int">1622</td><td class="txt">epicondylitis</td><td class="txt">Yes</td><td class="int">1690</td><td class="int">1686</td></tr>
+<tr class="row_odd"><td class="int">1623</td><td class="txt">tennis elbow / lateral epicondylitis</td><td class="txt">Yes</td><td class="int">1691</td><td class="int">1690</td></tr>
+<tr class="row_even"><td class="int">1624</td><td class="txt">housemaid&apos;s knee (prepatellar bursitis)</td><td class="txt">Yes</td><td class="int">1692</td><td class="int">1688</td></tr>
+<tr class="row_odd"><td class="int">1625</td><td class="txt">cellulitis</td><td class="txt">Yes</td><td class="int">1693</td><td class="int">1510</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">fracture</td><td class="txt">No</td><td class="int">1695</td><td class="int">1077</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">fracture head &amp; neck</td><td class="txt">No</td><td class="int">1696</td><td class="int">1695</td></tr>
+<tr class="row_even"><td class="int">1626</td><td class="txt">fracture skull / head</td><td class="txt">Yes</td><td class="int">1697</td><td class="int">1696</td></tr>
+<tr class="row_odd"><td class="int">1627</td><td class="txt">fracture jaw</td><td class="txt">Yes</td><td class="int">1698</td><td class="int">1696</td></tr>
+<tr class="row_even"><td class="int">1628</td><td class="txt">fracture nose</td><td class="txt">Yes</td><td class="int">1699</td><td class="int">1696</td></tr>
+<tr class="row_odd"><td class="int">1629</td><td class="txt">fracture face / orbit / eye socket</td><td class="txt">Yes</td><td class="int">1700</td><td class="int">1696</td></tr>
+<tr class="row_even"><td class="int">1630</td><td class="txt">fracture neck / cervical fracture</td><td class="txt">Yes</td><td class="int">1701</td><td class="int">1696</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">fracture upper limb &amp; shoulder</td><td class="txt">No</td><td class="int">1702</td><td class="int">1695</td></tr>
+<tr class="row_even"><td class="int">1631</td><td class="txt">fracture clavicle / collar bone</td><td class="txt">Yes</td><td class="int">1703</td><td class="int">1702</td></tr>
+<tr class="row_odd"><td class="int">1632</td><td class="txt">fracture shoulder / scapula</td><td class="txt">Yes</td><td class="int">1704</td><td class="int">1702</td></tr>
+<tr class="row_even"><td class="int">1633</td><td class="txt">fracture upper arm / humerus / elbow</td><td class="txt">Yes</td><td class="int">1705</td><td class="int">1702</td></tr>
+<tr class="row_odd"><td class="int">1634</td><td class="txt">fracture forearm / wrist</td><td class="txt">Yes</td><td class="int">1706</td><td class="int">1702</td></tr>
+<tr class="row_even"><td class="int">1635</td><td class="txt">fracture radius</td><td class="txt">Yes</td><td class="int">1707</td><td class="int">1706</td></tr>
+<tr class="row_odd"><td class="int">1636</td><td class="txt">fracture ulna</td><td class="txt">Yes</td><td class="int">1708</td><td class="int">1706</td></tr>
+<tr class="row_even"><td class="int">1637</td><td class="txt">fracture wrist / colles fracture</td><td class="txt">Yes</td><td class="int">1709</td><td class="int">1706</td></tr>
+<tr class="row_odd"><td class="int">1638</td><td class="txt">fracture hand</td><td class="txt">Yes</td><td class="int">1710</td><td class="int">1702</td></tr>
+<tr class="row_even"><td class="int">1639</td><td class="txt">fracture finger</td><td class="txt">Yes</td><td class="int">1711</td><td class="int">1702</td></tr>
+<tr class="row_odd"><td class="int">1640</td><td class="txt">fracture thumb</td><td class="txt">Yes</td><td class="int">1712</td><td class="int">1702</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">other fractures</td><td class="txt">No</td><td class="int">1713</td><td class="int">1695</td></tr>
+<tr class="row_odd"><td class="int">1644</td><td class="txt">fracture rib</td><td class="txt">Yes</td><td class="int">1717</td><td class="int">1713</td></tr>
+<tr class="row_even"><td class="int">1645</td><td class="txt">fracture sternum</td><td class="txt">Yes</td><td class="int">1718</td><td class="int">1713</td></tr>
+<tr class="row_odd"><td class="int">1646</td><td class="txt">fracture vertebra / crush fracture / vertebral collapse</td><td class="txt">Yes</td><td class="int">1719</td><td class="int">1713</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">fracture pelvis &amp; lower limb</td><td class="txt">No</td><td class="int">1720</td><td class="int">1695</td></tr>
+<tr class="row_odd"><td class="int">1647</td><td class="txt">fracture pelvis</td><td class="txt">Yes</td><td class="int">1721</td><td class="int">1720</td></tr>
+<tr class="row_even"><td class="int">1648</td><td class="txt">fracture neck of femur / hip</td><td class="txt">Yes</td><td class="int">1722</td><td class="int">1720</td></tr>
+<tr class="row_odd"><td class="int">1649</td><td class="txt">fracture shaft of femur</td><td class="txt">Yes</td><td class="int">1723</td><td class="int">1720</td></tr>
+<tr class="row_even"><td class="int">1650</td><td class="txt">fracture patella / knee</td><td class="txt">Yes</td><td class="int">1724</td><td class="int">1720</td></tr>
+<tr class="row_odd"><td class="int">1651</td><td class="txt">fracture lower leg / ankle</td><td class="txt">Yes</td><td class="int">1725</td><td class="int">1720</td></tr>
+<tr class="row_even"><td class="int">1652</td><td class="txt">fracture tibia</td><td class="txt">Yes</td><td class="int">1726</td><td class="int">1725</td></tr>
+<tr class="row_odd"><td class="int">1653</td><td class="txt">fracture fibula</td><td class="txt">Yes</td><td class="int">1727</td><td class="int">1725</td></tr>
+<tr class="row_even"><td class="int">1654</td><td class="txt">fracture foot</td><td class="txt">Yes</td><td class="int">1728</td><td class="int">1720</td></tr>
+<tr class="row_odd"><td class="int">1655</td><td class="txt">fracture metatarsal</td><td class="txt">Yes</td><td class="int">1729</td><td class="int">1728</td></tr>
+<tr class="row_even"><td class="int">1656</td><td class="txt">fracture toe</td><td class="txt">Yes</td><td class="int">1730</td><td class="int">1728</td></tr>
+<tr class="row_odd"><td class="int">1657</td><td class="txt">septicaemia / sepsis</td><td class="txt">Yes</td><td class="int">1731</td><td class="int">1495</td></tr>
+<tr class="row_even"><td class="int">1658</td><td class="txt">myelofibrosis</td><td class="txt">Yes</td><td class="int">1732</td><td class="int">1507</td></tr>
+<tr class="row_odd"><td class="int">1659</td><td class="txt">meningioma / benign meningeal tumour</td><td class="txt">Yes</td><td class="int">1733</td><td class="int">1489</td></tr>
+<tr class="row_even"><td class="int">1660</td><td class="txt">rosacea</td><td class="txt">Yes</td><td class="int">1734</td><td class="int">1510</td></tr>
+<tr class="row_odd"><td class="int">1661</td><td class="txt">vitiligo</td><td class="txt">Yes</td><td class="int">1735</td><td class="int">1510</td></tr>
+<tr class="row_even"><td class="int">1662</td><td class="txt">cervical erosion</td><td class="txt">Yes</td><td class="int">1736</td><td class="int">1616</td></tr>
+<tr class="row_odd"><td class="int">1663</td><td class="txt">abnormal smear (cervix)</td><td class="txt">Yes</td><td class="int">1737</td><td class="int">1617</td></tr>
+<tr class="row_even"><td class="int">1664</td><td class="txt">dysmenorrhoea / dysmenorrhea</td><td class="txt">Yes</td><td class="int">1738</td><td class="int">1390</td></tr>
+<tr class="row_odd"><td class="int">1665</td><td class="txt">menopausal symptoms / menopause</td><td class="txt">Yes</td><td class="int">1739</td><td class="int">1390</td></tr>
+<tr class="row_even"><td class="int">1666</td><td class="txt">benign breast lump</td><td class="txt">Yes</td><td class="int">1740</td><td class="int">1407</td></tr>
+<tr class="row_odd"><td class="int">1667</td><td class="txt">alopecia / hair loss</td><td class="txt">Yes</td><td class="int">1741</td><td class="int">1510</td></tr>
+<tr class="row_even"><td class="int">1668</td><td class="txt">allergy to house dust mite</td><td class="txt">Yes</td><td class="int">1742</td><td class="int">1417</td></tr>
+<tr class="row_odd"><td class="int">1669</td><td class="txt">contact dermatitis</td><td class="txt">Yes</td><td class="int">1743</td><td class="int">1417</td></tr>
+<tr class="row_even"><td class="int">1670</td><td class="txt">allergy to elastoplast</td><td class="txt">Yes</td><td class="int">1744</td><td class="int">1743</td></tr>
+<tr class="row_odd"><td class="int">1671</td><td class="txt">allergy to nickel</td><td class="txt">Yes</td><td class="int">1745</td><td class="int">1743</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">viral infection</td><td class="txt">No</td><td class="int">1747</td><td class="int">1495</td></tr>
+<tr class="row_odd"><td class="int">1439</td><td class="txt">hiv/aids</td><td class="txt">Yes</td><td class="int">1748</td><td class="int">1747</td></tr>
+<tr class="row_even"><td class="int">1568</td><td class="txt">measles / morbillivirus</td><td class="txt">Yes</td><td class="int">1750</td><td class="int">1747</td></tr>
+<tr class="row_odd"><td class="int">1570</td><td class="txt">rubella / german measles</td><td class="txt">Yes</td><td class="int">1751</td><td class="int">1747</td></tr>
+<tr class="row_even"><td class="int">1674</td><td class="txt">varicella zoster virus</td><td class="txt">Yes</td><td class="int">1752</td><td class="int">1747</td></tr>
+<tr class="row_odd"><td class="int">1571</td><td class="txt">chickenpox</td><td class="txt">Yes</td><td class="int">1753</td><td class="int">1752</td></tr>
+<tr class="row_even"><td class="int">1573</td><td class="txt">shingles</td><td class="txt">Yes</td><td class="int">1754</td><td class="int">1752</td></tr>
+<tr class="row_odd"><td class="int">1575</td><td class="txt">herpes simplex</td><td class="txt">Yes</td><td class="int">1755</td><td class="int">1747</td></tr>
+<tr class="row_even"><td class="int">1567</td><td class="txt">infectious mononucleosis / glandular fever / epstein barr virus (ebv)</td><td class="txt">Yes</td><td class="int">1756</td><td class="int">1747</td></tr>
+<tr class="row_odd"><td class="int">1569</td><td class="txt">mumps / epidemic parotitis</td><td class="txt">Yes</td><td class="int">1757</td><td class="int">1747</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">bacterial infection</td><td class="txt">No</td><td class="int">1758</td><td class="int">1495</td></tr>
+<tr class="row_odd"><td class="int">1566</td><td class="txt">mrsa / methicillin resistant staphylococcus aureus</td><td class="txt">Yes</td><td class="int">1759</td><td class="int">1758</td></tr>
+<tr class="row_even"><td class="int">1442</td><td class="txt">helicobacter pylori</td><td class="txt">Yes</td><td class="int">1760</td><td class="int">1758</td></tr>
+<tr class="row_odd"><td class="int">1440</td><td class="txt">tuberculosis (tb)</td><td class="txt">Yes</td><td class="int">1761</td><td class="int">1758</td></tr>
+<tr class="row_even"><td class="int">-1</td><td class="txt">tropical &amp; travel-related infections</td><td class="txt">No</td><td class="int">1762</td><td class="int">1495</td></tr>
+<tr class="row_odd"><td class="int">1441</td><td class="txt">malaria</td><td class="txt">Yes</td><td class="int">1763</td><td class="int">1762</td></tr>
+<tr class="row_even"><td class="int">1443</td><td class="txt">schistosomiasis/bilharzia</td><td class="txt">Yes</td><td class="int">1764</td><td class="int">1762</td></tr>
+<tr class="row_odd"><td class="int">1576</td><td class="txt">dengue fever</td><td class="txt">Yes</td><td class="int">1765</td><td class="int">1762</td></tr>
+<tr class="row_even"><td class="int">1577</td><td class="txt">typhoid fever</td><td class="txt">Yes</td><td class="int">1766</td><td class="int">1762</td></tr>
+<tr class="row_odd"><td class="int">1675</td><td class="txt">giardia / giardiasis</td><td class="txt">Yes</td><td class="int">1767</td><td class="int">1762</td></tr>
+<tr class="row_even"><td class="int">1574</td><td class="txt">diphtheria</td><td class="txt">Yes</td><td class="int">1768</td><td class="int">1758</td></tr>
+<tr class="row_odd"><td class="int">1572</td><td class="txt">whooping cough / pertussis</td><td class="txt">Yes</td><td class="int">1769</td><td class="int">1758</td></tr>
+<tr class="row_even"><td class="int">1676</td><td class="txt">yellow fever</td><td class="txt">Yes</td><td class="int">1770</td><td class="int">1762</td></tr>
+<tr class="row_odd"><td class="int">1677</td><td class="txt">scarlet fever / scarlatina</td><td class="txt">Yes</td><td class="int">1771</td><td class="int">1758</td></tr>
+<tr class="row_even"><td class="int">1678</td><td class="txt">chlamydia</td><td class="txt">Yes</td><td class="int">1772</td><td class="int">1758</td></tr>
+<tr class="row_odd"><td class="int">1679</td><td class="txt">undescended testicle</td><td class="txt">Yes</td><td class="int">1773</td><td class="int">1231</td></tr>
+<tr class="row_even"><td class="int">1680</td><td class="txt">bowen&apos;s disease</td><td class="txt">Yes</td><td class="int">1776</td><td class="int">1510</td></tr>
+<tr class="row_odd"><td class="int">1681</td><td class="txt">hydatiform mole</td><td class="txt">Yes</td><td class="int">1777</td><td class="int">1391</td></tr>
+<tr class="row_even"><td class="int">1682</td><td class="txt">benign insulinoma</td><td class="txt">Yes</td><td class="int">1778</td><td class="int">1075</td></tr>
+<tr class="row_odd"><td class="int">1683</td><td class="txt">benign neuroma</td><td class="txt">Yes</td><td class="int">1779</td><td class="int">1489</td></tr>
+<tr class="row_even"><td class="int">99999</td><td class="txt">unclassifiable</td><td class="txt">No</td><td class="int">99999</td><td class="int">Top</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>1 Data-Field</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f20002"><td class="txt"><a class="basic" href="field.cgi?id=20002">20002</a></td><td class="txt"><a class="subtle" href="field.cgi?id=20002">Non-cancer illness code, self-reported</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100074">Medical conditions</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.05s
+Thu Jun 16 21:28:00 2022
+
+-->
+</div>
+</body>
+</html>

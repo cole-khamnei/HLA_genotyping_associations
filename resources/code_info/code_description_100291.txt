@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 100291</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=100291&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 100291</span><br>
+<br>Name: g22.i.answer.a.D7.ans
+<p>Description: g22.i.answer.a.D7.ans
+<p>This is a flat (unstructured) list which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="100291"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>2 Categories</h2>
+<table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">Do not know</td></tr>
+<tr class="row_even"><td class="int">-3</td><td class="txt">Prefer not to answer</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>73 Data-Fields</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f3627"><td class="txt"><a class="basic" href="field.cgi?id=3627">3627</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3627">Age angina diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_even" id="f3786"><td class="txt"><a class="basic" href="field.cgi?id=3786">3786</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3786">Age asthma diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3882"><td class="txt"><a class="basic" href="field.cgi?id=3882">3882</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3882">Age at bilateral oophorectomy (both ovaries removed)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_even" id="f2824"><td class="txt"><a class="basic" href="field.cgi?id=2824">2824</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2824">Age at hysterectomy</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3581"><td class="txt"><a class="basic" href="field.cgi?id=3581">3581</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3581">Age at menopause (last menstrual period)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4700"><td class="txt"><a class="basic" href="field.cgi?id=4700">4700</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4700">Age cataract diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100041">Eyesight</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f4012"><td class="txt"><a class="basic" href="field.cgi?id=4012">4012</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4012">Age deep-vein thrombosis (DVT, blood clot in leg) diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_even" id="f2976"><td class="txt"><a class="basic" href="field.cgi?id=2976">2976</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2976">Age diabetes diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3992"><td class="txt"><a class="basic" href="field.cgi?id=3992">3992</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3992">Age emphysema/chronic bronchitis diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4689"><td class="txt"><a class="basic" href="field.cgi?id=4689">4689</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4689">Age glaucoma diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100041">Eyesight</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3761"><td class="txt"><a class="basic" href="field.cgi?id=3761">3761</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3761">Age hay fever, rhinitis or eczema diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_even" id="f3894"><td class="txt"><a class="basic" href="field.cgi?id=3894">3894</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3894">Age heart attack diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f2966"><td class="txt"><a class="basic" href="field.cgi?id=2966">2966</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2966">Age high blood pressure diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_even" id="f5923"><td class="txt"><a class="basic" href="field.cgi?id=5923">5923</a></td><td class="txt"><a class="subtle" href="field.cgi?id=5923">Age macular degeneration diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100041">Eyesight</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f5945"><td class="txt"><a class="basic" href="field.cgi?id=5945">5945</a></td><td class="txt"><a class="subtle" href="field.cgi?id=5945">Age other serious eye condition diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100041">Eyesight</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4022"><td class="txt"><a class="basic" href="field.cgi?id=4022">4022</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4022">Age pulmonary embolism (blood clot in lung) diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3536"><td class="txt"><a class="basic" href="field.cgi?id=3536">3536</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3536">Age started hormone-replacement therapy (HRT)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_even" id="f2794"><td class="txt"><a class="basic" href="field.cgi?id=2794">2794</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2794">Age started oral contraceptive pill</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3436"><td class="txt"><a class="basic" href="field.cgi?id=3436">3436</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3436">Age started smoking in current smokers</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100058">Smoking</a> &nbsp;</td></tr>
+<tr class="row_even" id="f2867"><td class="txt"><a class="basic" href="field.cgi?id=2867">2867</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2867">Age started smoking in former smokers</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100058">Smoking</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f2217"><td class="txt"><a class="basic" href="field.cgi?id=2217">2217</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2217">Age started wearing glasses or contact lenses</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100041">Eyesight</a> &nbsp;</td></tr>
+<tr class="row_even" id="f2897"><td class="txt"><a class="basic" href="field.cgi?id=2897">2897</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2897">Age stopped smoking</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100058">Smoking</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f6194"><td class="txt"><a class="basic" href="field.cgi?id=6194">6194</a></td><td class="txt"><a class="subtle" href="field.cgi?id=6194">Age stopped smoking cigarettes (current cigar/pipe or previous cigarette smoker)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100058">Smoking</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4056"><td class="txt"><a class="basic" href="field.cgi?id=4056">4056</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4056">Age stroke diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100044">Medical conditions</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f5901"><td class="txt"><a class="basic" href="field.cgi?id=5901">5901</a></td><td class="txt"><a class="subtle" href="field.cgi?id=5901">Age when diabetes-related eye disease diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100041">Eyesight</a> &nbsp;</td></tr>
+<tr class="row_even" id="f3680"><td class="txt"><a class="basic" href="field.cgi?id=3680">3680</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3680">Age when last ate meat</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100052">Diet</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f5430"><td class="txt"><a class="basic" href="field.cgi?id=5430">5430</a></td><td class="txt"><a class="subtle" href="field.cgi?id=5430">Age when loss of vision due to injury or trauma diagnosed</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100041">Eyesight</a> &nbsp;</td></tr>
+<tr class="row_even" id="f2714"><td class="txt"><a class="basic" href="field.cgi?id=2714">2714</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2714">Age when periods started (menarche)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f4429"><td class="txt"><a class="basic" href="field.cgi?id=4429">4429</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4429">Average monthly beer plus cider intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4418"><td class="txt"><a class="basic" href="field.cgi?id=4418">4418</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4418">Average monthly champagne plus white wine intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f4451"><td class="txt"><a class="basic" href="field.cgi?id=4451">4451</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4451">Average monthly fortified wine intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4462"><td class="txt"><a class="basic" href="field.cgi?id=4462">4462</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4462">Average monthly intake of other alcoholic drinks</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f4407"><td class="txt"><a class="basic" href="field.cgi?id=4407">4407</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4407">Average monthly red wine intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4440"><td class="txt"><a class="basic" href="field.cgi?id=4440">4440</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4440">Average monthly spirits intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f1588"><td class="txt"><a class="basic" href="field.cgi?id=1588">1588</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1588">Average weekly beer plus cider intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_even" id="f1578"><td class="txt"><a class="basic" href="field.cgi?id=1578">1578</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1578">Average weekly champagne plus white wine intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f1608"><td class="txt"><a class="basic" href="field.cgi?id=1608">1608</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1608">Average weekly fortified wine intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_even" id="f5364"><td class="txt"><a class="basic" href="field.cgi?id=5364">5364</a></td><td class="txt"><a class="subtle" href="field.cgi?id=5364">Average weekly intake of other alcoholic drinks</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f1568"><td class="txt"><a class="basic" href="field.cgi?id=1568">1568</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1568">Average weekly red wine intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_even" id="f1598"><td class="txt"><a class="basic" href="field.cgi?id=1598">1598</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1598">Average weekly spirits intake</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100051">Alcohol</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f1737"><td class="txt"><a class="basic" href="field.cgi?id=1737">1737</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1737">Childhood sunburn occasions</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100055">Sun exposure</a> &nbsp;</td></tr>
+<tr class="row_even" id="f894"><td class="txt"><a class="basic" href="field.cgi?id=894">894</a></td><td class="txt"><a class="subtle" href="field.cgi?id=894">Duration of moderate activity</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100054">Physical activity</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f914"><td class="txt"><a class="basic" href="field.cgi?id=914">914</a></td><td class="txt"><a class="subtle" href="field.cgi?id=914">Duration of vigorous activity</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100054">Physical activity</a> &nbsp;</td></tr>
+<tr class="row_even" id="f874"><td class="txt"><a class="basic" href="field.cgi?id=874">874</a></td><td class="txt"><a class="subtle" href="field.cgi?id=874">Duration of walks</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100054">Physical activity</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f1269"><td class="txt"><a class="basic" href="field.cgi?id=1269">1269</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1269">Exposure to tobacco smoke at home</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100058">Smoking</a> &nbsp;</td></tr>
+<tr class="row_even" id="f1279"><td class="txt"><a class="basic" href="field.cgi?id=1279">1279</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1279">Exposure to tobacco smoke outside home</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100058">Smoking</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f2946"><td class="txt"><a class="basic" href="field.cgi?id=2946">2946</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2946">Father&apos;s age</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_even" id="f1807"><td class="txt"><a class="basic" href="field.cgi?id=1807">1807</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1807">Father&apos;s age at death</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f767"><td class="txt"><a class="basic" href="field.cgi?id=767">767</a></td><td class="txt"><a class="subtle" href="field.cgi?id=767">Length of working week for main job</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100064">Employment</a> &nbsp;</td></tr>
+<tr class="row_even" id="f3669"><td class="txt"><a class="basic" href="field.cgi?id=3669">3669</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3669">Lifetime number of same-sex sexual partners</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100056">Sexual factors</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f2149"><td class="txt"><a class="basic" href="field.cgi?id=2149">2149</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2149">Lifetime number of sexual partners</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100056">Sexual factors</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4609"><td class="txt"><a class="basic" href="field.cgi?id=4609">4609</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4609">Longest period of depression</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100060">Mental health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f5375"><td class="txt"><a class="basic" href="field.cgi?id=5375">5375</a></td><td class="txt"><a class="subtle" href="field.cgi?id=5375">Longest period of unenthusiasm / disinterest</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100060">Mental health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f1845"><td class="txt"><a class="basic" href="field.cgi?id=1845">1845</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1845">Mother&apos;s age</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3526"><td class="txt"><a class="basic" href="field.cgi?id=3526">3526</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3526">Mother&apos;s age at death</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_even" id="f709"><td class="txt"><a class="basic" href="field.cgi?id=709">709</a></td><td class="txt"><a class="subtle" href="field.cgi?id=709">Number in household</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100066">Household</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3972"><td class="txt"><a class="basic" href="field.cgi?id=3972">3972</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3972">Number of adopted brothers</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_even" id="f3982"><td class="txt"><a class="basic" href="field.cgi?id=3982">3982</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3982">Number of adopted sisters</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f2405"><td class="txt"><a class="basic" href="field.cgi?id=2405">2405</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2405">Number of children fathered</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100070">Male-specific factors</a> &nbsp;</td></tr>
+<tr class="row_even" id="f884"><td class="txt"><a class="basic" href="field.cgi?id=884">884</a></td><td class="txt"><a class="subtle" href="field.cgi?id=884">Number of days/week of moderate physical activity 10+ minutes</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100054">Physical activity</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f904"><td class="txt"><a class="basic" href="field.cgi?id=904">904</a></td><td class="txt"><a class="subtle" href="field.cgi?id=904">Number of days/week of vigorous physical activity 10+ minutes</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100054">Physical activity</a> &nbsp;</td></tr>
+<tr class="row_even" id="f4620"><td class="txt"><a class="basic" href="field.cgi?id=4620">4620</a></td><td class="txt"><a class="subtle" href="field.cgi?id=4620">Number of depression episodes</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100060">Mental health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f1873"><td class="txt"><a class="basic" href="field.cgi?id=1873">1873</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1873">Number of full brothers</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_even" id="f1883"><td class="txt"><a class="basic" href="field.cgi?id=1883">1883</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1883">Number of full sisters</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f5057"><td class="txt"><a class="basic" href="field.cgi?id=5057">5057</a></td><td class="txt"><a class="subtle" href="field.cgi?id=5057">Number of older siblings</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100034">Family history</a> &nbsp;</td></tr>
+<tr class="row_even" id="f3849"><td class="txt"><a class="basic" href="field.cgi?id=3849">3849</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3849">Number of pregnancy terminations</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3839"><td class="txt"><a class="basic" href="field.cgi?id=3839">3839</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3839">Number of spontaneous miscarriages</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_even" id="f3829"><td class="txt"><a class="basic" href="field.cgi?id=3829">3829</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3829">Number of stillbirths</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f5386"><td class="txt"><a class="basic" href="field.cgi?id=5386">5386</a></td><td class="txt"><a class="subtle" href="field.cgi?id=5386">Number of unenthusiastic/disinterested episodes</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100060">Mental health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f2926"><td class="txt"><a class="basic" href="field.cgi?id=2926">2926</a></td><td class="txt"><a class="subtle" href="field.cgi?id=2926">Number of unsuccessful stop-smoking attempts</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100058">Smoking</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f1160"><td class="txt"><a class="basic" href="field.cgi?id=1160">1160</a></td><td class="txt"><a class="subtle" href="field.cgi?id=1160">Sleep duration</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100057">Sleep</a> &nbsp;</td></tr>
+<tr class="row_even" id="f3700"><td class="txt"><a class="basic" href="field.cgi?id=3700">3700</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3700">Time since last menstrual period</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100069">Female-specific factors</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f3659"><td class="txt"><a class="basic" href="field.cgi?id=3659">3659</a></td><td class="txt"><a class="subtle" href="field.cgi?id=3659">Year immigrated to UK (United Kingdom)</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100065">Ethnicity</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.04s
+Thu Jun 16 21:24:54 2022
+
+-->
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 1001</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=1001&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 1001</span><br>
+<br>Name: initial ethnic background tree
+<p>Description: ethnic background
+<p>This is a hierarchical tree-structured dictionary which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="1001"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>22 Categories</h2>All items were selectable
+<p><table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th><th>Node</th><th>Parent</th></tr>
+<tr class="row_odd"><td class="int">1</td><td class="txt">White</td><td class="int">1</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">1001</td><td class="txt">British</td><td class="int">1001</td><td class="int">1</td></tr>
+<tr class="row_odd"><td class="int">2001</td><td class="txt">White and Black Caribbean</td><td class="int">2001</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">3001</td><td class="txt">Indian</td><td class="int">3001</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">4001</td><td class="txt">Caribbean</td><td class="int">4001</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">2</td><td class="txt">Mixed</td><td class="int">2</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">1002</td><td class="txt">Irish</td><td class="int">1002</td><td class="int">1</td></tr>
+<tr class="row_even"><td class="int">2002</td><td class="txt">White and Black African</td><td class="int">2002</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">3002</td><td class="txt">Pakistani</td><td class="int">3002</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">4002</td><td class="txt">African</td><td class="int">4002</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">3</td><td class="txt">Asian or Asian British</td><td class="int">3</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">1003</td><td class="txt">Any other white background</td><td class="int">1003</td><td class="int">1</td></tr>
+<tr class="row_odd"><td class="int">2003</td><td class="txt">White and Asian</td><td class="int">2003</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">3003</td><td class="txt">Bangladeshi</td><td class="int">3003</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">4003</td><td class="txt">Any other Black background</td><td class="int">4003</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">4</td><td class="txt">Black or Black British</td><td class="int">4</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">2004</td><td class="txt">Any other mixed background</td><td class="int">2004</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">3004</td><td class="txt">Any other Asian background</td><td class="int">3004</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">5</td><td class="txt">Chinese</td><td class="int">5</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">6</td><td class="txt">Other ethnic group</td><td class="int">6</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">-1</td><td class="txt">Do not know</td><td class="int">-1</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">-3</td><td class="txt">Prefer not to answer</td><td class="int">-3</td><td class="int">Top</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>1 Data-Field</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f21000"><td class="txt"><a class="basic" href="field.cgi?id=21000">21000</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21000">Ethnic background</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100065">Ethnicity</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.03s
+Thu Jun 16 21:24:39 2022
+
+-->
+</div>
+</body>
+</html>
