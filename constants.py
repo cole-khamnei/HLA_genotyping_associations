@@ -46,6 +46,10 @@ UK_BIOBANK_INDEX_CSV_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_
 UDI_LOOKUP_OUTLIERS_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_outliers.csv")
 UDI_LOOKUP_CORE_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_core.csv")
 
+UDI_LOOKUP_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "udi_lookups")
+UDI_LOOKUP_VERSION_GENERIC_PATH = os.path.join(UDI_LOOKUP_DIR_PATH, "udi_lookup_{version}.csv")
+
+
 CODING_INFO_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "code_info")
 
 ########################################################################################################################

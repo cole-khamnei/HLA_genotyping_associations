@@ -1,0 +1,437 @@
+column,count,type,frequency,description,udi,name
+1,501674,Integer,0.9980998099809981,Verbal interview duration,3-0.0,_
+2,20336,Integer,0.0387038703870387,Verbal interview duration,3-1.0,_
+3,33099,Integer,0.0658065806580658,Verbal interview duration,3-2.0,_
+190,501683,Integer,0.9976997699769977,Touchscreen duration,630-0.0,_
+191,20337,Integer,0.0386038603860386,Touchscreen duration,630-1.0,_
+192,35880,Integer,0.0713071307130713,Touchscreen duration,630-2.0,_
+901,20474,Integer,0.0411041104110411,Number of antibiotics taken in last 3 months,6671-2.0,_
+1759,1333,Categorical (multiple),0.0034003400340034003,Antibiotic codes for last 3 months,20199-2.0,_
+1760,96,Categorical (multiple),0.00030003000300030005,Antibiotic codes for last 3 months,20199-2.1,_
+1761,14,Categorical (multiple),0.00010001000100010001,Antibiotic codes for last 3 months,20199-2.2,_
+1762,2,Categorical (multiple),0.0,Antibiotic codes for last 3 months,20199-2.3,_
+1763,157356,Categorical (single),0.3047304730473047,Ever addicted to any substance or behaviour,20401-0.0,_
+1764,143670,Categorical (single),0.27782778277827785,Amount of alcohol drunk on a typical drinking day,20403-0.0,_
+1765,3593,Categorical (single),0.008100810081008101,Ever physically dependent on alcohol,20404-0.0,_
+1766,157356,Categorical (single),0.3047304730473047,"Ever had known person concerned about, or recommend reduction of, alcohol consumption",20405-0.0,_
+1767,9384,Categorical (single),0.019901990199019903,Ever addicted to alcohol,20406-0.0,_
+1768,85199,Categorical (single),0.16801680168016803,Frequency of failure to fulfil normal expectations due to drinking alcohol in last year,20407-0.0,_
+1769,85199,Categorical (single),0.16801680168016803,Frequency of memory loss due to drinking alcohol in last year,20408-0.0,_
+1770,85199,Categorical (single),0.16801680168016803,Frequency of feeling guilt or remorse after drinking alcohol in last year,20409-0.0,_
+1771,7023,Integer,0.014101410141014101,Age when known person last commented about drinking habits,20410-0.0,_
+1772,157356,Categorical (single),0.3047304730473047,Ever been injured or injured someone else through drinking alcohol,20411-0.0,_
+1773,85199,Categorical (single),0.16801680168016803,Frequency of needing morning drink of alcohol after heavy drinking session in last year,20412-0.0,_
+1774,85199,Categorical (single),0.16801680168016803,Frequency of inability to cease drinking in last year,20413-0.0,_
+1775,157356,Categorical (single),0.3047304730473047,Frequency of drinking alcohol,20414-0.0,_
+1776,3593,Categorical (single),0.008100810081008101,Ongoing addiction to alcohol,20415-0.0,_
+1777,143670,Categorical (single),0.27782778277827785,Frequency of consuming six or more units of alcohol,20416-0.0,_
+1778,9384,Categorical (single),0.019901990199019903,Ever addicted to a behaviour or miscellanous,20431-0.0,_
+1779,2243,Categorical (single),0.0044004400440044,Ongoing behavioural or miscellanous addiction,20432-0.0,_
+1780,9384,Categorical (single),0.019901990199019903,Ever addicted to illicit or recreational drugs,20456-0.0,_
+1781,778,Categorical (single),0.0013001300130013002,Ongoing addiction or dependence on illicit or recreational drugs,20457-0.0,_
+1782,9384,Categorical (single),0.019901990199019903,Ever addicted to prescription or over-the-counter medication,20503-0.0,_
+1783,1319,Categorical (single),0.0022002200220022,Ongoing addiction or dependence to over-the-counter medication,20504-0.0,_
+1784,1319,Categorical (multiple),0.0022002200220022,Substance of prescription or over-the-counter medication addiction,20551-0.1,_
+1785,110,Categorical (multiple),0.00040004000400040005,Substance of prescription or over-the-counter medication addiction,20551-0.2,_
+1786,5,Categorical (multiple),0.0,Substance of prescription or over-the-counter medication addiction,20551-0.3,_
+1787,2243,Categorical (multiple),0.0044004400440044,Behavioural and miscellaneous addictions,20552-0.1,_
+1788,86,Categorical (multiple),0.00010001000100010001,Behavioural and miscellaneous addictions,20552-0.2,_
+1796,174778,Time,0.34113411341134114,When digestive health questionnaire completed,21023-0.0,_
+1797,174778,Categorical (single),0.34113411341134114,Ever diagnosed with IBS,21024-0.0,_
+1798,174778,Categorical (single),0.34113411341134114,Frequency of discomfort/pain in abdomen in last 3 months,21025-0.0,_
+1799,61024,Categorical (single),0.1224122412241224,Discomfort/pain occurring only during menstrual bleed,21026-0.0,_
+1800,93901,Categorical (single),0.1842184218421842,Abdominal discomfort/pain for 6 months or longer,21027-0.0,_
+1801,93901,Categorical (single),0.1842184218421842,Frequency of discomfort/pain getting better or stopping after a bowel movement,21028-0.0,_
+1802,93901,Categorical (single),0.1842184218421842,More frequent bowel movements when abdominal discomfort/pain started,21029-0.0,_
+1803,93901,Categorical (single),0.1842184218421842,Less frequent bowel movements when abdominal discomfort/pain started,21030-0.0,_
+1804,93901,Categorical (single),0.1842184218421842,Stools looser when abdominal discomfort/pain started,21031-0.0,_
+1805,93901,Categorical (single),0.1842184218421842,Frequency of harder stools when abdominal discomfort/pain started,21032-0.0,_
+1806,174778,Categorical (single),0.34113411341134114,Frequency of hard/lumpy stools in the last 3 months,21033-0.0,_
+1807,174778,Categorical (single),0.34113411341134114,Frequency of loose/mushy/watery stools in the last 3 months,21034-0.0,_
+1808,174778,Categorical (single),0.34113411341134114,Currently (in last 3 months) suffer from abdominal pain,21035-0.0,_
+1809,50620,Categorical (single),0.10081008100810081,Severity of current abdominal pain,21036-0.0,_
+1810,50620,Categorical (single),0.10081008100810081,Number of days (out of 10) with abdominal pain,21037-0.0,_
+1811,174778,Categorical (single),0.34113411341134114,Currently suffer from abdominal distension,21038-0.0,_
+1812,40667,Categorical (single),0.0816081608160816,Severity of current abdominal distension/tightness,21039-0.0,_
+1813,174778,Categorical (single),0.34113411341134114,Satisfaction with bowel habits,21040-0.0,_
+1814,174778,Categorical (single),0.34113411341134114,Degree to which abdominal pain/discomfort/altered bowel habits affect/interfere with life in general,21041-0.0,_
+1815,174778,Integer,0.34113411341134114,Greatest number of times bowels opened per day,21042-0.0,_
+1816,174778,Integer,0.34113411341134114,Least number of times bowels opened per week,21043-0.0,_
+1817,174778,Integer,0.34113411341134114,Average number of times bowels opened per day,21044-0.0,_
+1818,21362,Integer,0.0425042504250425,"Number of weeks absent from work due to IBS, in the last year",21045-0.0,_
+1819,150,Date,0.00010001000100010001,When gave up work due to IBS,21046-0.0,_
+1820,8370,Integer,0.016301630163016303,Number of weeks (in the last year) at work suffering because of IBS,21047-0.0,_
+1821,174778,Categorical (single),0.34113411341134114,Degree bothered by back pain in the past 3 months,21048-0.0,_
+1822,174778,Categorical (single),0.34113411341134114,Degree bothered by pain in arms/legs/joints in the past 3 months,21049-0.0,_
+1823,99292,Categorical (single),0.1933193319331933,Degree bothered by menstrual cramps or other problems with period in the last 3 months,21050-0.0,_
+1824,174778,Categorical (single),0.34113411341134114,Degree bothered by headaches in the last 3 months,21051-0.0,_
+1825,174778,Categorical (single),0.34113411341134114,Degree bothered by chest pain in the last 3 months,21052-0.0,_
+1826,174778,Categorical (single),0.34113411341134114,Degree bothered by dizziness in the last 3 months,21053-0.0,_
+1827,174778,Categorical (single),0.34113411341134114,Degree bothered by fainting spells in the last 3 months,21054-0.0,_
+1828,174778,Categorical (single),0.34113411341134114,Degree bothered by feeling heart pound/race in the last 3 months,21055-0.0,_
+1829,174778,Categorical (single),0.34113411341134114,Degree bothered by shortness of breath in the last 3 months,21056-0.0,_
+1830,174778,Categorical (single),0.34113411341134114,Degree bothered by pain/problems during intercourse in the last 3 months,21057-0.0,_
+1831,174778,Categorical (single),0.34113411341134114,Degree bothered by urinary frequency/bladder irritability in the last 3 months,21058-0.0,_
+1832,174778,Categorical (single),0.34113411341134114,Degree bothered by nausea in the last 3 months,21059-0.0,_
+1833,174778,Categorical (single),0.34113411341134114,Degree bothered by feeling tired all the time in the last 3 months,21060-0.0,_
+1834,174778,Categorical (single),0.34113411341134114,Degree bothered by trouble sleeping in the last 3 months,21061-0.0,_
+1835,174778,Categorical (single),0.34113411341134114,Ever been offered/sought treatment for anxiety,21062-0.0,_
+1836,174778,Categorical (single),0.34113411341134114,Ever been offered/sought treatment for depression,21063-0.0,_
+1837,174778,Categorical (single),0.34113411341134114,Sensitive stomach,21064-0.0,_
+1838,174778,Categorical (single),0.34113411341134114,Family history of IBS,21065-0.0,_
+1839,174778,Categorical (single),0.34113411341134114,Born by caesarian section,21066-0.0,_
+1840,174778,Categorical (single),0.34113411341134114,Long-term/recurrent antibiotics as child or teenager,21067-0.0,_
+1841,174778,Categorical (single),0.34113411341134114,Diagnosed with coeliac disease or gluten sensitivity,21068-0.0,_
+1842,3262,Categorical (single),0.006600660066006601,Method of coeliac disease/gluten sensitivity diagnosis,21069-0.0,_
+1843,21362,Categorical (single),0.0425042504250425,Speed of onset of IBS symptoms,21070-0.0,_
+1844,21362,Categorical (single),0.0425042504250425,Infectious illness diagnosis status when IBS symptoms first began,21071-0.0,_
+1845,2118,Categorical (single),0.005000500050005001,Infection diagnosed alongside IBS when IBS symptoms began,21072-0.0,_
+1846,21362,Categorical (single),0.0425042504250425,Fever when IBS symptoms first began,21073-0.0,_
+1847,21362,Categorical (single),0.0425042504250425,Diarrhoea when IBS symptoms first began,21074-0.0,_
+1848,10744,Categorical (single),0.0214021402140214,Bloody diarrhoea when IBS symptoms first began,21075-0.0,_
+1849,21362,Categorical (single),0.0425042504250425,Vomiting when IBS symptoms first began,21076-0.0,_
+1937,121283,Categorical (single),0.23242324232423242,Doctor diagnosed asthma,22127-0.0,_
+1938,121283,Categorical (single),0.23242324232423242,Doctor diagnosed COPD (chronic obstructive pulmonary disease),22130-0.0,_
+1939,27704,Integer,0.05160516051605161,Age hayfever or allergic rhinitis diagnosed by doctor,22146-0.0,_
+1940,15492,Integer,0.028602860286028604,Age asthma diagnosed by doctor,22147-0.0,_
+1942,121283,Categorical (single),0.23242324232423242,Tobacco smoking,22506-0.0,_
+1943,44011,Integer,0.0859085908590859,Age of stopping smoking,22507-0.0,_
+1944,2873,Integer,0.0063006300630063005,Amount of tobacco currently smoked,22508-0.0,_
+1945,502526,Date,1.0,Date first recorded at location,22700-0.0,_
+1946,148255,Date,0.29162916291629165,Date first recorded at location,22700-0.1,_
+1947,61998,Date,0.1266126612661266,Date first recorded at location,22700-0.2,_
+1948,37260,Date,0.0776077607760776,Date first recorded at location,22700-0.3,_
+1949,14870,Date,0.029002900290029002,Date first recorded at location,22700-0.4,_
+1950,6086,Date,0.012201220122012201,Date first recorded at location,22700-0.5,_
+1951,2444,Date,0.005000500050005001,Date first recorded at location,22700-0.6,_
+1952,944,Date,0.0014001400140014,Date first recorded at location,22700-0.7,_
+1953,377,Date,0.00040004000400040005,Date first recorded at location,22700-0.8,_
+1954,133,Date,0.00020002000200020003,Date first recorded at location,22700-0.9,_
+1955,52,Date,0.00010001000100010001,Date first recorded at location,22700-0.10,_
+1956,23,Date,0.0,Date first recorded at location,22700-0.11,_
+1957,12,Date,0.0,Date first recorded at location,22700-0.12,_
+1958,5,Date,0.0,Date first recorded at location,22700-0.13,_
+1959,2,Date,0.0,Date first recorded at location,22700-0.14,_
+1960,502526,Integer,1.0,Home location - east co-ordinate (rounded),22702-0.0,_
+1961,148255,Integer,0.29162916291629165,Home location - east co-ordinate (rounded),22702-0.1,_
+1962,61998,Integer,0.1266126612661266,Home location - east co-ordinate (rounded),22702-0.2,_
+1963,37260,Integer,0.0776077607760776,Home location - east co-ordinate (rounded),22702-0.3,_
+1964,14870,Integer,0.029002900290029002,Home location - east co-ordinate (rounded),22702-0.4,_
+1965,6086,Integer,0.012201220122012201,Home location - east co-ordinate (rounded),22702-0.5,_
+1966,2444,Integer,0.005000500050005001,Home location - east co-ordinate (rounded),22702-0.6,_
+1967,944,Integer,0.0014001400140014,Home location - east co-ordinate (rounded),22702-0.7,_
+1968,377,Integer,0.00040004000400040005,Home location - east co-ordinate (rounded),22702-0.8,_
+1969,133,Integer,0.00020002000200020003,Home location - east co-ordinate (rounded),22702-0.9,_
+1970,52,Integer,0.00010001000100010001,Home location - east co-ordinate (rounded),22702-0.10,_
+1971,23,Integer,0.0,Home location - east co-ordinate (rounded),22702-0.11,_
+1972,12,Integer,0.0,Home location - east co-ordinate (rounded),22702-0.12,_
+1973,5,Integer,0.0,Home location - east co-ordinate (rounded),22702-0.13,_
+1974,2,Integer,0.0,Home location - east co-ordinate (rounded),22702-0.14,_
+1975,502526,Integer,1.0,Home location - north co-ordinate (rounded),22704-0.0,_
+1976,148255,Integer,0.29162916291629165,Home location - north co-ordinate (rounded),22704-0.1,_
+1977,61998,Integer,0.1266126612661266,Home location - north co-ordinate (rounded),22704-0.2,_
+1978,37260,Integer,0.0776077607760776,Home location - north co-ordinate (rounded),22704-0.3,_
+1979,14870,Integer,0.029002900290029002,Home location - north co-ordinate (rounded),22704-0.4,_
+1980,6086,Integer,0.012201220122012201,Home location - north co-ordinate (rounded),22704-0.5,_
+1981,2444,Integer,0.005000500050005001,Home location - north co-ordinate (rounded),22704-0.6,_
+1982,944,Integer,0.0014001400140014,Home location - north co-ordinate (rounded),22704-0.7,_
+1983,377,Integer,0.00040004000400040005,Home location - north co-ordinate (rounded),22704-0.8,_
+1984,133,Integer,0.00020002000200020003,Home location - north co-ordinate (rounded),22704-0.9,_
+1985,52,Integer,0.00010001000100010001,Home location - north co-ordinate (rounded),22704-0.10,_
+1986,23,Integer,0.0,Home location - north co-ordinate (rounded),22704-0.11,_
+1987,12,Integer,0.0,Home location - north co-ordinate (rounded),22704-0.12,_
+1988,5,Integer,0.0,Home location - north co-ordinate (rounded),22704-0.13,_
+1989,2,Integer,0.0,Home location - north co-ordinate (rounded),22704-0.14,_
+2014,495155,Continuous,0.9847984798479849,Nitrogen dioxide air pollution; 2010,24003-0.0,_
+2015,495155,Continuous,0.9847984798479849,Nitrogen oxides air pollution; 2010,24004-0.0,_
+2016,461228,Continuous,0.9112911291129113,Particulate matter air pollution (pm10); 2010,24005-0.0,_
+2017,461228,Continuous,0.9112911291129113,Particulate matter air pollution (pm2.5); 2010,24006-0.0,_
+2018,461228,Continuous,0.9112911291129113,Particulate matter air pollution (pm2.5) absorbance; 2010,24007-0.0,_
+2019,461228,Continuous,0.9112911291129113,Particulate matter air pollution 2.5-10um; 2010,24008-0.0,_
+2020,495155,Integer,0.9847984798479849,Traffic intensity on the nearest road,24009-0.0,_
+2021,495155,Continuous,0.9847984798479849,Inverse distance to the nearest road,24010-0.0,_
+2022,495155,Integer,0.9847984798479849,Traffic intensity on the nearest major road,24011-0.0,_
+2023,495155,Continuous,0.9847984798479849,Inverse distance to the nearest major road,24012-0.0,_
+2024,495155,Integer,0.9847984798479849,Total traffic load on major roads,24013-0.0,_
+2025,495155,Categorical (single),0.9847984798479849,Close to major road,24014-0.0,_
+2026,495155,Continuous,0.9847984798479849,Sum of road length of major roads within 100m,24015-0.0,_
+2027,495155,Continuous,0.9847984798479849,Nitrogen dioxide air pollution; 2005,24016-0.0,_
+2028,495155,Continuous,0.9847984798479849,Nitrogen dioxide air pollution; 2006,24017-0.0,_
+2029,495155,Continuous,0.9847984798479849,Nitrogen dioxide air pollution; 2007,24018-0.0,_
+2030,494057,Continuous,0.9824982498249825,Particulate matter air pollution (pm10); 2007,24019-0.0,_
+2156,89759,Date,0.17591759175917593,Date of cancer diagnosis,40005-0.0,_
+2157,22733,Date,0.045504550455045506,Date of cancer diagnosis,40005-1.0,_
+2158,4659,Date,0.0088008800880088,Date of cancer diagnosis,40005-2.0,_
+2159,1140,Date,0.0027002700270027003,Date of cancer diagnosis,40005-3.0,_
+2160,286,Date,0.0005000500050005,Date of cancer diagnosis,40005-4.0,_
+2161,92,Date,0.00030003000300030005,Date of cancer diagnosis,40005-5.0,_
+2162,24,Date,0.00010001000100010001,Date of cancer diagnosis,40005-6.0,_
+2163,10,Date,0.00010001000100010001,Date of cancer diagnosis,40005-7.0,_
+2164,3,Date,0.0,Date of cancer diagnosis,40005-8.0,_
+2165,3,Date,0.0,Date of cancer diagnosis,40005-9.0,_
+2166,3,Date,0.0,Date of cancer diagnosis,40005-10.0,_
+2167,2,Date,0.0,Date of cancer diagnosis,40005-11.0,_
+2168,1,Date,0.0,Date of cancer diagnosis,40005-12.0,_
+2169,1,Date,0.0,Date of cancer diagnosis,40005-13.0,_
+2170,1,Date,0.0,Date of cancer diagnosis,40005-14.0,_
+2171,1,Date,0.0,Date of cancer diagnosis,40005-15.0,_
+2172,1,Date,0.0,Date of cancer diagnosis,40005-16.0,_
+2173,83483,Categorical (single),0.1635163516351635,Type of cancer: ICD10,40006-0.0,_
+2174,15379,Categorical (single),0.032603260326032606,Type of cancer: ICD10,40006-1.0,_
+2175,3499,Categorical (single),0.0070007000700070005,Type of cancer: ICD10,40006-2.0,_
+2176,787,Categorical (single),0.0017001700170017002,Type of cancer: ICD10,40006-3.0,_
+2177,211,Categorical (single),0.00010001000100010001,Type of cancer: ICD10,40006-4.0,_
+2178,75,Categorical (single),0.00030003000300030005,Type of cancer: ICD10,40006-5.0,_
+2179,20,Categorical (single),0.00010001000100010001,Type of cancer: ICD10,40006-6.0,_
+2180,6,Categorical (single),0.00010001000100010001,Type of cancer: ICD10,40006-7.0,_
+2181,2,Categorical (single),0.0,Type of cancer: ICD10,40006-8.0,_
+2182,3,Categorical (single),0.0,Type of cancer: ICD10,40006-9.0,_
+2183,1,Categorical (single),0.0,Type of cancer: ICD10,40006-10.0,_
+2184,1,Categorical (single),0.0,Type of cancer: ICD10,40006-11.0,_
+2185,0,Categorical (single),0.0,Type of cancer: ICD10,40006-12.0,_
+2186,1,Categorical (single),0.0,Type of cancer: ICD10,40006-13.0,_
+2187,0,Categorical (single),0.0,Type of cancer: ICD10,40006-14.0,_
+2188,1,Categorical (single),0.0,Type of cancer: ICD10,40006-15.0,_
+2189,1,Categorical (single),0.0,Type of cancer: ICD10,40006-16.0,_
+2193,89807,Continuous,0.17601760176017603,Age at cancer diagnosis,40008-0.0,_
+2194,69974,Continuous,0.1392139213921392,Age at cancer diagnosis,40008-1.0,_
+2195,54541,Continuous,0.1077107710771077,Age at cancer diagnosis,40008-2.0,_
+2196,11726,Continuous,0.024302430243024302,Age at cancer diagnosis,40008-3.0,_
+2197,8382,Continuous,0.0165016501650165,Age at cancer diagnosis,40008-4.0,_
+2198,6395,Continuous,0.012901290129012902,Age at cancer diagnosis,40008-5.0,_
+2199,1625,Continuous,0.0038003800380038005,Age at cancer diagnosis,40008-6.0,_
+2200,1143,Continuous,0.0031003100310031005,Age at cancer diagnosis,40008-7.0,_
+2201,806,Continuous,0.0025002500250025004,Age at cancer diagnosis,40008-8.0,_
+2202,265,Continuous,0.0008000800080008001,Age at cancer diagnosis,40008-9.0,_
+2203,179,Continuous,0.0008000800080008001,Age at cancer diagnosis,40008-10.0,_
+2204,133,Continuous,0.0005000500050005,Age at cancer diagnosis,40008-11.0,_
+2205,53,Continuous,0.00020002000200020003,Age at cancer diagnosis,40008-12.0,_
+2206,42,Continuous,0.00020002000200020003,Age at cancer diagnosis,40008-13.0,_
+2207,30,Continuous,0.00020002000200020003,Age at cancer diagnosis,40008-14.0,_
+2208,16,Continuous,0.00010001000100010001,Age at cancer diagnosis,40008-15.0,_
+2209,12,Continuous,0.00010001000100010001,Age at cancer diagnosis,40008-16.0,_
+2210,11,Continuous,0.00010001000100010001,Age at cancer diagnosis,40008-17.0,_
+2211,8,Continuous,0.00010001000100010001,Age at cancer diagnosis,40008-18.0,_
+2212,7,Continuous,0.00010001000100010001,Age at cancer diagnosis,40008-19.0,_
+2213,5,Continuous,0.0,Age at cancer diagnosis,40008-20.0,_
+2214,2,Continuous,0.0,Age at cancer diagnosis,40008-21.0,_
+2215,2,Continuous,0.0,Age at cancer diagnosis,40008-22.0,_
+2216,2,Continuous,0.0,Age at cancer diagnosis,40008-23.0,_
+2217,2,Continuous,0.0,Age at cancer diagnosis,40008-24.0,_
+2218,2,Continuous,0.0,Age at cancer diagnosis,40008-25.0,_
+2219,2,Continuous,0.0,Age at cancer diagnosis,40008-26.0,_
+2220,2,Continuous,0.0,Age at cancer diagnosis,40008-27.0,_
+2221,1,Continuous,0.0,Age at cancer diagnosis,40008-28.0,_
+2222,1,Continuous,0.0,Age at cancer diagnosis,40008-29.0,_
+2223,1,Continuous,0.0,Age at cancer diagnosis,40008-30.0,_
+2224,1,Continuous,0.0,Age at cancer diagnosis,40008-31.0,_
+2225,89769,Integer,0.17591759175917593,Reported occurrences of cancer,40009-0.0,_
+2227,85663,Categorical (single),0.16771677167716773,Histology of cancer tumour,40011-0.0,_
+2228,22077,Categorical (single),0.04390439043904391,Histology of cancer tumour,40011-1.0,_
+2229,4556,Categorical (single),0.0088008800880088,Histology of cancer tumour,40011-2.0,_
+2230,1120,Categorical (single),0.0027002700270027003,Histology of cancer tumour,40011-3.0,_
+2231,281,Categorical (single),0.0005000500050005,Histology of cancer tumour,40011-4.0,_
+2232,92,Categorical (single),0.00030003000300030005,Histology of cancer tumour,40011-5.0,_
+2233,24,Categorical (single),0.00010001000100010001,Histology of cancer tumour,40011-6.0,_
+2234,10,Categorical (single),0.00010001000100010001,Histology of cancer tumour,40011-7.0,_
+2235,3,Categorical (single),0.0,Histology of cancer tumour,40011-8.0,_
+2236,3,Categorical (single),0.0,Histology of cancer tumour,40011-9.0,_
+2237,2,Categorical (single),0.0,Histology of cancer tumour,40011-10.0,_
+2238,2,Categorical (single),0.0,Histology of cancer tumour,40011-11.0,_
+2239,1,Categorical (single),0.0,Histology of cancer tumour,40011-12.0,_
+2240,1,Categorical (single),0.0,Histology of cancer tumour,40011-13.0,_
+2241,1,Categorical (single),0.0,Histology of cancer tumour,40011-14.0,_
+2242,1,Categorical (single),0.0,Histology of cancer tumour,40011-15.0,_
+2243,1,Categorical (single),0.0,Histology of cancer tumour,40011-16.0,_
+2244,85717,Categorical (single),0.16741674167416742,Behaviour of cancer tumour,40012-0.0,_
+2245,22202,Categorical (single),0.0448044804480448,Behaviour of cancer tumour,40012-1.0,_
+2246,4559,Categorical (single),0.0087008700870087,Behaviour of cancer tumour,40012-2.0,_
+2247,1114,Categorical (single),0.0026002600260026003,Behaviour of cancer tumour,40012-3.0,_
+2248,283,Categorical (single),0.0005000500050005,Behaviour of cancer tumour,40012-4.0,_
+2249,91,Categorical (single),0.00030003000300030005,Behaviour of cancer tumour,40012-5.0,_
+2250,23,Categorical (single),0.00010001000100010001,Behaviour of cancer tumour,40012-6.0,_
+2251,9,Categorical (single),0.00010001000100010001,Behaviour of cancer tumour,40012-7.0,_
+2252,3,Categorical (single),0.0,Behaviour of cancer tumour,40012-8.0,_
+2253,3,Categorical (single),0.0,Behaviour of cancer tumour,40012-9.0,_
+2254,3,Categorical (single),0.0,Behaviour of cancer tumour,40012-10.0,_
+2255,2,Categorical (single),0.0,Behaviour of cancer tumour,40012-11.0,_
+2256,1,Categorical (single),0.0,Behaviour of cancer tumour,40012-12.0,_
+2257,1,Categorical (single),0.0,Behaviour of cancer tumour,40012-13.0,_
+2258,0,Categorical (single),0.0,Behaviour of cancer tumour,40012-14.0,_
+2259,1,Categorical (single),0.0,Behaviour of cancer tumour,40012-15.0,_
+2260,1,Categorical (single),0.0,Behaviour of cancer tumour,40012-16.0,_
+2261,6268,Categorical (single),0.012401240124012402,Type of cancer: ICD9,40013-0.0,_
+2262,7354,Categorical (single),0.012901290129012902,Type of cancer: ICD9,40013-1.0,_
+2263,1160,Categorical (single),0.0018001800180018,Type of cancer: ICD9,40013-2.0,_
+2264,353,Categorical (single),0.001000100010001,Type of cancer: ICD9,40013-3.0,_
+2265,75,Categorical (single),0.00040004000400040005,Type of cancer: ICD9,40013-4.0,_
+2266,17,Categorical (single),0.0,Type of cancer: ICD9,40013-5.0,_
+2267,4,Categorical (single),0.0,Type of cancer: ICD9,40013-6.0,_
+2268,4,Categorical (single),0.0,Type of cancer: ICD9,40013-7.0,_
+2269,1,Categorical (single),0.0,Type of cancer: ICD9,40013-8.0,_
+2270,0,Categorical (single),0.0,Type of cancer: ICD9,40013-9.0,_
+2271,2,Categorical (single),0.0,Type of cancer: ICD9,40013-10.0,_
+2272,1,Categorical (single),0.0,Type of cancer: ICD9,40013-11.0,_
+2273,1,Categorical (single),0.0,Type of cancer: ICD9,40013-12.0,_
+2274,0,Categorical (single),0.0,Type of cancer: ICD9,40013-13.0,_
+2275,1,Categorical (single),0.0,Type of cancer: ICD9,40013-14.0,_
+2278,89811,Categorical (single),0.17591759175917593,Cancer report format,40019-0.0,_
+2279,22782,Categorical (single),0.045604560456045606,Cancer report format,40019-1.0,_
+2280,4664,Categorical (single),0.0088008800880088,Cancer report format,40019-2.0,_
+2281,1141,Categorical (single),0.0027002700270027003,Cancer report format,40019-3.0,_
+2282,286,Categorical (single),0.0005000500050005,Cancer report format,40019-4.0,_
+2283,92,Categorical (single),0.00030003000300030005,Cancer report format,40019-5.0,_
+2284,24,Categorical (single),0.00010001000100010001,Cancer report format,40019-6.0,_
+2285,10,Categorical (single),0.00010001000100010001,Cancer report format,40019-7.0,_
+2286,3,Categorical (single),0.0,Cancer report format,40019-8.0,_
+2287,3,Categorical (single),0.0,Cancer report format,40019-9.0,_
+2288,3,Categorical (single),0.0,Cancer report format,40019-10.0,_
+2289,2,Categorical (single),0.0,Cancer report format,40019-11.0,_
+2290,1,Categorical (single),0.0,Cancer report format,40019-12.0,_
+2291,1,Categorical (single),0.0,Cancer report format,40019-13.0,_
+2292,1,Categorical (single),0.0,Cancer report format,40019-14.0,_
+2293,1,Categorical (single),0.0,Cancer report format,40019-15.0,_
+2294,1,Categorical (single),0.0,Cancer report format,40019-16.0,_
+2302,322505,Integer,0.6443644364436444,"Episodes containing ""Operation status"" data",41106-0.0,_
+2303,351824,Integer,0.6999699969997,"Episodes containing ""Duration of post-operative stay"" data",41107-0.0,_
+2304,351838,Integer,0.6999699969997,"Episodes containing ""Duration of pre-operative stay"" data",41108-0.0,_
+2310,410231,Categorical (multiple),0.8172817281728173,Operative procedures - main OPCS4,41200-0.0,_
+2311,318276,Categorical (multiple),0.6292629262926293,Operative procedures - main OPCS4,41200-0.1,_
+2312,240008,Categorical (multiple),0.47474747474747475,Operative procedures - main OPCS4,41200-0.2,_
+2313,178373,Categorical (multiple),0.35453545354535454,Operative procedures - main OPCS4,41200-0.3,_
+2314,131626,Categorical (multiple),0.26102610261026105,Operative procedures - main OPCS4,41200-0.4,_
+2315,96857,Categorical (multiple),0.1937193719371937,Operative procedures - main OPCS4,41200-0.5,_
+2316,71687,Categorical (multiple),0.1423142314231423,Operative procedures - main OPCS4,41200-0.6,_
+2317,53009,Categorical (multiple),0.10591059105910591,Operative procedures - main OPCS4,41200-0.7,_
+2318,39409,Categorical (multiple),0.08080808080808081,Operative procedures - main OPCS4,41200-0.8,_
+2319,29225,Categorical (multiple),0.05850585058505851,Operative procedures - main OPCS4,41200-0.9,_
+2320,21731,Categorical (multiple),0.0446044604460446,Operative procedures - main OPCS4,41200-0.10,_
+2321,16161,Categorical (multiple),0.0335033503350335,Operative procedures - main OPCS4,41200-0.11,_
+2322,12037,Categorical (multiple),0.0251025102510251,Operative procedures - main OPCS4,41200-0.12,_
+2323,9006,Categorical (multiple),0.0186018601860186,Operative procedures - main OPCS4,41200-0.13,_
+2324,6778,Categorical (multiple),0.014201420142014202,Operative procedures - main OPCS4,41200-0.14,_
+2325,5063,Categorical (multiple),0.010001000100010001,Operative procedures - main OPCS4,41200-0.15,_
+2326,3772,Categorical (multiple),0.008000800080008,Operative procedures - main OPCS4,41200-0.16,_
+2327,2870,Categorical (multiple),0.006200620062006201,Operative procedures - main OPCS4,41200-0.17,_
+2328,2175,Categorical (multiple),0.0047004700470047005,Operative procedures - main OPCS4,41200-0.18,_
+2329,1636,Categorical (multiple),0.0036003600360036,Operative procedures - main OPCS4,41200-0.19,_
+2330,1207,Categorical (multiple),0.0033003300330033004,Operative procedures - main OPCS4,41200-0.20,_
+2331,951,Categorical (multiple),0.0028002800280028,Operative procedures - main OPCS4,41200-0.21,_
+2332,743,Categorical (multiple),0.0023002300230023,Operative procedures - main OPCS4,41200-0.22,_
+2333,578,Categorical (multiple),0.0019001900190019003,Operative procedures - main OPCS4,41200-0.23,_
+2334,435,Categorical (multiple),0.0015001500150015,Operative procedures - main OPCS4,41200-0.24,_
+2335,336,Categorical (multiple),0.0013001300130013002,Operative procedures - main OPCS4,41200-0.25,_
+2336,267,Categorical (multiple),0.001000100010001,Operative procedures - main OPCS4,41200-0.26,_
+2337,205,Categorical (multiple),0.0007000700070007,Operative procedures - main OPCS4,41200-0.27,_
+2338,157,Categorical (multiple),0.0006000600060006001,Operative procedures - main OPCS4,41200-0.28,_
+2339,119,Categorical (multiple),0.00040004000400040005,Operative procedures - main OPCS4,41200-0.29,_
+2340,94,Categorical (multiple),0.00030003000300030005,Operative procedures - main OPCS4,41200-0.30,_
+2341,68,Categorical (multiple),0.00030003000300030005,Operative procedures - main OPCS4,41200-0.31,_
+2342,54,Categorical (multiple),0.00020002000200020003,Operative procedures - main OPCS4,41200-0.32,_
+2343,41,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.33,_
+2344,35,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.34,_
+2345,30,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.35,_
+2346,27,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.36,_
+2347,19,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.37,_
+2348,11,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.38,_
+2349,9,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.39,_
+2350,6,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.40,_
+2351,5,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.41,_
+2352,4,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.42,_
+2353,2,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.43,_
+2354,1,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.44,_
+2355,1,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.45,_
+2356,1,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.46,_
+2357,1,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.47,_
+2358,1,Categorical (multiple),0.0,Operative procedures - main OPCS4,41200-0.48,_
+2689,367452,Categorical (multiple),0.7360736073607361,Operative procedures - secondary OPCS4,41210-0.0,_
+2690,304425,Categorical (multiple),0.6093609360936093,Operative procedures - secondary OPCS4,41210-0.1,_
+2691,248233,Categorical (multiple),0.49104910491049103,Operative procedures - secondary OPCS4,41210-0.2,_
+2692,200576,Categorical (multiple),0.40074007400740075,Operative procedures - secondary OPCS4,41210-0.3,_
+2693,162553,Categorical (multiple),0.32303230323032306,Operative procedures - secondary OPCS4,41210-0.4,_
+2694,132078,Categorical (multiple),0.26222622262226225,Operative procedures - secondary OPCS4,41210-0.5,_
+2695,107739,Categorical (multiple),0.21292129212921293,Operative procedures - secondary OPCS4,41210-0.6,_
+2696,87712,Categorical (multiple),0.17331733173317332,Operative procedures - secondary OPCS4,41210-0.7,_
+2697,71893,Categorical (multiple),0.1407140714071407,Operative procedures - secondary OPCS4,41210-0.8,_
+2698,59136,Categorical (multiple),0.11621162116211621,Operative procedures - secondary OPCS4,41210-0.9,_
+2699,48940,Categorical (multiple),0.0964096409640964,Operative procedures - secondary OPCS4,41210-0.10,_
+2700,40631,Categorical (multiple),0.07920792079207921,Operative procedures - secondary OPCS4,41210-0.11,_
+2701,33680,Categorical (multiple),0.06410641064106411,Operative procedures - secondary OPCS4,41210-0.12,_
+2702,28083,Categorical (multiple),0.054405440544054405,Operative procedures - secondary OPCS4,41210-0.13,_
+2703,23467,Categorical (multiple),0.045404540454045406,Operative procedures - secondary OPCS4,41210-0.14,_
+2704,19601,Categorical (multiple),0.038003800380038005,Operative procedures - secondary OPCS4,41210-0.15,_
+2705,16403,Categorical (multiple),0.0314031403140314,Operative procedures - secondary OPCS4,41210-0.16,_
+2706,13810,Categorical (multiple),0.0268026802680268,Operative procedures - secondary OPCS4,41210-0.17,_
+2707,11611,Categorical (multiple),0.021802180218021803,Operative procedures - secondary OPCS4,41210-0.18,_
+2708,9807,Categorical (multiple),0.019001900190019003,Operative procedures - secondary OPCS4,41210-0.19,_
+2709,8189,Categorical (multiple),0.0159015901590159,Operative procedures - secondary OPCS4,41210-0.20,_
+2710,6880,Categorical (multiple),0.013601360136013601,Operative procedures - secondary OPCS4,41210-0.21,_
+2711,5830,Categorical (multiple),0.011801180118011801,Operative procedures - secondary OPCS4,41210-0.22,_
+2712,4940,Categorical (multiple),0.009900990099009901,Operative procedures - secondary OPCS4,41210-0.23,_
+2713,4126,Categorical (multiple),0.0087008700870087,Operative procedures - secondary OPCS4,41210-0.24,_
+2714,3490,Categorical (multiple),0.007500750075007501,Operative procedures - secondary OPCS4,41210-0.25,_
+2715,2957,Categorical (multiple),0.0063006300630063005,Operative procedures - secondary OPCS4,41210-0.26,_
+2716,2490,Categorical (multiple),0.0054005400540054005,Operative procedures - secondary OPCS4,41210-0.27,_
+2717,2116,Categorical (multiple),0.0047004700470047005,Operative procedures - secondary OPCS4,41210-0.28,_
+2718,1781,Categorical (multiple),0.0042004200420042,Operative procedures - secondary OPCS4,41210-0.29,_
+2719,1504,Categorical (multiple),0.0034003400340034003,Operative procedures - secondary OPCS4,41210-0.30,_
+2720,1257,Categorical (multiple),0.0028002800280028,Operative procedures - secondary OPCS4,41210-0.31,_
+2721,1073,Categorical (multiple),0.0025002500250025004,Operative procedures - secondary OPCS4,41210-0.32,_
+2722,896,Categorical (multiple),0.0021002100210021,Operative procedures - secondary OPCS4,41210-0.33,_
+2723,758,Categorical (multiple),0.002000200020002,Operative procedures - secondary OPCS4,41210-0.34,_
+2724,650,Categorical (multiple),0.0017001700170017002,Operative procedures - secondary OPCS4,41210-0.35,_
+2725,551,Categorical (multiple),0.0014001400140014,Operative procedures - secondary OPCS4,41210-0.36,_
+2726,467,Categorical (multiple),0.0013001300130013002,Operative procedures - secondary OPCS4,41210-0.37,_
+2727,393,Categorical (multiple),0.0009000900090009,Operative procedures - secondary OPCS4,41210-0.38,_
+2728,339,Categorical (multiple),0.0008000800080008001,Operative procedures - secondary OPCS4,41210-0.39,_
+2729,290,Categorical (multiple),0.0008000800080008001,Operative procedures - secondary OPCS4,41210-0.40,_
+2730,258,Categorical (multiple),0.0006000600060006001,Operative procedures - secondary OPCS4,41210-0.41,_
+2731,226,Categorical (multiple),0.0006000600060006001,Operative procedures - secondary OPCS4,41210-0.42,_
+2732,190,Categorical (multiple),0.0005000500050005,Operative procedures - secondary OPCS4,41210-0.43,_
+2733,163,Categorical (multiple),0.0005000500050005,Operative procedures - secondary OPCS4,41210-0.44,_
+2734,144,Categorical (multiple),0.00040004000400040005,Operative procedures - secondary OPCS4,41210-0.45,_
+2735,125,Categorical (multiple),0.00040004000400040005,Operative procedures - secondary OPCS4,41210-0.46,_
+2736,110,Categorical (multiple),0.00040004000400040005,Operative procedures - secondary OPCS4,41210-0.47,_
+2737,96,Categorical (multiple),0.00040004000400040005,Operative procedures - secondary OPCS4,41210-0.48,_
+2738,78,Categorical (multiple),0.00030003000300030005,Operative procedures - secondary OPCS4,41210-0.49,_
+2739,63,Categorical (multiple),0.00010001000100010001,Operative procedures - secondary OPCS4,41210-0.50,_
+2740,56,Categorical (multiple),0.00010001000100010001,Operative procedures - secondary OPCS4,41210-0.51,_
+2741,46,Categorical (multiple),0.00010001000100010001,Operative procedures - secondary OPCS4,41210-0.52,_
+2742,40,Categorical (multiple),0.00010001000100010001,Operative procedures - secondary OPCS4,41210-0.53,_
+2743,37,Categorical (multiple),0.00010001000100010001,Operative procedures - secondary OPCS4,41210-0.54,_
+2744,31,Categorical (multiple),0.00010001000100010001,Operative procedures - secondary OPCS4,41210-0.55,_
+2745,26,Categorical (multiple),0.00010001000100010001,Operative procedures - secondary OPCS4,41210-0.56,_
+2746,19,Categorical (multiple),0.00010001000100010001,Operative procedures - secondary OPCS4,41210-0.57,_
+2747,15,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.58,_
+2748,13,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.59,_
+2749,13,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.60,_
+2750,9,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.61,_
+2751,7,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.62,_
+2752,7,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.63,_
+2753,7,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.64,_
+2754,7,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.65,_
+2755,6,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.66,_
+2756,4,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.67,_
+2757,4,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.68,_
+2758,4,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.69,_
+2759,4,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.70,_
+2760,4,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.71,_
+2761,4,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.72,_
+2762,4,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.73,_
+2763,3,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.74,_
+2764,3,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.75,_
+2765,3,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.76,_
+2766,3,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.77,_
+2767,3,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.78,_
+2768,1,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.79,_
+2769,1,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.80,_
+2770,1,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.81,_
+2771,1,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.82,_
+2772,1,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.83,_
+2773,1,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.84,_
+2774,1,Categorical (multiple),0.0,Operative procedures - secondary OPCS4,41210-0.85,_
+2776,413649,Categorical (multiple),0.8228822882288229,Inpatient record format,41253-0.0,_
+2777,232542,Categorical (multiple),0.46884688468846886,Inpatient record format,41253-0.1,_
+2778,79740,Categorical (multiple),0.15821582158215822,Inpatient record format,41253-0.2,_
+2779,669,Categorical (multiple),0.0019001900190019003,Inpatient record format,41253-0.3,_
+2780,12,Categorical (multiple),0.00010001000100010001,Inpatient record format,41253-0.4,_

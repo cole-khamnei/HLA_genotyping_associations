@@ -1,0 +1,535 @@
+column,count,type,counts,frequency,description,udi,name
+0,502543,Sequence,9999,1.0,Encoded anonymised participant ID,eid,eid
+1,456606,Categorical (single),9056,0.9056905690569056,Spirometry methodUses data-coding 100270 comprises 5 Integer-valued members in a simple list.,23-0.0,spirometry_method
+4,502543,Categorical (single),9999,1.0,SexUses data-coding 9 comprises 2 Integer-valued members in a simple list.,31-0.0,sex
+5,502543,Integer,9999,1.0,Year of birth,34-0.0,birth_year
+6,501328,Categorical (single),9978,0.997899789978998,Was blood sampling attemptedUses data-coding 7 comprises 2 Integer-valued members in a simple list.,35-0.0,blood_sample_attempted
+9,497907,Text,9907,0.9907990799079908,Blood pressure device ID,36-0.0,bp_device
+12,497907,Text,176,0.0176017601760176,Blood pressure manual sphygmomanometer device ID,37-0.0,bp_manual_device_ID
+15,497077,Text,9672,0.9672967296729672,Spirometer device ID,42-0.0,spirometry_device_ID
+18,502543,Categorical (single),9999,1.0,Month of birthUses data-coding 8 comprises 12 Integer-valued members in a simple list.,52-0.0,birth_month
+19,502543,Date,9999,1.0,Date of attending assessment centre,53-0.0,assessment_date
+22,502543,Categorical (single),9999,1.0,UK Biobank assessment centreUses data-coding 10 comprises 26 Integer-valued members in a simple list.,54-0.0,assessment_center
+25,501328,Integer,9978,0.997899789978998,Number of blood samples taken,68-0.0,n_blood_samples
+28,501310,Integer,9978,0.997899789978998,Fasting time,74-0.0,fasting_time
+31,41700,Integer,840,0.084008400840084,Cancer year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.,84-0.0,cancer_first_year_age
+49,375064,Integer,7463,0.7463746374637463,Non-cancer illness year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.,87-0.0,illness_first_year_age
+148,391305,Integer,7810,0.7810781078107811,Operation year/age first occurredUses data-coding 37 comprises 2 Integer-valued members in a simple list.,92-0.0,operation_first_year_age
+244,33113,Integer,656,0.0656065606560656,"Systolic blood pressure, manual reading",93-0.0,systolic_bp_manual
+250,33113,Integer,656,0.0656065606560656,"Diastolic blood pressure, manual reading",94-0.0,diastolic_bp_manual
+256,33113,Integer,656,0.0656065606560656,Pulse rate (during blood-pressure measurement),95-0.0,pulse_rate_manual
+262,501681,Integer,9982,0.9982998299829984,Time since interview start at which blood pressure screen(s) shown,96-0.0,bp_start_time
+268,468106,Integer,9320,0.932093209320932,"Pulse rate, automated reading",102-0.0,pulse_rate_auto
+274,501681,Categorical (single),9982,0.9982998299829984,Birth weight knownUses data-coding 100258 comprises 3 Integer-valued members in a simple list.,120-0.0,birth_weigh_known
+277,452282,Integer,8999,0.8999899989999,Place of birth in UK - north co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.,129-0.0,birth_place_north
+280,452282,Integer,8999,0.8999899989999,Place of birth in UK - east co-ordinateUses data-coding 170 comprises 1 Integer-valued members in a simple list.,130-0.0,birth_place_east
+283,328846,Categorical (single),6613,0.6613661366136614,Job codeUses data-coding 2 comprises 26408 Integer-valued members in a hierarchical tree.,132-0.0,job
+286,501681,Integer,9982,0.9982998299829984,Number of self-reported cancers,134-0.0,n_cancers
+289,501681,Integer,9982,0.9982998299829984,Number of self-reported non-cancer illnesses,135-0.0,n_non_cancer_illnesses
+292,501681,Integer,9982,0.9982998299829984,"Number of operations, self-reported",136-0.0,n_operations
+295,501681,Integer,9982,0.9982998299829984,Number of treatments/medications taken,137-0.0,n_treatments
+298,501920,Continuous,9993,0.9993999399939996,Townsend deprivation index at recruitment,189-0.0,deprivation_index
+299,1299,Categorical (single),26,0.0026002600260026,Reason lost to follow-upUses data-coding 1965 comprises 5 Integer-valued members in a simple list.,190-0.0,lost_to_follow_reason
+300,1299,Date,26,0.0026002600260026,Date lost to follow-up,191-0.0,lost_to_follow_up_date
+301,501680,Categorical (single),9969,0.996999699969997,Type of accommodation lived inUses data-coding 100286 comprises 7 Integer-valued members in a simple list.,670-0.0,living_accomodation
+304,500287,Categorical (single),9936,0.9936993699369936,Own or rent accommodation lived inUses data-coding 100287 comprises 8 Integer-valued members in a simple list.,680-0.0,own_or_rent_accomodation
+307,501676,Integer,9969,0.996999699969997,Length of time at current addressUses data-coding 100290 comprises 3 Integer-valued members in a simple list.,699-0.0,time_at_current_address
+310,500283,Integer,9936,0.9936993699369936,Number in householdUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,709-0.0,n_household_inhabitants
+313,500283,Categorical (single),9936,0.9936993699369936,Number of vehicles in householdUses data-coding 100293 comprises 7 Integer-valued members in a simple list.,728-0.0,n_household_vehicles
+316,496526,Categorical (single),9861,0.9861986198619862,Average total household income before taxUses data-coding 100294 comprises 7 Integer-valued members in a simple list.,738-0.0,household_average_income
+319,287174,Integer,5750,0.575057505750575,Time employed in main current jobUses data-coding 100290 comprises 3 Integer-valued members in a simple list.,757-0.0,time_at_current_job
+322,287176,Integer,5750,0.575057505750575,Length of working week for main jobUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,767-0.0,work_week_length
+325,284837,Integer,5709,0.570957095709571,Frequency of travelling from home to job workplaceUses data-coding 100298 comprises 3 Integer-valued members in a simple list.,777-0.0,n_trips_to_work
+328,265638,Integer,5304,0.5304530453045304,Distance between home and job workplaceUses data-coding 100300 comprises 3 Integer-valued members in a simple list.,796-0.0,distance_to_work
+331,287176,Categorical (single),5750,0.575057505750575,Job involves mainly walking or standingUses data-coding 100301 comprises 6 Integer-valued members in a simple list.,806-0.0,work_standing_and_walking
+334,287176,Categorical (single),5750,0.575057505750575,Job involves heavy manual or physical workUses data-coding 100301 comprises 6 Integer-valued members in a simple list.,816-0.0,work_heavy_physical_labor
+337,287176,Categorical (single),5750,0.575057505750575,Job involves shift workUses data-coding 100301 comprises 6 Integer-valued members in a simple list.,826-0.0,work_shift_status
+340,336773,Integer,6607,0.6607660766076607,Age completed full time educationUses data-coding 100306 comprises 3 Integer-valued members in a simple list.,845-0.0,education_completion_age
+343,497886,Categorical (single),9894,0.9894989498949897,Frequency of friend/family visitsUses data-coding 100327 comprises 9 Integer-valued members in a simple list.,1031-0.0,frequency_family_friend_visits
+346,497886,Integer,9894,0.9894989498949897,Time spend outdoors in summerUses data-coding 100329 comprises 3 Integer-valued members in a simple list.,1050-0.0,outdoors_time_summer
+349,497886,Integer,9894,0.9894989498949897,Time spent outdoors in winterUses data-coding 100329 comprises 3 Integer-valued members in a simple list.,1060-0.0,outdoors_time_winter
+352,501656,Integer,9969,0.996999699969997,Sleep durationUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1160-0.0,sleep_duration
+355,497881,Categorical (single),9894,0.9894989498949897,Getting up in morningUses data-coding 100341 comprises 6 Integer-valued members in a simple list.,1170-0.0,morning_wake_up
+358,497879,Categorical (single),9894,0.9894989498949897,Morning/evening person (chronotype)Uses data-coding 100342 comprises 6 Integer-valued members in a simple list.,1180-0.0,morning_evening_person
+361,501653,Categorical (single),9969,0.996999699969997,Nap during dayUses data-coding 100343 comprises 4 Integer-valued members in a simple list.,1190-0.0,day_naps
+364,501652,Categorical (single),9969,0.996999699969997,Sleeplessness / insomniaUses data-coding 100343 comprises 4 Integer-valued members in a simple list.,1200-0.0,insomnia
+367,501652,Categorical (single),9969,0.996999699969997,SnoringUses data-coding 100345 comprises 4 Integer-valued members in a simple list.,1210-0.0,snoring
+370,501652,Categorical (single),9969,0.996999699969997,Daytime dozing / sleeping (narcolepsy)Uses data-coding 100346 comprises 6 Integer-valued members in a simple list.,1220-0.0,narcolepsy
+373,501652,Categorical (single),9969,0.996999699969997,Current tobacco smokingUses data-coding 100347 comprises 4 Integer-valued members in a simple list.,1239-0.0,tobacco_smoking_current
+376,462408,Categorical (single),9186,0.9186918691869188,Past tobacco smokingUses data-coding 100348 comprises 5 Integer-valued members in a simple list.,1249-0.0,tobacco_smoking_past
+379,459033,Categorical (single),9122,0.9122912291229124,Smoking/smokers in householdUses data-coding 100370 comprises 4 Integer-valued members in a simple list.,1259-0.0,n_household_smokers
+382,462808,Integer,9197,0.9197919791979198,Exposure to tobacco smoke at homeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1269-0.0,tobacco_exposure_home
+385,462808,Integer,9197,0.9197919791979198,Exposure to tobacco smoke outside homeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1279-0.0,tobacco_exposure_outside_home
+388,501650,Integer,9969,0.996999699969997,Cooked vegetable intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1289-0.0,vegetable_intake_cooked
+391,501650,Integer,9969,0.996999699969997,Salad / raw vegetable intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1299-0.0,vegetable_intake_raw
+394,501650,Integer,9969,0.996999699969997,Fresh fruit intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1309-0.0,fruit_intake_fresh
+397,501649,Integer,9969,0.996999699969997,Dried fruit intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1319-0.0,fruit_intake_dried
+400,501649,Categorical (single),9969,0.996999699969997,Oily fish intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.,1329-0.0,fish_intake_oily
+403,501649,Categorical (single),9969,0.996999699969997,Non-oily fish intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.,1339-0.0,fish_intake_non_oily
+406,501648,Categorical (single),9969,0.996999699969997,Processed meat intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.,1349-0.0,meat_intake_processed
+409,501648,Categorical (single),9969,0.996999699969997,Poultry intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.,1359-0.0,meat_intake_poultry
+412,501648,Categorical (single),9969,0.996999699969997,Beef intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.,1369-0.0,meat_intake_beef
+415,501648,Categorical (single),9969,0.996999699969997,Lamb/mutton intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.,1379-0.0,meat_intake_lamb
+418,501646,Categorical (single),9969,0.996999699969997,Pork intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.,1389-0.0,meat_intake_pork
+421,489661,Categorical (single),9735,0.9735973597359736,Cheese intakeUses data-coding 100377 comprises 8 Integer-valued members in a simple list.,1408-0.0,dairy_intake_cheese
+424,501563,Categorical (single),9965,0.9965996599659966,Milk type usedUses data-coding 100387 comprises 8 Integer-valued members in a simple list.,1418-0.0,dairy_intake_milk
+427,497871,Categorical (single),9894,0.9894989498949897,Spread typeUses data-coding 100388 comprises 6 Integer-valued members in a simple list.,1428-0.0,spread_type
+430,497871,Integer,9894,0.9894989498949897,Bread intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1438-0.0,bread_intake
+433,481411,Categorical (single),9578,0.957895789578958,Bread typeUses data-coding 100391 comprises 6 Integer-valued members in a simple list.,1448-0.0,bread_type
+436,501529,Integer,9965,0.9965996599659966,Cereal intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1458-0.0,cereal_intake
+439,415243,Categorical (single),8246,0.8246824682468247,Cereal typeUses data-coding 100393 comprises 7 Integer-valued members in a simple list.,1468-0.0,cereal_type
+442,501646,Categorical (single),9969,0.996999699969997,Salt added to foodUses data-coding 100394 comprises 5 Integer-valued members in a simple list.,1478-0.0,salt_added
+445,501646,Integer,9969,0.996999699969997,Tea intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1488-0.0,tea_intake
+448,501646,Integer,9969,0.996999699969997,Coffee intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1498-0.0,coffee_intake
+451,386250,Categorical (single),7686,0.7686768676867687,Coffee typeUses data-coding 100397 comprises 6 Integer-valued members in a simple list.,1508-0.0,coffee_type
+454,501646,Categorical (single),9969,0.996999699969997,Hot drink temperatureUses data-coding 100398 comprises 5 Integer-valued members in a simple list.,1518-0.0,hot_drink_temperatures
+457,501646,Integer,9969,0.996999699969997,Water intakeUses data-coding 100373 comprises 3 Integer-valued members in a simple list.,1528-0.0,water_intake
+460,501646,Categorical (single),9969,0.996999699969997,Major dietary changes in the last 5 yearsUses data-coding 100400 comprises 4 Integer-valued members in a simple list.,1538-0.0,major_dietary_changes_past_5_years
+463,497871,Categorical (single),9894,0.9894989498949897,Variation in dietUses data-coding 100401 comprises 5 Integer-valued members in a simple list.,1548-0.0,diet_variations
+466,501646,Categorical (single),9969,0.996999699969997,Alcohol intake frequency.Uses data-coding 100402 comprises 7 Integer-valued members in a simple list.,1558-0.0,alcohol_intake
+469,346519,Integer,6981,0.6981698169816982,Average weekly red wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1568-0.0,alcohol_intake_red_wine
+472,346518,Integer,6981,0.6981698169816982,Average weekly champagne plus white wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1578-0.0,alcohol_intake_champagne
+475,346518,Integer,6981,0.6981698169816982,Average weekly beer plus cider intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1588-0.0,alcohol_intake_beer_cider
+478,346518,Integer,6981,0.6981698169816982,Average weekly spirits intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1598-0.0,alcohol_intake_spirits
+481,346518,Integer,6981,0.6981698169816982,Average weekly fortified wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1608-0.0,alcohol_intake_fortified_wine
+484,387354,Categorical (single),7779,0.7779777977797779,Alcohol usually taken with mealsUses data-coding 100416 comprises 5 Integer-valued members in a simple list.,1618-0.0,alcohol_with_meals
+487,460391,Categorical (single),9183,0.9183918391839184,Alcohol intake versus 10 years previouslyUses data-coding 100417 comprises 5 Integer-valued members in a simple list.,1628-0.0,alcohol_intake_versus_past_10_years
+490,501645,Categorical (single),9969,0.996999699969997,Country of birth (UK/elsewhere)Uses data-coding 100420 comprises 8 Integer-valued members in a simple list.,1647-0.0,birth_country
+493,501645,Categorical (single),9969,0.996999699969997,Breastfed as a babyUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1677-0.0,baby_breastfed
+496,501645,Categorical (single),9969,0.996999699969997,Comparative body size at age 10Uses data-coding 100428 comprises 5 Integer-valued members in a simple list.,1687-0.0,body_size_age_10
+499,501645,Categorical (single),9969,0.996999699969997,Comparative height size at age 10Uses data-coding 100429 comprises 5 Integer-valued members in a simple list.,1697-0.0,height_age_10
+502,501645,Categorical (single),9969,0.996999699969997,Handedness (chirality/laterality)Uses data-coding 100430 comprises 4 Integer-valued members in a simple list.,1707-0.0,handedness
+505,501644,Categorical (single),9969,0.996999699969997,Skin colourUses data-coding 100431 comprises 8 Integer-valued members in a simple list.,1717-0.0,skin_color
+508,497869,Categorical (single),9894,0.9894989498949897,Ease of skin tanningUses data-coding 100432 comprises 6 Integer-valued members in a simple list.,1727-0.0,ski_tanning_ease
+511,497869,Integer,9894,0.9894989498949897,Childhood sunburn occasionsUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1737-0.0,childhood_sunburn_events
+514,501644,Categorical (single),9969,0.996999699969997,"Hair colour (natural, before greying)Uses data-coding 100434 comprises 8 Integer-valued members in a simple list.",1747-0.0,hair_color
+517,497868,Categorical (single),9894,0.9894989498949897,Facial ageingUses data-coding 100435 comprises 5 Integer-valued members in a simple list.,1757-0.0,facial_aging
+520,501643,Categorical (single),9969,0.996999699969997,Adopted as a childUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1767-0.0,adopted
+523,494284,Categorical (single),9817,0.9817981798179818,Part of a multiple birthUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1777-0.0,birth_part_of_multiple
+526,494284,Categorical (single),9817,0.9817981798179818,Maternal smoking around birthUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1787-0.0,birth_maternal_smoking
+529,494283,Categorical (single),9817,0.9817981798179818,Father still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1797-0.0,father_alive
+532,378094,Integer,7536,0.7536753675367537,Father's age at deathUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1807-0.0,father_death_age
+535,494283,Categorical (single),9817,0.9817981798179818,Mother still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1835-0.0,mother_alive
+538,199351,Integer,3948,0.3948394839483948,Mother's ageUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1845-0.0,mother_age
+541,494280,Integer,9817,0.9817981798179818,Number of full brothersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1873-0.0,brothers_n_full
+544,494280,Integer,9817,0.9817981798179818,Number of full sistersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,1883-0.0,sisters_n_full
+547,501639,Categorical (single),9969,0.996999699969997,Mood swingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1920-0.0,mood_swings
+550,501639,Categorical (single),9969,0.996999699969997,MiserablenessUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1930-0.0,miserableness
+553,501639,Categorical (single),9969,0.996999699969997,IrritabilityUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1940-0.0,irritability
+556,501638,Categorical (single),9969,0.996999699969997,Sensitivity / hurt feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1950-0.0,sensitivity
+559,501638,Categorical (single),9969,0.996999699969997,Fed-up feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1960-0.0,feelings_fed_up
+562,501638,Categorical (single),9969,0.996999699969997,Nervous feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1970-0.0,feelings_nervous
+565,501637,Categorical (single),9969,0.996999699969997,Worrier / anxious feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1980-0.0,feelings_anxious
+568,501637,Categorical (single),9969,0.996999699969997,Tense / 'highly strung'Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.,1990-0.0,feelings_tense
+571,501637,Categorical (single),9969,0.996999699969997,Worry too long after embarrassmentUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2000-0.0,persistent_embarrassment
+574,501637,Categorical (single),9969,0.996999699969997,Suffer from 'nerves'Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2010-0.0,nerve_suffering
+577,501636,Categorical (single),9969,0.996999699969997,"Loneliness, isolationUses data-coding 100349 comprises 4 Integer-valued members in a simple list.",2020-0.0,loneliness
+580,501636,Categorical (single),9969,0.996999699969997,Guilty feelingsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2030-0.0,feelings_guilty
+583,501636,Categorical (single),9969,0.996999699969997,Risk takingUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2040-0.0,risk_taking
+586,501636,Categorical (single),9969,0.996999699969997,Frequency of depressed mood in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.,2050-0.0,frequency_depressed_mood
+589,501635,Categorical (single),9969,0.996999699969997,Frequency of unenthusiasm / disinterest in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.,2060-0.0,frequency_disinterest
+592,501634,Categorical (single),9969,0.996999699969997,Frequency of tenseness / restlessness in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.,2070-0.0,frequency_tenseness
+595,501633,Categorical (single),9969,0.996999699969997,Frequency of tiredness / lethargy in last 2 weeksUses data-coding 100484 comprises 6 Integer-valued members in a simple list.,2080-0.0,frequency_tiredness
+598,501632,Categorical (single),9969,0.996999699969997,"Seen doctor (GP) for nerves, anxiety, tension or depressionUses data-coding 100349 comprises 4 Integer-valued members in a simple list.",2090-0.0,seen_gp_for_nerves_anxiety_tension_depression
+601,501632,Categorical (single),9969,0.996999699969997,"Seen a psychiatrist for nerves, anxiety, tension or depressionUses data-coding 100349 comprises 4 Integer-valued members in a simple list.",2100-0.0,seen_psychiastrist_for_nerves_anxiety_tension_depression
+604,501631,Categorical (single),9969,0.996999699969997,Able to confideUses data-coding 100501 comprises 8 Integer-valued members in a simple list.,2110-0.0,able_to_confide
+607,501629,Categorical (single),9969,0.996999699969997,Answered sexual history questionsUses data-coding 100503 comprises 2 Integer-valued members in a simple list.,2129-0.0,sex_answered_history
+610,455525,Integer,9066,0.9066906690669068,Age first had sexual intercourseUses data-coding 100504 comprises 3 Integer-valued members in a simple list.,2139-0.0,sex_first_age
+613,451295,Integer,8986,0.8986898689868987,Lifetime number of sexual partnersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2149-0.0,sex_n_partners
+616,451295,Categorical (single),8986,0.8986898689868987,Ever had same-sex intercourseUses data-coding 100352 comprises 3 Integer-valued members in a simple list.,2159-0.0,sex_ever_same_sex
+619,501625,Categorical (single),9969,0.996999699969997,Overall health ratingUses data-coding 100508 comprises 6 Integer-valued members in a simple list.,2178-0.0,overall_health_rating
+622,501625,Categorical (single),9969,0.996999699969997,"Long-standing illness, disability or infirmityUses data-coding 100349 comprises 4 Integer-valued members in a simple list.",2188-0.0,chronic_illness_disability
+625,497849,Categorical (single),9894,0.9894989498949897,Use of sun/uv protectionUses data-coding 100536 comprises 7 Integer-valued members in a simple list.,2267-0.0,sun_uv_protection_use
+628,497849,Integer,9894,0.9894989498949897,Frequency of solarium/sunlamp useUses data-coding 100537 comprises 3 Integer-valued members in a simple list.,2277-0.0,sun_lamp_use_frequency
+631,501624,Categorical (single),9969,0.996999699969997,Falls in the last yearUses data-coding 100539 comprises 4 Integer-valued members in a simple list.,2296-0.0,n_falls_past_year
+634,501623,Categorical (single),9969,0.996999699969997,Weight change compared with 1 year agoUses data-coding 100540 comprises 5 Integer-valued members in a simple list.,2306-0.0,weight_change_past_year
+637,501622,Categorical (single),9969,0.996999699969997,Wheeze or whistling in the chest in last yearUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2316-0.0,chest_wheeze_past_year
+640,501620,Categorical (single),9969,0.996999699969997,Chest pain or discomfortUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2335-0.0,chest_pain
+643,226953,Categorical (single),4518,0.4518451845184518,Relative age of first facial hairUses data-coding 100570 comprises 5 Integer-valued members in a simple list.,2375-0.0,age_first_facial_hair
+646,226953,Categorical (single),4518,0.4518451845184518,Relative age voice brokeUses data-coding 100570 comprises 5 Integer-valued members in a simple list.,2385-0.0,age_voice_broke
+649,226953,Categorical (single),4518,0.4518451845184518,Hair/balding patternUses data-coding 100572 comprises 6 Integer-valued members in a simple list.,2395-0.0,hair_balding_pattern
+652,226953,Integer,4518,0.4518451845184518,Number of children fatheredUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2405-0.0,n_children_fathered
+655,228670,Categorical (single),4556,0.4556455645564556,Had major operationsUses data-coding 100603 comprises 4 Integer-valued members in a simple list.,2415-0.0,had_major_operations
+658,501612,Categorical (single),9969,0.996999699969997,Diabetes diagnosed by doctorUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2443-0.0,diabetes_dx
+661,501612,Categorical (single),9969,0.996999699969997,Cancer diagnosed by doctorUses data-coding 100603 comprises 4 Integer-valued members in a simple list.,2453-0.0,cancer_dx
+664,501612,Categorical (single),9969,0.996999699969997,Fractured/broken bones in last 5 yearsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2463-0.0,n_fractures_breaks_past_year
+667,501612,Categorical (single),9969,0.996999699969997,Other serious medical condition/disability diagnosed by doctorUses data-coding 100603 comprises 4 Integer-valued members in a simple list.,2473-0.0,serious_medical_dx
+670,501612,Categorical (single),9969,0.996999699969997,Taking other prescription medicationsUses data-coding 100603 comprises 4 Integer-valued members in a simple list.,2492-0.0,other_prescription_medication
+673,137573,Categorical (single),2783,0.2783278327832783,"Light smokers, at least 100 smokes in lifetimeUses data-coding 100349 comprises 4 Integer-valued members in a simple list.",2644-0.0,tobacco_smoking_light_status
+676,259836,Categorical (single),5153,0.5153515351535154,Non-butter spread type detailsUses data-coding 100389 comprises 9 Integer-valued members in a simple list.,2654-0.0,non_butter_spread_use
+679,207095,Categorical (single),4011,0.4011401140114011,Reason for reducing amount of alcohol drunkUses data-coding 100418 comprises 7 Integer-valued members in a simple list.,2664-0.0,alcohol_reduction_reason
+682,272930,Categorical (single),5413,0.5413541354135414,Ever had breast cancer screening / mammogramUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2674-0.0,breast_cancer_screening_ever
+685,217401,Integer,4294,0.4294429442944294,Years since last breast cancer screening / mammogramUses data-coding 100567 comprises 3 Integer-valued members in a simple list.,2684-0.0,breast_cancer_time_since_last
+688,272930,Categorical (single),5413,0.5413541354135414,Ever had cervical smear testUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2694-0.0,cervical_smear_ever
+691,265801,Integer,5274,0.5274527452745275,Years since last cervical smear testUses data-coding 100569 comprises 3 Integer-valued members in a simple list.,2704-0.0,cervical_smear_time_since_last
+694,272930,Integer,5413,0.5413541354135414,Age when periods started (menarche)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2714-0.0,menarche
+697,272930,Categorical (single),5413,0.5413541354135414,Had menopauseUses data-coding 100579 comprises 5 Integer-valued members in a simple list.,2724-0.0,menopause
+700,272928,Integer,5413,0.5413541354135414,Number of live birthsUses data-coding 100584 comprises 1 Integer-valued members in a simple list.,2734-0.0,n_live_births
+703,221457,Integer,4384,0.4384438443844384,Birth weight of first childUses data-coding 100585 comprises 3 Integer-valued members in a simple list.,2744-0.0,children_first_birth_weight
+706,184989,Integer,3673,0.3673367336733673,Age at first live birthUses data-coding 100586 comprises 2 Integer-valued members in a simple list.,2754-0.0,live_birth_first_age
+709,184989,Integer,3673,0.3673367336733673,Age at last live birthUses data-coding 100586 comprises 2 Integer-valued members in a simple list.,2764-0.0,live_birth_last_age
+712,272927,Categorical (single),5413,0.5413541354135414,"Ever had stillbirth, spontaneous miscarriage or terminationUses data-coding 100349 comprises 4 Integer-valued members in a simple list.",2774-0.0,stillbirth_ever
+715,272927,Categorical (single),5413,0.5413541354135414,Ever taken oral contraceptive pillUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2784-0.0,oral_contraception_ever
+718,220451,Integer,4336,0.4336433643364336,Age started oral contraceptive pillUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2794-0.0,oral_contraception_start_age
+721,220115,Integer,4328,0.4328432843284328,Age when last used oral contraceptive pillUses data-coding 100595 comprises 3 Integer-valued members in a simple list.,2804-0.0,oral_contraception_last_age
+724,272927,Categorical (single),5413,0.5413541354135414,Ever used hormone-replacement therapy (HRT)Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2814-0.0,HRT_ever
+727,51042,Integer,988,0.0988098809880988,Age at hysterectomyUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2824-0.0,hysterectomy_age
+730,272927,Categorical (single),5413,0.5413541354135414,Bilateral oophorectomy (both ovaries removed)Uses data-coding 100599 comprises 4 Integer-valued members in a simple list.,2834-0.0,oophorectomy_bilateral_age
+733,272927,Categorical (single),5413,0.5413541354135414,Had other major operationsUses data-coding 100603 comprises 4 Integer-valued members in a simple list.,2844-0.0,major_operations
+736,120982,Integer,2349,0.2349234923492349,Age started smoking in former smokersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2867-0.0,tobacco_smoking_former_start_age
+739,120982,Categorical (single),2349,0.2349234923492349,Type of tobacco previously smokedUses data-coding 100351 comprises 5 Integer-valued members in a simple list.,2877-0.0,tobacco_smoking_former_type
+742,115484,Integer,2248,0.2248224822482248,Number of cigarettes previously smoked dailyUses data-coding 100353 comprises 2 Integer-valued members in a simple list.,2887-0.0,tobacco_smoking_former_n_daily_cigarettes
+745,120982,Integer,2349,0.2349234923492349,Age stopped smokingUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2897-0.0,tobacco_smoking_former_stop_age
+748,120048,Categorical (single),2331,0.2331233123312331,Ever stopped smoking for 6+ monthsUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2907-0.0,tobacco_smoking_stopped_more_than_6_months
+751,120048,Integer,2331,0.2331233123312331,Number of unsuccessful stop-smoking attemptsUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2926-0.0,tobacco_smoking_n_unsuccessful_stop_attempts
+754,120048,Categorical (single),2331,0.2331233123312331,Likelihood of resuming smokingUses data-coding 100369 comprises 6 Integer-valued members in a simple list.,2936-0.0,tobacco_smoking_former_likelihood_resume
+757,114649,Integer,2259,0.2259225922592259,Father's ageUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2946-0.0,father_age
+760,134649,Integer,2613,0.2613261326132613,Age high blood pressure diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2966-0.0,HTN_dx_age
+763,25285,Integer,510,0.051005100510051,Age diabetes diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,2976-0.0,diabetes_dx_age
+766,25309,Categorical (single),511,0.0511051105110511,Started insulin within one year diagnosis of diabetesUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,2986-0.0,diabetes_insulin_start_within_one_year
+769,47466,Categorical (single),1035,0.1035103510351035,Fracture resulting from simple fallUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,3005-0.0,simple_fall_fracture
+772,453731,Categorical (single),8996,0.8996899689968997,Result rankingUses data-coding 22 comprises 3 Integer-valued members in a simple list.,3059-0.0,spirometry_result_ranking
+781,453731,Time,8996,0.8996899689968997,Time of blow measurement,3060-0.0,blow_time
+790,453731,Integer,8996,0.8996899689968997,Acceptability of each blow result,3061-0.0,spirometry_blow_result_acceptability
+799,453731,Continuous,8996,0.8996899689968997,Forced vital capacity (FVC),3062-0.0,spirometry_FVC
+808,453731,Continuous,8996,0.8996899689968997,Forced expiratory volume in 1-second (FEV1),3063-0.0,spirometry_FEV1
+817,453731,Integer,8996,0.8996899689968997,Peak expiratory flow (PEF),3064-0.0,spirometry_PEF
+826,453731,Categorical (single),8996,0.8996899689968997,Ordering of blowsUses data-coding 23 comprises 3 Integer-valued members in a simple list.,3065-0.0,spirometry_blow_orders
+835,453731,Curve,8996,0.8996899689968997,Data points for blow,3066-0.0,spirometry_blow_data_points
+844,500828,Categorical (single),9968,0.9968996899689968,Pace-makerUses data-coding 7 comprises 2 Integer-valued members in a simple list.,3079-0.0,pace_maker
+847,500818,Categorical (single),9968,0.9968996899689968,Contra-indications for spirometryUses data-coding 100267 comprises 3 Integer-valued members in a simple list.,3088-0.0,spirometry_contraindications
+850,460041,Categorical (single),9125,0.9125912591259124,Caffeine drink within last hourUses data-coding 7 comprises 2 Integer-valued members in a simple list.,3089-0.0,caffiene_use_past_hour
+853,460041,Categorical (single),9125,0.9125912591259124,Used an inhaler for chest within last hourUses data-coding 7 comprises 2 Integer-valued members in a simple list.,3090-0.0,inhaler_use_past_hour
+856,453731,Text,8996,0.8996899689968997,Spirometry device serial number,3132-0.0,spirometry_device_serial_number
+859,453731,Integer,8996,0.8996899689968997,Number of measurements made,3137-0.0,spirometry_n_measurements
+862,272563,Categorical (single),5406,0.5406540654065407,PregnantUses data-coding 100267 comprises 3 Integer-valued members in a simple list.,3140-0.0,pregnant_current
+865,47587,Categorical (single),978,0.0978097809780978,Smoked cigarette or pipe within last hourUses data-coding 7 comprises 2 Integer-valued members in a simple list.,3159-0.0,tobacco_smoking_use_past_hour
+868,497306,Time,9916,0.9916991699169916,Time blood sample collected,3166-0.0,blood_sample_collection_time
+889,50277,Categorical (single),1005,0.1005100510051005,Job involve night shift workUses data-coding 100301 comprises 6 Integer-valued members in a simple list.,3426-0.0,job_night_shift
+892,39244,Integer,783,0.0783078307830783,Age started smoking in current smokersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3436-0.0,tobacco_smoking_current_start_age
+895,39244,Categorical (single),783,0.0783078307830783,Type of tobacco currently smokedUses data-coding 100351 comprises 5 Integer-valued members in a simple list.,3446-0.0,tobacco_smoking_current_type
+898,36484,Integer,728,0.0728072807280728,Number of cigarettes currently smoked daily (current cigarette smokers)Uses data-coding 100355 comprises 3 Integer-valued members in a simple list.,3456-0.0,tobacco_smoking_current_n_daily_cigarettes
+901,36118,Categorical (single),717,0.0717071707170717,Time from waking to first cigaretteUses data-coding 100356 comprises 7 Integer-valued members in a simple list.,3466-0.0,tobacco_smoking_current_time_to_first_cigarette
+904,36118,Categorical (single),717,0.0717071707170717,Difficulty not smoking for 1 dayUses data-coding 100357 comprises 5 Integer-valued members in a simple list.,3476-0.0,tobacco_smoking_current_1_day_abstinence_difficulty
+907,39244,Categorical (single),783,0.0783078307830783,Ever tried to stop smokingUses data-coding 100358 comprises 4 Integer-valued members in a simple list.,3486-0.0,tobacco_smoking_current_stop_attempt_ever
+910,38842,Categorical (single),772,0.0772077207720772,Wants to stop smokingUses data-coding 100359 comprises 5 Integer-valued members in a simple list.,3496-0.0,tobacco_smoking_current_desire_to_stop
+913,39244,Categorical (single),783,0.0783078307830783,Smoking compared to 10 years previousUses data-coding 100360 comprises 4 Integer-valued members in a simple list.,3506-0.0,tobacco_smoking_current_change_past_10_years
+916,298457,Integer,5943,0.5943594359435943,Mother's age at deathUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3526-0.0,mother_death_age
+919,103921,Integer,2053,0.2053205320532053,Age started hormone-replacement therapy (HRT)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3536-0.0,HRT_start_age
+922,103921,Integer,2053,0.2053205320532053,Age last used hormone-replacement therapy (HRT)Uses data-coding 100598 comprises 3 Integer-valued members in a simple list.,3546-0.0,HRT_last_age
+925,165363,Integer,3258,0.3258325832583258,Age at menopause (last menstrual period)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3581-0.0,menopause_age
+928,241757,Categorical (single),4767,0.4767476747674767,Ever had hysterectomy (womb removed)Uses data-coding 100599 comprises 4 Integer-valued members in a simple list.,3591-0.0,hysterectomy_ever
+931,81023,Categorical (single),1692,0.1692169216921692,Chest pain or discomfort walking normallyUses data-coding 100563 comprises 4 Integer-valued members in a simple list.,3606-0.0,chest_pain_walking
+934,31913,Categorical (single),657,0.0657065706570657,Chest pain due to walking ceases when standing stillUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,3616-0.0,chest_pain_walking_ceases_when_standing
+937,15997,Integer,298,0.0298029802980298,Age angina diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3627-0.0,angina_dx_age
+940,44560,Integer,871,0.0871087108710871,Year immigrated to UK (United Kingdom)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3659-0.0,immigration_year
+943,15819,Integer,331,0.0331033103310331,Lifetime number of same-sex sexual partnersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3669-0.0,sex_same_sex_n_partners
+946,20509,Integer,414,0.0414041404140414,Age when last ate meatUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3680-0.0,meat_intake_last_age
+949,64081,Integer,1266,0.1266126612661266,Time since last menstrual periodUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3700-0.0,menses_time_since_last
+952,64081,Integer,1266,0.1266126612661266,Length of menstrual cycleUses data-coding 100582 comprises 3 Integer-valued members in a simple list.,3710-0.0,menses_cycle_length
+955,76348,Categorical (single),1509,0.1509150915091509,Menstruating todayUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,3720-0.0,menses_current
+958,40649,Categorical (single),777,0.0777077707770777,Former alcohol drinkerUses data-coding 100352 comprises 3 Integer-valued members in a simple list.,3731-0.0,alcohol_former_user
+961,65262,Categorical (single),1371,0.1371137113711371,Chest pain or discomfort when walking uphill or hurryingUses data-coding 100564 comprises 4 Integer-valued members in a simple list.,3751-0.0,chest_pain_on_exertion
+964,115140,Integer,2267,0.2267226722672267,"Age hay fever, rhinitis or eczema diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.",3761-0.0,hay_fever_rhinitis_eczema_dx_age
+967,57693,Integer,1139,0.1139113911391139,Age asthma diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3786-0.0,asthma_age_dx
+970,87245,Integer,1759,0.1759175917591759,Number of stillbirthsUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3829-0.0,pregnancy_n_stillbirths
+973,87245,Integer,1759,0.1759175917591759,Number of spontaneous miscarriagesUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3839-0.0,pregnancy_n_miscarriages
+976,87245,Integer,1759,0.1759175917591759,Number of pregnancy terminationsUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3849-0.0,pregnancy_n_terminations
+979,17969,Categorical (single),342,0.0342034203420342,Reason former drinker stopped drinking alcoholUses data-coding 100418 comprises 7 Integer-valued members in a simple list.,3859-0.0,alcohol_former_use_stop_reason
+982,36468,Integer,711,0.0711071107110711,Age of primiparous women at birth of childUses data-coding 100586 comprises 2 Integer-valued members in a simple list.,3872-0.0,pregnancy_primiparous_birth_age
+985,21764,Integer,405,0.0405040504050405,Age at bilateral oophorectomy (both ovaries removed)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3882-0.0,oophorectomy_bilateral_age_integer
+988,11545,Integer,225,0.0225022502250225,Age heart attack diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3894-0.0,myocardial_infarction_dx_age
+991,7295,Categorical (single),150,0.015001500150015,Adopted father still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,3912-0.0,father_adopted_alive
+994,7295,Categorical (single),150,0.015001500150015,Adopted mother still aliveUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,3942-0.0,mother_adopted_alive
+997,7295,Integer,150,0.015001500150015,Number of adopted brothersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3972-0.0,brothers_adopted_n
+1000,7295,Integer,150,0.015001500150015,Number of adopted sistersUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3982-0.0,sisters_adopted_n
+1003,8315,Integer,151,0.0151015101510151,Age emphysema/chronic bronchitis diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,3992-0.0,copd_dx_age
+1006,9954,Integer,215,0.0215021502150215,"Age deep-vein thrombosis (DVT, blood clot in leg) diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.",4012-0.0,DVT_dx_age
+1009,4119,Integer,83,0.0083008300830083,Age pulmonary embolism (blood clot in lung) diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4022-0.0,pulmonary_embolism_dx_age
+1012,10322,Categorical (single),211,0.0211021102110211,Gestational diabetes onlyUses data-coding 100617 comprises 5 Integer-valued members in a simple list.,4041-0.0,diabetes_gestational_only
+1015,7579,Integer,146,0.0146014601460146,Age stroke diagnosedUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4056-0.0,stroke_dx_age
+1018,468106,Integer,9320,0.932093209320932,"Diastolic blood pressure, automated reading",4079-0.0,diastolic_bp_auto
+1024,468093,Integer,9319,0.931993199319932,"Systolic blood pressure, automated reading",4080-0.0,systolic_bp_auto
+1030,501681,Categorical (single),9982,0.9982998299829984,Method of measuring blood pressureUses data-coding 100259 comprises 5 Integer-valued members in a simple list.,4081-0.0,bp_measurement_method
+1036,40836,Integer,798,0.0798079807980798,Average monthly red wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4407-0.0,alcohol_intake_monthly_red_wine
+1039,40836,Integer,798,0.0798079807980798,Average monthly champagne plus white wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4418-0.0,alcohol_intake_monthly_champagne_white_wine
+1042,40836,Integer,798,0.0798079807980798,Average monthly beer plus cider intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4429-0.0,alcohol_intake_monthly_beer_cider
+1045,40836,Integer,798,0.0798079807980798,Average monthly spirits intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4440-0.0,alcohol_intake_monthly_spirits
+1048,40836,Integer,798,0.0798079807980798,Average monthly fortified wine intakeUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4451-0.0,alcohol_intake_monthly_fortified_wine
+1051,40836,Integer,798,0.0798079807980798,Average monthly intake of other alcoholic drinksUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4462-0.0,alcohol_intake_monthly_other
+1054,169651,Categorical (single),3415,0.3415341534153415,Non-accidental death in close genetic familyUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,4501-0.0,family_death_non-accidental
+1057,172715,Categorical (single),3466,0.3466346634663466,HappinessUses data-coding 100478 comprises 8 Integer-valued members in a simple list.,4526-0.0,happiness
+1060,172715,Categorical (single),3466,0.3466346634663466,Work/job satisfactionUses data-coding 100479 comprises 9 Integer-valued members in a simple list.,4537-0.0,satisfaction_work
+1063,172715,Categorical (single),3466,0.3466346634663466,Health satisfactionUses data-coding 100478 comprises 8 Integer-valued members in a simple list.,4548-0.0,satisfaction_health
+1066,172715,Categorical (single),3466,0.3466346634663466,Family relationship satisfactionUses data-coding 100478 comprises 8 Integer-valued members in a simple list.,4559-0.0,satisfaction_family_relationships
+1069,172715,Categorical (single),3466,0.3466346634663466,Friendships satisfactionUses data-coding 100478 comprises 8 Integer-valued members in a simple list.,4570-0.0,satisfaction_freindships
+1072,172715,Categorical (single),3466,0.3466346634663466,Financial situation satisfactionUses data-coding 100478 comprises 8 Integer-valued members in a simple list.,4581-0.0,satisfaction_financial_situation
+1075,172715,Categorical (single),3466,0.3466346634663466,Ever depressed for a whole weekUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,4598-0.0,depression_entire_week
+1078,89388,Integer,1807,0.1807180718071807,Longest period of depressionUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4609-0.0,depression_longest_episode
+1081,89388,Integer,1807,0.1807180718071807,Number of depression episodesUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,4620-0.0,depression_n_episodes
+1084,172715,Categorical (single),3466,0.3466346634663466,Ever unenthusiastic/disinterested for a whole weekUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,4631-0.0,disinterest_entire_week
+1087,172715,Categorical (single),3466,0.3466346634663466,Ever manic/hyper for 2 daysUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,4642-0.0,mania_2_days
+1090,172715,Categorical (single),3466,0.3466346634663466,Ever highly irritable/argumentative for 2 daysUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,4653-0.0,irritable_2_days
+1093,172715,Categorical (single),3466,0.3466346634663466,Private healthcareUses data-coding 100511 comprises 6 Integer-valued members in a simple list.,4674-0.0,healthcare_private
+1096,172715,Categorical (single),3466,0.3466346634663466,Shortness of breath walking on level groundUses data-coding 100349 comprises 4 Integer-valued members in a simple list.,4717-0.0,dyspnea_walking
+1099,151071,Integer,3028,0.3028302830283028,Number of older siblingsUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,5057-0.0,siblings_n_older
+1102,116105,Integer,2368,0.2368236823682368,Average weekly intake of other alcoholic drinksUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,5364-0.0,alcohol_intake_weekly_other
+1105,60560,Integer,1192,0.1192119211921192,Longest period of unenthusiasm / disinterestUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,5375-0.0,disinterest_longest_episode
+1108,60556,Integer,1192,0.1192119211921192,Number of unenthusiastic/disinterested episodesUses data-coding 100291 comprises 2 Integer-valued members in a simple list.,5386-0.0,disinterest_n_episodes
+1111,36080,Categorical (single),721,0.0721072107210721,Length of longest manic/irritable episodeUses data-coding 100499 comprises 5 Integer-valued members in a simple list.,5663-0.0,mania_longest_episode
+1114,36080,Categorical (single),721,0.0721072107210721,Severity of manic/irritable episodesUses data-coding 100500 comprises 4 Integer-valued members in a simple list.,5674-0.0,mania_irritability_episode_severity
+1117,2634,Categorical (single),54,0.0054005400540054,Previously smoked cigarettes on most/all daysUses data-coding 100352 comprises 3 Integer-valued members in a simple list.,5959-0.0,tobacco_smoking_previously_smoked_everyday
+1120,497898,Categorical (multiple),9894,0.9894989498949897,QualificationsUses data-coding 100305 comprises 8 Integer-valued members in a simple list.,6138-0.0,qualifications
+1138,497901,Categorical (multiple),9894,0.9894989498949897,Gas or solid-fuel cooking/heatingUses data-coding 100288 comprises 6 Integer-valued members in a simple list.,6139-0.0,household_heating_cooking_gas_or_solid_fuel
+1147,172715,Categorical (multiple),3466,0.3466346634663466,Heating type(s) in homeUses data-coding 100289 comprises 9 Integer-valued members in a simple list.,6140-0.0,household_heating_fuel_type
+1156,407357,Categorical (multiple),8079,0.8079807980798079,How are people in household related to participantUses data-coding 100292 comprises 9 Integer-valued members in a simple list.,6141-0.0,household_n_people_related
+1171,501673,Categorical (multiple),9969,0.996999699969997,Current employment statusUses data-coding 100295 comprises 9 Integer-valued members in a simple list.,6142-0.0,work_current_employment_status
+1192,265638,Categorical (multiple),5304,0.5304530453045304,Transport type for commuting to job workplaceUses data-coding 100299 comprises 6 Integer-valued members in a simple list.,6143-0.0,work_commute_transport_type
+1204,497871,Categorical (multiple),9894,0.9894989498949897,"Never eat eggs, dairy, wheat, sugarUses data-coding 100385 comprises 6 Integer-valued members in a simple list.",6144-0.0,diet_never_eat_eggs_dairy_wheat_sugar
+1216,497855,Categorical (multiple),9894,0.9894989498949897,"Illness, injury, bereavement, stress in last 2 yearsUses data-coding 100502 comprises 8 Integer-valued members in a simple list.",6145-0.0,past_2_years_injurt_illness_bereacement_stress
+1234,501625,Categorical (multiple),9969,0.996999699969997,Attendance/disability/mobility allowanceUses data-coding 100510 comprises 6 Integer-valued members in a simple list.,6146-0.0,attendance_disability_mobility_allowance
+1243,497849,Categorical (multiple),9894,0.9894989498949897,Mouth/teeth dental problemsUses data-coding 100538 comprises 8 Integer-valued members in a simple list.,6149-0.0,oral_problems
+1261,501614,Categorical (multiple),9969,0.996999699969997,Vascular/heart problems diagnosed by doctorUses data-coding 100605 comprises 6 Integer-valued members in a simple list.,6150-0.0,cardiovascular_problems_dx
+1273,47466,Categorical (multiple),1035,0.1035103510351035,Fractured bone site(s)Uses data-coding 100622 comprises 9 Integer-valued members in a simple list.,6151-0.0,bone_fracture_sites
+1294,501612,Categorical (multiple),9969,0.996999699969997,"Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctorUses data-coding 100610 comprises 7 Integer-valued members in a simple list.",6152-0.0,TE_DVT_copd_asthma_rhinite_eczema_allergy_dx
+1309,270871,Categorical (multiple),5376,0.5376537653765376,"Medication for cholesterol, blood pressure, diabetes, or take exogenous hormonesUses data-coding 100626 comprises 8 Integer-valued members in a simple list.",6153-0.0,medications_HLD_HTN_diabetes_HRT
+1321,497836,Categorical (multiple),9894,0.9894989498949897,"Medication for pain relief, constipation, heartburnUses data-coding 100628 comprises 9 Integer-valued members in a simple list.",6154-0.0,medications_pain_constipation_heartburn
+1339,497836,Categorical (multiple),9894,0.9894989498949897,Vitamin and mineral supplementsUses data-coding 100629 comprises 9 Integer-valued members in a simple list.,6155-0.0,medications_supplements
+1360,36080,Categorical (multiple),721,0.0721072107210721,Manic/hyper symptomsUses data-coding 100498 comprises 6 Integer-valued members in a simple list.,6156-0.0,mania_symptoms
+1372,120048,Categorical (multiple),2331,0.2331233123312331,Why stopped smokingUses data-coding 100361 comprises 7 Integer-valued members in a simple list.,6157-0.0,tobacco_smoking_stop_reason
+1384,16757,Categorical (multiple),297,0.0297029702970297,Why reduced smokingUses data-coding 100361 comprises 7 Integer-valued members in a simple list.,6158-0.0,tobacco_smoking_reduction_reason
+1396,501661,Categorical (multiple),9969,0.996999699969997,Leisure/social activitiesUses data-coding 100328 comprises 7 Integer-valued members in a simple list.,6160-0.0,activities_leisure
+1411,226951,Categorical (multiple),4518,0.4518451845184518,"Medication for cholesterol, blood pressure or diabetesUses data-coding 100625 comprises 6 Integer-valued members in a simple list.",6177-0.0,medications_HLD_HTN_diabetes
+1420,497835,Categorical (multiple),9894,0.9894989498949897,Mineral and other dietary supplementsUses data-coding 100630 comprises 8 Integer-valued members in a simple list.,6179-0.0,medications_other_supplements
+1438,1786,Integer,36,0.0036003600360036,Number of cigarettes previously smoked daily (current cigar/pipe smokers)Uses data-coding 100353 comprises 2 Integer-valued members in a simple list.,6183-0.0,tobacco_smoking_current_pipe_cigar_n_daily_cigarettes
+1441,1786,Integer,36,0.0036003600360036,Age stopped smoking cigarettes (current cigar/pipe or previous cigarette smoker)Uses data-coding 100291 comprises 2 Integer-valued members in a simple list.,6194-0.0,tobacco_smoking_current_pipe_cigar_stop_agge
+1444,3775,Categorical (multiple),75,0.0075007500750075,"Medication for pain relief, constipation, heartburn (pilot)Uses data-coding 100688 comprises 8 Integer-valued members in a simple list.",10004-0.0,medications_pain_constipation_heartburn_pilot
+1449,3775,Categorical (multiple),75,0.0075007500750075,"Medication for smoking cessation, constipation, heartburn, allergies (pilot)Uses data-coding 100689 comprises 7 Integer-valued members in a simple list.",10005-0.0,medications_smoking_cessation_constipation_heartburn_allergies_pilot
+1452,3775,Categorical (multiple),75,0.0075007500750075,Mouth/teeth dental problems (pilot)Uses data-coding 100685 comprises 6 Integer-valued members in a simple list.,10006-0.0,oral_problems_pilot
+1456,3775,Categorical (multiple),75,0.0075007500750075,Vitamin and mineral supplements (pilot)Uses data-coding 100692 comprises 8 Integer-valued members in a simple list.,10007-0.0,medications_supplements_pilot
+1462,934,Categorical (single),18,0.0018001800180018,Why stopped smoking (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.,10115-0.0,tobacco_smoking_stop_reason_pilot
+1463,44,Categorical (single),0,0.0,Type of progestan-only oral contraceptive used (pilot)Uses data-coding 100686 comprises 8 Integer-valued members in a simple list.,10132-0.0,oral_contraception_progestan_only_type
+1488,3435,Categorical (single),69,0.0069006900690069,Spirometry method (pilot)Uses data-coding 100282 comprises 3 Integer-valued members in a simple list.,10711-0.0,spirometry_method_pilot
+1489,3430,Text,69,0.0069006900690069,Spirometry device serial number (pilot),10714-0.0,spirometry_device_serial_number_pilot
+1490,3430,Integer,69,0.0069006900690069,Number of measurements made (pilot),10717-0.0,spirometry_n_measurements_pilot
+1491,3775,Categorical (multiple),75,0.0075007500750075,"Illness, injury, bereavement, stress in last 2 years (pilot)Uses data-coding 100683 comprises 9 Integer-valued members in a simple list.",10721-0.0,past_2_years_injurt_illness_bereacement_stress_pilot
+1496,3775,Categorical (multiple),75,0.0075007500750075,Qualifications (pilot)Uses data-coding 100658 comprises 7 Integer-valued members in a simple list.,10722-0.0,qualifications_pilot
+1501,3775,Categorical (multiple),75,0.0075007500750075,Vitamin supplements (pilot)Uses data-coding 100691 comprises 8 Integer-valued members in a simple list.,10723-0.0,medications_vitamin_supplements_pilot
+1507,3775,Categorical (single),75,0.0075007500750075,Frequency of friend/family visits (pilot)Uses data-coding 100662 comprises 8 Integer-valued members in a simple list.,10740-0.0,frequency_family_friend_visits_pilot
+1508,3775,Categorical (single),75,0.0075007500750075,Spread type (pilot)Uses data-coding 100673 comprises 8 Integer-valued members in a simple list.,10767-0.0,spread_type_pilot
+1509,3658,Categorical (single),71,0.0071007100710071,Bread type/intake (pilot)Uses data-coding 100674 comprises 7 Integer-valued members in a simple list.,10776-0.0,bread_type_intake_pilot
+1510,1516,Categorical (single),35,0.0035003500350035,Reason for reducing amount of alcohol drunk (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.,10818-0.0,alcohol_reduction_reason_pilot
+1511,934,Categorical (single),18,0.0018001800180018,Ever stopped smoking for 6+ months (pilot)Uses data-coding 100668 comprises 3 Integer-valued members in a simple list.,10827-0.0,tobacco_smoking_stopped_more_than_6_months_pilot
+1512,63,Categorical (single),2,0.0002000200020002,Gestational diabetes only (pilot)Uses data-coding 100349 comprises 4 Integer-valued members in a simple list.,10844-0.0,diabetes_gestational_only_pilot
+1513,139,Categorical (single),6,0.0006000600060006,Reason former drinker stopped drinking alcohol (pilot)Uses data-coding 100669 comprises 5 Integer-valued members in a simple list.,10853-0.0,alcohol_former_use_stop_reason_pilot
+1514,3775,Categorical (multiple),75,0.0075007500750075,Other dietary supplements (pilot)Uses data-coding 100690 comprises 8 Integer-valued members in a simple list.,10854-0.0,medications_dietary_supplements_other_pilot
+1520,3775,Categorical (multiple),75,0.0075007500750075,"Never eat eggs, dairy, wheat, sugar (pilot)Uses data-coding 100672 comprises 6 Integer-valued members in a simple list.",10855-0.0,diet_never_eat_eggs_dairy_wheat_sugar_pilot
+1524,3775,Categorical (multiple),75,0.0075007500750075,Gas or solid-fuel cooking/heating (pilot)Uses data-coding 100656 comprises 6 Integer-valued members in a simple list.,10860-0.0,household_heating_cooking_gas_or_solid_fuel_pilot
+1527,3755,Categorical (single),75,0.0075007500750075,Average total household income before tax (pilot)Uses data-coding 100657 comprises 7 Integer-valued members in a simple list.,10877-0.0,household_average_income_pilot
+1528,935,Categorical (single),21,0.0021002100210021,"Light smokers, at least 100 smokes in lifetime (pilot)Uses data-coding 100352 comprises 3 Integer-valued members in a simple list.",10895-0.0,tobacco_smoking_light_status_pilot
+1529,3775,Categorical (single),75,0.0075007500750075,Variation in diet (pilot)Uses data-coding 100394 comprises 5 Integer-valued members in a simple list.,10912-0.0,diet_variations_pilot
+1530,41700,Categorical (multiple),840,0.084008400840084,"Cancer code, self-reportedUses data-coding 3 comprises 89 Integer-valued members in a hierarchical tree.",20001-0.0,cancer_code
+1548,375064,Categorical (multiple),7463,0.7463746374637463,"Non-cancer illness code, self-reportedUses data-coding 6 comprises 474 Integer-valued members in a hierarchical tree.",20002-0.0,illness_code
+1647,364000,Categorical (multiple),7226,0.7226722672267226,Treatment/medication codeUses data-coding 4 comprises 6745 Integer-valued members in a simple list.,20003-0.0,treatment_code
+1791,391305,Categorical (multiple),7810,0.7810781078107811,Operation codeUses data-coding 5 comprises 270 Integer-valued members in a hierarchical tree.,20004-0.0,operation_code
+1887,317755,Categorical (single),6378,0.6378637863786378,Email accessUses data-coding 1007 comprises 2 Integer-valued members in a simple list.,20005-0.0,email_access
+1888,41700,Continuous,840,0.084008400840084,Interpolated Year when cancer first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.,20006-0.0,cancer_dx_year_interpolated
+1906,41700,Continuous,840,0.084008400840084,Interpolated Age of participant when cancer first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.,20007-0.0,cancer_dx_age_interpolated
+1924,375061,Continuous,7463,0.7463746374637463,Interpolated Year when non-cancer illness first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.,20008-0.0,illness_dx_year_interpolated
+2023,375061,Continuous,7463,0.7463746374637463,Interpolated Age of participant when non-cancer illness first diagnosedUses data-coding 13 comprises 2 Real-valued members in a simple list.,20009-0.0,illness_dx_age_interpolated
+2122,391302,Continuous,7810,0.7810781078107811,Interpolated Year when operation took placeUses data-coding 13 comprises 2 Real-valued members in a simple list.,20010-0.0,operation_year_interpolated
+2218,391302,Continuous,7810,0.7810781078107811,Interpolated Age of participant when operation took placeUses data-coding 13 comprises 2 Real-valued members in a simple list.,20011-0.0,operation_age_interpolated
+2314,41700,Categorical (single),840,0.084008400840084,Method of recording time when cancer first diagnosedUses data-coding 14 comprises 4 Integer-valued members in a simple list.,20012-0.0,cancer_dx_recording_time_method
+2332,375064,Categorical (single),7463,0.7463746374637463,Method of recording time when non-cancer illness first diagnosedUses data-coding 14 comprises 4 Integer-valued members in a simple list.,20013-0.0,illness_dx_recording_time_method
+2431,391305,Categorical (single),7810,0.7810781078107811,Method of recording time when operation occurredUses data-coding 14 comprises 4 Integer-valued members in a simple list.,20014-0.0,operation_recording_time_method
+2527,277012,Continuous,5424,0.5424542454245425,Birth weight,20022-0.0,birth_weight
+2530,14554,Categorical (single),274,0.0274027402740274,Job code - deducedUses data-coding 2 comprises 26408 Integer-valued members in a hierarchical tree.,20024-0.0,work_code_deduced
+2531,99703,Text,1947,0.1947194719471947,Acceptability of each blow result (text),20031-0.0,spirometry_blow_result_acceptability_text
+2544,494811,Time,9850,0.9850985098509852,Time urine sample collected,20035-0.0,urine_collection_time
+2545,2013,Categorical (single),43,0.0043004300430043,Reason for skipping spirometryUses data-coding 47 comprises 41 Integer-valued members in a hierarchical tree.,20042-0.0,spirometry_skip_reason
+2546,2343,Categorical (single),35,0.0035003500350035,"Blood sample #, note contentsUses data-coding 49 comprises 15 Integer-valued members in a hierarchical tree.",20049-0.0,blood_sample_number
+2553,1583,Categorical (single),27,0.0027002700270027,Reason blood sampling not attemptedUses data-coding 50 comprises 14 Integer-valued members in a hierarchical tree.,20050-0.0,blood_sample_not_attempted_reason
+2554,3560,Categorical (single),65,0.0065006500650065,Reason no urine sample collectedUses data-coding 71 comprises 11 Integer-valued members in a hierarchical tree.,20072-0.0,urine_collection_not_attempted_reason
+2555,487808,Categorical (single),9690,0.9690969096909692,Illnesses of fatherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.,20107-0.0,father_illnesses
+2585,492946,Categorical (single),9793,0.9793979397939794,Illnesses of motherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.,20110-0.0,mother_illnesses
+2618,433939,Categorical (single),8636,0.8636863686368637,Illnesses of siblingsUses data-coding 1010 comprises 18 Integer-valued members in a simple list.,20111-0.0,sibling_illnesses
+2654,5043,Categorical (single),107,0.0107010701070107,Illnesses of adopted fatherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.,20112-0.0,father_adopted_illnesses
+2675,5431,Categorical (single),113,0.0113011301130113,Illnesses of adopted motherUses data-coding 1010 comprises 18 Integer-valued members in a simple list.,20113-0.0,mother_adopted_illnesses
+2693,3717,Categorical (single),75,0.0075007500750075,Illnesses of adopted siblingsUses data-coding 1010 comprises 18 Integer-valued members in a simple list.,20114-0.0,sibling_adopted_illnesses
+2714,40583,Categorical (single),812,0.0812081208120812,Country of Birth (non-UK origin)Uses data-coding 89 comprises 201 Integer-valued members in a hierarchical tree.,20115-0.0,birth_country_duplicate
+2715,501652,Categorical (single),9969,0.996999699969997,Smoking statusUses data-coding 90 comprises 4 Integer-valued members in a simple list.,20116-0.0,tobacco_smoking_status
+2718,501646,Categorical (single),9969,0.996999699969997,Alcohol drinker statusUses data-coding 90 comprises 4 Integer-valued members in a simple list.,20117-0.0,alcohol_use_status
+2721,3364,Categorical (single),78,0.0078007800780078,Current employment status - correctedUses data-coding 100295 comprises 9 Integer-valued members in a simple list.,20119-0.0,work_current_employment_status_corrected
+2722,14554,Integer,274,0.0274027402740274,Cascot confidence score,20121-0.0,work_cascot_confidence_score
+2723,1615,Categorical (single),38,0.0038003800380038,Bipolar disorder statusUses data-coding 100694 comprises 2 Integer-valued members in a simple list.,20122-0.0,bipolar_disorder_status
+2724,9754,Categorical (single),194,0.0194019401940194,Single episode of probable major depressionUses data-coding 7 comprises 2 Integer-valued members in a simple list.,20123-0.0,major_depression_single_episode
+2725,15245,Categorical (single),282,0.0282028202820282,Probable recurrent major depression (moderate)Uses data-coding 7 comprises 2 Integer-valued members in a simple list.,20124-0.0,major_depression_recurrent_moderate
+2726,9401,Categorical (single),201,0.0201020102010201,Probable recurrent major depression (severe)Uses data-coding 7 comprises 2 Integer-valued members in a simple list.,20125-0.0,major_depression_recurrent_severe
+2727,122983,Categorical (single),2451,0.2451245124512451,Bipolar and major depression statusUses data-coding 100695 comprises 6 Integer-valued members in a simple list.,20126-0.0,bipolar_and_major_depression_status
+2728,401602,Integer,7993,0.7993799379937994,Neuroticism score,20127-0.0,neuroticism_score
+2729,353336,Continuous,7019,0.701970197019702,"Forced expiratory volume in 1-second (FEV1), Best measure",20150-0.0,spirometry_FEV1_best
+2730,353336,Continuous,7019,0.701970197019702,"Forced vital capacity (FVC), Best measure",20151-0.0,spirometry_FVC_best
+2731,353336,Categorical (single),7019,0.701970197019702,Reproduciblity of spirometry measurement using ERS/ATS criteriaUses data-coding 7 comprises 2 Integer-valued members in a simple list.,20152-0.0,spirometry_ERS_ATS_reproducibility
+2732,151982,Continuous,3021,0.3021302130213021,"Forced expiratory volume in 1-second (FEV1), predicted",20153-0.0,spirometry_FEV1_predicted
+2733,151982,Continuous,3021,0.3021302130213021,"Forced expiratory volume in 1-second (FEV1), predicted percentage",20154-0.0,spirometry_FEV1_predicted_percent
+2734,499657,Categorical (single),9927,0.9927992799279928,Ever smokedUses data-coding 7 comprises 2 Integer-valued members in a simple list.,20160-0.0,tobacco_smoking_ever
+2737,150951,Continuous,2945,0.2945294529452945,Pack years of smoking,20161-0.0,tobacco_smoking_pack_years
+2740,150951,Continuous,2945,0.2945294529452945,Pack years adult smoking as proportion of life span exposed to smoking,20162-0.0,tobacco_smoking_pack_years_life_proportion
+2743,501645,Categorical (single),9969,0.996999699969997,Ethnic backgroundUses data-coding 1001 comprises 22 Integer-valued members in a hierarchical tree.,21000-0.0,ethnic_background
+2746,502543,Integer,9999,1.0,Age when attended assessment centre,21003-0.0,assessment_age
+2749,502543,Integer,9999,1.0,Age at recruitment,21022-0.0,recruitment_age
+2750,488295,Categorical (single),9743,0.9743974397439744,Genotype measurement batchUses data-coding 22000 comprises 108 Integer-valued members in a hierarchical tree.,22000-0.0,genotype_measurement_batch
+2751,488295,Categorical (single),9743,0.9743974397439744,Genetic sexUses data-coding 9 comprises 2 Integer-valued members in a simple list.,22001-0.0,genetic_sex
+2752,488295,Text,9743,0.9743974397439744,CEL files,22002-0.0,CEL_files
+2753,488295,Continuous,9743,0.9743974397439744,Heterozygosity,22003-0.0,heterozygosity
+2754,488295,Continuous,9743,0.9743974397439744,"Heterozygosity, PCA corrected",22004-0.0,heterozygosity_PCA_corrected
+2755,488295,Continuous,9743,0.9743974397439744,Missingness,22005-0.0,missingness
+2756,409634,Categorical (single),8152,0.8152815281528153,Genetic ethnic groupingUses data-coding 1002 comprises 1 Integer-valued members in a simple list.,22006-0.0,genetic_ethnic_grouping
+2757,488295,Text,9743,0.9743974397439744,Genotype measurement plate,22007-0.0,gentoype_measurement_plate
+2758,488295,Text,9743,0.9743974397439744,Genotype measurement well,22008-0.0,gentoype_measurement_well
+2799,651,Categorical (single),13,0.0013001300130013,Sex chromosome aneuploidyUses data-coding 1 comprises 1 Integer-valued members in a simple list.,22019-0.0,aneuploidy_sex_chromosomes
+2800,407152,Categorical (single),8124,0.8124812481248125,Used in genetic principal componentsUses data-coding 1 comprises 1 Integer-valued members in a simple list.,22020-0.0,used_genetic_PCs
+2801,488295,Categorical (single),9743,0.9743974397439744,Genetic kinship to other participantsUses data-coding 682 comprises 4 Integer-valued members in a simple list.,22021-0.0,genetic_kinship_to_other_participants
+2802,488295,Continuous,9743,0.9743974397439744,Sex inference X probe-intensity,22022-0.0,sex_inference_X_probe_intensity
+2803,488295,Continuous,9743,0.9743974397439744,Sex inference Y probe-intensity,22023-0.0,sex_inference_Y_probe_intensity
+2804,488295,Continuous,9743,0.9743974397439744,DNA concentration,22024-0.0,DNA_concentration
+2805,488295,Continuous,9743,0.9743974397439744,"Affymetrix quality control metric ""Cluster.CR""",22025-0.0,affymetric_QC_cluster_cr
+2806,488295,Continuous,9743,0.9743974397439744,"Affymetrix quality control metric ""dQC""",22026-0.0,affymetric_QC_dQC
+2807,968,Categorical (single),27,0.0027002700270027,Outliers for heterozygosity or missing rateUses data-coding 1 comprises 1 Integer-valued members in a simple list.,22027-0.0,heterozygosity_outliers_missing_rate
+2808,488295,Categorical (single),9743,0.9743974397439744,Use in phasing Chromosomes 1-22Uses data-coding 100264 comprises 2 Integer-valued members in a simple list.,22028-0.0,phasing_use_chr_1_22
+2809,488295,Categorical (single),9743,0.9743974397439744,Use in phasing Chromosome XUses data-coding 100264 comprises 2 Integer-valued members in a simple list.,22029-0.0,phasing_use_chr_X
+2810,488295,Categorical (single),9743,0.9743974397439744,Use in phasing Chromosome XYUses data-coding 100264 comprises 2 Integer-valued members in a simple list.,22030-0.0,phasing_use_chr_XY
+2811,488295,Text,9743,0.9743974397439744,Chromosome XY genotype results,22100-0.0,chr_XY_genotype
+2812,488295,Text,9743,0.9743974397439744,Chromosome 1 genotype results,22101-0.0,chr_1_genotype
+2813,488295,Text,9743,0.9743974397439744,Chromosome 2 genotype results,22102-0.0,chr_2_genotype
+2814,488295,Text,9743,0.9743974397439744,Chromosome 3 genotype results,22103-0.0,chr_3_genotype
+2815,488295,Text,9743,0.9743974397439744,Chromosome 4 genotype results,22104-0.0,chr_4_genotype
+2816,488295,Text,9743,0.9743974397439744,Chromosome 5 genotype results,22105-0.0,chr_5_genotype
+2817,488295,Text,9743,0.9743974397439744,Chromosome 6 genotype results,22106-0.0,chr_6_genotype
+2818,488295,Text,9743,0.9743974397439744,Chromosome 7 genotype results,22107-0.0,chr_7_genotype
+2819,488295,Text,9743,0.9743974397439744,Chromosome 8 genotype results,22108-0.0,chr_8_genotype
+2820,488295,Text,9743,0.9743974397439744,Chromosome 9 genotype results,22109-0.0,chr_9_genotype
+2821,488295,Text,9743,0.9743974397439744,Chromosome 10 genotype results,22110-0.0,chr_10_genotype
+2822,488295,Text,9743,0.9743974397439744,Chromosome 11 genotype results,22111-0.0,chr_11_genotype
+2823,488295,Text,9743,0.9743974397439744,Chromosome 12 genotype results,22112-0.0,chr_12_genotype
+2824,488295,Text,9743,0.9743974397439744,Chromosome 13 genotype results,22113-0.0,chr_13_genotype
+2825,488295,Text,9743,0.9743974397439744,Chromosome 14 genotype results,22114-0.0,chr_14_genotype
+2826,488295,Text,9743,0.9743974397439744,Chromosome 15 genotype results,22115-0.0,chr_15_genotype
+2827,488295,Text,9743,0.9743974397439744,Chromosome 16 genotype results,22116-0.0,chr_16_genotype
+2828,488295,Text,9743,0.9743974397439744,Chromosome 17 genotype results,22117-0.0,chr_17_genotype
+2829,488295,Text,9743,0.9743974397439744,Chromosome 18 genotype results,22118-0.0,chr_18_genotype
+2830,488295,Text,9743,0.9743974397439744,Chromosome 19 genotype results,22119-0.0,chr_19_genotype
+2831,488295,Text,9743,0.9743974397439744,Chromosome 20 genotype results,22120-0.0,chr_20_genotype
+2832,488295,Text,9743,0.9743974397439744,Chromosome 21 genotype results,22121-0.0,chr_21_genotype
+2833,488295,Text,9743,0.9743974397439744,Chromosome 22 genotype results,22122-0.0,chr_22_genotype
+2834,488295,Text,9743,0.9743974397439744,Chromosome X genotype results,22123-0.0,chr_X_genotype
+2835,488295,Text,9743,0.9743974397439744,Chromosome Y genotype results,22124-0.0,chr_Y_genotype
+2836,488295,Text,9743,0.9743974397439744,Mitochondrial genotype results,22125-0.0,chr_M_genotype
+2837,488295,Curve,9743,0.9743974397439744,HLA imputation values,22182-0.0,HLA_imputation
+2838,486362,Text,9696,0.9696969696969696,Chromosome XY imputation and haplotype results,22800-0.0,chr_XY_imputation_haplotype
+2839,0,Text,0,0.0,Chromosome 1 imputation and haplotype results,22801-0.0,chr_1_imputation_haplotype
+2840,0,Text,0,0.0,Chromosome 2 imputation and haplotype results,22802-0.0,chr_2_imputation_haplotype
+2841,0,Text,0,0.0,Chromosome 3 imputation and haplotype results,22803-0.0,chr_3_imputation_haplotype
+2842,0,Text,0,0.0,Chromosome 4 imputation and haplotype results,22804-0.0,chr_4_imputation_haplotype
+2843,0,Text,0,0.0,Chromosome 5 imputation and haplotype results,22805-0.0,chr_5_imputation_haplotype
+2844,0,Text,0,0.0,Chromosome 6 imputation and haplotype results,22806-0.0,chr_6_imputation_haplotype
+2845,0,Text,0,0.0,Chromosome 7 imputation and haplotype results,22807-0.0,chr_7_imputation_haplotype
+2846,0,Text,0,0.0,Chromosome 8 imputation and haplotype results,22808-0.0,chr_8_imputation_haplotype
+2847,0,Text,0,0.0,Chromosome 9 imputation and haplotype results,22809-0.0,chr_9_imputation_haplotype
+2848,0,Text,0,0.0,Chromosome 10 imputation and haplotype results,22810-0.0,chr_10_imputation_haplotype
+2849,0,Text,0,0.0,Chromosome 11 imputation and haplotype results,22811-0.0,chr_11_imputation_haplotype
+2850,0,Text,0,0.0,Chromosome 12 imputation and haplotype results,22812-0.0,chr_12_imputation_haplotype
+2851,0,Text,0,0.0,Chromosome 13 imputation and haplotype results,22813-0.0,chr_13_imputation_haplotype
+2852,0,Text,0,0.0,Chromosome 14 imputation and haplotype results,22814-0.0,chr_14_imputation_haplotype
+2853,0,Text,0,0.0,Chromosome 15 imputation and haplotype results,22815-0.0,chr_15_imputation_haplotype
+2854,0,Text,0,0.0,Chromosome 16 imputation and haplotype results,22816-0.0,chr_16_imputation_haplotype
+2855,0,Text,0,0.0,Chromosome 17 imputation and haplotype results,22817-0.0,chr_17_imputation_haplotype
+2856,0,Text,0,0.0,Chromosome 18 imputation and haplotype results,22818-0.0,chr_18_imputation_haplotype
+2857,0,Text,0,0.0,Chromosome 19 imputation and haplotype results,22819-0.0,chr_19_imputation_haplotype
+2858,0,Text,0,0.0,Chromosome 20 imputation and haplotype results,22820-0.0,chr_20_imputation_haplotype
+2859,0,Text,0,0.0,Chromosome 21 imputation and haplotype results,22821-0.0,chr_21_imputation_haplotype
+2860,0,Text,0,0.0,Chromosome 22 imputation and haplotype results,22822-0.0,chr_22_imputation_haplotype
+2861,486676,Text,9703,0.9703970397039704,Chromosome X imputation and haplotype results,22823-0.0,chr_X_imputation_haplotype
+2862,478201,Continuous,9522,0.9522952295229524,White blood cell (leukocyte) count,30000-0.0,WBC_count
+2865,478206,Continuous,9522,0.9522952295229524,Red blood cell (erythrocyte) count,30010-0.0,RBC_count
+2868,478206,Continuous,9522,0.9522952295229524,Haemoglobin concentration,30020-0.0,hemoglobin_concentration
+2871,478206,Continuous,9522,0.9522952295229524,Haematocrit percentage,30030-0.0,hematocrit_percent
+2874,478204,Continuous,9522,0.9522952295229524,Mean corpuscular volume,30040-0.0,MCV
+2877,478203,Continuous,9522,0.9522952295229524,Mean corpuscular haemoglobin,30050-0.0,MC_hemoglobin
+2880,478199,Continuous,9522,0.9522952295229524,Mean corpuscular haemoglobin concentration,30060-0.0,MC_hemoglobin_concentration
+2883,478204,Continuous,9522,0.9522952295229524,Red blood cell (erythrocyte) distribution width,30070-0.0,RBC_distribution_width
+2886,478203,Continuous,9522,0.9522952295229524,Platelet count,30080-0.0,platelet_count
+2889,478199,Continuous,9522,0.9522952295229524,Platelet crit,30090-0.0,platelet_crit
+2892,478198,Continuous,9522,0.9522952295229524,Mean platelet (thrombocyte) volume,30100-0.0,mean_platelet_volume
+2895,478198,Continuous,9522,0.9522952295229524,Platelet distribution width,30110-0.0,platelet_distribution_width
+2898,477317,Continuous,9502,0.9502950295029504,Lymphocyte count,30120-0.0,lymphocyte_count
+2901,477317,Continuous,9502,0.9502950295029504,Monocyte count,30130-0.0,monocyte_count
+2904,477317,Continuous,9502,0.9502950295029504,Neutrophill count,30140-0.0,neutrophil_count
+2907,477317,Continuous,9502,0.9502950295029504,Eosinophill count,30150-0.0,eosinophil_count
+2910,477317,Continuous,9502,0.9502950295029504,Basophill count,30160-0.0,basophil_count
+2913,477306,Continuous,9502,0.9502950295029504,Nucleated red blood cell count,30170-0.0,nucleated_RBC_count
+2916,477323,Continuous,9502,0.9502950295029504,Lymphocyte percentage,30180-0.0,lymphocyte_percent
+2919,477323,Continuous,9502,0.9502950295029504,Monocyte percentage,30190-0.0,monocyte_percent
+2922,477323,Continuous,9502,0.9502950295029504,Neutrophill percentage,30200-0.0,neutrophil_percent
+2925,477323,Continuous,9502,0.9502950295029504,Eosinophill percentage,30210-0.0,eosinophil_percent
+2928,477323,Continuous,9502,0.9502950295029504,Basophill percentage,30220-0.0,basophil_percent
+2931,477302,Continuous,9502,0.9502950295029504,Nucleated red blood cell percentage,30230-0.0,nucleated_RBC_percent
+2934,469884,Continuous,9349,0.934993499349935,Reticulocyte percentage,30240-0.0,reticulocyte_percent
+2937,469884,Continuous,9349,0.934993499349935,Reticulocyte count,30250-0.0,reticulocyte_count
+2940,469883,Continuous,9349,0.934993499349935,Mean reticulocyte volume,30260-0.0,mean_reticulocyte_volume
+2943,469885,Continuous,9349,0.934993499349935,Mean sphered cell volume,30270-0.0,mean_sphered_cell_volume
+2946,469883,Continuous,9349,0.934993499349935,Immature reticulocyte fraction,30280-0.0,immature_reticulocyte_fraction
+2949,469885,Continuous,9349,0.934993499349935,High light scatter reticulocyte percentage,30290-0.0,reticulocyte_high_light_scatter_percentage
+2952,469884,Continuous,9349,0.934993499349935,High light scatter reticulocyte count,30300-0.0,reticulocyte_high_light_scatter_count
+2955,152907,Continuous,2997,0.2997299729972997,Microalbumin in urine,30500-0.0,urine_microalbumin
+2957,331418,Categorical (single),6640,0.6640664066406641,Microalbumin in urine result flagUses data-coding 198 comprises 1 String-valued members in a simple list.,30505-0.0,urine_microalbumin_result_flag
+2959,484345,Continuous,9639,0.963996399639964,Creatinine (enzymatic) in urine,30510-0.0,urine_cr
+2961,4,Categorical (single),0,0.0,Creatinine (enzymatic) in urine result flagUses data-coding 199 comprises 1 String-valued members in a simple list.,30515-0.0,urine_cr_result
+2962,483323,Continuous,9617,0.9617961796179618,Potassium in urine,30520-0.0,urine_K
+2964,1020,Categorical (single),22,0.0022002200220022,Potassium in urine result flagUses data-coding 197 comprises 2 String-valued members in a simple list.,30525-0.0,urine_k_result_flag
+2966,483312,Continuous,9613,0.9613961396139614,Sodium in urine,30530-0.0,urine_Na
+2968,1029,Categorical (single),26,0.0026002600260026,Sodium in urine result flagUses data-coding 196 comprises 2 String-valued members in a simple list.,30535-0.0,urine_Na_result_flag
+2970,14420,Date,279,0.0279027902790279,Date of death,40000-0.0,death_date
+2973,14416,Categorical (single),279,0.0279027902790279,Underlying (primary) cause of death: ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.,40001-0.0,death_cause_primary
+2976,8767,Categorical (single),155,0.0155015501550155,Contributory (secondary) causes of death: ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.,40002-0.0,death_causes_secondary
+3018,14420,Continuous,279,0.0279027902790279,Age at death,40007-0.0,death_age
+3021,11517,Curve,215,0.0215021502150215,Description of cause of death,40010-0.0,death_cause_curve
+3023,14422,Categorical (single),279,0.0279027902790279,Death report formatUses data-coding 261 comprises 5 Integer-valued members in a simple list.,40018-0.0,death_report_format
+3026,8715,Integer,171,0.0171017101710171,"Episodes containing ""Diagnoses - secondary ICD9"" data",41076-0.0,important_unlabeled_1
+3027,320404,Integer,6342,0.6342634263426342,"Episodes containing ""Diagnoses - secondary ICD10"" data",41078-0.0,important_unlabeled_2
+3028,3798,Integer,83,0.0083008300830083,"Episodes containing ""Diagnoses - secondary ICD10 addendum"" data",41079-0.0,important_unlabeled_3
+3029,343276,Integer,6821,0.6821682168216822,"Episodes containing ""Operative procedures - secondary OPCS"" data",41080-0.0,important_unlabeled_4
+3030,329682,Integer,6541,0.6541654165416542,"Episodes containing ""Dates of operations"" data",41082-0.0,important_unlabeled_5
+3031,391915,Integer,7786,0.7786778677867787,"Episodes containing ""Episode start date"" data",41083-0.0,important_unlabeled_6
+3032,391907,Integer,7786,0.7786778677867787,"Episodes containing ""Episode end date"" data",41084-0.0,important_unlabeled_7
+3033,395872,Integer,7865,0.7865786578657866,"Episodes containing ""Duration of episode"" data",41085-0.0,important_unlabeled_8
+3034,364915,Integer,7257,0.7257725772577258,"Episodes containing ""Episode order"" data",41086-0.0,important_unlabeled_9
+3035,348668,Integer,6921,0.6921692169216922,"Episodes containing ""Episode status"" data",41087-0.0,important_unlabeled_10
+3036,348659,Integer,6921,0.6921692169216922,"Episodes containing ""Duration of episode within HES data year"" data",41088-0.0,important_unlabeled_11
+3037,348660,Integer,6921,0.6921692169216922,"Episodes containing ""Beginning of spell indicator"" data",41089-0.0,important_unlabeled_12
+3038,348668,Integer,6921,0.6921692169216922,"Episodes containing ""End of spell indicator"" data",41090-0.0,important_unlabeled_13
+3039,364812,Integer,7254,0.7254725472547254,"Episodes containing ""Duration of spell"" data",41091-0.0,important_unlabeled_14
+3040,341885,Integer,6799,0.67996799679968,"Episodes containing ""Date of decision to admit to hospital"" data",41095-0.0,important_unlabeled_15
+3041,385449,Integer,7653,0.7653765376537653,"Episodes containing ""Date of admission to hospital"" data",41096-0.0,important_unlabeled_16
+3042,385361,Integer,7651,0.7651765176517652,"Episodes containing ""Date of discharge from hospital"" data",41101-0.0,important_unlabeled_17
+3043,66343,Integer,1319,0.1319131913191319,"Episodes containing ""External cause - ICD10"" data",41104-0.0,important_unlabeled_18
+3044,176,Integer,4,0.0004000400040004,"Episodes containing ""External cause - ICD10 addendum"" data",41105-0.0,important_unlabeled_19
+3045,359348,Integer,7131,0.7131713171317132,"Episodes containing ""Patient classification on admission"" data (polymorphic)",41109-0.0,important_unlabeled_20
+3046,364910,Integer,7257,0.7257725772577258,"Episodes containing ""Intended management of patient"" data (polymorphic)",41110-0.0,important_unlabeled_21
+3047,348668,Integer,6921,0.6921692169216922,"Episodes containing ""Episode type"" data",41132-0.0,important_unlabeled_22
+3048,392242,Integer,7787,0.7787778777877787,"Episodes containing ""Diagnoses - main ICD10"" data",41142-0.0,important_unlabeled_23
+3049,2733,Integer,48,0.0048004800480048,"Episodes containing ""Diagnoses - main ICD10 - addendum"" data",41143-0.0,important_unlabeled_24
+3050,20307,Integer,401,0.0401040104010401,"Episodes containing ""Diagnoses - main ICD9"" data",41144-0.0,important_unlabeled_25
+3051,392230,Integer,7789,0.778977897789779,"Episodes containing ""Operative procedure - main OPCS"" data",41146-0.0,important_unlabeled_26
+3052,377693,Integer,7522,0.7522752275227522,"Episodes containing ""Date of operation"" data",41148-0.0,important_unlabeled_27
+3053,66343,Categorical (multiple),1319,0.1319131913191319,External causesUses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.,41201-0.0,external_causes
+3085,392242,Categorical (multiple),7787,0.7787778777877787,Diagnoses - main ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.,41202-0.0,important_unlabeled_28
+3465,20307,Categorical (multiple),401,0.0401040104010401,Diagnoses - main ICD9Uses data-coding 87 comprises 13710 String-valued members in a hierarchical tree.,41203-0.0,important_unlabeled_29
+3493,320404,Categorical (multiple),6342,0.6342634263426342,Diagnoses - secondary ICD10Uses data-coding 19 comprises 19154 String-valued members in a hierarchical tree.,41204-0.0,important_unlabeled_30
+3928,8715,Categorical (multiple),171,0.0171017101710171,Diagnoses - secondary ICD9Uses data-coding 87 comprises 13710 String-valued members in a hierarchical tree.,41205-0.0,important_unlabeled_31
+3958,348668,Categorical (multiple),6921,0.6921692169216922,Hospital episode typeUses data-coding 238 comprises 6 Integer-valued members in a simple list.,41231-0.0,hospital_episode_type
+3962,330471,Integer,6525,0.6525652565256526,Spells in hospital,41235-0.0,hospital_spells
+3963,277019,Integer,5456,0.5456545654565457,"Episodes containing ""Patient classification on admission"" data (recoded)",41240-0.0,important_unlabeled_32
+3964,305421,Integer,6028,0.6028602860286029,"Episodes containing ""Intended management of patient"" data (recoded)",41241-0.0,important_unlabeled_33
+3965,277019,Categorical (multiple),5456,0.5456545654565457,Patient classification on admission (recoded)Uses data-coding 266 comprises 13 Integer-valued members in a hierarchical tree.,41247-0.0,patient_classification_on_admission
+3972,395885,Integer,7865,0.7865786578657866,"Episodes containing ""Inpatient record format"" data",41252-0.0,important_unlabeled_34
