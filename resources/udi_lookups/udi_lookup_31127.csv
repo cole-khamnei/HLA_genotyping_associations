@@ -2,79 +2,79 @@ column,count,type,description,udi,name
 901,20474,Integer,Number of antibiotics taken in last 3 months,6671-2.0,antibiotic_n_taken_past_3_months
 1759,1333,Categorical (multiple),Antibiotic codes for last 3 months,20199-2.0,antibiotic_codes_past_3_months
 1766,157356,Categorical (single),"Ever had known person concerned about, or recommend reduction of, alcohol consumption",20405-0.0,alcohol_suggested_reduction_ever
-1767,9384,Categorical (single),Ever addicted to alcohol,20406-0.0,alcohol_addiction_ever
+1767,9384,Categorical (single),Ever addicted to alcohol,20406-0.0,alcohol_UD_ever
 1768,85199,Categorical (single),Frequency of failure to fulfil normal expectations due to drinking alcohol in last year,20407-0.0,alcohol_failure_to_meet_normal_expectations_frequency
 1769,85199,Categorical (single),Frequency of memory loss due to drinking alcohol in last year,20408-0.0,alcohol_memory_loss_frequency
 1770,85199,Categorical (single),Frequency of feeling guilt or remorse after drinking alcohol in last year,20409-0.0,alcohol_guilt_or_remorse_feelings_frequency
 1771,7023,Integer,Age when known person last commented about drinking habits,20410-0.0,alcohol_last_comment_on_habits_age
 1772,157356,Categorical (single),Ever been injured or injured someone else through drinking alcohol,20411-0.0,alcohol_injury_self_or_others_ever
 1773,85199,Categorical (single),Frequency of needing morning drink of alcohol after heavy drinking session in last year,20412-0.0,alcohol_morning_alcohol_after_heavy_drinking_frequency
-1774,85199,Categorical (single),Frequency of inability to cease drinking in last year,20413-0.0,
-1775,157356,Categorical (single),Frequency of drinking alcohol,20414-0.0,_
-1776,3593,Categorical (single),Ongoing addiction to alcohol,20415-0.0,_
-1777,143670,Categorical (single),Frequency of consuming six or more units of alcohol,20416-0.0,_
-1778,9384,Categorical (single),Ever addicted to a behaviour or miscellanous,20431-0.0,_
-1779,2243,Categorical (single),Ongoing behavioural or miscellanous addiction,20432-0.0,_
-1780,9384,Categorical (single),Ever addicted to illicit or recreational drugs,20456-0.0,_
-1781,778,Categorical (single),Ongoing addiction or dependence on illicit or recreational drugs,20457-0.0,_
-1782,9384,Categorical (single),Ever addicted to prescription or over-the-counter medication,20503-0.0,_
-1783,1319,Categorical (single),Ongoing addiction or dependence to over-the-counter medication,20504-0.0,_
-1784,1319,Categorical (multiple),Substance of prescription or over-the-counter medication addiction,20551-0.1,_
-1787,2243,Categorical (multiple),Behavioural and miscellaneous addictions,20552-0.1,_
-1796,174778,Time,When digestive health questionnaire completed,21023-0.0,_
-1797,174778,Categorical (single),Ever diagnosed with IBS,21024-0.0,_
-1798,174778,Categorical (single),Frequency of discomfort/pain in abdomen in last 3 months,21025-0.0,_
-1799,61024,Categorical (single),Discomfort/pain occurring only during menstrual bleed,21026-0.0,_
-1800,93901,Categorical (single),Abdominal discomfort/pain for 6 months or longer,21027-0.0,_
-1801,93901,Categorical (single),Frequency of discomfort/pain getting better or stopping after a bowel movement,21028-0.0,_
-1802,93901,Categorical (single),More frequent bowel movements when abdominal discomfort/pain started,21029-0.0,_
-1803,93901,Categorical (single),Less frequent bowel movements when abdominal discomfort/pain started,21030-0.0,_
-1804,93901,Categorical (single),Stools looser when abdominal discomfort/pain started,21031-0.0,_
-1805,93901,Categorical (single),Frequency of harder stools when abdominal discomfort/pain started,21032-0.0,_
-1806,174778,Categorical (single),Frequency of hard/lumpy stools in the last 3 months,21033-0.0,_
-1807,174778,Categorical (single),Frequency of loose/mushy/watery stools in the last 3 months,21034-0.0,_
-1808,174778,Categorical (single),Currently (in last 3 months) suffer from abdominal pain,21035-0.0,_
-1809,50620,Categorical (single),Severity of current abdominal pain,21036-0.0,_
-1810,50620,Categorical (single),Number of days (out of 10) with abdominal pain,21037-0.0,_
-1811,174778,Categorical (single),Currently suffer from abdominal distension,21038-0.0,_
-1812,40667,Categorical (single),Severity of current abdominal distension/tightness,21039-0.0,_
-1813,174778,Categorical (single),Satisfaction with bowel habits,21040-0.0,_
-1814,174778,Categorical (single),Degree to which abdominal pain/discomfort/altered bowel habits affect/interfere with life in general,21041-0.0,_
-1815,174778,Integer,Greatest number of times bowels opened per day,21042-0.0,_
-1816,174778,Integer,Least number of times bowels opened per week,21043-0.0,_
-1817,174778,Integer,Average number of times bowels opened per day,21044-0.0,_
-1818,21362,Integer,"Number of weeks absent from work due to IBS, in the last year",21045-0.0,_
-1819,150,Date,When gave up work due to IBS,21046-0.0,_
-1820,8370,Integer,Number of weeks (in the last year) at work suffering because of IBS,21047-0.0,_
-1821,174778,Categorical (single),Degree bothered by back pain in the past 3 months,21048-0.0,_
-1822,174778,Categorical (single),Degree bothered by pain in arms/legs/joints in the past 3 months,21049-0.0,_
-1823,99292,Categorical (single),Degree bothered by menstrual cramps or other problems with period in the last 3 months,21050-0.0,_
-1824,174778,Categorical (single),Degree bothered by headaches in the last 3 months,21051-0.0,_
-1825,174778,Categorical (single),Degree bothered by chest pain in the last 3 months,21052-0.0,_
-1826,174778,Categorical (single),Degree bothered by dizziness in the last 3 months,21053-0.0,_
-1827,174778,Categorical (single),Degree bothered by fainting spells in the last 3 months,21054-0.0,_
-1828,174778,Categorical (single),Degree bothered by feeling heart pound/race in the last 3 months,21055-0.0,_
-1829,174778,Categorical (single),Degree bothered by shortness of breath in the last 3 months,21056-0.0,_
-1830,174778,Categorical (single),Degree bothered by pain/problems during intercourse in the last 3 months,21057-0.0,_
-1831,174778,Categorical (single),Degree bothered by urinary frequency/bladder irritability in the last 3 months,21058-0.0,_
-1832,174778,Categorical (single),Degree bothered by nausea in the last 3 months,21059-0.0,_
-1833,174778,Categorical (single),Degree bothered by feeling tired all the time in the last 3 months,21060-0.0,_
-1834,174778,Categorical (single),Degree bothered by trouble sleeping in the last 3 months,21061-0.0,_
-1835,174778,Categorical (single),Ever been offered/sought treatment for anxiety,21062-0.0,_
-1836,174778,Categorical (single),Ever been offered/sought treatment for depression,21063-0.0,_
+1774,85199,Categorical (single),Frequency of inability to cease drinking in last year,20413-0.0,alcohol_inability_to_quit_frequency_last_year
+1775,157356,Categorical (single),Frequency of drinking alcohol,20414-0.0,alcohol_drinking_frequency
+1776,3593,Categorical (single),Ongoing addiction to alcohol,20415-0.0,alcohol_UD_ongoing
+1777,143670,Categorical (single),Frequency of consuming six or more units of alcohol,20416-0.0,alcohol_consume_6_or_more_units_frequency
+1778,9384,Categorical (single),Ever addicted to a behaviour or miscellanous,20431-0.0,UD_behavior_miscellaneous_ever
+1779,2243,Categorical (single),Ongoing behavioural or miscellanous addiction,20432-0.0,UD_behavior_miscellaneous_ongoing
+1780,9384,Categorical (single),Ever addicted to illicit or recreational drugs,20456-0.0,UD_drugs_ever
+1781,778,Categorical (single),Ongoing addiction or dependence on illicit or recreational drugs,20457-0.0,UD_drugs_ongoing
+1782,9384,Categorical (single),Ever addicted to prescription or over-the-counter medication,20503-0.0,UD_drugs_prescription_ever
+1783,1319,Categorical (single),Ongoing addiction or dependence to over-the-counter medication,20504-0.0,UD_drugs_prescription_ongoing
+1784,1319,Categorical (multiple),Substance of prescription or over-the-counter medication addiction,20551-0.1,UD_drugs_prescription_substance
+1787,2243,Categorical (multiple),Behavioural and miscellaneous addictions,20552-0.1,UD_behavior_miscellaneous_habits
+1796,174778,Time,When digestive health questionnaire completed,21023-0.0,digestive_health_questionnaire_completion_date
+1797,174778,Categorical (single),Ever diagnosed with IBS,21024-0.0,GI_IBS_dx
+1798,174778,Categorical (single),Frequency of discomfort/pain in abdomen in last 3 months,21025-0.0,GI_abdominal_pain_past_3_months_frequency
+1799,61024,Categorical (single),Discomfort/pain occurring only during menstrual bleed,21026-0.0,GU_menstrual_pain_only
+1800,93901,Categorical (single),Abdominal discomfort/pain for 6 months or longer,21027-0.0,GI_abdominal_pain_6_months_or_longer
+1801,93901,Categorical (single),Frequency of discomfort/pain getting better or stopping after a bowel movement,21028-0.0,GI_abdominal_pain_BM_relieves_frequency
+1802,93901,Categorical (single),More frequent bowel movements when abdominal discomfort/pain started,21029-0.0,GI_abdominal_pain_onset_BM_more_frequent
+1803,93901,Categorical (single),Less frequent bowel movements when abdominal discomfort/pain started,21030-0.0,GI_abdominal_pain_onset_BM_less_frequent
+1804,93901,Categorical (single),Stools looser when abdominal discomfort/pain started,21031-0.0,GI_abdominal_pain_onset_stools_looser
+1805,93901,Categorical (single),Frequency of harder stools when abdominal discomfort/pain started,21032-0.0,GI_abdominal_pain_onset_stools_harder_frequency
+1806,174778,Categorical (single),Frequency of hard/lumpy stools in the last 3 months,21033-0.0,GI_hard_stools_past_3_months
+1807,174778,Categorical (single),Frequency of loose/mushy/watery stools in the last 3 months,21034-0.0,GI_loose_stools_past_3_months
+1808,174778,Categorical (single),Currently (in last 3 months) suffer from abdominal pain,21035-0.0,GI_abdominal_pain_current
+1809,50620,Categorical (single),Severity of current abdominal pain,21036-0.0,GI_abdominal_pain_current_intensity
+1810,50620,Categorical (single),Number of days (out of 10) with abdominal pain,21037-0.0,GI_abdominal_pain_n_days
+1811,174778,Categorical (single),Currently suffer from abdominal distension,21038-0.0,GI_abdominal_distension
+1812,40667,Categorical (single),Severity of current abdominal distension/tightness,21039-0.0,GI_abdominal_distension_severity
+1813,174778,Categorical (single),Satisfaction with bowel habits,21040-0.0,GI_abdominal_bowel_habit_satisfaction
+1814,174778,Categorical (single),Degree to which abdominal pain/discomfort/altered bowel habits affect/interfere with life in general,21041-0.0,GI_abdominal_pain_affect_lifestyle
+1815,174778,Integer,Greatest number of times bowels opened per day,21042-0.0,GI_bowel_openings_per_day_max
+1816,174778,Integer,Least number of times bowels opened per week,21043-0.0,GI_bowel_openings_per_day_min
+1817,174778,Integer,Average number of times bowels opened per day,21044-0.0,GI_bowel_openings_per_day_average
+1818,21362,Integer,"Number of weeks absent from work due to IBS, in the last year",21045-0.0,GI_IBS_work_weeks_absent_from_past_year
+1819,150,Date,When gave up work due to IBS,21046-0.0,GI_IBS_work_gave_up_date
+1820,8370,Integer,Number of weeks (in the last year) at work suffering because of IBS,21047-0.0,GI_IBS_work_weeks_suffering
+1821,174778,Categorical (single),Degree bothered by back pain in the past 3 months,21048-0.0,back_pain_degree_bothered_past_3_months
+1822,174778,Categorical (single),Degree bothered by pain in arms/legs/joints in the past 3 months,21049-0.0,joint_pain_degree_bothered_past_3_months
+1823,99292,Categorical (single),Degree bothered by menstrual cramps or other problems with period in the last 3 months,21050-0.0,menstraul_pain_degree_bothered_past_3_months
+1824,174778,Categorical (single),Degree bothered by headaches in the last 3 months,21051-0.0,headaches_degree_bothered_past_3_months
+1825,174778,Categorical (single),Degree bothered by chest pain in the last 3 months,21052-0.0,chest_pain_degree_bothered_past_3_months
+1826,174778,Categorical (single),Degree bothered by dizziness in the last 3 months,21053-0.0,dizziness_degree_bothered_past_3_months
+1827,174778,Categorical (single),Degree bothered by fainting spells in the last 3 months,21054-0.0,syncope_degree_bothered_past_3_months
+1828,174778,Categorical (single),Degree bothered by feeling heart pound/race in the last 3 months,21055-0.0,heart_racing_degree_bothered_past_3_months
+1829,174778,Categorical (single),Degree bothered by shortness of breath in the last 3 months,21056-0.0,dyspnea_degree_bothered_past_3_months
+1830,174778,Categorical (single),Degree bothered by pain/problems during intercourse in the last 3 months,21057-0.0,sexual_pain_problems_degree_bothered_past_3_months
+1831,174778,Categorical (single),Degree bothered by urinary frequency/bladder irritability in the last 3 months,21058-0.0,urinary_frequency_degree_bothered_past_3_months
+1832,174778,Categorical (single),Degree bothered by nausea in the last 3 months,21059-0.0,nausea_degree_bothered_past_3_months
+1833,174778,Categorical (single),Degree bothered by feeling tired all the time in the last 3 months,21060-0.0,fatigue_degree_bothered_past_3_months
+1834,174778,Categorical (single),Degree bothered by trouble sleeping in the last 3 months,21061-0.0,trouble_sleeping_degree_bothered_past_3_months
+1835,174778,Categorical (single),Ever been offered/sought treatment for anxiety,21062-0.0,anxiety_offered_sought_treatment
+1836,174778,Categorical (single),Ever been offered/sought treatment for depression,21063-0.0,depression_offered_sought_treatment
 1837,174778,Categorical (single),Sensitive stomach,21064-0.0,GI_sensitive_stomach
-1838,174778,Categorical (single),Family history of IBS,21065-0.0,IBS_family_hx
+1838,174778,Categorical (single),Family history of IBS,21065-0.0,GI_IBS_family_hx
 1839,174778,Categorical (single),Born by caesarian section,21066-0.0,birth_caesarian
 1840,174778,Categorical (single),Long-term/recurrent antibiotics as child or teenager,21067-0.0,antibiotics_childhood_long-term_recurrent_use
-1841,174778,Categorical (single),Diagnosed with coeliac disease or gluten sensitivity,21068-0.0,celiac_gluten_sensitivity_dx
-1842,3262,Categorical (single),Method of coeliac disease/gluten sensitivity diagnosis,21069-0.0,celiac_gluten_sensitivity_dx_method
-1843,21362,Categorical (single),Speed of onset of IBS symptoms,21070-0.0,IBS_initial_symptoms_onset_speed
-1844,21362,Categorical (single),Infectious illness diagnosis status when IBS symptoms first began,21071-0.0,IBS_initial_symptoms_co-occuring_infection
-1845,2118,Categorical (single),Infection diagnosed alongside IBS when IBS symptoms began,21072-0.0,IBS_initial_symptoms_co
-1846,21362,Categorical (single),Fever when IBS symptoms first began,21073-0.0,IBS_initial_symptoms_fever
-1847,21362,Categorical (single),Diarrhoea when IBS symptoms first began,21074-0.0,IBS_initial_symptoms_diarrhea
-1848,10744,Categorical (single),Bloody diarrhoea when IBS symptoms first began,21075-0.0,IBS_initial_symptoms_bloody_diarrhea
-1849,21362,Categorical (single),Vomiting when IBS symptoms first began,21076-0.0,IBS_initial_symptoms_vomiting
+1841,174778,Categorical (single),Diagnosed with coeliac disease or gluten sensitivity,21068-0.0,GI_celiac_gluten_sensitivity_dx
+1842,3262,Categorical (single),Method of coeliac disease/gluten sensitivity diagnosis,21069-0.0,GI_celiac_gluten_sensitivity_dx_method
+1843,21362,Categorical (single),Speed of onset of IBS symptoms,21070-0.0,GI_IBS_initial_symptoms_onset_speed
+1844,21362,Categorical (single),Infectious illness diagnosis status when IBS symptoms first began,21071-0.0,GI_IBS_initial_symptoms_co-occuring_infection
+1845,2118,Categorical (single),Infection diagnosed alongside IBS when IBS symptoms began,21072-0.0,GI_IBS_initial_symptoms_co
+1846,21362,Categorical (single),Fever when IBS symptoms first began,21073-0.0,GI_IBS_initial_symptoms_fever
+1847,21362,Categorical (single),Diarrhoea when IBS symptoms first began,21074-0.0,GI_IBS_initial_symptoms_diarrhea
+1848,10744,Categorical (single),Bloody diarrhoea when IBS symptoms first began,21075-0.0,GI_IBS_initial_symptoms_bloody_diarrhea
+1849,21362,Categorical (single),Vomiting when IBS symptoms first began,21076-0.0,GI_IBS_initial_symptoms_vomiting
 1937,121283,Categorical (single),Doctor diagnosed asthma,22127-0.0,asthma_dx
 1938,121283,Categorical (single),Doctor diagnosed COPD (chronic obstructive pulmonary disease),22130-0.0,copd_dx
 1939,27704,Integer,Age hayfever or allergic rhinitis diagnosed by doctor,22146-0.0,hayfever_allergic_rhinitis_dx_age
