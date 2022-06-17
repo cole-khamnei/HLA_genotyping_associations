@@ -40,7 +40,7 @@ UK_BIOBANK_DATA_PATH = DATA_PATH + f"{dir_divider}uk_biobank_{UK_BIOBANK_VERSION
 
 UK_BIOBANK_DEV_DATA_CSV = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}_small.csv")
 UK_BIOBANK_DATA_CSV = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}.csv")
-UK_BIOBANK_DATA_CSV_PATH = UK_BIOBANK_DEV_DATA_CSV if DEV_MODE else UK_BIOBANK_DATA_CSV
+
 
 UK_BIOBANK_INDEX_HTML_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}.html")
 UK_BIOBANK_INDEX_CSV_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}_index.csv")
@@ -53,6 +53,12 @@ UDI_LOOKUP_VERSION_GENERIC_PATH = os.path.join(UDI_LOOKUP_DIR_PATH, "udi_lookup_
 
 
 CODING_INFO_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "code_info")
+
+########################################################################################################################
+### Mode Set Constants ###
+########################################################################################################################
+
+UK_BIOBANK_DATA_CSV_PATH = UK_BIOBANK_DEV_DATA_CSV if DEV_MODE else UK_BIOBANK_DATA_CSV
 
 ########################################################################################################################
 ### URL Path Constants ###
