@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 950</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=950&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 950</span><br>
+<br>Name: Frequency of effects
+<p>Description: Graduated frequency of effects.
+<p>This is a flat (unstructured) list which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="950"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>6 Categories</h2>
+<table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th></tr>
+<tr class="row_odd"><td class="int">-500</td><td class="txt">Never</td></tr>
+<tr class="row_even"><td class="int">-501</td><td class="txt">Sometimes</td></tr>
+<tr class="row_odd"><td class="int">-502</td><td class="txt">Often</td></tr>
+<tr class="row_even"><td class="int">-503</td><td class="txt">Most of the time</td></tr>
+<tr class="row_odd"><td class="int">-504</td><td class="txt">Always</td></tr>
+<tr class="row_even"><td class="int">-818</td><td class="txt">Prefer not to answer</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>7 Data-Fields</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f21028"><td class="txt"><a class="basic" href="field.cgi?id=21028">21028</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21028">Frequency of discomfort/pain getting better or stopping after a bowel movement</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21033"><td class="txt"><a class="basic" href="field.cgi?id=21033">21033</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21033">Frequency of hard/lumpy stools in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21032"><td class="txt"><a class="basic" href="field.cgi?id=21032">21032</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21032">Frequency of harder stools when abdominal discomfort/pain started</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21034"><td class="txt"><a class="basic" href="field.cgi?id=21034">21034</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21034">Frequency of loose/mushy/watery stools in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21030"><td class="txt"><a class="basic" href="field.cgi?id=21030">21030</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21030">Less frequent bowel movements when abdominal discomfort/pain started</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21029"><td class="txt"><a class="basic" href="field.cgi?id=21029">21029</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21029">More frequent bowel movements when abdominal discomfort/pain started</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21031"><td class="txt"><a class="basic" href="field.cgi?id=21031">21031</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21031">Stools looser when abdominal discomfort/pain started</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.03s
+Fri Jun 17 20:20:27 2022
+
+-->
+</div>
+</body>
+</html>

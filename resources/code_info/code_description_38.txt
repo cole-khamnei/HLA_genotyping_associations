@@ -1,0 +1,751 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 38</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=38&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 38</span><br>
+<br>Name: Tumour Histology
+<p>Description: Tumour Histology codings used by UK Cancer Registry
+<p>This is a hierarchical tree-structured dictionary which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="38"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>682 Categories</h2>Some items were NOT selectable
+<p><table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th><th>Selectable</th><th>Node</th><th>Parent</th></tr>
+<tr class="row_odd"><td class="int">1</td><td class="txt">(8000-8009) Not otherwise specified</td><td class="txt">No</td><td class="int">1</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">2</td><td class="txt">(8010-8790) Epithelial</td><td class="txt">No</td><td class="int">2</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">3</td><td class="txt">(8800-9370) Connective tissue</td><td class="txt">No</td><td class="int">3</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">4</td><td class="txt">(9380-9589) Nervous system</td><td class="txt">No</td><td class="int">4</td><td class="int">Top</td></tr>
+<tr class="row_odd"><td class="int">5</td><td class="txt">(9590-9999) Hematologic (Leukemias, Lymphomas and related disorders)</td><td class="txt">No</td><td class="int">5</td><td class="int">Top</td></tr>
+<tr class="row_even"><td class="int">8000</td><td class="txt">Neoplasm</td><td class="txt">Yes</td><td class="int">8000</td><td class="int">1</td></tr>
+<tr class="row_odd"><td class="int">8001</td><td class="txt">Tumor cells</td><td class="txt">Yes</td><td class="int">8001</td><td class="int">1</td></tr>
+<tr class="row_even"><td class="int">8002</td><td class="txt">Small cell tumour</td><td class="txt">Yes</td><td class="int">8002</td><td class="int">1</td></tr>
+<tr class="row_odd"><td class="int">8003</td><td class="txt">Giant cell tumour</td><td class="txt">Yes</td><td class="int">8003</td><td class="int">1</td></tr>
+<tr class="row_even"><td class="int">8004</td><td class="txt">Spindle cell tumour</td><td class="txt">Yes</td><td class="int">8004</td><td class="int">1</td></tr>
+<tr class="row_odd"><td class="int">8005</td><td class="txt">Clear cell tumor</td><td class="txt">Yes</td><td class="int">8005</td><td class="int">1</td></tr>
+<tr class="row_even"><td class="int">8010</td><td class="txt">Carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8010</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8011</td><td class="txt">Epithelioma, NOS</td><td class="txt">Yes</td><td class="int">8011</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8012</td><td class="txt">Large cell carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8012</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8013</td><td class="txt">Large cell neuroendocrine carcinoma</td><td class="txt">Yes</td><td class="int">8013</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8014</td><td class="txt">Large cell carcinoma with rhabdoid phenotype</td><td class="txt">Yes</td><td class="int">8014</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8015</td><td class="txt">Glassy cell carcinoma</td><td class="txt">Yes</td><td class="int">8015</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8020</td><td class="txt">Carcinoma, undifferentiated type</td><td class="txt">Yes</td><td class="int">8020</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8021</td><td class="txt">Carcinoma, anaplastic type</td><td class="txt">Yes</td><td class="int">8021</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8022</td><td class="txt">Pleomorphic carcinoma</td><td class="txt">Yes</td><td class="int">8022</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8030</td><td class="txt">Giant cell and spindle cell carcinoma</td><td class="txt">Yes</td><td class="int">8030</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8031</td><td class="txt">Giant cell carcinoma</td><td class="txt">Yes</td><td class="int">8031</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8032</td><td class="txt">Spindle cell carcinoma</td><td class="txt">Yes</td><td class="int">8032</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8033</td><td class="txt">Pseudosarcomatous carcinoma</td><td class="txt">Yes</td><td class="int">8033</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8034</td><td class="txt">Polygonal cell carcinoma</td><td class="txt">Yes</td><td class="int">8034</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8035</td><td class="txt">Carcinoma with osteoclast-like giant cells</td><td class="txt">Yes</td><td class="int">8035</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8040</td><td class="txt">Tumorlet</td><td class="txt">Yes</td><td class="int">8040</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8041</td><td class="txt">Small cell carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8041</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8042</td><td class="txt">Oat cell carcinoma</td><td class="txt">Yes</td><td class="int">8042</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8043</td><td class="txt">Small cell carcinoma, fusiform cell</td><td class="txt">Yes</td><td class="int">8043</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8044</td><td class="txt">Small cell carcinoma, intermediate cell</td><td class="txt">Yes</td><td class="int">8044</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8045</td><td class="txt">Combined small cell carcinoma</td><td class="txt">Yes</td><td class="int">8045</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8046</td><td class="txt">Non-small cell carcinoma</td><td class="txt">Yes</td><td class="int">8046</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8050</td><td class="txt">Papillary carcinoma</td><td class="txt">Yes</td><td class="int">8050</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8051</td><td class="txt">Verrucous carcinoma</td><td class="txt">Yes</td><td class="int">8051</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8052</td><td class="txt">Papillary squamous cell carcinoma</td><td class="txt">Yes</td><td class="int">8052</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8053</td><td class="txt">Squamous cell papilloma, inverted</td><td class="txt">Yes</td><td class="int">8053</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8070</td><td class="txt">Squamous cell carcinoma</td><td class="txt">Yes</td><td class="int">8070</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8071</td><td class="txt">Squamous cell carcinoma, keratinizing</td><td class="txt">Yes</td><td class="int">8071</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8072</td><td class="txt">Squamous cell carcinoma, large cell, non-keratinizing</td><td class="txt">Yes</td><td class="int">8072</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8073</td><td class="txt">Squamous cell carcinoma, small cell, non-keratinizing</td><td class="txt">Yes</td><td class="int">8073</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8074</td><td class="txt">Squamous cell carcinoma, spindle cell</td><td class="txt">Yes</td><td class="int">8074</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8075</td><td class="txt">Squamous cell carcinoma, adenoid</td><td class="txt">Yes</td><td class="int">8075</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8076</td><td class="txt">Squamous cell carcinoma, micro-invasive</td><td class="txt">Yes</td><td class="int">8076</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8077</td><td class="txt">Squamous intraepithelial neoplasia, grade III</td><td class="txt">Yes</td><td class="int">8077</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8078</td><td class="txt">Squamous cell carcinoma with horn formation</td><td class="txt">Yes</td><td class="int">8078</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8080</td><td class="txt">Queyrat erythroplasia</td><td class="txt">Yes</td><td class="int">8080</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8081</td><td class="txt">Bowen disease</td><td class="txt">Yes</td><td class="int">8081</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8082</td><td class="txt">Lymphoepithelial carcinoma</td><td class="txt">Yes</td><td class="int">8082</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8083</td><td class="txt">Basaloid squamous cell carcinoma</td><td class="txt">Yes</td><td class="int">8083</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8084</td><td class="txt">Squamous cell carcinoma, clear cell type</td><td class="txt">Yes</td><td class="int">8084</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8090</td><td class="txt">Basal cell carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8090</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8091</td><td class="txt">Multifocal superficial basal cell carcinoma</td><td class="txt">Yes</td><td class="int">8091</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8092</td><td class="txt">Infiltrating basal cell carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8092</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8093</td><td class="txt">Basal cell carcinoma, fibroepithelial</td><td class="txt">Yes</td><td class="int">8093</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8094</td><td class="txt">Basosquamous carcinoma</td><td class="txt">Yes</td><td class="int">8094</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8095</td><td class="txt">Metatypical carcinoma</td><td class="txt">Yes</td><td class="int">8095</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8097</td><td class="txt">Basal cell carcinoma, nodular</td><td class="txt">Yes</td><td class="int">8097</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8098</td><td class="txt">Adenoid basal cell carcinoma</td><td class="txt">Yes</td><td class="int">8098</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8100</td><td class="txt">Trichoepithelioma</td><td class="txt">Yes</td><td class="int">8100</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8102</td><td class="txt">Trichilemmocarcinoma</td><td class="txt">Yes</td><td class="int">8102</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8110</td><td class="txt">Pilomatrix carcinoma</td><td class="txt">Yes</td><td class="int">8110</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8120</td><td class="txt">Transitional cell carcinoma</td><td class="txt">Yes</td><td class="int">8120</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8121</td><td class="txt">Schneiderian carcinoma</td><td class="txt">Yes</td><td class="int">8121</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8122</td><td class="txt">Transitional cell carcinoma, spindle cell</td><td class="txt">Yes</td><td class="int">8122</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8123</td><td class="txt">Basaloid carcinoma</td><td class="txt">Yes</td><td class="int">8123</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8124</td><td class="txt">Cloacogenic carcinoma</td><td class="txt">Yes</td><td class="int">8124</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8130</td><td class="txt">Papillary transitional cell carcinoma</td><td class="txt">Yes</td><td class="int">8130</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8131</td><td class="txt">Transitional cell carcinoma, micropapillary</td><td class="txt">Yes</td><td class="int">8131</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8140</td><td class="txt">Adenocarcinoma, NOS</td><td class="txt">Yes</td><td class="int">8140</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8141</td><td class="txt">Scirrhous adenocarcinoma</td><td class="txt">Yes</td><td class="int">8141</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8142</td><td class="txt">Linitis plastica</td><td class="txt">Yes</td><td class="int">8142</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8143</td><td class="txt">Superficial spreading adenocarcinoma</td><td class="txt">Yes</td><td class="int">8143</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8144</td><td class="txt">Adenocarcinoma, intestinal type</td><td class="txt">Yes</td><td class="int">8144</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8145</td><td class="txt">Carcinoma, diffuse type</td><td class="txt">Yes</td><td class="int">8145</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8146</td><td class="txt">Monomorphic adenoma</td><td class="txt">Yes</td><td class="int">8146</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8147</td><td class="txt">Basal cell adenocarcinoma</td><td class="txt">Yes</td><td class="int">8147</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8148</td><td class="txt">Glandular intraepithelial neoplasia, grade III</td><td class="txt">Yes</td><td class="int">8148</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8150</td><td class="txt">Islet cell carcinoma</td><td class="txt">Yes</td><td class="int">8150</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8151</td><td class="txt">Insulinoma (Beta-cell tumour), malignant</td><td class="txt">Yes</td><td class="int">8151</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8152</td><td class="txt">Glucagonoma (Alpha-cell tumour), malignant</td><td class="txt">Yes</td><td class="int">8152</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8153</td><td class="txt">Gastrinoma (G-cell tumour), malignant</td><td class="txt">Yes</td><td class="int">8153</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8154</td><td class="txt">Mixed islet cell and exocrine adenocarcinoma</td><td class="txt">Yes</td><td class="int">8154</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8155</td><td class="txt">Vipoma</td><td class="txt">Yes</td><td class="int">8155</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8156</td><td class="txt">Somatostatinoma, malignant</td><td class="txt">Yes</td><td class="int">8156</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8157</td><td class="txt">Enteroglucagonoma, malignant</td><td class="txt">Yes</td><td class="int">8157</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8160</td><td class="txt">Bile Duct Adenocarcinoma</td><td class="txt">Yes</td><td class="int">8160</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8161</td><td class="txt">Bile duct cystadenocarcinoma</td><td class="txt">Yes</td><td class="int">8161</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8162</td><td class="txt">Klatskin tumor</td><td class="txt">Yes</td><td class="int">8162</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8170</td><td class="txt">Hepatocellular carcinoma</td><td class="txt">Yes</td><td class="int">8170</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8171</td><td class="txt">Hepatocellular carcinoma, fibrolamellar</td><td class="txt">Yes</td><td class="int">8171</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8172</td><td class="txt">Hepatocellular carcinoma, scirrhous</td><td class="txt">Yes</td><td class="int">8172</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8173</td><td class="txt">Hepatocellular carcinoma, spindle cell variant</td><td class="txt">Yes</td><td class="int">8173</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8174</td><td class="txt">Hepatocellular carcinoma, clear cell type</td><td class="txt">Yes</td><td class="int">8174</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8175</td><td class="txt">Hepatocellular carcinoma, pleomorphic type</td><td class="txt">Yes</td><td class="int">8175</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8180</td><td class="txt">Mixed Hepato Bile Duct Carcinoma</td><td class="txt">Yes</td><td class="int">8180</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8190</td><td class="txt">Trabecular adenocarcinoma</td><td class="txt">Yes</td><td class="int">8190</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8191</td><td class="txt">Embryonal Adenoma</td><td class="txt">Yes</td><td class="int">8191</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8200</td><td class="txt">Adenoid cystic carcinoma</td><td class="txt">Yes</td><td class="int">8200</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8201</td><td class="txt">Cribriform carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8201</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8210</td><td class="txt">Adenocarcinoma in adenomatous polyp</td><td class="txt">Yes</td><td class="int">8210</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8211</td><td class="txt">Tubular adenocarcinoma</td><td class="txt">Yes</td><td class="int">8211</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8214</td><td class="txt">Parietal cell carcinoma</td><td class="txt">Yes</td><td class="int">8214</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8215</td><td class="txt">Adenocarcinoma of anal glands</td><td class="txt">Yes</td><td class="int">8215</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8220</td><td class="txt">Adenocarcinoma in adenoma polyposis coli</td><td class="txt">Yes</td><td class="int">8220</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8221</td><td class="txt">Adenocarcinoma in multiple adenomatous polyps</td><td class="txt">Yes</td><td class="int">8221</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8230</td><td class="txt">Solid carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8230</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8231</td><td class="txt">Carcinoma simplex</td><td class="txt">Yes</td><td class="int">8231</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8240</td><td class="txt">Carcinoid tumor</td><td class="txt">Yes</td><td class="int">8240</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8241</td><td class="txt">Enterochromaffin cell carcinoid</td><td class="txt">Yes</td><td class="int">8241</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8242</td><td class="txt">Enterochromaffin-like cell tumor</td><td class="txt">Yes</td><td class="int">8242</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8243</td><td class="txt">Goblet cell carcinoid (Mucocarcinoid Tumor)</td><td class="txt">Yes</td><td class="int">8243</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8244</td><td class="txt">Composite carcinoid</td><td class="txt">Yes</td><td class="int">8244</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8245</td><td class="txt">Adenocarcinoid tumor</td><td class="txt">Yes</td><td class="int">8245</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8246</td><td class="txt">Neuroendocrine carcinoma</td><td class="txt">Yes</td><td class="int">8246</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8247</td><td class="txt">Merkel cell carcinoma</td><td class="txt">Yes</td><td class="int">8247</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8249</td><td class="txt">Atypical carcinoid tumor</td><td class="txt">Yes</td><td class="int">8249</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8250</td><td class="txt">Bronchiolo-alveolar adenocarcinoma</td><td class="txt">Yes</td><td class="int">8250</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8251</td><td class="txt">Alveolar adenocarcinoma</td><td class="txt">Yes</td><td class="int">8251</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8252</td><td class="txt">Bronchiolo-alveolar carcinoma, non-mucinous</td><td class="txt">Yes</td><td class="int">8252</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8253</td><td class="txt">Bronchiolo-alveolar carcinoma, mucinous</td><td class="txt">Yes</td><td class="int">8253</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8254</td><td class="txt">Bronchiolo-alveolar carcinoma, mixed mucinous and non-mucinous</td><td class="txt">Yes</td><td class="int">8254</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8255</td><td class="txt">Adenocarcinoma with mixed subtypes</td><td class="txt">Yes</td><td class="int">8255</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8260</td><td class="txt">Papillary adenocarcinoma, NOS</td><td class="txt">Yes</td><td class="int">8260</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8261</td><td class="txt">Adenocarcinoma in villous adenoma</td><td class="txt">Yes</td><td class="int">8261</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8262</td><td class="txt">Villous adenocarcinoma</td><td class="txt">Yes</td><td class="int">8262</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8263</td><td class="txt">Adenocarcinoma in tubulovillous adenoma</td><td class="txt">Yes</td><td class="int">8263</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8264</td><td class="txt">Papillomatosis, glandular</td><td class="txt">Yes</td><td class="int">8264</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8270</td><td class="txt">Chromophobe adenocarcinoma</td><td class="txt">Yes</td><td class="int">8270</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8271</td><td class="txt">Prolactinoma</td><td class="txt">Yes</td><td class="int">8271</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8272</td><td class="txt">Pituitary carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8272</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8280</td><td class="txt">Acidophil carcinoma</td><td class="txt">Yes</td><td class="int">8280</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8281</td><td class="txt">Mixed acidophil-basophil carcinoma</td><td class="txt">Yes</td><td class="int">8281</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8290</td><td class="txt">Oxyphilic adenocarcinoma</td><td class="txt">Yes</td><td class="int">8290</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8300</td><td class="txt">Basophil carcinoma</td><td class="txt">Yes</td><td class="int">8300</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8310</td><td class="txt">Clear cell adenocarcinoma</td><td class="txt">Yes</td><td class="int">8310</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8312</td><td class="txt">Renal cell carcinoma</td><td class="txt">Yes</td><td class="int">8312</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8313</td><td class="txt">Clear cell adenocarcinofibroma</td><td class="txt">Yes</td><td class="int">8313</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8314</td><td class="txt">Lipid-rich carcinoma</td><td class="txt">Yes</td><td class="int">8314</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8315</td><td class="txt">Glycogen-rich carcinoma</td><td class="txt">Yes</td><td class="int">8315</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8316</td><td class="txt">Cyst-associated renal cell carcinoma</td><td class="txt">Yes</td><td class="int">8316</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8317</td><td class="txt">Renal cell carcinoma, chromophobe type</td><td class="txt">Yes</td><td class="int">8317</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8318</td><td class="txt">Renal cell carcinoma, sarcomatoid</td><td class="txt">Yes</td><td class="int">8318</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8319</td><td class="txt">Collecting duct carcinoma</td><td class="txt">Yes</td><td class="int">8319</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8320</td><td class="txt">Granular cell carcinoma</td><td class="txt">Yes</td><td class="int">8320</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8322</td><td class="txt">Water-clear cell adenocarcinoma</td><td class="txt">Yes</td><td class="int">8322</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8323</td><td class="txt">Mixed cell adenocarcinoma</td><td class="txt">Yes</td><td class="int">8323</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8330</td><td class="txt">Follicular adenocarcinoma</td><td class="txt">Yes</td><td class="int">8330</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8331</td><td class="txt">Follicular adenocarcinoma, well differentiated</td><td class="txt">Yes</td><td class="int">8331</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8332</td><td class="txt">Follicular adenocarcinoma trabecular</td><td class="txt">Yes</td><td class="int">8332</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8333</td><td class="txt">Fetal adenocarcinoma</td><td class="txt">Yes</td><td class="int">8333</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8334</td><td class="txt">Macrofollicular adenoma</td><td class="txt">Yes</td><td class="int">8334</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8335</td><td class="txt">Follicular carcinoma, minimally invasive</td><td class="txt">Yes</td><td class="int">8335</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8337</td><td class="txt">Insular carcinoma</td><td class="txt">Yes</td><td class="int">8337</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8340</td><td class="txt">Papillary carcinoma, follicular variant</td><td class="txt">Yes</td><td class="int">8340</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8341</td><td class="txt">Papillary microcarcinoma</td><td class="txt">Yes</td><td class="int">8341</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8342</td><td class="txt">Papillary carcinoma, oxyphilic cell</td><td class="txt">Yes</td><td class="int">8342</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8343</td><td class="txt">Papillary carcinoma, encapsulated</td><td class="txt">Yes</td><td class="int">8343</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8344</td><td class="txt">Papillary carcinoma, columnar cell</td><td class="txt">Yes</td><td class="int">8344</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8345</td><td class="txt">Medullary carcinoma with amyloid stroma</td><td class="txt">Yes</td><td class="int">8345</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8346</td><td class="txt">Mixed medullary-follicular carcinoma</td><td class="txt">Yes</td><td class="int">8346</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8347</td><td class="txt">Mixed medullary-papillary carcinoma</td><td class="txt">Yes</td><td class="int">8347</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8350</td><td class="txt">Nonencapsulated sclerosing carcinoma</td><td class="txt">Yes</td><td class="int">8350</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8360</td><td class="txt">Multiple endocrine adenomas</td><td class="txt">Yes</td><td class="int">8360</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8370</td><td class="txt">Adrenal cortical carcinoma</td><td class="txt">Yes</td><td class="int">8370</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8380</td><td class="txt">Endometrioid carcinoma</td><td class="txt">Yes</td><td class="int">8380</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8381</td><td class="txt">Endometrioid adenofibroma, malignant</td><td class="txt">Yes</td><td class="int">8381</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8382</td><td class="txt">Endometrioid adenocarcinoma, secretory variant</td><td class="txt">Yes</td><td class="int">8382</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8383</td><td class="txt">Endometrioid adenocarcinoma, ciliated cell variant</td><td class="txt">Yes</td><td class="int">8383</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8384</td><td class="txt">Adenocarcinoma, endocervical type</td><td class="txt">Yes</td><td class="int">8384</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8390</td><td class="txt">Skin appendage carcinoma</td><td class="txt">Yes</td><td class="int">8390</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8400</td><td class="txt">Sweat gland adenocarcinoma</td><td class="txt">Yes</td><td class="int">8400</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8401</td><td class="txt">Apocrine adenocarcinoma</td><td class="txt">Yes</td><td class="int">8401</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8402</td><td class="txt">Nodular hidradenoma, malignant</td><td class="txt">Yes</td><td class="int">8402</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8403</td><td class="txt">Malignant eccrine spiradenoma</td><td class="txt">Yes</td><td class="int">8403</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8405</td><td class="txt">Papillary hidradenoma</td><td class="txt">Yes</td><td class="int">8405</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8407</td><td class="txt">Sclerosing sweat duct carcinoma</td><td class="txt">Yes</td><td class="int">8407</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8408</td><td class="txt">Eccrine papillary adenocarcinoma</td><td class="txt">Yes</td><td class="int">8408</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8409</td><td class="txt">Eccrine poroma, malignant</td><td class="txt">Yes</td><td class="int">8409</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8410</td><td class="txt">Sebaceous adenocarcinoma</td><td class="txt">Yes</td><td class="int">8410</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8413</td><td class="txt">Eccrine adenocarcinoma</td><td class="txt">Yes</td><td class="int">8413</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8420</td><td class="txt">Ceruminous adenocarcinoma</td><td class="txt">Yes</td><td class="int">8420</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8430</td><td class="txt">Mucoepidermoid carcinoma</td><td class="txt">Yes</td><td class="int">8430</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8440</td><td class="txt">Cystadenocarcinoma, NOS</td><td class="txt">Yes</td><td class="int">8440</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8441</td><td class="txt">Serous cystadenocarcinoma</td><td class="txt">Yes</td><td class="int">8441</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8442</td><td class="txt">Serous cystadenoma, borderline malignancy</td><td class="txt">Yes</td><td class="int">8442</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8443</td><td class="txt">Clear cell cystadenoma</td><td class="txt">Yes</td><td class="int">8443</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8450</td><td class="txt">Papillary cystadenocarcinoma</td><td class="txt">Yes</td><td class="int">8450</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8451</td><td class="txt">Papillary cystadenoma, borderline malignancy</td><td class="txt">Yes</td><td class="int">8451</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8452</td><td class="txt">Solid pseudopapillary carcinoma</td><td class="txt">Yes</td><td class="int">8452</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8453</td><td class="txt">Intraductal papillary-mucinous carcinoma</td><td class="txt">Yes</td><td class="int">8453</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8454</td><td class="txt">Cystic tumor of atrio-ventricular node</td><td class="txt">Yes</td><td class="int">8454</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8460</td><td class="txt">Papillary serous cystadenocarcinoma</td><td class="txt">Yes</td><td class="int">8460</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8461</td><td class="txt">Serous surface papillary carcinoma</td><td class="txt">Yes</td><td class="int">8461</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8462</td><td class="txt">Serous papillary cystic tumor of borderline malignancy</td><td class="txt">Yes</td><td class="int">8462</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8470</td><td class="txt">Mucinous cystadenocarcinoma, NOS</td><td class="txt">Yes</td><td class="int">8470</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8471</td><td class="txt">Papillary mucinous cystadenocarcinoma</td><td class="txt">Yes</td><td class="int">8471</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8472</td><td class="txt">Mucinous cystic tumor of borderline malignancy</td><td class="txt">Yes</td><td class="int">8472</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8473</td><td class="txt">Papillary mucinous cystadenoma, borderline malignancy</td><td class="txt">Yes</td><td class="int">8473</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8480</td><td class="txt">Mucinous adenocarcinoma</td><td class="txt">Yes</td><td class="int">8480</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8481</td><td class="txt">Mucin-producing adenocarcinoma</td><td class="txt">Yes</td><td class="int">8481</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8482</td><td class="txt">Mucinous adenocarcinoma, endocervical type</td><td class="txt">Yes</td><td class="int">8482</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8490</td><td class="txt">Signet ring cell carcinoma</td><td class="txt">Yes</td><td class="int">8490</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8500</td><td class="txt">Duct adenocarcinoma</td><td class="txt">Yes</td><td class="int">8500</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8501</td><td class="txt">Comedocarcinoma</td><td class="txt">Yes</td><td class="int">8501</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8502</td><td class="txt">Secretory carcinoma of breast</td><td class="txt">Yes</td><td class="int">8502</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8503</td><td class="txt">Intraductal papillary adenocarcinoma with invasion</td><td class="txt">Yes</td><td class="int">8503</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8504</td><td class="txt">Intracystic carcinoma</td><td class="txt">Yes</td><td class="int">8504</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8507</td><td class="txt">Intraductal micropapillary carcinoma</td><td class="txt">Yes</td><td class="int">8507</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8508</td><td class="txt">Cystic hypersecretory carcinoma</td><td class="txt">Yes</td><td class="int">8508</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8510</td><td class="txt">Medullary carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8510</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8511</td><td class="txt">Medull Carcinoma wAmyl Stroma</td><td class="txt">Yes</td><td class="int">8511</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8512</td><td class="txt">Medullary carcinoma with lymphoid stroma</td><td class="txt">Yes</td><td class="int">8512</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8513</td><td class="txt">Atypical medullary carcinoma</td><td class="txt">Yes</td><td class="int">8513</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8514</td><td class="txt">Duct carcinoma, desmoplastic type</td><td class="txt">Yes</td><td class="int">8514</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8520</td><td class="txt">Lobular carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8520</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8521</td><td class="txt">Infiltrating ductular carcinoma</td><td class="txt">Yes</td><td class="int">8521</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8522</td><td class="txt">Infiltrating duct and lobular carcinoma</td><td class="txt">Yes</td><td class="int">8522</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8523</td><td class="txt">Infiltrating duct mixed with other types of carcinoma</td><td class="txt">Yes</td><td class="int">8523</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8524</td><td class="txt">Infiltrating lobular mixed with other types of carcinoma</td><td class="txt">Yes</td><td class="int">8524</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8525</td><td class="txt">Polymorphous low grade adenocarcinoma</td><td class="txt">Yes</td><td class="int">8525</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8530</td><td class="txt">Inflammatory carcinoma</td><td class="txt">Yes</td><td class="int">8530</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8540</td><td class="txt">Paget disease, mammary</td><td class="txt">Yes</td><td class="int">8540</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8541</td><td class="txt">Paget disease and infiltrating duct carcinoma</td><td class="txt">Yes</td><td class="int">8541</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8542</td><td class="txt">Paget disease, extramammary</td><td class="txt">Yes</td><td class="int">8542</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8543</td><td class="txt">Paget disease and intraductal carcinoma</td><td class="txt">Yes</td><td class="int">8543</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8550</td><td class="txt">Acinar cell carcinoma</td><td class="txt">Yes</td><td class="int">8550</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8551</td><td class="txt">Acinar cell cystadenocarcinoma</td><td class="txt">Yes</td><td class="int">8551</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8560</td><td class="txt">Adenosquamous carcinoma</td><td class="txt">Yes</td><td class="int">8560</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8561</td><td class="txt">Warthin tumor (Adenolymphoma), malignant</td><td class="txt">Yes</td><td class="int">8561</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8562</td><td class="txt">Epithelial-myoepithelial carcinoma</td><td class="txt">Yes</td><td class="int">8562</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8570</td><td class="txt">Adenocarcinoma with squamous metaplasia (adenoacanthoma)</td><td class="txt">Yes</td><td class="int">8570</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8571</td><td class="txt">Adenocarcinoma with cartilaginous and osseous metaplasia</td><td class="txt">Yes</td><td class="int">8571</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8572</td><td class="txt">Adenocarcinoma with spindle cell mataplasia</td><td class="txt">Yes</td><td class="int">8572</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8573</td><td class="txt">Adenocarcinoma with apocrine metaplasia</td><td class="txt">Yes</td><td class="int">8573</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8574</td><td class="txt">Adenocarcinoma with neuroendocrine differentiation</td><td class="txt">Yes</td><td class="int">8574</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8575</td><td class="txt">Metaplastic carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8575</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8576</td><td class="txt">Hepatoid adenocarcinoma</td><td class="txt">Yes</td><td class="int">8576</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8580</td><td class="txt">Thymoma, malignant, NOS</td><td class="txt">Yes</td><td class="int">8580</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8581</td><td class="txt">Thymoma, type A, malignant</td><td class="txt">Yes</td><td class="int">8581</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8582</td><td class="txt">Thymoma, type AB, malignant</td><td class="txt">Yes</td><td class="int">8582</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8583</td><td class="txt">Thymoma, type B1, malignant</td><td class="txt">Yes</td><td class="int">8583</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8584</td><td class="txt">Thymoma, type B2, malignant</td><td class="txt">Yes</td><td class="int">8584</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8585</td><td class="txt">Thymoma, type B3, malignant</td><td class="txt">Yes</td><td class="int">8585</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8586</td><td class="txt">Thymic carcinoma, NOS</td><td class="txt">Yes</td><td class="int">8586</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8588</td><td class="txt">Spindle epithelial tumor with thymus-like element</td><td class="txt">Yes</td><td class="int">8588</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8589</td><td class="txt">Carcinoma showing thymus-like element</td><td class="txt">Yes</td><td class="int">8589</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8590</td><td class="txt">Sex cord-gonadal stromal tumour, NOS</td><td class="txt">Yes</td><td class="int">8590</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8591</td><td class="txt">Sex cord-gonadal stromal tumour, incompletely differentiated</td><td class="txt">Yes</td><td class="int">8591</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8592</td><td class="txt">Sex cord-gonadal stromal tumour, mixed forms</td><td class="txt">Yes</td><td class="int">8592</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8593</td><td class="txt">Stromal tumour with minor sex cord elements</td><td class="txt">Yes</td><td class="int">8593</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8600</td><td class="txt">Thecoma, malignant</td><td class="txt">Yes</td><td class="int">8600</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8620</td><td class="txt">Granulosa cell tumor, malignant</td><td class="txt">Yes</td><td class="int">8620</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8621</td><td class="txt">Granulosa cell-theca cell tumor</td><td class="txt">Yes</td><td class="int">8621</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8630</td><td class="txt">Androblastoma, malignant</td><td class="txt">Yes</td><td class="int">8630</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8631</td><td class="txt">Sertoli-Leydig cell tumor, poorly differentiated</td><td class="txt">Yes</td><td class="int">8631</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8632</td><td class="txt">Gynandroblastoma</td><td class="txt">Yes</td><td class="int">8632</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8634</td><td class="txt">Sertoli-Leydig cell tumour, poorly differentiated, with heterologous elements</td><td class="txt">Yes</td><td class="int">8634</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8640</td><td class="txt">Sertoli cell carcinoma</td><td class="txt">Yes</td><td class="int">8640</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8650</td><td class="txt">Interstitial cell tumor</td><td class="txt">Yes</td><td class="int">8650</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8670</td><td class="txt">Steroid cell tumor, malignant</td><td class="txt">Yes</td><td class="int">8670</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8680</td><td class="txt">Paraganglioma, malignant</td><td class="txt">Yes</td><td class="int">8680</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8681</td><td class="txt">Sympathetic paraganglioma</td><td class="txt">Yes</td><td class="int">8681</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8690</td><td class="txt">Glomus jugulare tumor, NOS</td><td class="txt">Yes</td><td class="int">8690</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8691</td><td class="txt">Aortic body tumor, malignant</td><td class="txt">Yes</td><td class="int">8691</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8692</td><td class="txt">Carotid body tumor, malignant</td><td class="txt">Yes</td><td class="int">8692</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8693</td><td class="txt">Extra-adrenal paraganglioma, malignant</td><td class="txt">Yes</td><td class="int">8693</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8700</td><td class="txt">Pheochromocytoma, malignant</td><td class="txt">Yes</td><td class="int">8700</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8710</td><td class="txt">Glomangiosarcoma</td><td class="txt">Yes</td><td class="int">8710</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8711</td><td class="txt">Glomus Tumor Malignant</td><td class="txt">Yes</td><td class="int">8711</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8720</td><td class="txt">Malignant melanoma, NOS</td><td class="txt">Yes</td><td class="int">8720</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8721</td><td class="txt">Nodular melanoma</td><td class="txt">Yes</td><td class="int">8721</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8722</td><td class="txt">Balloon cell melanoma</td><td class="txt">Yes</td><td class="int">8722</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8723</td><td class="txt">Malignant melanoma, regressing</td><td class="txt">Yes</td><td class="int">8723</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8727</td><td class="txt">Dysplastic nevus</td><td class="txt">Yes</td><td class="int">8727</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8728</td><td class="txt">Meningeal melanomatosis</td><td class="txt">Yes</td><td class="int">8728</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8730</td><td class="txt">Amelanotic melanoma</td><td class="txt">Yes</td><td class="int">8730</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8740</td><td class="txt">Melanoma in junctional naevus</td><td class="txt">Yes</td><td class="int">8740</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8741</td><td class="txt">Melanoma in precancerous melanosis</td><td class="txt">Yes</td><td class="int">8741</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8742</td><td class="txt">Lentigo maligna melanoma</td><td class="txt">Yes</td><td class="int">8742</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8743</td><td class="txt">Superficial spreading melanoma</td><td class="txt">Yes</td><td class="int">8743</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8744</td><td class="txt">Acral lentiginous melanoma</td><td class="txt">Yes</td><td class="int">8744</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8745</td><td class="txt">Desmoplastic melanoma</td><td class="txt">Yes</td><td class="int">8745</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8746</td><td class="txt">Mucosal lentiginous melanoma</td><td class="txt">Yes</td><td class="int">8746</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8761</td><td class="txt">Melanoma in giant pigmented nevus</td><td class="txt">Yes</td><td class="int">8761</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8770</td><td class="txt">Mixed epithelioid and spindle cell melanoma</td><td class="txt">Yes</td><td class="int">8770</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8771</td><td class="txt">Epithelioid cell melanoma</td><td class="txt">Yes</td><td class="int">8771</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8772</td><td class="txt">Spindle cell melanoma, NOS</td><td class="txt">Yes</td><td class="int">8772</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8773</td><td class="txt">Spindle cell melanoma, type A</td><td class="txt">Yes</td><td class="int">8773</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8774</td><td class="txt">Spindle cell melanoma, type B</td><td class="txt">Yes</td><td class="int">8774</td><td class="int">2</td></tr>
+<tr class="row_odd"><td class="int">8780</td><td class="txt">Blue nevus, malignant</td><td class="txt">Yes</td><td class="int">8780</td><td class="int">2</td></tr>
+<tr class="row_even"><td class="int">8800</td><td class="txt">Sarcoma, NOS</td><td class="txt">Yes</td><td class="int">8800</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8801</td><td class="txt">Spindle cell sarcoma</td><td class="txt">Yes</td><td class="int">8801</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8802</td><td class="txt">Giant cell sarcoma</td><td class="txt">Yes</td><td class="int">8802</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8803</td><td class="txt">Small cell sarcoma</td><td class="txt">Yes</td><td class="int">8803</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8804</td><td class="txt">Epithelioid sarcoma</td><td class="txt">Yes</td><td class="int">8804</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8805</td><td class="txt">Undifferentiated sarcoma</td><td class="txt">Yes</td><td class="int">8805</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8806</td><td class="txt">Desmoplastic small round cell tumor</td><td class="txt">Yes</td><td class="int">8806</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8810</td><td class="txt">Fibrosarcoma, NOS</td><td class="txt">Yes</td><td class="int">8810</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8811</td><td class="txt">Fibromyxosarcoma</td><td class="txt">Yes</td><td class="int">8811</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8812</td><td class="txt">Periosteal fibrosarcoma</td><td class="txt">Yes</td><td class="int">8812</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8813</td><td class="txt">Fascial fibrosarcoma</td><td class="txt">Yes</td><td class="int">8813</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8814</td><td class="txt">Infantile fibrosarcoma</td><td class="txt">Yes</td><td class="int">8814</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8815</td><td class="txt">Solitary fibrous tumor, malignant</td><td class="txt">Yes</td><td class="int">8815</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8821</td><td class="txt">Aggressive fibromatosis</td><td class="txt">Yes</td><td class="int">8821</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8822</td><td class="txt">Abdominal fibromatosis</td><td class="txt">Yes</td><td class="int">8822</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8823</td><td class="txt">Desmoplastic fibroma</td><td class="txt">Yes</td><td class="int">8823</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8824</td><td class="txt">Myofibroma</td><td class="txt">Yes</td><td class="int">8824</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8825</td><td class="txt">Myofibroblastoma</td><td class="txt">Yes</td><td class="int">8825</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8830</td><td class="txt">Fibrous histiocytoma, malignant</td><td class="txt">Yes</td><td class="int">8830</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8832</td><td class="txt">Dermatofibrosarcoma, NOS</td><td class="txt">Yes</td><td class="int">8832</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8833</td><td class="txt">Pigmented dermatofibrosarcoma protuberans</td><td class="txt">Yes</td><td class="int">8833</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8840</td><td class="txt">Myxosarcoma</td><td class="txt">Yes</td><td class="int">8840</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8841</td><td class="txt">Angiomyxoma</td><td class="txt">Yes</td><td class="int">8841</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8850</td><td class="txt">Liposarcoma, NOS</td><td class="txt">Yes</td><td class="int">8850</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8851</td><td class="txt">Liposarcoma, well differentiated</td><td class="txt">Yes</td><td class="int">8851</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8852</td><td class="txt">Myxoid liposarcoma</td><td class="txt">Yes</td><td class="int">8852</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8853</td><td class="txt">Round cell liposarcoma</td><td class="txt">Yes</td><td class="int">8853</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8854</td><td class="txt">Pleomorphic liposarcoma</td><td class="txt">Yes</td><td class="int">8854</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8855</td><td class="txt">Mixed type liposarcoma</td><td class="txt">Yes</td><td class="int">8855</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8857</td><td class="txt">Fibroblastic liposarcoma</td><td class="txt">Yes</td><td class="int">8857</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8858</td><td class="txt">Dedifferentiated liposarcoma</td><td class="txt">Yes</td><td class="int">8858</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8861</td><td class="txt">Angiolipoma, NOS</td><td class="txt">Yes</td><td class="int">8861</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8890</td><td class="txt">Leiomyosarcoma, NOS</td><td class="txt">Yes</td><td class="int">8890</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8891</td><td class="txt">Epithelioid leiomyosarcoma</td><td class="txt">Yes</td><td class="int">8891</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8892</td><td class="txt">Cellular leiomyoma</td><td class="txt">Yes</td><td class="int">8892</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8893</td><td class="txt">Bizarre leiomyoma</td><td class="txt">Yes</td><td class="int">8893</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8894</td><td class="txt">Angiomyosarcoma</td><td class="txt">Yes</td><td class="int">8894</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8895</td><td class="txt">Myosarcoma</td><td class="txt">Yes</td><td class="int">8895</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8896</td><td class="txt">Myxoid leiomyosarcoma</td><td class="txt">Yes</td><td class="int">8896</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8897</td><td class="txt">Smooth muscle tumor, NOS</td><td class="txt">Yes</td><td class="int">8897</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8900</td><td class="txt">Rhabdomyosarcoma, NOS</td><td class="txt">Yes</td><td class="int">8900</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8901</td><td class="txt">Pleomorphic rhabdomyosarcoma, adult type</td><td class="txt">Yes</td><td class="int">8901</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8902</td><td class="txt">Mixed type rhabdomyosarcoma</td><td class="txt">Yes</td><td class="int">8902</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8910</td><td class="txt">Embryonal rhabdomyosarcoma</td><td class="txt">Yes</td><td class="int">8910</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8912</td><td class="txt">Spindle cell rhabdomyosarcoma</td><td class="txt">Yes</td><td class="int">8912</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8920</td><td class="txt">Alveolar rhabdomyosarcoma</td><td class="txt">Yes</td><td class="int">8920</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8921</td><td class="txt">Rhabdomyosarcoma with ganglionic differentiation</td><td class="txt">Yes</td><td class="int">8921</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8930</td><td class="txt">Endometrial stromal sarcoma</td><td class="txt">Yes</td><td class="int">8930</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8931</td><td class="txt">Endometrial stromal sarcoma, low grade</td><td class="txt">Yes</td><td class="int">8931</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8933</td><td class="txt">Adenosarcoma</td><td class="txt">Yes</td><td class="int">8933</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8934</td><td class="txt">Carcinofibroma</td><td class="txt">Yes</td><td class="int">8934</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8935</td><td class="txt">Stromal sarcoma, NOS</td><td class="txt">Yes</td><td class="int">8935</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8936</td><td class="txt">Gastrointestinal stromal sarcoma</td><td class="txt">Yes</td><td class="int">8936</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8940</td><td class="txt">Mixed tumor, malignant, NOS</td><td class="txt">Yes</td><td class="int">8940</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8941</td><td class="txt">Carcinoma in pleomorphic adenoma</td><td class="txt">Yes</td><td class="int">8941</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8950</td><td class="txt">Mullerian mixed tumor</td><td class="txt">Yes</td><td class="int">8950</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8951</td><td class="txt">Mesodermal mixed tumor</td><td class="txt">Yes</td><td class="int">8951</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8959</td><td class="txt">Malignant cystic nephroma</td><td class="txt">Yes</td><td class="int">8959</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8960</td><td class="txt">Nephroblastoma, NOS</td><td class="txt">Yes</td><td class="int">8960</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8963</td><td class="txt">Malignant rhabdoid tumor</td><td class="txt">Yes</td><td class="int">8963</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8964</td><td class="txt">Clear cell sarcoma of kidney</td><td class="txt">Yes</td><td class="int">8964</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8970</td><td class="txt">Hepatoblastoma</td><td class="txt">Yes</td><td class="int">8970</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8971</td><td class="txt">Pancreatoblastoma</td><td class="txt">Yes</td><td class="int">8971</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8972</td><td class="txt">Pulmonary blastoma</td><td class="txt">Yes</td><td class="int">8972</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8973</td><td class="txt">Pleuropulmonary blastoma</td><td class="txt">Yes</td><td class="int">8973</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8980</td><td class="txt">Carcinosarcoma, NOS</td><td class="txt">Yes</td><td class="int">8980</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8981</td><td class="txt">Carcinosarcoma, embryonal type</td><td class="txt">Yes</td><td class="int">8981</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8982</td><td class="txt">Malignant myoepithelioma</td><td class="txt">Yes</td><td class="int">8982</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">8990</td><td class="txt">Mesenchymoma, malignant</td><td class="txt">Yes</td><td class="int">8990</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">8991</td><td class="txt">Embryonal sarcoma</td><td class="txt">Yes</td><td class="int">8991</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9000</td><td class="txt">Brenner tumor, malignant</td><td class="txt">Yes</td><td class="int">9000</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9013</td><td class="txt">Adenofibroma, NOS</td><td class="txt">Yes</td><td class="int">9013</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9014</td><td class="txt">Serous adenocarcinofibroma</td><td class="txt">Yes</td><td class="int">9014</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9015</td><td class="txt">Mucinous adenocarcinofibroma</td><td class="txt">Yes</td><td class="int">9015</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9020</td><td class="txt">Phyllodes tumor, malignant</td><td class="txt">Yes</td><td class="int">9020</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9040</td><td class="txt">Synovial sarcoma, NOS</td><td class="txt">Yes</td><td class="int">9040</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9041</td><td class="txt">Synovial sarcoma, spindle cell</td><td class="txt">Yes</td><td class="int">9041</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9042</td><td class="txt">Synovial sarcoma, epithelioid cell</td><td class="txt">Yes</td><td class="int">9042</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9043</td><td class="txt">Synovial sarcoma, biphasic</td><td class="txt">Yes</td><td class="int">9043</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9044</td><td class="txt">Clear cell sarcoma,NOS</td><td class="txt">Yes</td><td class="int">9044</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9050</td><td class="txt">Mesothelioma, malignant</td><td class="txt">Yes</td><td class="int">9050</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9051</td><td class="txt">Fibrous mesothelioma, malignant</td><td class="txt">Yes</td><td class="int">9051</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9052</td><td class="txt">Epithelioid mesothelioma, malignant</td><td class="txt">Yes</td><td class="int">9052</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9053</td><td class="txt">Mesothelioma, biphasic, malignant</td><td class="txt">Yes</td><td class="int">9053</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9054</td><td class="txt">Adenomatoid tumor, NOS</td><td class="txt">Yes</td><td class="int">9054</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9060</td><td class="txt">Dysgerminoma</td><td class="txt">Yes</td><td class="int">9060</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9061</td><td class="txt">Seminoma, NOS</td><td class="txt">Yes</td><td class="int">9061</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9062</td><td class="txt">Seminoma, anaplastic</td><td class="txt">Yes</td><td class="int">9062</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9063</td><td class="txt">Spermatocytic seminoma</td><td class="txt">Yes</td><td class="int">9063</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9064</td><td class="txt">Germinoma</td><td class="txt">Yes</td><td class="int">9064</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9065</td><td class="txt">Germ cell tumor, nonseminomatous</td><td class="txt">Yes</td><td class="int">9065</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9070</td><td class="txt">Embryonal carcinoma, NOS</td><td class="txt">Yes</td><td class="int">9070</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9071</td><td class="txt">Yolk sac tumor</td><td class="txt">Yes</td><td class="int">9071</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9072</td><td class="txt">Polyembryoma</td><td class="txt">Yes</td><td class="int">9072</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9073</td><td class="txt">Gonadoblastoma</td><td class="txt">Yes</td><td class="int">9073</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9080</td><td class="txt">Teratoma malignant, NOS</td><td class="txt">Yes</td><td class="int">9080</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9081</td><td class="txt">Teratocarcinoma</td><td class="txt">Yes</td><td class="int">9081</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9082</td><td class="txt">Malignant teratoma, undifferentiated</td><td class="txt">Yes</td><td class="int">9082</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9083</td><td class="txt">Malignant teratoma, intermediate</td><td class="txt">Yes</td><td class="int">9083</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9084</td><td class="txt">Teratoma with maligant transformation</td><td class="txt">Yes</td><td class="int">9084</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9085</td><td class="txt">Mixed germ cell tumor</td><td class="txt">Yes</td><td class="int">9085</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9090</td><td class="txt">Struma ovarii, malignant</td><td class="txt">Yes</td><td class="int">9090</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9100</td><td class="txt">Choriocarcinoma, NOS</td><td class="txt">Yes</td><td class="int">9100</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9101</td><td class="txt">Choriocarcinoma combined with other germ cell elements</td><td class="txt">Yes</td><td class="int">9101</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9102</td><td class="txt">Malignant teratoma, trophoblastic</td><td class="txt">Yes</td><td class="int">9102</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9103</td><td class="txt">Partial hydatidiform mole</td><td class="txt">Yes</td><td class="int">9103</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9104</td><td class="txt">Placental site trophoblastic tumor</td><td class="txt">Yes</td><td class="int">9104</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9105</td><td class="txt">Trophoblastic tumor, epithelioid</td><td class="txt">Yes</td><td class="int">9105</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9110</td><td class="txt">Mesonephroma, malignant</td><td class="txt">Yes</td><td class="int">9110</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9120</td><td class="txt">Hemangiosarcoma</td><td class="txt">Yes</td><td class="int">9120</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9121</td><td class="txt">Cavernous hemangioma</td><td class="txt">Yes</td><td class="int">9121</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9122</td><td class="txt">Venous hemangioma</td><td class="txt">Yes</td><td class="int">9122</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9124</td><td class="txt">Kupffer cell sarcoma</td><td class="txt">Yes</td><td class="int">9124</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9130</td><td class="txt">Hemangioendothelioma, malignant</td><td class="txt">Yes</td><td class="int">9130</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9131</td><td class="txt">Capillary hemangioma</td><td class="txt">Yes</td><td class="int">9131</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9133</td><td class="txt">Epithelioid hemangioendothelioma, malignant</td><td class="txt">Yes</td><td class="int">9133</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9140</td><td class="txt">Kaposi sarcoma</td><td class="txt">Yes</td><td class="int">9140</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9150</td><td class="txt">Hemangiopericytoma, malignant</td><td class="txt">Yes</td><td class="int">9150</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9160</td><td class="txt">Angiofibroma, NOS</td><td class="txt">Yes</td><td class="int">9160</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9161</td><td class="txt">Hemangioblastoma</td><td class="txt">Yes</td><td class="int">9161</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9170</td><td class="txt">Lymphangiosarcoma</td><td class="txt">Yes</td><td class="int">9170</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9174</td><td class="txt">Lymphangiomyoma</td><td class="txt">Yes</td><td class="int">9174</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9180</td><td class="txt">Osteosarcoma, NOS</td><td class="txt">Yes</td><td class="int">9180</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9181</td><td class="txt">Chondroblastic osteosarcoma</td><td class="txt">Yes</td><td class="int">9181</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9182</td><td class="txt">Fibroblastic osteosarcoma</td><td class="txt">Yes</td><td class="int">9182</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9183</td><td class="txt">Telangiectatic osteosarcoma</td><td class="txt">Yes</td><td class="int">9183</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9184</td><td class="txt">Osteosarcoma in Paget disease</td><td class="txt">Yes</td><td class="int">9184</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9185</td><td class="txt">Small cell osteosarcoma</td><td class="txt">Yes</td><td class="int">9185</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9186</td><td class="txt">Central osteosarcoma</td><td class="txt">Yes</td><td class="int">9186</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9187</td><td class="txt">Instrosseous well differentiated osteosarcoma</td><td class="txt">Yes</td><td class="int">9187</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9192</td><td class="txt">Parosteal osteosarcoma</td><td class="txt">Yes</td><td class="int">9192</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9193</td><td class="txt">Periosteal osteosarcoma</td><td class="txt">Yes</td><td class="int">9193</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9194</td><td class="txt">High grade surface osteosarcoma</td><td class="txt">Yes</td><td class="int">9194</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9195</td><td class="txt">Intracortical osteosarcoma</td><td class="txt">Yes</td><td class="int">9195</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9210</td><td class="txt">Osteochondroma</td><td class="txt">Yes</td><td class="int">9210</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9220</td><td class="txt">Chondrosarcoma, NOS</td><td class="txt">Yes</td><td class="int">9220</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9221</td><td class="txt">Juxtacortical chondrosarcoma</td><td class="txt">Yes</td><td class="int">9221</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9230</td><td class="txt">Chondroblastoma, malignant</td><td class="txt">Yes</td><td class="int">9230</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9231</td><td class="txt">Myxoid chondrosarcoma</td><td class="txt">Yes</td><td class="int">9231</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9240</td><td class="txt">Mesenchymal chondrosarcoma</td><td class="txt">Yes</td><td class="int">9240</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9242</td><td class="txt">Clear cell chondrosarcoma</td><td class="txt">Yes</td><td class="int">9242</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9243</td><td class="txt">Dedifferentiated chondrosarcoma</td><td class="txt">Yes</td><td class="int">9243</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9250</td><td class="txt">Giant cell tumor of bone, malignant</td><td class="txt">Yes</td><td class="int">9250</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9251</td><td class="txt">Malignant giant cell tumor of soft parts</td><td class="txt">Yes</td><td class="int">9251</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9252</td><td class="txt">Malignant tenosynovial giant cell tumor</td><td class="txt">Yes</td><td class="int">9252</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9260</td><td class="txt">Ewing sarcoma</td><td class="txt">Yes</td><td class="int">9260</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9261</td><td class="txt">Adamantinoma of long bones</td><td class="txt">Yes</td><td class="int">9261</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9270</td><td class="txt">Odontogenic tumor, malignant</td><td class="txt">Yes</td><td class="int">9270</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9290</td><td class="txt">Ameloblastic odontosarcoma</td><td class="txt">Yes</td><td class="int">9290</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9310</td><td class="txt">Ameloblastoma, malignant</td><td class="txt">Yes</td><td class="int">9310</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9330</td><td class="txt">Ameloblastic fibrosarcoma</td><td class="txt">Yes</td><td class="int">9330</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9342</td><td class="txt">Odontogenic carcinosarcoma</td><td class="txt">Yes</td><td class="int">9342</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9350</td><td class="txt">Craniopharyngioma</td><td class="txt">Yes</td><td class="int">9350</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9351</td><td class="txt">Adamantinomatous craniopharyngioma</td><td class="txt">Yes</td><td class="int">9351</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9352</td><td class="txt">Papillary craniopharyngioma</td><td class="txt">Yes</td><td class="int">9352</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9360</td><td class="txt">Pinealoma, NOS</td><td class="txt">Yes</td><td class="int">9360</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9361</td><td class="txt">Pineocytoma</td><td class="txt">Yes</td><td class="int">9361</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9362</td><td class="txt">Pineoblastoma</td><td class="txt">Yes</td><td class="int">9362</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9363</td><td class="txt">Melanotic neuroectodermal tumor</td><td class="txt">Yes</td><td class="int">9363</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9364</td><td class="txt">Peripheral neuroectodermal tumor</td><td class="txt">Yes</td><td class="int">9364</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9365</td><td class="txt">Askin tumor</td><td class="txt">Yes</td><td class="int">9365</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9370</td><td class="txt">Chordoma, NOS</td><td class="txt">Yes</td><td class="int">9370</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9371</td><td class="txt">Chondroid chordoma</td><td class="txt">Yes</td><td class="int">9371</td><td class="int">3</td></tr>
+<tr class="row_odd"><td class="int">9372</td><td class="txt">Dedifferentiated chordoma</td><td class="txt">Yes</td><td class="int">9372</td><td class="int">3</td></tr>
+<tr class="row_even"><td class="int">9380</td><td class="txt">Glioma, malignant</td><td class="txt">Yes</td><td class="int">9380</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9381</td><td class="txt">Gliomatosis cerebri</td><td class="txt">Yes</td><td class="int">9381</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9382</td><td class="txt">Mixed glioma</td><td class="txt">Yes</td><td class="int">9382</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9383</td><td class="txt">Subependymoma</td><td class="txt">Yes</td><td class="int">9383</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9384</td><td class="txt">Supependymal giant cell astrocytoma</td><td class="txt">Yes</td><td class="int">9384</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9390</td><td class="txt">Choroid plexus papilloma</td><td class="txt">Yes</td><td class="int">9390</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9391</td><td class="txt">Ependymoma, NOS</td><td class="txt">Yes</td><td class="int">9391</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9392</td><td class="txt">Ependymoma, anaplastic</td><td class="txt">Yes</td><td class="int">9392</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9393</td><td class="txt">Papillary ependymoma</td><td class="txt">Yes</td><td class="int">9393</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9394</td><td class="txt">Myxopapillary ependymoma</td><td class="txt">Yes</td><td class="int">9394</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9400</td><td class="txt">Astrocytoma, NOS</td><td class="txt">Yes</td><td class="int">9400</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9401</td><td class="txt">Astrocytoma, anaplastic</td><td class="txt">Yes</td><td class="int">9401</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9410</td><td class="txt">Protoplasmic astrocytoma</td><td class="txt">Yes</td><td class="int">9410</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9411</td><td class="txt">Gemistocytic astrocytoma</td><td class="txt">Yes</td><td class="int">9411</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9412</td><td class="txt">Desmoplastic infantile astrocytoma</td><td class="txt">Yes</td><td class="int">9412</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9413</td><td class="txt">Dysembryoplastic neuroepithelial tumor</td><td class="txt">Yes</td><td class="int">9413</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9420</td><td class="txt">Fibrillary astrocytoma</td><td class="txt">Yes</td><td class="int">9420</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9421</td><td class="txt">Pilocytic astrocytoma</td><td class="txt">Yes</td><td class="int">9421</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9423</td><td class="txt">Polar spongioblastoma</td><td class="txt">Yes</td><td class="int">9423</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9424</td><td class="txt">Pleomorphic xanthoastrocytoma</td><td class="txt">Yes</td><td class="int">9424</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9430</td><td class="txt">Astroblastoma</td><td class="txt">Yes</td><td class="int">9430</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9440</td><td class="txt">Glioblastoma, NOS</td><td class="txt">Yes</td><td class="int">9440</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9441</td><td class="txt">Giant cell glioblastoma</td><td class="txt">Yes</td><td class="int">9441</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9442</td><td class="txt">Gliosarcoma</td><td class="txt">Yes</td><td class="int">9442</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9444</td><td class="txt">Chordoid glioma</td><td class="txt">Yes</td><td class="int">9444</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9450</td><td class="txt">Oligodendroglioma, NOS</td><td class="txt">Yes</td><td class="int">9450</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9451</td><td class="txt">Oligodendroglioma, anaplastic</td><td class="txt">Yes</td><td class="int">9451</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9460</td><td class="txt">Oligodendroblastoma</td><td class="txt">Yes</td><td class="int">9460</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9470</td><td class="txt">Medulloblastoma, NOS</td><td class="txt">Yes</td><td class="int">9470</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9471</td><td class="txt">Desmoplastic nodular medulloblastoma</td><td class="txt">Yes</td><td class="int">9471</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9472</td><td class="txt">Medullomyoblastoma</td><td class="txt">Yes</td><td class="int">9472</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9473</td><td class="txt">Primitive neuroectodermal tumor</td><td class="txt">Yes</td><td class="int">9473</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9474</td><td class="txt">Large cell medulloblastoma</td><td class="txt">Yes</td><td class="int">9474</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9480</td><td class="txt">Cerebellar sarcoma, NOS</td><td class="txt">Yes</td><td class="int">9480</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9490</td><td class="txt">Ganglioneuroblastoma</td><td class="txt">Yes</td><td class="int">9490</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9492</td><td class="txt">Gangliocytoma</td><td class="txt">Yes</td><td class="int">9492</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9493</td><td class="txt">Dysplastic gangliocytoma of cerebellum (Lhermitte-Duclos)</td><td class="txt">Yes</td><td class="int">9493</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9500</td><td class="txt">Neuroblastoma, NOS</td><td class="txt">Yes</td><td class="int">9500</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9501</td><td class="txt">Medulloepithelioma, NOS</td><td class="txt">Yes</td><td class="int">9501</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9502</td><td class="txt">Teratoid medulloepithelioma</td><td class="txt">Yes</td><td class="int">9502</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9503</td><td class="txt">Neuroepithelioma, NOS</td><td class="txt">Yes</td><td class="int">9503</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9504</td><td class="txt">Spongioneuroblastoma</td><td class="txt">Yes</td><td class="int">9504</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9505</td><td class="txt">Ganglioglioma, anaplastic</td><td class="txt">Yes</td><td class="int">9505</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9506</td><td class="txt">Centrol neurocytoma</td><td class="txt">Yes</td><td class="int">9506</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9508</td><td class="txt">Atypical teratoid/rhabdoid tumor</td><td class="txt">Yes</td><td class="int">9508</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9510</td><td class="txt">Retinoblastoma, NOS</td><td class="txt">Yes</td><td class="int">9510</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9511</td><td class="txt">Retinoblastoma, differentiated</td><td class="txt">Yes</td><td class="int">9511</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9512</td><td class="txt">Retinoblastoma, undifferentiated</td><td class="txt">Yes</td><td class="int">9512</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9513</td><td class="txt">Retinoblastoma, diffuse</td><td class="txt">Yes</td><td class="int">9513</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9520</td><td class="txt">Olfactory neurogenic tumor</td><td class="txt">Yes</td><td class="int">9520</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9521</td><td class="txt">Olfactory neurcytoma</td><td class="txt">Yes</td><td class="int">9521</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9522</td><td class="txt">Olfactory neuroblastoma</td><td class="txt">Yes</td><td class="int">9522</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9523</td><td class="txt">Olfactory neuroepithelioma</td><td class="txt">Yes</td><td class="int">9523</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9530</td><td class="txt">Meningioma, malignant</td><td class="txt">Yes</td><td class="int">9530</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9531</td><td class="txt">Meningothelial meningioma</td><td class="txt">Yes</td><td class="int">9531</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9532</td><td class="txt">Fibrous meningioma</td><td class="txt">Yes</td><td class="int">9532</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9533</td><td class="txt">Psammomatous meningioma</td><td class="txt">Yes</td><td class="int">9533</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9534</td><td class="txt">Angiomatous meningioma</td><td class="txt">Yes</td><td class="int">9534</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9537</td><td class="txt">Transitional meningioma</td><td class="txt">Yes</td><td class="int">9537</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9538</td><td class="txt">Papillary meningioma</td><td class="txt">Yes</td><td class="int">9538</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9539</td><td class="txt">Meningeal sarcomatosis</td><td class="txt">Yes</td><td class="int">9539</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9540</td><td class="txt">Malignant peripheral nerve sheath tumor</td><td class="txt">Yes</td><td class="int">9540</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9541</td><td class="txt">Melanotic neurofibroma</td><td class="txt">Yes</td><td class="int">9541</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9550</td><td class="txt">Plexiform neurofibroma</td><td class="txt">Yes</td><td class="int">9550</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9560</td><td class="txt">Neurilemmoma, malignant</td><td class="txt">Yes</td><td class="int">9560</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9561</td><td class="txt">Malignant peripheral nerve sheath tumour with rhabdomyoblastic differentiation</td><td class="txt">Yes</td><td class="int">9561</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9562</td><td class="txt">Neurothekeoma</td><td class="txt">Yes</td><td class="int">9562</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9570</td><td class="txt">Neuroma, NOS</td><td class="txt">Yes</td><td class="int">9570</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9571</td><td class="txt">Perineurioma, malignant</td><td class="txt">Yes</td><td class="int">9571</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9580</td><td class="txt">Granular cell tumor, malignant</td><td class="txt">Yes</td><td class="int">9580</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9581</td><td class="txt">Alveolar soft part sarcoma</td><td class="txt">Yes</td><td class="int">9581</td><td class="int">4</td></tr>
+<tr class="row_odd"><td class="int">9582</td><td class="txt">Granular cell tumor of the sellar region</td><td class="txt">Yes</td><td class="int">9582</td><td class="int">4</td></tr>
+<tr class="row_even"><td class="int">9590</td><td class="txt">Malignant lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9590</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9591</td><td class="txt">Malignant lymphoma, non-Hodgkin</td><td class="txt">Yes</td><td class="int">9591</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9596</td><td class="txt">Composite Hodgkin and non-Hodgkin lymphoma</td><td class="txt">Yes</td><td class="int">9596</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9597</td><td class="txt">Primary Cutaneous follicle centre lymphoma</td><td class="txt">Yes</td><td class="int">9597</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9650</td><td class="txt">Hodgkin lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9650</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9651</td><td class="txt">Hodgkin lymphoma, lymphocyte-rich</td><td class="txt">Yes</td><td class="int">9651</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9652</td><td class="txt">Hodgkin lymphoma, mixed cellularity</td><td class="txt">Yes</td><td class="int">9652</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9653</td><td class="txt">Hodgkin lymphoma, lymphocytic depletion</td><td class="txt">Yes</td><td class="int">9653</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9654</td><td class="txt">Hodgkin lymphoma, lymphocytic depletion, diffuse fibrosis</td><td class="txt">Yes</td><td class="int">9654</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9655</td><td class="txt">Hodgkin lymphoma, lymphocytic depletion, reticular</td><td class="txt">Yes</td><td class="int">9655</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9659</td><td class="txt">Hodgkin lymphoma, nodular lymphocyte predominance</td><td class="txt">Yes</td><td class="int">9659</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9661</td><td class="txt">Hodgkin granuloma</td><td class="txt">Yes</td><td class="int">9661</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9662</td><td class="txt">Hodgkin sarcoma</td><td class="txt">Yes</td><td class="int">9662</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9663</td><td class="txt">Hodgkin lymphoma, nodular sclerosis</td><td class="txt">Yes</td><td class="int">9663</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9664</td><td class="txt">Hodgkin lymphoma, nodular sclerosis, cellular phase</td><td class="txt">Yes</td><td class="int">9664</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9665</td><td class="txt">Hodgkin lymphoma, nodular sclerosis, grade 1</td><td class="txt">Yes</td><td class="int">9665</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9667</td><td class="txt">Hodgkin lymphoma, nodular sclerosis, grade 2</td><td class="txt">Yes</td><td class="int">9667</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9670</td><td class="txt">Malignant lymphoma, small B lymphocytic, NOS</td><td class="txt">Yes</td><td class="int">9670</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9671</td><td class="txt">Malignant lymphoma, lymphoplasmacytic</td><td class="txt">Yes</td><td class="int">9671</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9673</td><td class="txt">Mantle cell lymphoma</td><td class="txt">Yes</td><td class="int">9673</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9675</td><td class="txt">Malignant lymphoma, mixed small and large cell, diffuse</td><td class="txt">Yes</td><td class="int">9675</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9678</td><td class="txt">Primary effusion lymphoma</td><td class="txt">Yes</td><td class="int">9678</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9679</td><td class="txt">Mediastinal large B-cell lymphoma</td><td class="txt">Yes</td><td class="int">9679</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9680</td><td class="txt">Malignant lymphoma, large B-cell, diffuse</td><td class="txt">Yes</td><td class="int">9680</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9684</td><td class="txt">Malignant lymphoma, large B-cell, diffuse, immunoblastic, NOS</td><td class="txt">Yes</td><td class="int">9684</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9687</td><td class="txt">Burkitt lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9687</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9688</td><td class="txt">T-cell histiocyte rich large B-cell lymphoma</td><td class="txt">Yes</td><td class="int">9688</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9689</td><td class="txt">Splenic marginal zone B-cell lymphoma</td><td class="txt">Yes</td><td class="int">9689</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9690</td><td class="txt">Follicular lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9690</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9691</td><td class="txt">Follicular lymphoma, grade 2</td><td class="txt">Yes</td><td class="int">9691</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9695</td><td class="txt">Follicular lymphoma, grade 1</td><td class="txt">Yes</td><td class="int">9695</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9698</td><td class="txt">Follicular lymphoma, grade 3</td><td class="txt">Yes</td><td class="int">9698</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9699</td><td class="txt">Marginal zone B-cell lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9699</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9700</td><td class="txt">Mycosis fungoides</td><td class="txt">Yes</td><td class="int">9700</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9701</td><td class="txt">Sezary syndrome</td><td class="txt">Yes</td><td class="int">9701</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9702</td><td class="txt">Mature T-cell lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9702</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9705</td><td class="txt">Angioimmunoblastic T-cell lymphoma</td><td class="txt">Yes</td><td class="int">9705</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9708</td><td class="txt">Subcutaneous panniculitis-like T-cell lymphoma</td><td class="txt">Yes</td><td class="int">9708</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9709</td><td class="txt">Cutaneous T-cell lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9709</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9712</td><td class="txt">Intravascular large B-cell lymphoma</td><td class="txt">Yes</td><td class="int">9712</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9714</td><td class="txt">Anaplastic large cell lymphoma, T-cell and Null cell type</td><td class="txt">Yes</td><td class="int">9714</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9716</td><td class="txt">Hepatosplenic gamma-delta cell lymphoma</td><td class="txt">Yes</td><td class="int">9716</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9717</td><td class="txt">Intestinal T-cell lymphoma</td><td class="txt">Yes</td><td class="int">9717</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9718</td><td class="txt">Primary cutaneous CD30+ T-cell lymphoproliferative disorder</td><td class="txt">Yes</td><td class="int">9718</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9719</td><td class="txt">NK/T-cell lymphoma, nasal and nasal-type</td><td class="txt">Yes</td><td class="int">9719</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9724</td><td class="txt">SystemicEBV positive T-cell lymphoproliferative disease of childhood</td><td class="txt">Yes</td><td class="int">9724</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9725</td><td class="txt">Hydroa vacciniforme-like lymphoma</td><td class="txt">Yes</td><td class="int">9725</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9726</td><td class="txt">Primary Cutaneous gamma-delta T-cell lymphoma</td><td class="txt">Yes</td><td class="int">9726</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9727</td><td class="txt">Precursor cell lymphoblastic lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9727</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9728</td><td class="txt">Precursor B-cell lymphoblastic lymphoma</td><td class="txt">Yes</td><td class="int">9728</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9729</td><td class="txt">Precursor T-cell lymphoblastic lymphoma</td><td class="txt">Yes</td><td class="int">9729</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9731</td><td class="txt">Plasmacytoma, NOS</td><td class="txt">Yes</td><td class="int">9731</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9732</td><td class="txt">Multiple myeloma</td><td class="txt">Yes</td><td class="int">9732</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9733</td><td class="txt">Plasma cell leukemia</td><td class="txt">Yes</td><td class="int">9733</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9734</td><td class="txt">Plasmacytoma, extramedullary</td><td class="txt">Yes</td><td class="int">9734</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9735</td><td class="txt">Plasmablastic lymphoma</td><td class="txt">Yes</td><td class="int">9735</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9737</td><td class="txt">ALK positive large B-cell lymphoma</td><td class="txt">Yes</td><td class="int">9737</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9738</td><td class="txt">Lrg B-cell lymphoma in HHV8-assoc. multicentric Castleman DZ</td><td class="txt">Yes</td><td class="int">9738</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9740</td><td class="txt">Mast cell sarcoma</td><td class="txt">Yes</td><td class="int">9740</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9741</td><td class="txt">Malignant mastocytosis</td><td class="txt">Yes</td><td class="int">9741</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9742</td><td class="txt">Mast cell leukemia</td><td class="txt">Yes</td><td class="int">9742</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9750</td><td class="txt">Malignant histiocytosis</td><td class="txt">Yes</td><td class="int">9750</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9751</td><td class="txt">Langerhans cell histiocytosis, NOS</td><td class="txt">Yes</td><td class="int">9751</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9752</td><td class="txt">Langerhans cell histiocytosis, unifocal</td><td class="txt">Yes</td><td class="int">9752</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9753</td><td class="txt">Langerhans cell histiocytosis, multifocal</td><td class="txt">Yes</td><td class="int">9753</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9754</td><td class="txt">Langerhans cell histiocytosis, disseminated</td><td class="txt">Yes</td><td class="int">9754</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9755</td><td class="txt">Histiocytic sarcoma</td><td class="txt">Yes</td><td class="int">9755</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9756</td><td class="txt">Langerhans cell sarcoma</td><td class="txt">Yes</td><td class="int">9756</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9757</td><td class="txt">Interdigitating dendritic cell sarcoma</td><td class="txt">Yes</td><td class="int">9757</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9758</td><td class="txt">Follicular dendritic cell sarcoma</td><td class="txt">Yes</td><td class="int">9758</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9759</td><td class="txt">Fibroblastic reticular cell tumor</td><td class="txt">Yes</td><td class="int">9759</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9760</td><td class="txt">Immunoproliferative disease, NOS</td><td class="txt">Yes</td><td class="int">9760</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9761</td><td class="txt">Waldenstrom macroglobulinemia</td><td class="txt">Yes</td><td class="int">9761</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9762</td><td class="txt">Heavy chain disease, NOS</td><td class="txt">Yes</td><td class="int">9762</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9764</td><td class="txt">Immunoproliferative small intestinal disease</td><td class="txt">Yes</td><td class="int">9764</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9765</td><td class="txt">Monoclonal gammopathy of undetermined significance</td><td class="txt">Yes</td><td class="int">9765</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9769</td><td class="txt">Immunoglobulin deposition disease</td><td class="txt">Yes</td><td class="int">9769</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9800</td><td class="txt">Leukemia, NOS</td><td class="txt">Yes</td><td class="int">9800</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9801</td><td class="txt">Acute leukemia, NOS</td><td class="txt">Yes</td><td class="int">9801</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9805</td><td class="txt">Acute biphenotypic leukemia</td><td class="txt">Yes</td><td class="int">9805</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9806</td><td class="txt">Mixed phenotype acute leukemia with t(9;22)(q34;q11.2);BCR-ABL2</td><td class="txt">Yes</td><td class="int">9806</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9807</td><td class="txt">Mixed phenotype acute leukemia with t(v;11q23);MLL rearranged</td><td class="txt">Yes</td><td class="int">9807</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9808</td><td class="txt">Mixed phenotype acute leukemia, B/myeloid, NOS</td><td class="txt">Yes</td><td class="int">9808</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9809</td><td class="txt">Mixed phenotype acute leukemia, T/myeloid, NOS</td><td class="txt">Yes</td><td class="int">9809</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9811</td><td class="txt">B lymphoblastic leukemia/lymphoma, NOS</td><td class="txt">Yes</td><td class="int">9811</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9812</td><td class="txt">Leukemia/lymphoma with t(9;22)(q34;q11.2);BCR-ABL2</td><td class="txt">Yes</td><td class="int">9812</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9813</td><td class="txt">Leukemia/lymphoma with t(v;11q23);MLL rearranged</td><td class="txt">Yes</td><td class="int">9813</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9814</td><td class="txt">Leukemia/lymphoma with t(12;21)(p13;q22);TEL-AML1(ETV6-RUNX1)</td><td class="txt">Yes</td><td class="int">9814</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9815</td><td class="txt">B lymphoblastic leukemia/lymphoma with hyperdiploidy</td><td class="txt">Yes</td><td class="int">9815</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9816</td><td class="txt">Leukemia/lymphoma with hypodiploidy (hypodiploid ALL)</td><td class="txt">Yes</td><td class="int">9816</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9817</td><td class="txt">B lymphblastic leukemia/lymphoma with t(5;14)(q31;q32);IL3-IGH</td><td class="txt">Yes</td><td class="int">9817</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9818</td><td class="txt">Leukemia/lymphoma with t(1;19)(q23;p13.3); E2A PBX1 (TCF3 PBX1)</td><td class="txt">Yes</td><td class="int">9818</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9820</td><td class="txt">Lymphoid leukemia, NOS</td><td class="txt">Yes</td><td class="int">9820</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9823</td><td class="txt">Chronic lymphocytic leukemia/small lymphocytic lymphoma</td><td class="txt">Yes</td><td class="int">9823</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9826</td><td class="txt">Burkitt cell leukemia</td><td class="txt">Yes</td><td class="int">9826</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9827</td><td class="txt">Adult T-cell leukemia/lymphoma</td><td class="txt">Yes</td><td class="int">9827</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9828</td><td class="txt">Acute lymphoblastic leukemia, L2 type, NOS</td><td class="txt">Yes</td><td class="int">9828</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9831</td><td class="txt">T-cell large granular lymphocytic leukemia</td><td class="txt">Yes</td><td class="int">9831</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9832</td><td class="txt">Prolymphocytic leukemia, NOS</td><td class="txt">Yes</td><td class="int">9832</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9833</td><td class="txt">Prolymphocytic leukemia, B-cell type</td><td class="txt">Yes</td><td class="int">9833</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9834</td><td class="txt">Prolymphocytic leukemia, T-cell type</td><td class="txt">Yes</td><td class="int">9834</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9835</td><td class="txt">Precursor cell lymphoblastic leukemia, NOS</td><td class="txt">Yes</td><td class="int">9835</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9836</td><td class="txt">Precursor B-cell lymphoblastic leukemia</td><td class="txt">Yes</td><td class="int">9836</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9837</td><td class="txt">Precursor T-cell lymphoblastic leukaemia</td><td class="txt">Yes</td><td class="int">9837</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9840</td><td class="txt">Acute myeloid leukemia, M6 type</td><td class="txt">Yes</td><td class="int">9840</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9860</td><td class="txt">Myeloid leukemia, NOS</td><td class="txt">Yes</td><td class="int">9860</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9861</td><td class="txt">Acute myeloid leukemia, NOS</td><td class="txt">Yes</td><td class="int">9861</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9863</td><td class="txt">Chronic myeloid leukemia, NOS</td><td class="txt">Yes</td><td class="int">9863</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9865</td><td class="txt">Acute myeloid leukemia with t(6;9)(p23;q34) DEK-NUP215</td><td class="txt">Yes</td><td class="int">9865</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9866</td><td class="txt">Acute promyelocytic leukaemia</td><td class="txt">Yes</td><td class="int">9866</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9867</td><td class="txt">Acute myelomonocytic leukemia</td><td class="txt">Yes</td><td class="int">9867</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9869</td><td class="txt">Acute myeloid leukemia with inv(3)(q21q26.2) or t(3;3)(q21;q26.2);RPN1EVI2</td><td class="txt">Yes</td><td class="int">9869</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9870</td><td class="txt">Acute basophilic leukemia</td><td class="txt">Yes</td><td class="int">9870</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9871</td><td class="txt">Acute myeloid leukaemia with abnormal marrow eosinophils</td><td class="txt">Yes</td><td class="int">9871</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9872</td><td class="txt">Acute myeloid leukemia, minimal differentiation</td><td class="txt">Yes</td><td class="int">9872</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9873</td><td class="txt">Acute myeloid leukemia without maturation</td><td class="txt">Yes</td><td class="int">9873</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9874</td><td class="txt">Acute myeloid leukemia with maturation</td><td class="txt">Yes</td><td class="int">9874</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9875</td><td class="txt">Chronic myelogenous leukemia, BCR/ABL positive</td><td class="txt">Yes</td><td class="int">9875</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9876</td><td class="txt">Atypical chronic myeloid leukemia, BCR/ABL negative</td><td class="txt">Yes</td><td class="int">9876</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9891</td><td class="txt">Acute monocytic leukemia</td><td class="txt">Yes</td><td class="int">9891</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9895</td><td class="txt">Acute myeloid leukemia with multilineage dysplasia</td><td class="txt">Yes</td><td class="int">9895</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9896</td><td class="txt">Acute myeloid leukemia, t(8;21)(q22;q22)</td><td class="txt">Yes</td><td class="int">9896</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9897</td><td class="txt">Acute myeloid leukemia, 11q23 abnormalities</td><td class="txt">Yes</td><td class="int">9897</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9898</td><td class="txt">Myeloid leukemia associated with Down Syndrome</td><td class="txt">Yes</td><td class="int">9898</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9910</td><td class="txt">Acute megakaryoblastic leukemia</td><td class="txt">Yes</td><td class="int">9910</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9911</td><td class="txt">Acute myeloid leukemia (megakaryoblastic) with t(1;22)(p13;q13);RBM15-MLK2</td><td class="txt">Yes</td><td class="int">9911</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9920</td><td class="txt">Therapy-related acute myeloid leukemia, NOS</td><td class="txt">Yes</td><td class="int">9920</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9930</td><td class="txt">Myeloid sarcoma</td><td class="txt">Yes</td><td class="int">9930</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9931</td><td class="txt">Acute panmyelosis with myelofibrosis</td><td class="txt">Yes</td><td class="int">9931</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9940</td><td class="txt">Hairy cell leukemia</td><td class="txt">Yes</td><td class="int">9940</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9945</td><td class="txt">Chronic myelomonocytic leukemia, NOS</td><td class="txt">Yes</td><td class="int">9945</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9946</td><td class="txt">Juvenile myelomonocytic leukemia</td><td class="txt">Yes</td><td class="int">9946</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9948</td><td class="txt">Aggressive NK-cell leukemia</td><td class="txt">Yes</td><td class="int">9948</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9950</td><td class="txt">Polycythemia vera</td><td class="txt">Yes</td><td class="int">9950</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9960</td><td class="txt">Chronic myeloproliferative disease, NOS</td><td class="txt">Yes</td><td class="int">9960</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9961</td><td class="txt">Myelosclerosis with myeloid metaplasia</td><td class="txt">Yes</td><td class="int">9961</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9962</td><td class="txt">Essential thrombocythemia</td><td class="txt">Yes</td><td class="int">9962</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9963</td><td class="txt">Chronic neutrophilic leukemia</td><td class="txt">Yes</td><td class="int">9963</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9964</td><td class="txt">Hypereosinophilic syndrome</td><td class="txt">Yes</td><td class="int">9964</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9965</td><td class="txt">Myeloid and lymphoid neoplasms with PDGFRB rearrangement</td><td class="txt">Yes</td><td class="int">9965</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9966</td><td class="txt">Myeloid and lymphoid neoplasms with PDGFRB re arrangement</td><td class="txt">Yes</td><td class="int">9966</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9967</td><td class="txt">Myeloid and lymphoid neoplasm with FGFR1 abnormalities</td><td class="txt">Yes</td><td class="int">9967</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9970</td><td class="txt">Lymphoproliferative disorder, NOS</td><td class="txt">Yes</td><td class="int">9970</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9971</td><td class="txt">Polymorphic PTLD</td><td class="txt">Yes</td><td class="int">9971</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9975</td><td class="txt">Myelodysplastic/Myeloproliferative neoplasm, unclassifiable</td><td class="txt">Yes</td><td class="int">9975</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9980</td><td class="txt">Refractory anemia</td><td class="txt">Yes</td><td class="int">9980</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9982</td><td class="txt">Refractory anemia with sideroblasts</td><td class="txt">Yes</td><td class="int">9982</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9983</td><td class="txt">Refractory anemia with excess blasts</td><td class="txt">Yes</td><td class="int">9983</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9984</td><td class="txt">Refractory anemia with excess blasts in transformation</td><td class="txt">Yes</td><td class="int">9984</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9985</td><td class="txt">Refractory cytopenia with multilineage dysplasia</td><td class="txt">Yes</td><td class="int">9985</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9986</td><td class="txt">Myelodysplastic syndrome with 5q deletion syndrome</td><td class="txt">Yes</td><td class="int">9986</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9987</td><td class="txt">Therapy-related myelodysplastic syndrome, NOS</td><td class="txt">Yes</td><td class="int">9987</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9989</td><td class="txt">Myelodysplastic syndrome, NOS</td><td class="txt">Yes</td><td class="int">9989</td><td class="int">5</td></tr>
+<tr class="row_odd"><td class="int">9991</td><td class="txt">Refractory neutropenia</td><td class="txt">Yes</td><td class="int">9991</td><td class="int">5</td></tr>
+<tr class="row_even"><td class="int">9992</td><td class="txt">Refractory thrombocytopenia</td><td class="txt">Yes</td><td class="int">9992</td><td class="int">5</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>1 Data-Field</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f40011"><td class="txt"><a class="basic" href="field.cgi?id=40011">40011</a></td><td class="txt"><a class="subtle" href="field.cgi?id=40011">Histology of cancer tumour</a></td><td class="txt"><a class="subtle" href="label.cgi?id=100092">Cancer register</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.05s
+Fri Jun 17 20:19:48 2022
+
+-->
+</div>
+</body>
+</html>

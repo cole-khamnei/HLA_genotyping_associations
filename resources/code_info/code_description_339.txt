@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+<title> : Data-Coding 339</title>
+<link rel="stylesheet" href="ukb/styles.css" type="text/css" media="screen">
+<link rel="stylesheet" href="crystal.css" type="text/css" media="screen">
+<link rel="icon" type="image/png" href="ukb/favicon.png">
+<link rel="stylesheet" href="crystal_print.css" type="text/css" media="print">
+<script type="text/javascript" src="tabber.js"></script>
+<script type="text/javascript">document.write('<style type="text/css">.tabber{display:none;}<\/style>');</script>
+</head>
+<body>
+<div class="background">
+<div class="topbreak"></div>
+<div class="topnav">
+<a href="http://"><img src="ukb/toplogo.png" class="logo" alt="Project Banner" /></a>
+<ul class="topmenu">
+<li class="topmenu"><a class="topmenu" href="index.cgi">Index</a></li>
+<li class="topmenu"><a class="topmenu" href="browse.cgi?id=339&cd=data_coding">Browse</a></li>
+<li class="topmenu"><a class="topmenu" href="search.cgi">Search</a></li>
+<li class="topmenu"><a class="topmenu" href="catalogs.cgi">Catalogues</a></li>
+<li class="topmenu"><a class="topmenu" href="download.cgi">Downloads</a></li>
+<li class="topmenu"><a class="topmenu" href="https://bbams.ndph.ox.ac.uk/ams/resApplications">Login</a></li>
+<li class="topmenr"><a class="topmenu" href="help.cgi?cd=data_coding">Help</a></li>
+</ul>
+</div>
+<div class="topbreak"></div>
+<div id="main" class="main"><span class="screentitle">Data-Coding 339</span><br>
+<br>Name: Degree bothered
+<p>Description: Degree of botheredness
+<p>This is a flat (unstructured) list which uses integers to represent categories or special values.
+<p><table><tr><td>Coding can be downloaded here as a tab-separated file.
+<form method="post" action="codown.cgi">
+<input type="hidden" name="id" value="339"></td><td>
+<input class="btn_glow" type="submit" value="Download">
+</form></td></tr></table>
+</div>
+<noscript><p style="color: red;">
+WARNING: your browser does NOT have JavaScript enabled.
+Not all features of this website will be available to you.
+If possible, please enable JavaScript and refresh the page.
+</noscript>
+<div class="css3outer"><div class="css3warning"><p style="color: red;">WARNING: the interactive features of this website use CSS3, which your browser does not support. To use the full features of this website, please update your browser.</p></div></div>
+<div class="tabber">
+<div class="tabbertab"><h2>4 Categories</h2>
+<table border="0" cellspacing="2">
+<tr><th>Coding</th><th>Meaning</th></tr>
+<tr class="row_odd"><td class="int">-600</td><td class="txt">Not bothered at all</td></tr>
+<tr class="row_even"><td class="int">-601</td><td class="txt">Bothered a little</td></tr>
+<tr class="row_odd"><td class="int">-602</td><td class="txt">Bothered a lot</td></tr>
+<tr class="row_even"><td class="int">-818</td><td class="txt">Prefer not to answer</td></tr>
+</table>
+</div>
+<div class="tabbertab"><h2>12 Data-Fields</h2>
+<table class="listing" summary="List of data-fields">
+<tr><th class="txt">Field ID</th><th class="txt">Description</th><th class="txt">Category</th></tr>
+<tr class="row_odd" id="f21048"><td class="txt"><a class="basic" href="field.cgi?id=21048">21048</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21048">Degree bothered by back pain in the past 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21052"><td class="txt"><a class="basic" href="field.cgi?id=21052">21052</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21052">Degree bothered by chest pain in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21053"><td class="txt"><a class="basic" href="field.cgi?id=21053">21053</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21053">Degree bothered by dizziness in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21054"><td class="txt"><a class="basic" href="field.cgi?id=21054">21054</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21054">Degree bothered by fainting spells in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21055"><td class="txt"><a class="basic" href="field.cgi?id=21055">21055</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21055">Degree bothered by feeling heart pound/race in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21060"><td class="txt"><a class="basic" href="field.cgi?id=21060">21060</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21060">Degree bothered by feeling tired all the time in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21051"><td class="txt"><a class="basic" href="field.cgi?id=21051">21051</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21051">Degree bothered by headaches in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21059"><td class="txt"><a class="basic" href="field.cgi?id=21059">21059</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21059">Degree bothered by nausea in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21049"><td class="txt"><a class="basic" href="field.cgi?id=21049">21049</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21049">Degree bothered by pain in arms/legs/joints in the past 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21056"><td class="txt"><a class="basic" href="field.cgi?id=21056">21056</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21056">Degree bothered by shortness of breath in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_odd" id="f21061"><td class="txt"><a class="basic" href="field.cgi?id=21061">21061</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21061">Degree bothered by trouble sleeping in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+<tr class="row_even" id="f21058"><td class="txt"><a class="basic" href="field.cgi?id=21058">21058</a></td><td class="txt"><a class="subtle" href="field.cgi?id=21058">Degree bothered by urinary frequency/bladder irritability in the last 3 months</a></td><td class="txt"><a class="subtle" href="label.cgi?id=153">Digestive health</a> &nbsp;</td></tr>
+</table>
+<ul>
+</ul>
+</div>
+</div>
+<p id="lowcph" class="outerbottom"><span class="catchphrase">Enabling scientific discoveries that improve human health</span>
+<!--
+(c) Alan Young, NDPH, Oxford University
+May 21 2022 07:07:02
+0.04s
+Fri Jun 17 20:19:46 2022
+
+-->
+</div>
+</body>
+</html>

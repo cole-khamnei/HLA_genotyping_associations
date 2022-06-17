@@ -97,7 +97,7 @@ def get_indices_missing_names(biobank_index: pd.DataFrame) -> pd.DataFrame:
 
     missing_name_index = biobank_index.loc[biobank_index["name"].isna()].copy(deep=True)
     missing_name_index["primary_udi"] = missing_name_index["udi"].apply(lambda s: s.split("-")[0])
-    missing_name_index = missing_name_index.drop_duplicates(["primary_udi"])
+    missing_name_index = missing_name_index.sort_values("column").drop_duplicates(["primary_udi"])
     missing_name_index["name"] = "_"
     udi_lookup_columns = ["column", "count", "type", "description", "udi", "name"]
     return missing_name_index[udi_lookup_columns]

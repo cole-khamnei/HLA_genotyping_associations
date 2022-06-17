@@ -1,5 +1,11 @@
 column,count,type,description,udi,name
-901,20474,Integer,Number of antibiotics taken in last 3 months,6671-2.0,antibiotic_n_taken_past_3_months
+1,501674,Integer,Verbal interview duration,3-0.0,verbal_interview_duration
+190,501683,Integer,Touchscreen duration,630-0.0,touchscreen_duration
+901,20474,Integer,Number of antibiotics taken in last 3 months,6671-2.0,antibiotics_n_past_3_months
+1759,1333,Categorical (multiple),Antibiotic codes for last 3 months,20199-2.0,antibiotics_codes_past_3_months
+1763,157356,Categorical (single),Ever addicted to any substance or behaviour,20401-0.0,UD_any_substance_or_behavior_ever
+1764,143670,Categorical (single),Amount of alcohol drunk on a typical drinking day,20403-0.0,alcohol_typical_drinking_day_amount
+1765,3593,Categorical (single),Ever physically dependent on alcohol,20404-0.0,alcohol_physically_dependent_ever
 1759,1333,Categorical (multiple),Antibiotic codes for last 3 months,20199-2.0,antibiotic_codes_past_3_months
 1766,157356,Categorical (single),"Ever had known person concerned about, or recommend reduction of, alcohol consumption",20405-0.0,alcohol_suggested_reduction_ever
 1767,9384,Categorical (single),Ever addicted to alcohol,20406-0.0,alcohol_UD_ever
