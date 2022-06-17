@@ -1,15 +1,15 @@
 column,count,type,description,udi,name
-901,20474,Integer,Number of antibiotics taken in last 3 months,6671-2.0,_
-1759,1333,Categorical (multiple),Antibiotic codes for last 3 months,20199-2.0,_
-1766,157356,Categorical (single),"Ever had known person concerned about, or recommend reduction of, alcohol consumption",20405-0.0,_
-1767,9384,Categorical (single),Ever addicted to alcohol,20406-0.0,_
-1768,85199,Categorical (single),Frequency of failure to fulfil normal expectations due to drinking alcohol in last year,20407-0.0,_
-1769,85199,Categorical (single),Frequency of memory loss due to drinking alcohol in last year,20408-0.0,_
-1770,85199,Categorical (single),Frequency of feeling guilt or remorse after drinking alcohol in last year,20409-0.0,_
-1771,7023,Integer,Age when known person last commented about drinking habits,20410-0.0,_
-1772,157356,Categorical (single),Ever been injured or injured someone else through drinking alcohol,20411-0.0,_
-1773,85199,Categorical (single),Frequency of needing morning drink of alcohol after heavy drinking session in last year,20412-0.0,_
-1774,85199,Categorical (single),Frequency of inability to cease drinking in last year,20413-0.0,_
+901,20474,Integer,Number of antibiotics taken in last 3 months,6671-2.0,antibiotic_n_taken_past_3_months
+1759,1333,Categorical (multiple),Antibiotic codes for last 3 months,20199-2.0,antibiotic_codes_past_3_months
+1766,157356,Categorical (single),"Ever had known person concerned about, or recommend reduction of, alcohol consumption",20405-0.0,alcohol_suggested_reduction_ever
+1767,9384,Categorical (single),Ever addicted to alcohol,20406-0.0,alcohol_addiction_ever
+1768,85199,Categorical (single),Frequency of failure to fulfil normal expectations due to drinking alcohol in last year,20407-0.0,alcohol_failure_to_meet_normal_expectations_frequency
+1769,85199,Categorical (single),Frequency of memory loss due to drinking alcohol in last year,20408-0.0,alcohol_memory_loss_frequency
+1770,85199,Categorical (single),Frequency of feeling guilt or remorse after drinking alcohol in last year,20409-0.0,alcohol_guilt_or_remorse_feelings_frequency
+1771,7023,Integer,Age when known person last commented about drinking habits,20410-0.0,alcohol_last_comment_on_habits_age
+1772,157356,Categorical (single),Ever been injured or injured someone else through drinking alcohol,20411-0.0,alcohol_injury_self_or_others_ever
+1773,85199,Categorical (single),Frequency of needing morning drink of alcohol after heavy drinking session in last year,20412-0.0,alcohol_morning_alcohol_after_heavy_drinking_frequency
+1774,85199,Categorical (single),Frequency of inability to cease drinking in last year,20413-0.0,
 1775,157356,Categorical (single),Frequency of drinking alcohol,20414-0.0,_
 1776,3593,Categorical (single),Ongoing addiction to alcohol,20415-0.0,_
 1777,143670,Categorical (single),Frequency of consuming six or more units of alcohol,20416-0.0,_
@@ -62,57 +62,57 @@ column,count,type,description,udi,name
 1834,174778,Categorical (single),Degree bothered by trouble sleeping in the last 3 months,21061-0.0,_
 1835,174778,Categorical (single),Ever been offered/sought treatment for anxiety,21062-0.0,_
 1836,174778,Categorical (single),Ever been offered/sought treatment for depression,21063-0.0,_
-1837,174778,Categorical (single),Sensitive stomach,21064-0.0,_
-1838,174778,Categorical (single),Family history of IBS,21065-0.0,_
-1839,174778,Categorical (single),Born by caesarian section,21066-0.0,_
-1840,174778,Categorical (single),Long-term/recurrent antibiotics as child or teenager,21067-0.0,_
-1841,174778,Categorical (single),Diagnosed with coeliac disease or gluten sensitivity,21068-0.0,_
-1842,3262,Categorical (single),Method of coeliac disease/gluten sensitivity diagnosis,21069-0.0,_
-1843,21362,Categorical (single),Speed of onset of IBS symptoms,21070-0.0,_
-1844,21362,Categorical (single),Infectious illness diagnosis status when IBS symptoms first began,21071-0.0,_
-1845,2118,Categorical (single),Infection diagnosed alongside IBS when IBS symptoms began,21072-0.0,_
-1846,21362,Categorical (single),Fever when IBS symptoms first began,21073-0.0,_
-1847,21362,Categorical (single),Diarrhoea when IBS symptoms first began,21074-0.0,_
-1848,10744,Categorical (single),Bloody diarrhoea when IBS symptoms first began,21075-0.0,_
-1849,21362,Categorical (single),Vomiting when IBS symptoms first began,21076-0.0,_
-1937,121283,Categorical (single),Doctor diagnosed asthma,22127-0.0,_
-1938,121283,Categorical (single),Doctor diagnosed COPD (chronic obstructive pulmonary disease),22130-0.0,_
-1939,27704,Integer,Age hayfever or allergic rhinitis diagnosed by doctor,22146-0.0,_
-1940,15492,Integer,Age asthma diagnosed by doctor,22147-0.0,_
-1942,121283,Categorical (single),Tobacco smoking,22506-0.0,_
-1943,44011,Integer,Age of stopping smoking,22507-0.0,_
-1944,2873,Integer,Amount of tobacco currently smoked,22508-0.0,_
-1945,502526,Date,Date first recorded at location,22700-0.0,_
-1960,502526,Integer,Home location - east co-ordinate (rounded),22702-0.0,_
-1975,502526,Integer,Home location - north co-ordinate (rounded),22704-0.0,_
-2014,495155,Continuous,Nitrogen dioxide air pollution; 2010,24003-0.0,_
-2015,495155,Continuous,Nitrogen oxides air pollution; 2010,24004-0.0,_
-2016,461228,Continuous,Particulate matter air pollution (pm10); 2010,24005-0.0,_
-2017,461228,Continuous,Particulate matter air pollution (pm2.5); 2010,24006-0.0,_
-2018,461228,Continuous,Particulate matter air pollution (pm2.5) absorbance; 2010,24007-0.0,_
-2019,461228,Continuous,Particulate matter air pollution 2.5-10um; 2010,24008-0.0,_
-2020,495155,Integer,Traffic intensity on the nearest road,24009-0.0,_
-2021,495155,Continuous,Inverse distance to the nearest road,24010-0.0,_
-2022,495155,Integer,Traffic intensity on the nearest major road,24011-0.0,_
-2023,495155,Continuous,Inverse distance to the nearest major road,24012-0.0,_
-2024,495155,Integer,Total traffic load on major roads,24013-0.0,_
-2025,495155,Categorical (single),Close to major road,24014-0.0,_
-2026,495155,Continuous,Sum of road length of major roads within 100m,24015-0.0,_
-2027,495155,Continuous,Nitrogen dioxide air pollution; 2005,24016-0.0,_
-2028,495155,Continuous,Nitrogen dioxide air pollution; 2006,24017-0.0,_
-2029,495155,Continuous,Nitrogen dioxide air pollution; 2007,24018-0.0,_
-2030,494057,Continuous,Particulate matter air pollution (pm10); 2007,24019-0.0,_
-2156,89759,Date,Date of cancer diagnosis,40005-0.0,_
-2173,83483,Categorical (single),Type of cancer: ICD10,40006-0.0,_
-2193,89807,Continuous,Age at cancer diagnosis,40008-0.0,_
-2225,89769,Integer,Reported occurrences of cancer,40009-0.0,_
-2227,85663,Categorical (single),Histology of cancer tumour,40011-0.0,_
-2244,85717,Categorical (single),Behaviour of cancer tumour,40012-0.0,_
-2261,6268,Categorical (single),Type of cancer: ICD9,40013-0.0,_
-2278,89811,Categorical (single),Cancer report format,40019-0.0,_
-2302,322505,Integer,"Episodes containing ""Operation status"" data",41106-0.0,_
-2303,351824,Integer,"Episodes containing ""Duration of post-operative stay"" data",41107-0.0,_
-2304,351838,Integer,"Episodes containing ""Duration of pre-operative stay"" data",41108-0.0,_
-2310,410231,Categorical (multiple),Operative procedures - main OPCS4,41200-0.0,_
-2689,367452,Categorical (multiple),Operative procedures - secondary OPCS4,41210-0.0,_
-2776,413649,Categorical (multiple),Inpatient record format,41253-0.0,_
+1837,174778,Categorical (single),Sensitive stomach,21064-0.0,GI_sensitive_stomach
+1838,174778,Categorical (single),Family history of IBS,21065-0.0,IBS_family_hx
+1839,174778,Categorical (single),Born by caesarian section,21066-0.0,birth_caesarian
+1840,174778,Categorical (single),Long-term/recurrent antibiotics as child or teenager,21067-0.0,antibiotics_childhood_long-term_recurrent_use
+1841,174778,Categorical (single),Diagnosed with coeliac disease or gluten sensitivity,21068-0.0,celiac_gluten_sensitivity_dx
+1842,3262,Categorical (single),Method of coeliac disease/gluten sensitivity diagnosis,21069-0.0,celiac_gluten_sensitivity_dx_method
+1843,21362,Categorical (single),Speed of onset of IBS symptoms,21070-0.0,IBS_initial_symptoms_onset_speed
+1844,21362,Categorical (single),Infectious illness diagnosis status when IBS symptoms first began,21071-0.0,IBS_initial_symptoms_co-occuring_infection
+1845,2118,Categorical (single),Infection diagnosed alongside IBS when IBS symptoms began,21072-0.0,IBS_initial_symptoms_co
+1846,21362,Categorical (single),Fever when IBS symptoms first began,21073-0.0,IBS_initial_symptoms_fever
+1847,21362,Categorical (single),Diarrhoea when IBS symptoms first began,21074-0.0,IBS_initial_symptoms_diarrhea
+1848,10744,Categorical (single),Bloody diarrhoea when IBS symptoms first began,21075-0.0,IBS_initial_symptoms_bloody_diarrhea
+1849,21362,Categorical (single),Vomiting when IBS symptoms first began,21076-0.0,IBS_initial_symptoms_vomiting
+1937,121283,Categorical (single),Doctor diagnosed asthma,22127-0.0,asthma_dx
+1938,121283,Categorical (single),Doctor diagnosed COPD (chronic obstructive pulmonary disease),22130-0.0,copd_dx
+1939,27704,Integer,Age hayfever or allergic rhinitis diagnosed by doctor,22146-0.0,hayfever_allergic_rhinitis_dx_age
+1940,15492,Integer,Age asthma diagnosed by doctor,22147-0.0,asthma_dx_age
+1942,121283,Categorical (single),Tobacco smoking,22506-0.0,tobacco_smoking
+1943,44011,Integer,Age of stopping smoking,22507-0.0,tobacco_smoking_age_stopped
+1944,2873,Integer,Amount of tobacco currently smoked,22508-0.0,tobacco_smoking_current_amount
+1945,502526,Date,Date first recorded at location,22700-0.0,first_record_date_at_location
+1960,502526,Integer,Home location - east co-ordinate (rounded),22702-0.0,home_location_east
+1975,502526,Integer,Home location - north co-ordinate (rounded),22704-0.0,home_location_north
+2014,495155,Continuous,Nitrogen dioxide air pollution; 2010,24003-0.0,air_pollution_NO2_2010
+2015,495155,Continuous,Nitrogen oxides air pollution; 2010,24004-0.0,air_pollution_NOs_2010
+2016,461228,Continuous,Particulate matter air pollution (pm10); 2010,24005-0.0,air_pollution_pm10_2010
+2017,461228,Continuous,Particulate matter air pollution (pm2.5); 2010,24006-0.0,air_pollution_pm2.5_2010
+2018,461228,Continuous,Particulate matter air pollution (pm2.5) absorbance; 2010,24007-0.0,air_pollution_pm2.5_absorbance_2010
+2019,461228,Continuous,Particulate matter air pollution 2.5-10um; 2010,24008-0.0,air_pollution_2.5-10um_2010
+2020,495155,Integer,Traffic intensity on the nearest road,24009-0.0,road_any_traffic_intensity
+2021,495155,Continuous,Inverse distance to the nearest road,24010-0.0,road_any_inverse_distance
+2022,495155,Integer,Traffic intensity on the nearest major road,24011-0.0,road_major_traffic_intensity
+2023,495155,Continuous,Inverse distance to the nearest major road,24012-0.0,road_major_inverse_distance
+2024,495155,Integer,Total traffic load on major roads,24013-0.0,road_major_traffic_load
+2025,495155,Categorical (single),Close to major road,24014-0.0,road_major_close
+2026,495155,Continuous,Sum of road length of major roads within 100m,24015-0.0,road_length_within_100m
+2027,495155,Continuous,Nitrogen dioxide air pollution; 2005,24016-0.0,air_pollution_NO2_2005
+2028,495155,Continuous,Nitrogen dioxide air pollution; 2006,24017-0.0,air_pollution_NO2_2006
+2029,495155,Continuous,Nitrogen dioxide air pollution; 2007,24018-0.0,air_pollution_NO2_2007
+2030,494057,Continuous,Particulate matter air pollution (pm10); 2007,24019-0.0,air_pollution_pm10_2007
+2156,89759,Date,Date of cancer diagnosis,40005-0.0,cancer_dx_date
+2173,83483,Categorical (single),Type of cancer: ICD10,40006-0.0,cancer_type_ICD10
+2193,89807,Continuous,Age at cancer diagnosis,40008-0.0,cancer_dx_age
+2225,89769,Integer,Reported occurrences of cancer,40009-0.0,cancer_occurences
+2227,85663,Categorical (single),Histology of cancer tumour,40011-0.0,cancer_tumor_histology
+2244,85717,Categorical (single),Behaviour of cancer tumour,40012-0.0,cancer_tumor_behavior
+2261,6268,Categorical (single),Type of cancer: ICD9,40013-0.0,cancer_type_ICD9
+2278,89811,Categorical (single),Cancer report format,40019-0.0,cancer_report_format
+2302,322505,Integer,"Episodes containing ""Operation status"" data",41106-0.0,episodes_containing_operation_status
+2303,351824,Integer,"Episodes containing ""Duration of post-operative stay"" data",41107-0.0,episodes_containing_duration_postop_stay
+2304,351838,Integer,"Episodes containing ""Duration of pre-operative stay"" data",41108-0.0,episodes_containing_duration_preop_stay
+2310,410231,Categorical (multiple),Operative procedures - main OPCS4,41200-0.0,operative_procedures_OPCS4_main
+2689,367452,Categorical (multiple),Operative procedures - secondary OPCS4,41210-0.0,operative_procedures_OPCS4_secondary
+2776,413649,Categorical (multiple),Inpatient record format,41253-0.0,inpatient_record_format
