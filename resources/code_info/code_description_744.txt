@@ -1,0 +1,3 @@
+Antibiotics
+List used by UKB assessment centre nurses to code antibiotic treatments. This is a subset of <a class="basic" href="coding.cgi?id=4">Data-Coding 4</a>.
+This is a flat (unstructured) list which uses integers to represent categories or special values.

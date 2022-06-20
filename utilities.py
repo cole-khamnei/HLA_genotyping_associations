@@ -1,10 +1,77 @@
+import time
+
+import multiprocess as mp
 import pandas as pd
 
-from typing import Any, Optional
+from thefuzz import fuzz
+
+from typing import Any, List, Optional, Iterable
 
 ########################################################################################################################
-### Constants ###
+### Multiprocessing ###
 ########################################################################################################################
+
+
+########################################################################################################################
+### Random ###
+########################################################################################################################
+
+
+class Timer:
+    def __init__(self):
+        self.start_time = time.time()
+        self.final_time = False
+
+    def __enter__(self):
+        self.start_time = time.time()
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.get_elapsed_time()
+        self.final_time = True
+        
+    def get_elapsed_time(self):
+        """"""
+        if not self.final_time:
+            self.elapsed_time = time.time() - self.start_time
+    
+    def print_time(self):
+        """"""
+        self.get_elapsed_time()
+        print(f"Elapsed time: {self.elapsed_time:,.04f} seconds")
+
+
+def fuzzy_index_search(term: str, descriptions: Iterable[str], fuzzy_threshold: int = 95,
+                       and_search: bool = False) -> List[int]:
+    """ Searches a list of descriptions and returns any with a fuzzy index above a threshold."""
+
+    if isinstance(term, str):
+        term = term.lower()
+        return [i for (i, desc) in enumerate(descriptions) if fuzz.partial_ratio(term, desc.lower()) > fuzzy_threshold]
+
+    index_sets = [set(fuzzy_index_search(term_i, descriptions, fuzzy_threshold=fuzzy_threshold)) for term_i in term]
+
+    final_indices = index_sets[0]
+    for indices in index_sets[1:]:
+        if and_search:
+            final_indices = final_indices.intersection(indices)
+        else:
+            final_indices = final_indices.union(indices)
+
+    return sorted(final_indices)
+
+
+########################################################################################################################
+### Random ###
+########################################################################################################################
+
+
+def multiprocess_pool(function, param_sets: list, n_processes: int = 4):
+    """ Runs a function in parallel using the pool multiprocess"""
+
+    with mp.Pool(n_processes) as pool:
+        results = [pool.apply_async(function, param_set) for param_set in param_sets]
+        return [result.get() for result in results]
 
 
 ########################################################################################################################

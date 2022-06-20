@@ -13,7 +13,7 @@ import numpy as np
 from bs4 import BeautifulSoup as bsoup
 from thefuzz import fuzz
 
-import constants
+import constants, utilities
 
 ########################################################################################################################
 ### Constants ###
@@ -128,8 +128,43 @@ def load_partial_udi_lookup_map() -> dict:
 
     partial_labeled_udis = partial_udi_lookup.loc[partial_udi_lookup["name"] != "_"]
     partial_udi_to_name_map = dict(zip(partial_labeled_udis["udi"], partial_labeled_udis["name"]))
+
+    partial_udi_to_name_map["20199-2.0"] = "antibiotic_codes_past_3_months"
+    partial_udi_to_name_map["6671-2.0"] = "n_antibiotics_past_3_months"
+
     return partial_udi_to_name_map
 
+
+def load_partial_udi_lookup_map_2() -> dict:
+    """ Loads the UDI lookup tables"""
+
+    udi_lookup_paths = glob.glob(os.path.join(constants.UDI_LOOKUP_DIR_PATH, "udi_lookup_*.csv"))
+    partial_udi_lookup = pd.concat([pd.read_csv(udi_lookup_path) for udi_lookup_path in udi_lookup_paths])
+
+    partial_labeled_udis = partial_udi_lookup.loc[partial_udi_lookup["name"] != "_"]
+    partial_udi_to_name_map = dict(zip(partial_labeled_udis["udi"].apply(lambda s: s.split("-")[0]), partial_labeled_udis["name"]))
+
+    partial_udi_to_name_map["20199"] = "antibiotic_codes_past_3_months"
+    partial_udi_to_name_map["6671"] = "n_antibiotics_past_3_months"
+
+    return partial_udi_to_name_map
+
+
+def add_udi_names_to_index_2(biobank_index: pd.DataFrame) -> pd.DataFrame:
+    """ Adds the names to the index based on udi"""
+
+    partial_udi_to_name_map = load_partial_udi_lookup_map_2()
+
+    names = ["eid"]
+    for udi in biobank_index_full["udi"].values[1:]:
+        primary_udi, modifier = udi.split("-")
+        name = map_.get(primary_udi, None)
+        if name:
+            name = name + "_" + modifier
+        names.append(name)
+
+    biobank_index["name"] = names
+    return biobank_index
 
 def add_udi_names_to_index(biobank_index: pd.DataFrame) -> pd.DataFrame:
     """ Adds the names to the index based on udi"""
@@ -192,26 +227,6 @@ class UDIMap:
 ########################################################################################################################
 
 
-def fuzzy_index_search(term: str, descriptions: Iterable[str], fuzzy_threshold: int = 95,
-                       and_search: bool = False) -> List[int]:
-    """ Searches a list of descriptions and returns any with a fuzzy index above a threshold."""
-
-    if isinstance(term, str):
-        term = term.lower()
-        return [i for (i, desc) in enumerate(descriptions) if fuzz.partial_ratio(desc.lower(), term) > fuzzy_threshold]
-
-    index_sets = [set(fuzzy_index_search(term_i, descriptions, fuzzy_threshold=fuzzy_threshold)) for term_i in term]
-
-    final_indices = index_sets[0]
-    for indices in index_sets[1:]:
-        if and_search:
-            final_indices = final_indices.intersection(indices)
-        else:
-            final_indices = final_indices.union(indices)
-
-    return sorted(final_indices)
-
-
 def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str],
                 fuzzy_threshold: int = 95, and_search: bool = False) -> pd.DataFrame:
     """ searches the biobank_index for relevant features."""
@@ -220,7 +235,7 @@ def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str],
     descriptions = biobank_index["name"].apply(lambda s: s.replace("_", " ") + " " if s else "")
     descriptions = descriptions + biobank_index["description"]
 
-    indices = fuzzy_index_search(search_terms, descriptions, fuzzy_threshold=fuzzy_threshold, and_search=and_search)
+    indices = utilities.fuzzy_index_search(search_terms, descriptions, fuzzy_threshold=fuzzy_threshold, and_search=and_search)
     return biobank_index["name"].iloc[indices].tolist()
 
 
