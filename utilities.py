@@ -34,7 +34,7 @@ class Timer:
         self.final_time = True
         if self.print_on_exit:
             self.print_time()
-        
+
     def get_elapsed_time(self):
         """"""
         if not self.final_time:

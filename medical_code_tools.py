@@ -3,8 +3,7 @@ import glob
 import requests
 import time
 
-from collections.abc import Iterable
-from typing import Optional, TypeVar, Union
+from typing import Optional, TypeVar, Union, Iterable
 
 import pandas as pd
 import treelib as tl
