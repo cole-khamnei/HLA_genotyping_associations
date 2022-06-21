@@ -71,7 +71,7 @@ def decode_medical_codes(med_code_mapping: medical_code_tools.MedicalCodeMapping
     return pd.DataFrame(values)
 
 
-def load_all_biobank_components() -> Tuple[pd.DataFrame, pd.DataFrame, medical_code_tools.MedicalCodeMapping]:
+def load_all_biobank_components(dev_mode: bool) -> Tuple[pd.DataFrame, pd.DataFrame, medical_code_tools.MedicalCodeMapping]:
     """ Returns the biobank data, index, and medical code mapping"""
   
     print("Importing BioBank Index and Data:")
@@ -80,7 +80,7 @@ def load_all_biobank_components() -> Tuple[pd.DataFrame, pd.DataFrame, medical_c
         biobank_index = index_tools.add_udi_names_to_index(biobank_index)
         udi_map = index_tools.UDIMap(biobank_index)
 
-        biobank_data = load_biobank_data(constants.UK_BIOBANK_DATA_CSV_PATH, udi_map)
+        biobank_data = load_biobank_data(constants.get_uk_biobank_data_csv_path(dev_mode), udi_map)
 
         biobank_index = index_tools.add_biobank_info_to_index(biobank_index, biobank_data)
         biobank_data = clean_biobank_data(biobank_data, biobank_index)

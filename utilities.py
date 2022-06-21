@@ -151,13 +151,17 @@ def kde_plot(data, x, hue: str = None, ax = None, label: str = None, labels: lis
         group_values, counts = np.unique(data[group_variable], return_counts=True)
         sort_index = np.argsort(group_values)
         group_values, counts = group_values[sort_index], counts[sort_index]
+        
         if not labels:
             labels = [f"{group_value.title()} ( N = {count})" for group_value, count in zip(group_values, counts)]
+
+        i = 0
         for group_value, label in zip(group_values, labels):
             group_data = data.loc[data[group_variable] == group_value]
             sns.kdeplot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
-                        common_norm=False, warn_singular=False)
-        
+                        common_norm=False, warn_singular=False, zorder=i)
+            i -= 1
+
     else:
         sns.kdeplot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
                     common_norm=False, warn_singular=False)

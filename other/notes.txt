@@ -10,3 +10,10 @@
 
 for thursday:
 	- make summary slides (sex, viral associated cancer, dx age, ebv status)
+	- viral associated cancers:
+		- burkitt lymphoma
+		- hodgkin lymphoma
+		- stomach cancer
+		- nasopharyngeal cancer
+		- gastric cancer
+		
