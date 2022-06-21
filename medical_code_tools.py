@@ -32,14 +32,15 @@ ArrayOrItem = Union[Iterable[S], S]
 ########################################################################################################################
 
 
-def download_biobank_code_data(code: int, overwrite: bool = False) -> None:
+def download_biobank_code_data(code: int, overwrite: bool = False, suppress: bool = False) -> None:
     """ Downloads the coding information for a data code."""
 
     lookup_path = os.path.join(constants.CODING_INFO_DIR_PATH, f"code_lookup_{code}.csv")
     description_path = os.path.join(constants.CODING_INFO_DIR_PATH, f"code_description_{code}.txt")
 
     if os.path.exists(lookup_path) and os.path.exists(description_path) and not overwrite:
-        print(f"code {code} files already exist.")
+        if not suppress:
+            print(f"code {code} files already exist.")
         return
 
     # Parse the description to provide variable description info
@@ -66,12 +67,12 @@ def download_biobank_code_data(code: int, overwrite: bool = False) -> None:
     	code_description_file.write(data_format + "\n")
 
 
-def download_all_biobank_codes(biobank_index: pd.DataFrame, overwrite: bool = False) -> None:
+def download_all_biobank_codes(biobank_index: pd.DataFrame, overwrite: bool = False, suppress: bool = False) -> None:
     """  Downloads all relevant biobank code lookup tables and descriptions."""
 
     biobank_codes = sorted(biobank_index["data_code"].dropna().unique())
     for code in tqdm(biobank_codes, desc="Downloading BioBank code info", unit=" code"):
-        download_biobank_code_data(code, overwrite=overwrite)
+        download_biobank_code_data(code, overwrite=overwrite, suppress=suppress)
 
 
 ########################################################################################################################
@@ -82,13 +83,18 @@ def download_all_biobank_codes(biobank_index: pd.DataFrame, overwrite: bool = Fa
 class MedicalCodeMapping:
     def __init__(self, biobank_index: pd.DataFrame):
         self.name_to_code_format_map = dict(biobank_index[["name", "data_code"]].values)
+        self.code_format_to_name_map = dict(biobank_index[["data_code", "name"]].values)
         self.code_format_lookup = self.get_code_format_info_lookup()
 
-
+        self.code_formats_with_tree_structure = []
         self.ICD10_master_list = []
         for code_format, info in self.code_format_lookup.items():
+            if "node_id" in info["coded_values_df"]:
+                self.code_formats_with_tree_structure.append(code_format)
             ICD10_code_meanings = info["coded_values_df"][["coding","meaning"]].copy(deep=True)
             ICD10_code_meanings["code_format"] = code_format
+            names = biobank_index.query(f"data_code == '{code_format}'").sort_values("name")["name"]
+            ICD10_code_meanings["feature"] = names.values[0] if len(names) > 0 else None
             self.ICD10_master_list.append(ICD10_code_meanings)
 
         self.ICD10_master_list = pd.concat(self.ICD10_master_list).drop_duplicates(["coding", "meaning", "code_format"])
@@ -137,12 +143,19 @@ class MedicalCodeMapping:
 
         return pd.DataFrame(values[1:], columns=header)
 
-    def build_tree(self, name: str) -> tl.Tree:
-        """"""
-        tree = tl.Tree()
+    def build_tree(self, name: Optional[str] = None, code_format: Optional[str] = None) -> tl.Tree:
+        """ """
+        assert bool(code_format) != bool(name), "Only name or code should be provided."
+        if name:
+            name = self.clean_name(name)
+            code = self.get_code_format_from_name(name)
+        else:
+            name = self.code_format_to_name_map.get(code_format, code_format)
+            code = code_format
 
+
+        tree = tl.Tree()
         tree.create_node(name, "0")
-        code = self.get_code_format_from_name(name)
 
         df = self.code_format_lookup[code]["coded_values_df"]
         items = [row for i, row in df.sort_values("node_id").iterrows()]
