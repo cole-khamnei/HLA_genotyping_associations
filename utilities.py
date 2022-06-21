@@ -18,9 +18,10 @@ from typing import Any, List, Optional, Iterable
 
 
 class Timer:
-    def __init__(self):
+    def __init__(self, print_on_exit: bool = True):
         self.start_time = time.time()
         self.final_time = False
+        self.print_on_exit = print_on_exit
 
     def __enter__(self):
         self.start_time = time.time()
@@ -29,6 +30,8 @@ class Timer:
     def __exit__(self, exc_type, exc_value, traceback):
         self.get_elapsed_time()
         self.final_time = True
+        if self.print_on_exit:
+            self.print_time()
         
     def get_elapsed_time(self):
         """"""
@@ -95,7 +98,8 @@ def is_jupyter_notebook():
         return False      # Probably standard Python interpreter
 
 
-def notebook_tqdm_import():
+def tqdm_import():
+    global tqdm
     if is_jupyter_notebook():
         from tqdm.notebook import tqdm
     else:

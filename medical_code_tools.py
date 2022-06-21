@@ -9,14 +9,12 @@ from typing import Optional, TypeVar, Union
 import pandas as pd
 import treelib as tl
 
-import utilities
+import constants, utilities
 
 if utilities.is_jupyter_notebook():
     from tqdm.notebook import tqdm
 else:
     from tqdm import tqdm
-
-import constants
 
 
 
@@ -65,6 +63,19 @@ def download_biobank_code_data(code: int, overwrite: bool = False, suppress: boo
     	code_description_file.write(name + "\n")
     	code_description_file.write(description + "\n")
     	code_description_file.write(data_format + "\n")
+
+
+def all_biobank_codes_downloaded(biobank_index: pd.DataFrame) -> bool:
+    """ Checks that all of the biobank code lookup tables are downloaded."""
+
+    biobank_codes = sorted(biobank_index["data_code"].dropna().unique())
+    for code in biobank_codes:
+        lookup_path = os.path.join(constants.CODING_INFO_DIR_PATH, f"code_lookup_{code}.csv")
+        description_path = os.path.join(constants.CODING_INFO_DIR_PATH, f"code_description_{code}.txt")
+        if not os.path.exists(lookup_path) or not os.path.exists(description_path):
+            return False
+    else:
+        return True
 
 
 def download_all_biobank_codes(biobank_index: pd.DataFrame, overwrite: bool = False, suppress: bool = False) -> None:
@@ -141,7 +152,7 @@ class MedicalCodeMapping:
             else:
                 values.append(tokens[:1] + [";".join(tokens[1:])])
 
-        return pd.DataFrame(values[1:], columns=header)
+        return pd.DataFrame(values, columns=header)
 
     def build_tree(self, name: Optional[str] = None, code_format: Optional[str] = None) -> tl.Tree:
         """ """
@@ -214,7 +225,6 @@ class MedicalCodeMapping:
             return [self.decode(coded_value_i, code_format=code_format) for coded_value_i in coded_value]
         
         return self.code_format_lookup[code_format]["coded_values"].get(str(coded_value), coded_value)
-
 
     def search_codes(self, search_terms: ArrayOrItem[str], fuzzy_threshold: int = 95, and_search: bool = False) -> pd.DataFrame:
         """ Searches the descriptions of ICD codes for relevent features"""

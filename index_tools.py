@@ -69,15 +69,16 @@ def load_index() -> pd.DataFrame:
 
     biobank_index["data_code"] = biobank_index["description"].apply(extract_data_coding)
     biobank_index["description"] = biobank_index["description"].apply(lambda desc: desc.split("Uses")[0])
+    biobank_index["primary_udi"] = biobank_index["udi"].apply(lambda s: s.split("-")[0])
 
     return biobank_index
 
 
-def add_biobank_info_to_index(biobank_index: pd.DataFrame, ukbb_data: pd.DataFrame) -> pd.DataFrame:
+def add_biobank_info_to_index(biobank_index: pd.DataFrame, biobank_data: pd.DataFrame) -> pd.DataFrame:
     """ Adds relevant statistics from the ukbb data to the index"""
 
-    biobank_index["counts"] = np.array(ukbb_data.count().tolist())
-    biobank_index["frequency"] = biobank_index["counts"] / len(ukbb_data)
+    biobank_index["counts"] = np.array(biobank_data.count().tolist())
+    biobank_index["frequency"] = biobank_index["counts"] / len(biobank_data)
     return biobank_index
 
 ########################################################################################################################
@@ -127,21 +128,6 @@ def load_partial_udi_lookup_map() -> dict:
     partial_udi_lookup = pd.concat([pd.read_csv(udi_lookup_path) for udi_lookup_path in udi_lookup_paths])
 
     partial_labeled_udis = partial_udi_lookup.loc[partial_udi_lookup["name"] != "_"]
-    partial_udi_to_name_map = dict(zip(partial_labeled_udis["udi"], partial_labeled_udis["name"]))
-
-    partial_udi_to_name_map["20199-2.0"] = "antibiotic_codes_past_3_months"
-    partial_udi_to_name_map["6671-2.0"] = "n_antibiotics_past_3_months"
-
-    return partial_udi_to_name_map
-
-
-def load_partial_udi_lookup_map_2() -> dict:
-    """ Loads the UDI lookup tables"""
-
-    udi_lookup_paths = glob.glob(os.path.join(constants.UDI_LOOKUP_DIR_PATH, "udi_lookup_*.csv"))
-    partial_udi_lookup = pd.concat([pd.read_csv(udi_lookup_path) for udi_lookup_path in udi_lookup_paths])
-
-    partial_labeled_udis = partial_udi_lookup.loc[partial_udi_lookup["name"] != "_"]
     partial_udi_to_name_map = dict(zip(partial_labeled_udis["udi"].apply(lambda s: s.split("-")[0]), partial_labeled_udis["name"]))
 
     partial_udi_to_name_map["20199"] = "antibiotic_codes_past_3_months"
@@ -150,43 +136,24 @@ def load_partial_udi_lookup_map_2() -> dict:
     return partial_udi_to_name_map
 
 
-def add_udi_names_to_index_2(biobank_index: pd.DataFrame) -> pd.DataFrame:
-    """ Adds the names to the index based on udi"""
-
-    partial_udi_to_name_map = load_partial_udi_lookup_map_2()
-
-    names = ["eid"]
-    for udi in biobank_index_full["udi"].values[1:]:
-        primary_udi, modifier = udi.split("-")
-        name = map_.get(primary_udi, None)
-        if name:
-            name = name + "_" + modifier
-        names.append(name)
-
-    biobank_index["name"] = names
-    return biobank_index
-
 def add_udi_names_to_index(biobank_index: pd.DataFrame) -> pd.DataFrame:
     """ Adds the names to the index based on udi"""
 
     partial_udi_to_name_map = load_partial_udi_lookup_map()
 
-    names = []
-    for udi in biobank_index["udi"]:
-        if "-" not in udi or udi.endswith("-0.0"):
-            names.append(partial_udi_to_name_map.get(udi, None))
-        else:
-            udi_stem, udi_modifier = udi.split("-")
-            new_name = None
-
-            if udi_stem + "-0.0" in partial_udi_to_name_map:
-                names.append(f"{partial_udi_to_name_map[udi_stem + '-0.0']}_{udi_modifier}")
-            elif udi_stem + "-0.1" in partial_udi_to_name_map:
-                names.append(f"{partial_udi_to_name_map[udi_stem + '-0.1']}_{udi_modifier}")
-            else:
-                names.append(None)
+    names = ["eid"]
+    for udi in biobank_index["udi"].values[1:]:
+        primary_udi, modifier = udi.split("-")
+        name = partial_udi_to_name_map.get(primary_udi, None)
+        if name:
+            name = name + "_" + modifier if modifier != "0.0" else name
+        names.append(name)
 
     biobank_index["name"] = names
+
+    missing_name_index = get_indices_missing_names(biobank_index)
+    print("Missing", len(biobank_index.loc[biobank_index["name"].isna()]), "biobank index names")
+
     return biobank_index
 
 
@@ -227,7 +194,7 @@ class UDIMap:
 ########################################################################################################################
 
 
-def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str],
+def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str], simple: bool = True,
                 fuzzy_threshold: int = 95, and_search: bool = False) -> pd.DataFrame:
     """ searches the biobank_index for relevant features."""
 
@@ -236,7 +203,13 @@ def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str],
     descriptions = descriptions + biobank_index["description"]
 
     indices = utilities.fuzzy_index_search(search_terms, descriptions, fuzzy_threshold=fuzzy_threshold, and_search=and_search)
-    return biobank_index["name"].iloc[indices].tolist()
+    
+    found_names = biobank_index["name"].iloc[indices]
+    if not simple:
+        return found_names.tolist()
+
+    return found_names.apply(lambda s: "_".join(s.split("_")[:-1]) if "." in s else s).unique().tolist()
+
 
 
 ########################################################################################################################
