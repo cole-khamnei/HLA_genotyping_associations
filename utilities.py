@@ -1,11 +1,13 @@
 import time
+from typing import Any, List, Optional, Iterable
 
+import matplotlib.pyplot as plt
 import multiprocess as mp
+import numpy as np
 import pandas as pd
+import seaborn as sns
 
 from thefuzz import fuzz
-
-from typing import Any, List, Optional, Iterable
 
 ########################################################################################################################
 ### Multiprocessing ###
@@ -50,7 +52,8 @@ def fuzzy_index_search(term: str, descriptions: Iterable[str], fuzzy_threshold: 
 
     if isinstance(term, str):
         term = term.lower()
-        return [i for (i, desc) in enumerate(descriptions) if fuzz.partial_ratio(term, desc.lower()) > fuzzy_threshold]
+        return [i for (i, desc) in enumerate(descriptions) if term in desc.lower()]
+        # return [i for (i, desc) in enumerate(descriptions) if fuzz.partial_ratio(term, desc.lower()) > fuzzy_threshold]
 
     index_sets = [set(fuzzy_index_search(term_i, descriptions, fuzzy_threshold=fuzzy_threshold)) for term_i in term]
 
@@ -62,6 +65,11 @@ def fuzzy_index_search(term: str, descriptions: Iterable[str], fuzzy_threshold: 
             final_indices = final_indices.union(indices)
 
     return sorted(final_indices)
+
+
+def exclude(main_list: List[Any], exclude_list: List[Any]) -> List[Any]:
+    """ Excludes item found in another list"""
+    return [item for item in main_list if item not in exclude_list]
 
 
 ########################################################################################################################
@@ -130,6 +138,34 @@ def add_plt_labels(ax, x: str, y: str, title: Optional[str] = None, **kwargs) ->
 
     if title:
         ax.set_title(titleize(title))
+
+
+def kde_plot(data, x, hue: str = None, ax = None, label: str = None, labels: list = None,
+             shade: bool = True, alpha: float = .6, bw_method: float = .35):
+    """ plots a kdeplot"""
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(12, 6))
+
+    if hue:
+        group_variable = hue
+        group_values, counts = np.unique(data[group_variable], return_counts=True)
+        sort_index = np.argsort(group_values)
+        group_values, counts = group_values[sort_index], counts[sort_index]
+        if not labels:
+            labels = [f"{group_value.title()} ( N = {count})" for group_value, count in zip(group_values, counts)]
+        for group_value, label in zip(group_values, labels):
+            group_data = data.loc[data[group_variable] == group_value]
+            sns.kdeplot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
+                        common_norm=False, warn_singular=False)
+        
+    else:
+        sns.kdeplot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
+                    common_norm=False, warn_singular=False)
+    if label:
+        ax.legend()
+
+    return ax
+
 
 
 ########################################################################################################################

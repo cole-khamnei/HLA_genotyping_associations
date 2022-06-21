@@ -60,9 +60,9 @@ def download_biobank_code_data(code: int, overwrite: bool = False, suppress: boo
         code_lookup_file.write(r_code)
 
     with open(description_path, 'w') as code_description_file:
-    	code_description_file.write(name + "\n")
-    	code_description_file.write(description + "\n")
-    	code_description_file.write(data_format + "\n")
+        code_description_file.write(name + "\n")
+        code_description_file.write(description + "\n")
+        code_description_file.write(data_format + "\n")
 
 
 def all_biobank_codes_downloaded(biobank_index: pd.DataFrame) -> bool:
@@ -105,7 +105,7 @@ class MedicalCodeMapping:
             ICD10_code_meanings = info["coded_values_df"][["coding","meaning"]].copy(deep=True)
             ICD10_code_meanings["code_format"] = code_format
             names = biobank_index.query(f"data_code == '{code_format}'").sort_values("name")["name"]
-            ICD10_code_meanings["feature"] = names.values[0] if len(names) > 0 else None
+            ICD10_code_meanings["name"] = names.values[0] if len(names) > 0 else None
             self.ICD10_master_list.append(ICD10_code_meanings)
 
         self.ICD10_master_list = pd.concat(self.ICD10_master_list).drop_duplicates(["coding", "meaning", "code_format"])

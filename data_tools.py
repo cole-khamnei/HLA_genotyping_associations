@@ -94,6 +94,21 @@ def load_all_biobank_components() -> Tuple[pd.DataFrame, pd.DataFrame, medical_c
     
     return biobank_data, biobank_index, med_code_mapping
 
+
+def biobank_search(med_code_mapping: medical_code_tools.MedicalCodeMapping, biobank_data: pd.DataFrame, term: str) -> pd.DataFrame:
+    """ Searchs for codes that resemble the search term and the counts the occurences in biobank"""
+    df = med_code_mapping.search_codes(term).copy(deep=True)
+    counts = []
+    
+    for feature, meaning in zip(df["name"], df["meaning"]):
+        if feature:
+            counts.append((biobank_data[feature] == meaning).sum())
+        else:
+            counts.append(0)
+    df["count"] = counts
+    return df.sort_values(["count", "code_format"], ascending=False)
+
+
 ########################################################################################################################
 ### End ###
 ########################################################################################################################
