@@ -39,7 +39,7 @@ class Timer:
         """"""
         if not self.final_time:
             self.elapsed_time = time.time() - self.start_time
-    
+
     def print_time(self):
         """"""
         self.get_elapsed_time()
@@ -140,7 +140,7 @@ def add_plt_labels(ax, x: str, y: str, title: Optional[str] = None, **kwargs) ->
         ax.set_title(titleize(title))
 
 
-def kde_plot(data, x, hue: str = None, ax = None, label: str = None, labels: list = None,
+def kde_plot(data, x, hue: str = None, ax=None, label: str = None, labels: list = None,
              shade: bool = True, alpha: float = .6, bw_method: float = .35):
     """ plots a kdeplot"""
     if ax is None:
@@ -151,7 +151,7 @@ def kde_plot(data, x, hue: str = None, ax = None, label: str = None, labels: lis
         group_values, counts = np.unique(data[group_variable], return_counts=True)
         sort_index = np.argsort(group_values)
         group_values, counts = group_values[sort_index], counts[sort_index]
-        
+
         if not labels:
             labels = [f"{group_value.title()} ( N = {count})" for group_value, count in zip(group_values, counts)]
 
@@ -159,17 +159,16 @@ def kde_plot(data, x, hue: str = None, ax = None, label: str = None, labels: lis
         for group_value, label in zip(group_values, labels):
             group_data = data.loc[data[group_variable] == group_value]
             sns.kdeplot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
-                        common_norm=False, warn_singular=False, zorder=i)
+                        common_norm=False, zorder=i)
             i -= 1
 
     else:
         sns.kdeplot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
-                    common_norm=False, warn_singular=False)
+                    common_norm=False)
     if label:
         ax.legend()
 
     return ax
-
 
 
 ########################################################################################################################

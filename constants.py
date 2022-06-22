@@ -51,6 +51,7 @@ UDI_LOOKUP_CORE_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_core.csv")
 UDI_LOOKUP_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "udi_lookups")
 UDI_LOOKUP_VERSION_GENERIC_PATH = os.path.join(UDI_LOOKUP_DIR_PATH, "udi_lookup_{version}.csv")
 
+REDUCED_FEATURE_SET_PATH = os.path.join(RESOURCES_DIR_PATH, "feature_resources", "reduced_feature_set.txt")
 
 CODING_INFO_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "code_info")
 
@@ -60,9 +61,12 @@ CODING_INFO_DIR_PATH = os.path.join(RESOURCES_DIR_PATH, "code_info")
 
 # UK_BIOBANK_DATA_CSV_PATH = UK_BIOBANK_DEV_DATA_CSV if DEV_MODE else UK_BIOBANK_DATA_CSV
 
-def get_uk_biobank_data_csv_path(dev_mode: bool) -> str:
+
+def get_uk_biobank_data_csv_path(dev_mode: bool, signifier: str = "") -> str:
     """ Returns the UK_BIOBANK_DATA_CSV_PATH based on the current dev mode."""
-    return UK_BIOBANK_DEV_DATA_CSV if dev_mode else UK_BIOBANK_DATA_CSV
+    path = UK_BIOBANK_DEV_DATA_CSV if dev_mode else UK_BIOBANK_DATA_CSV
+    return path.replace(".csv", f"_{signifier}.csv") if signifier != "" else path
+
 
 ########################################################################################################################
 ### URL Path Constants ###

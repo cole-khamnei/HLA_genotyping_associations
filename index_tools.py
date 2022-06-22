@@ -128,7 +128,8 @@ def load_partial_udi_lookup_map() -> dict:
     partial_udi_lookup = pd.concat([pd.read_csv(udi_lookup_path) for udi_lookup_path in udi_lookup_paths])
 
     partial_labeled_udis = partial_udi_lookup.loc[partial_udi_lookup["name"] != "_"]
-    partial_udi_to_name_map = dict(zip(partial_labeled_udis["udi"].apply(lambda s: s.split("-")[0]), partial_labeled_udis["name"]))
+    partial_udi_to_name_map = dict(zip(partial_labeled_udis["udi"].apply(lambda s: s.split("-")[0]),
+                                       partial_labeled_udis["name"]))
 
     partial_udi_to_name_map["20199"] = "antibiotic_codes_past_3_months"
     partial_udi_to_name_map["6671"] = "n_antibiotics_past_3_months"
@@ -202,14 +203,14 @@ def term_search(biobank_index: pd.DataFrame, search_terms: ArrayOrItem[str], sim
     descriptions = biobank_index["name"].apply(lambda s: s.replace("_", " ") + " " if s else "")
     descriptions = descriptions + biobank_index["description"]
 
-    indices = utilities.fuzzy_index_search(search_terms, descriptions, fuzzy_threshold=fuzzy_threshold, and_search=and_search)
-    
+    indices = utilities.fuzzy_index_search(search_terms, descriptions, fuzzy_threshold=fuzzy_threshold,
+                                           and_search=and_search)
+
     found_names = biobank_index["name"].iloc[indices]
     if not simple:
         return found_names.tolist()
 
     return found_names.apply(lambda s: "_".join(s.split("_")[:-1]) if "." in s else s).unique().tolist()
-
 
 
 ########################################################################################################################
