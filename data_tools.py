@@ -124,7 +124,7 @@ def biobank_search(med_code_mapping: medical_code_tools.MedicalCodeMapping,
     counts = []
 
     for feature, meaning in zip(df["name"], df["meaning"]):
-        if feature:
+        if feature and feature in biobank_data:
             counts.append((biobank_data[feature] == meaning).sum())
         else:
             counts.append(0)
