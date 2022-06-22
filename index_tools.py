@@ -77,7 +77,16 @@ def load_index() -> pd.DataFrame:
 def add_biobank_info_to_index(biobank_index: pd.DataFrame, biobank_data: pd.DataFrame) -> pd.DataFrame:
     """ Adds relevant statistics from the ukbb data to the index"""
 
-    biobank_index["counts"] = np.array(biobank_data.count().tolist())
+    counts = []
+    for feature in biobank_index["name"]:
+        if feature in biobank_data.columns:
+            counts.append(biobank_data[feature].count())
+        else:
+            counts.append(None)
+
+    biobank_index["counts"] = counts
+
+    # biobank_index["counts"] = np.array(biobank_data.count().tolist())
     biobank_index["frequency"] = biobank_index["counts"] / len(biobank_data)
     return biobank_index
 

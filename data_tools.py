@@ -35,19 +35,17 @@ def load_biobank_data(dev_mode: bool, udi_map: index_tools.UDIMap, signifier: st
 
     data_csv_path = constants.get_uk_biobank_data_csv_path(dev_mode, signifier=signifier)
 
-    # if not dev_mode:
-    #     assert biobank_index is not None, "Valid biobank_index must be passed to load_biobank_data if not in dev mode."
-    #     reduced_feature_set_indices = get_reduced_feature_set_indices(biobank_index)
+    if not dev_mode:
+        assert biobank_index is not None, "Valid biobank_index must be passed to load_biobank_data if not in dev mode."
+        reduced_feature_set_indices = get_reduced_feature_set_indices(biobank_index)
 
-    #     print(len(reduced_feature_set_indices))
-    #     biobank_data = pd.read_csv(data_csv_path, low_memory=False, dtype=str, encoding='iso-8859-1',
-    #                                usecols=reduced_feature_set_indices)
+        print("Reduced feature set has", len(reduced_feature_set_indices), "features.")
+        biobank_data = pd.read_csv(data_csv_path, low_memory=True, dtype=str, encoding='iso-8859-1',
+                                   usecols=reduced_feature_set_indices)
 
-    #     # raise NotImplementedError
-    # else:
-    #     biobank_data = pd.read_csv(data_csv_path, low_memory=False, dtype=str, encoding='iso-8859-1')
+    else:
+        biobank_data = pd.read_csv(data_csv_path, low_memory=True, dtype=str, encoding='iso-8859-1')
 
-    biobank_data = pd.read_csv(data_csv_path, low_memory=False, dtype=str, encoding='iso-8859-1')
     biobank_data.columns = udi_map.get_name(biobank_data.columns)
     print(f"UK BioBank Data Loaded.\nSize: {biobank_data.shape[0]} rows x {biobank_data.shape[1]} columns")
 
