@@ -86,7 +86,7 @@ def decode_medical_codes(med_code_mapping: medical_code_tools.MedicalCodeMapping
                          biobank_data: pd.DataFrame) -> pd.DataFrame:
     """ Maps all of the medical codes to values."""
     values = {}
-    for feature in tqdm(biobank_data.columns, desc="Mapping ICD10 Codes", unit=" feature"):
+    for feature in tqdm(biobank_data.columns, desc="Mapping Medical Codes", unit=" feature"):
         values[feature] = med_code_mapping.decode(biobank_data[feature], name=feature)
 
     return pd.DataFrame(values)
