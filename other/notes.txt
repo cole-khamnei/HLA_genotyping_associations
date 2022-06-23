@@ -4,16 +4,18 @@
 - HLA homozygozity -> cancer + illness
 	- calculate grantham distance for all bb, lookup hospital codes for cancers + ebv associated cancers -> calculate OR
 
-	- next steps:
-		- download the biobank codings
-		- switch to new version of biobank
+	- look at HLA associations for HIV/EBV/Hepatitis/herpes simplex (A02:01 protective against EBV?)
+	- loook at all cancers for HLA / age distributions
+		- KS test on all age distributions and cluster (spectral?)
 
-for thursday:
-	- make summary slides (sex, viral associated cancer, dx age, ebv status)
+
 	- viral associated cancers:
+		- look for viral infection -> any cancers (viral encephalitis -> gbm?)
 		- burkitt lymphoma
 		- hodgkin lymphoma
 		- stomach cancer
 		- nasopharyngeal cancer
 		- gastric cancer
+		- liver
+
 		

@@ -247,7 +247,7 @@ def sns_wrapper(function, data, x, hue: str = None, ax=None, label: str = None, 
         group_values, counts = group_values[sort_index], counts[sort_index]
 
         if not labels:
-            labels = [f"{group_value.title()} ( N = {count})" for group_value, count in zip(group_values, counts)]
+            labels = [f"{str(group_value).title()} ( N = {count})" for group_value, count in zip(group_values, counts)]
 
         i = 0
         for group_value, label in zip(group_values, labels):
