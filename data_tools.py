@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 
 from typing import Any, Optional, Tuple
@@ -130,6 +131,25 @@ def biobank_search(med_code_mapping: medical_code_tools.MedicalCodeMapping,
             counts.append(0)
     df["count"] = counts
     return df.sort_values(["count", "code_format"], ascending=False)
+
+
+########################################################################################################################
+### HLA tools ###
+########################################################################################################################
+
+
+def load_hla_data() -> pd.DataFrame:
+    """ Loads the HLA allele tsv data"""
+    biobank_hla_allele_path = os.path.join(constants.UK_BIOBANK_DATA_PATH,
+                                       f"uk_biobank_{constants.UK_BIOBANK_VERSION}_HLA_alleles.tsv")
+    hla_alleles = pd.read_csv(biobank_hla_allele_path, sep='\t')
+    hla_alleles = hla_alleles[["eid", "A1", "A2", "B1", "B2", "C1", "C2"]].astype({"eid": str})
+    
+    hla_alleles["homozygosity"] = (hla_alleles["A1"] == hla_alleles["A2"]) * 1
+    hla_alleles["homozygosity"] += (hla_alleles["B1"] == hla_alleles["B2"]) * 1
+    hla_alleles["homozygosity"] += (hla_alleles["C1"] == hla_alleles["C2"]) * 1
+    
+    return hla_alleles
 
 
 ########################################################################################################################
