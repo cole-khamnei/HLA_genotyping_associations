@@ -138,18 +138,37 @@ def biobank_search(med_code_mapping: medical_code_tools.MedicalCodeMapping,
 ########################################################################################################################
 
 
-def load_hla_data() -> pd.DataFrame:
+def load_HLA_data(HLA_allele_path: Optional[str] = None) -> pd.DataFrame:
     """ Loads the HLA allele tsv data"""
-    biobank_hla_allele_path = os.path.join(constants.UK_BIOBANK_DATA_PATH,
-                                       f"uk_biobank_{constants.UK_BIOBANK_VERSION}_HLA_alleles.tsv")
-    hla_alleles = pd.read_csv(biobank_hla_allele_path, sep='\t')
-    hla_alleles = hla_alleles[["eid", "A1", "A2", "B1", "B2", "C1", "C2"]].astype({"eid": str})
+
+    if HLA_allele_path is None:
+        if os.path.exists(constants.UK_BIOBANK_HLA_ALLELES_TSV_FULL_PATH):
+            HLA_allele_path = constants.UK_BIOBANK_HLA_ALLELES_TSV_FULL_PATH
+        else:
+            HLA_allele_path = constants.UK_BIOBANK_HLA_ALLELES_TSV_PATH
+
+    assert os.path.exists(HLA_allele_path), f"HLA Allele TSV PATH: {HLA_allele_path} does not exist."
+
     
-    hla_alleles["zygosity"] = (hla_alleles["A1"] == hla_alleles["A2"]) * 1
-    hla_alleles["zygosity"] += (hla_alleles["B1"] == hla_alleles["B2"]) * 1
-    hla_alleles["zygosity"] += (hla_alleles["C1"] == hla_alleles["C2"]) * 1
+    HLA_alleles = pd.read_csv(HLA_allele_path, sep='\t')
+    HLA_alleles = HLA_alleles.astype({"eid": str})
+
+
+    drop_columns = ['icd10_cancer', 'date_cancer_diagnosis', 'date_death', 'age_at_diagnosis', 'age_at_death', 'CHL',
+                    'Follicular_non_Hodgkin', 'Diffuse_non_Hodgkin', 'Diffuse_large_cell', 'Burkitt', 'T_cell_lymphomas',
+                    'Other_B_cell_lymphomas', 'Other_T_cell_lymphomas', 'Immunoproliferative_diseases',
+                    'Plasma_cell_neoplasms', 'Lymphoid_leukemia', 'ALL', 'CLL', 'Myeloid_leukemia', 'AML', 'CML',
+                    'Monocytic_leukemia', 'Other_leukemia_specified_cell_type', 'Other_leukemia_unspecified_cell_type',
+                    'Other_hematopoietic_neoplasm']
+    drop_columns = [column for column in HLA_alleles.columns if column in drop_columns]
+    HLA_alleles = HLA_alleles.drop(drop_columns, axis=1)
     
-    return hla_alleles
+    if "zygosity" not in HLA_alleles.columns:
+        HLA_alleles["zygosity"] = (HLA_alleles["A1"] == HLA_alleles["A2"]) * 1
+        HLA_alleles["zygosity"] += (HLA_alleles["B1"] == HLA_alleles["B2"]) * 1
+        HLA_alleles["zygosity"] += (HLA_alleles["C1"] == HLA_alleles["C2"]) * 1
+    
+    return HLA_alleles
 
 
 ########################################################################################################################

@@ -43,9 +43,11 @@ UK_BIOBANK_DATA_PATH = DATA_PATH + f"{dir_divider}uk_biobank_{UK_BIOBANK_VERSION
 UK_BIOBANK_DEV_DATA_CSV = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}_small.csv")
 UK_BIOBANK_DATA_CSV = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}.csv")
 
-
 UK_BIOBANK_INDEX_HTML_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}.html")
 UK_BIOBANK_INDEX_CSV_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}_index.csv")
+
+UK_BIOBANK_HLA_ALLELES_TSV_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}_HLA_alleles.tsv")
+UK_BIOBANK_HLA_ALLELES_TSV_FULL_PATH = os.path.join(UK_BIOBANK_DATA_PATH, f"uk_biobank_{UK_BIOBANK_VERSION}_HLA_alleles_full.tsv")
 
 UDI_LOOKUP_OUTLIERS_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_outliers.csv")
 UDI_LOOKUP_CORE_CSV = os.path.join(RESOURCES_DIR_PATH, "udi_lookup_core.csv")
@@ -84,6 +86,12 @@ NDPH_DATABASE_ERROR_TOKEN = "<!--\nDATABASE ERROR"
 ########################################################################################################################
 
 TEMPORARILY_EXCLUDE_FEATURE_TOKENS = ["spirometry_blow_data_points"]
+
+########################################################################################################################
+### Variable Constants ###
+########################################################################################################################
+
+DEFAULT = "default"
 
 ########################################################################################################################
 ### End ###
