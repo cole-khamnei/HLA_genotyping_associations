@@ -171,10 +171,13 @@ def titleize(label: str) -> str:
     return label.replace("_", " ").title()
 
 
-def add_plt_labels(ax, x: str, y: str, title: Optional[str] = None, **kwargs) -> None:
+def add_plt_labels(ax, x: Optional[str] = None, y: Optional[str] = None, title: Optional[str] = None, **kwargs) -> None:
     """ Adds plot labels"""
-    ax.set_xlabel(titleize(x))
-    ax.set_ylabel(titleize(y))
+    if x: 
+        ax.set_xlabel(titleize(x))
+
+    if y:
+        ax.set_ylabel(titleize(y))
 
     if title:
         ax.set_title(titleize(title))
@@ -248,7 +251,7 @@ def sns_wrapper(function, data, x, hue: str = None, ax=None, label: str = None, 
         group_values, counts = group_values[sort_index], counts[sort_index]
 
         if not labels:
-            labels = [f"{str(group_value).title()} ( N = {count})" for group_value, count in zip(group_values, counts)]
+            labels = [f"{str(group_value).title()} ( N = {count:,})" for group_value, count in zip(group_values, counts)]
 
         i = 0
         for group_value, label in zip(group_values, labels):
@@ -258,8 +261,9 @@ def sns_wrapper(function, data, x, hue: str = None, ax=None, label: str = None, 
 
     else:
         function(data=data, x=x, ax=ax, alpha=alpha, label=label, **params)
+
     if label:
-        ax.legend()
+        ax.legend(title=hue.title())
 
     return ax
 

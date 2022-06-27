@@ -145,9 +145,9 @@ def load_hla_data() -> pd.DataFrame:
     hla_alleles = pd.read_csv(biobank_hla_allele_path, sep='\t')
     hla_alleles = hla_alleles[["eid", "A1", "A2", "B1", "B2", "C1", "C2"]].astype({"eid": str})
     
-    hla_alleles["homozygosity"] = (hla_alleles["A1"] == hla_alleles["A2"]) * 1
-    hla_alleles["homozygosity"] += (hla_alleles["B1"] == hla_alleles["B2"]) * 1
-    hla_alleles["homozygosity"] += (hla_alleles["C1"] == hla_alleles["C2"]) * 1
+    hla_alleles["zygosity"] = (hla_alleles["A1"] == hla_alleles["A2"]) * 1
+    hla_alleles["zygosity"] += (hla_alleles["B1"] == hla_alleles["B2"]) * 1
+    hla_alleles["zygosity"] += (hla_alleles["C1"] == hla_alleles["C2"]) * 1
     
     return hla_alleles
 
