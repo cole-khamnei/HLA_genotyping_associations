@@ -8,10 +8,12 @@ import pathlib
 
 if platform.system() == 'Darwin':
     DATA_PATH = "/Users/cole/Documents/_research/rabadan_lab/data"
+    GRANTHAM_DISTANCE_PATH = "/Users/cole/Documents/_research/rabadan_lab/"
     dir_divider = "/"
 elif platform.system() == 'Windows':
     DATA_PATH = "C://Users//Cole//Documents//_drive//columbia_education//research//rabadan_lab//data"
     dir_divider = "//"
+    GRANTHAM_DISTANCE_PATH = None
 
 else:
     raise NotImplementedError("Unsupported OS")

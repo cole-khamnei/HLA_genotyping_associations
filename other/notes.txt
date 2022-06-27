@@ -10,7 +10,7 @@
 
 
 	- viral associated cancers:
-		- look for viral infection -> any cancers (viral encephalitis -> gbm?)
+		- look for viral infection -> any cancers (viral encephalitis -> gbm?	)
 		- burkitt lymphoma
 		- hodgkin lymphoma
 		- stomach cancer
