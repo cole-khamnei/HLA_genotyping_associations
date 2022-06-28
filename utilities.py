@@ -183,7 +183,7 @@ def add_plt_labels(ax, x: Optional[str] = None, y: Optional[str] = None, title: 
         ax.set_title(titleize(title))
 
 
-def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: float = 3):
+def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: float = 3, hspace: float = 0.3, wspace: float = .2):
     """ this function is such a homie"""
 
     assert n_plots > 1, f"n_plots must be greater than 1, given: {n_plots}"
@@ -202,7 +202,7 @@ def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: 
     if i != n_plots - 1:
         axes.append(fig.add_subplot(gs[n_rows - 1, :]))
     fig.tight_layout()
-    plt.subplots_adjust(wspace=0.2, hspace=0.3)
+    plt.subplots_adjust(wspace=wspace, hspace=hspace)
 
     return fig, axes
 
