@@ -3,7 +3,7 @@ import sys
 from gc import get_referents
 import six
 
-from typing import Any, List, Optional, Iterable
+from typing import Any, Iterable, List, Optional, Tuple, Union
 from types import ModuleType, FunctionType
 
 import matplotlib.pyplot as plt
@@ -11,6 +11,8 @@ import multiprocess as mp
 import numpy as np
 import pandas as pd
 import seaborn as sns
+
+import KDEpy
 
 from thefuzz import fuzz
 
@@ -207,8 +209,84 @@ def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: 
     return fig, axes
 
 
+def kde_smooth(values: np.ndarray, bw: Union[str, float] = "silverman", kernel: str = "gaussian",
+               n_grid: int = 400, clip: Optional[Tuple[float, float]] = None, mean: bool = True):
+    """"""
+
+    if isinstance(bw, float):
+        bw = bw * np.std(values)
+
+    values = np.array(values)
+    values = values[~pd.isnull(values)]
+    values_min, range_ = np.min(values), np.ptp(values)
+    value_lower_lim, value_upper_lim = values_min - 0.05 * range_, values_min + 1.05 * range_
+    
+    kde = KDEpy.FFTKDE(bw=bw, kernel=kernel)
+    x, y = kde.fit(values)(n_grid)
+    
+    if clip:
+        clip_min, clip_max = clip
+        start_index = 0
+        multiplier = 1
+        append_values = [values]
+        if clip_min is not None:
+            append_values.append(2 * clip_min - values)
+            multiplier += 1
+            start_index = n_grid
+        else:
+            clip_min = - np.inf
+        
+        if clip_max is not None:
+            append_values.append(2 * clip_max - values)
+            multiplier += 1
+        else:
+            clip_max = np.inf
+        
+        values = np.concatenate(append_values)
+
+        x_fft, y_fft = KDEpy.FFTKDE(bw=bw, kernel=kernel).fit(values)(n_grid * multiplier)
+        y_fft = y_fft * multiplier
+        
+        if mean:
+            x_fft, y_fft = x, np.sqrt(y * y_fft[start_index: start_index + n_grid])
+        else:
+            x_fft, y_fft = x, y_fft[start_index: start_index + n_grid]
+
+
+        clipped_indices = (x_fft <= clip_min) | (x_fft >= clip_max)
+        return x_fft[~clipped_indices], y_fft[~clipped_indices]
+
+    else:
+        return x, y
+
+
+def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
+                    shade: bool = True, bw: str = "silverman", kernel: str = "gaussian", mean: bool = True,
+                    clip: Optional[Tuple[float, float]] = None, ax = None, **params):
+    """"""
+    if isinstance(x, str):
+        assert data is not None, "Must provide 'data'"
+        x = data[x]
+    
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(14, 6))
+
+    label = params.pop("label", None)
+    fill_label, line_label = (label, None) if shade else (None, label)
+
+    x_, y_ = kde_smooth(x, bw=bw, mean=mean, clip=clip, kernel=kernel)
+    
+    baseline, = ax.plot(x_, y_, **params, linewidth=1, label=line_label)
+
+    if shade:
+        shade_alpha = params.get("alpha", .2)
+        ax.fill_between(x_, y1=y_, alpha=shade_alpha, facecolor=baseline.get_color(), label=fill_label)
+    
+    return ax
+
+
 def kde_plot(data, x, hue: str = None, ax=None, label: str = None, labels: list = None,
-             shade: bool = True, alpha: float = .6, bw_method: float = .35, **params):
+             shade: bool = True, alpha: float = .6, bw: float = .35, **params):
     """ plots a kdeplot"""
     if ax is None:
         fig, ax = plt.subplots(figsize=(12, 6))
@@ -220,18 +298,17 @@ def kde_plot(data, x, hue: str = None, ax=None, label: str = None, labels: list 
         group_values, counts = group_values[sort_index], counts[sort_index]
 
         if not labels:
-            labels = [f"{group_value.title()} ( N = {count})" for group_value, count in zip(group_values, counts)]
+            labels = [f"{str(group_value).title()} ( N = {count:,})" for group_value, count in zip(group_values, counts)]
 
         i = 0
         for group_value, label in zip(group_values, labels):
             group_data = data.loc[data[group_variable] == group_value]
-            sns.kdeplot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
-                        common_norm=False, zorder=i, **params)
+            single_kde_plot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label,
+                            zorder=i, **params)
             i -= 1
 
     else:
-        sns.kdeplot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
-                    common_norm=False)
+        single_kde_plot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label)
     if label:
         ax.legend()
 
