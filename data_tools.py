@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import numpy as np
 
 from typing import Any, Optional, Tuple
 
@@ -169,7 +170,6 @@ def load_HLA_data(HLA_allele_path: Optional[str] = None) -> pd.DataFrame:
         HLA_alleles["zygosity"] += (HLA_alleles["C1"] == HLA_alleles["C2"]) * 1
     
     return HLA_alleles
-
 
 
 ########################################################################################################################

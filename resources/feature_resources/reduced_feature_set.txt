@@ -351,6 +351,13 @@ death_causes_secondary_0.12
 death_causes_secondary_0.13
 cancer_dx_date
 cancer_type_ICD10
+cancer_type_ICD10_1.0
+cancer_type_ICD10_2.0
+cancer_type_ICD10_3.0
+cancer_type_ICD10_4.0
+cancer_type_ICD10_5.0
+cancer_type_ICD10_6.0
+cancer_type_ICD10_7.0
 death_age
 death_age_1.0
 death_age_2.0
