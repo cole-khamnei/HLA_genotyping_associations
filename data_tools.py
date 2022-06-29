@@ -156,11 +156,12 @@ def load_HLA_data(HLA_allele_path: Optional[str] = None) -> pd.DataFrame:
 
 
     drop_columns = ['icd10_cancer', 'date_cancer_diagnosis', 'date_death', 'age_at_diagnosis', 'age_at_death', 'CHL',
-                    'Follicular_non_Hodgkin', 'Diffuse_non_Hodgkin', 'Diffuse_large_cell', 'Burkitt', 'T_cell_lymphomas',
-                    'Other_B_cell_lymphomas', 'Other_T_cell_lymphomas', 'Immunoproliferative_diseases',
-                    'Plasma_cell_neoplasms', 'Lymphoid_leukemia', 'ALL', 'CLL', 'Myeloid_leukemia', 'AML', 'CML',
-                    'Monocytic_leukemia', 'Other_leukemia_specified_cell_type', 'Other_leukemia_unspecified_cell_type',
-                    'Other_hematopoietic_neoplasm']
+                    'Follicular_non_Hodgkin', 'Diffuse_non_Hodgkin', 'Diffuse_large_cell', 'Burkitt',
+                    'T_cell_lymphomas', 'Other_B_cell_lymphomas', 'Other_T_cell_lymphomas',
+                    'Immunoproliferative_diseases', 'Plasma_cell_neoplasms', 'Lymphoid_leukemia', 'ALL', 'CLL',
+                    'Myeloid_leukemia', 'AML', 'CML', 'Monocytic_leukemia', 'Other_leukemia_specified_cell_type',
+                    'Other_leukemia_unspecified_cell_type', 'Other_hematopoietic_neoplasm']
+
     drop_columns = [column for column in HLA_alleles.columns if column in drop_columns]
     HLA_alleles = HLA_alleles.drop(drop_columns, axis=1)
     
