@@ -218,6 +218,9 @@ def kde_smooth(values: np.ndarray, bw: Union[str, float] = "silverman", kernel: 
 
     values = np.array(values)
     values = values[~pd.isnull(values)]
+
+    assert len(values) >= 2, f"Values array must contained at least 2 non-null values."
+
     values_min, range_ = np.min(values), np.ptp(values)
     value_lower_lim, value_upper_lim = values_min - 0.05 * range_, values_min + 1.05 * range_
     
@@ -270,6 +273,10 @@ def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
     
     if ax is None:
         fig, ax = plt.subplots(figsize=(14, 6))
+
+    if (~pd.isnull(x)).sum() < 2:
+        ax.plot([], [])
+        return ax
 
     label = params.pop("label", None)
     fill_label, line_label = (label, None) if shade else (None, label)
