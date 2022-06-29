@@ -97,7 +97,14 @@ DEFAULT = "default"
 ### Lists ###
 ########################################################################################################################
 
-ICD10_cancer_types = {
+FEMALE_SPECIFIC_CANCERS = ["breast cancer", "female genital tract cancer", "cervical cancer",
+                           "cin/pre-cancer cells cervix", "fallopian tube cancer", "ovarian cancer",
+                           "uterine/endometrial cancer", "vaginal cancer", "vulval cancer" ]
+
+MALE_SPECIFIC_CANCERS = ["male genital tract cancer", "penis cancer", "prostate cancer", "testicular cancer"]
+SEX_SPECIFIC_CANCERS = FEMALE_SPECIFIC_CANCERS + MALE_SPECIFIC_CANCERS
+
+ICD10_CANCER_TYPES = {
     "C00":" lip",
     "C01":" tongue base",
     "C02":" tongue other",

@@ -18,4 +18,7 @@
 		- gastric cancer
 		- liver
 
-		
+
+UK biobank questions:
+	- how to interpret the HLA codes?
+	- difference between ICD10 cancer type (83k) and cancer code (41K entries)

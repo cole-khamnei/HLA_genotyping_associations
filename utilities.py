@@ -208,7 +208,7 @@ def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: 
 
 
 def kde_plot(data, x, hue: str = None, ax=None, label: str = None, labels: list = None,
-             shade: bool = True, alpha: float = .6, bw_method: float = .35):
+             shade: bool = True, alpha: float = .6, bw_method: float = .35, **params):
     """ plots a kdeplot"""
     if ax is None:
         fig, ax = plt.subplots(figsize=(12, 6))
@@ -226,7 +226,7 @@ def kde_plot(data, x, hue: str = None, ax=None, label: str = None, labels: list 
         for group_value, label in zip(group_values, labels):
             group_data = data.loc[data[group_variable] == group_value]
             sns.kdeplot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw_method=bw_method, label=label,
-                        common_norm=False, zorder=i)
+                        common_norm=False, zorder=i, **params)
             i -= 1
 
     else:
