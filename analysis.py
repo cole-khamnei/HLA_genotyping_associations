@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 import scipy.stats as stats
 
+import matplotlib.pyplot as plt
+
 from typing import Any, List, Optional, Tuple, Union
 
 import constants, utilities
@@ -41,13 +43,16 @@ def calculate_OR(disease: np.ndarray, exposure: np.ndarray,
 
     odds_ratio, p_value = stats.fisher_exact(contingency_table)
 
-    standard_error = np.sqrt(np.sum(1 / np.array(contingency_table).ravel()))
     
-    assert 100 > CI > 1, f"Given CI percent ({CI}%) is in invalid. Must be in (1, 100)"
-    z_score = stats.norm.ppf(CI / 100)
+    if CI:
+        standard_error = np.sqrt(np.sum(1 / np.array(contingency_table).ravel()))
+        assert 100 > CI > 1, f"Given CI percent ({CI}%) is in invalid. Must be in (1, 100)"
+        z_score = stats.norm.ppf(CI / 100)
 
-    upper_bound = np.exp(np.log(odds_ratio) + z_score * standard_error)
-    lower_bound = np.exp(np.log(odds_ratio) - z_score * standard_error)
+        upper_bound = np.exp(np.log(odds_ratio) + z_score * standard_error)
+        lower_bound = np.exp(np.log(odds_ratio) - z_score * standard_error)
+    else:
+        upper_bound, lower_bound = None, None
 
     return odds_ratio, p_value, disease_exposure, lower_bound, upper_bound
 
@@ -55,7 +60,7 @@ def calculate_OR(disease: np.ndarray, exposure: np.ndarray,
 
 def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.ndarray],
                     data: Optional[pd.DataFrame] = None, variable_baseline:
-                    Any = None, CI: float = 95, as_text: bool = False) -> str:
+                    Any = None, CI: Optional[float] = 95, as_text: bool = False) -> str:
     """ """
 
     if isinstance(variable, str):
@@ -69,11 +74,11 @@ def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.nd
         assert data is not None
         illness = data[illness]
 
-    nan_indices = np.isnan(illness) | np.isnan(variable)
+    nan_indices = pd.isnull(illness) | pd.isnull(variable)
     illness, variable = illness[~nan_indices], variable[~nan_indices]
 
     text = ""
-    variable_values, counts = np.unique(variable[~np.isnan(variable)], return_counts=True)
+    variable_values, counts = np.unique(variable[~pd.isnull(variable)], return_counts=True)
 
     if variable_baseline is None:
         variable_baseline = variable_values[np.argmax(counts)]
@@ -81,11 +86,14 @@ def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.nd
 
     odds_ratio, p_value, N, lower_bound, upper_bound = calculate_OR(illness, variable != variable_baseline, CI=CI)
 
-    p_value_str = f"{p_value:.2}" if "e" in str(p_value) else f"{p_value:.5f}"
-    line = f"{variable_name} != {variable_baseline}: OR = {odds_ratio:.3f}   p-value = {p_value_str}" 
-    line += f"   95% CI: {lower_bound:.2f} - {upper_bound:.2f}   N = {N:,}"
-    text += line + "\n" if p_value > .05 else line + " ***************\n"
 
+    if len(variable_values) > 2:
+        p_value_str = f"{p_value:.2}" if "e" in str(p_value) else f"{p_value:.3f}"
+        line = f"{variable_name} != {variable_baseline}: OR: {odds_ratio:.3f} p-value: {p_value_str}" 
+        if CI:
+            line += f" 95% CI: {lower_bound:.2f} - {upper_bound:.2f}"
+        line += f" N: {N:,}"
+        text += line + "\n" if p_value > .05 else line + " ***\n"
 
     for variable_value in sorted(variable_values):
         if variable_value == variable_baseline:
@@ -93,13 +101,60 @@ def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.nd
 
         odds_ratio, p_value, N, lower_bound, upper_bound = calculate_OR(illness, variable == variable_value, CI=CI)
 
-        p_value_str = f"{p_value:.2}" if "e" in str(p_value) else f"{p_value:.5f}"
-        line = f"{variable_name} = {variable_value}:  OR = {odds_ratio:.3f}   p-value = {p_value_str}"
-        line += f"   95% CI: {lower_bound:.2f} - {upper_bound:.2f}   N = {N:,}"
-        text += line + "\n" if p_value > .05 else line + " ***************\n"
+        p_value_str = f"{p_value:.2}" if "e" in str(p_value) else f"{p_value:.3f}"
+        line = f"{variable_name} == {variable_value}: OR: {odds_ratio:.3f} p-value: {p_value_str}"
+        if CI:
+            line += f" 95% CI: {lower_bound:.2f} - {upper_bound:.2f}"
+        line += f" N: {N:,}"
+        text += line + "\n" if p_value > .05 else line + " ***\n"
 
     return text
 
+
+def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax = None,
+                     x: str = "grantham_divergence", OR_variable: str = "zygosity", bw: float = .2,
+                     no_illness_label: Optional[str] = None):
+    """"""
+    
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(14, 6))
+    else:
+        fig = None
+
+    if isinstance(illness_feature, str):
+        illness_values = data[illness_feature] == illness
+    else:
+        illness_values = illness_feature
+
+    if not no_illness_label:
+        no_illness_label = "no " + illness
+        
+    illness_labels = np.array([no_illness_label, illness])[1 * illness_values]
+    utilities.kde_plot(data=data, x=x, hue=illness_labels, ax=ax, bw=bw)
+    
+    if OR_variable:
+        OR_variables = [OR_variable] if isinstance(OR_variable, str) else OR_variable
+        text = ""
+        for OR_variable in OR_variables:
+            text += variable_OR_test(illness=illness_values, variable=OR_variable, data=data, CI=None)
+
+        ax.text(.01, .70, text, transform=ax.transAxes, va="top", ha="left", fontdict={'family' : 'monospace'})
+
+    disease_distances = data[x].loc[illness_values]
+    no_disease_distances = data[x].loc[~illness_values]
+    ks_stat, ks_p_value = stats.kstest(disease_distances, no_disease_distances)
+
+    title = f"{utilities.titleize(illness)} HLA Class I Grantham Distance"
+    title += f"\nKS Test: Stat={ks_stat:.03}, p={ks_p_value:.03}"
+    if ks_p_value < 0.05:
+        title += " **"
+
+    ax.set_title(title)
+
+    ax.legend(title="Status", loc="upper left")
+    utilities.add_plt_labels(ax, x=x, y="Density")
+
+    return fig, ax
 
 
 ########################################################################################################################

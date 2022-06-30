@@ -287,29 +287,46 @@ def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
 
     if shade:
         shade_alpha = params.get("alpha", .2)
-        ax.fill_between(x_, y1=y_, alpha=shade_alpha, facecolor=baseline.get_color(), label=fill_label)
+        zorder = params.get("zorder", None)
+        ax.fill_between(x_, y1=y_, alpha=shade_alpha, facecolor=baseline.get_color(), label=fill_label, zorder=zorder)
     
     return ax
 
 
-def kde_plot(data, x, hue: str = None, ax=None, label: str = None, labels: list = None,
-             shade: bool = True, alpha: float = .6, bw: float = .35, **params):
+def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None, label: Optional[str] = None,
+             labels: Optional[list] = None, shade: bool = True, alpha: float = .6, bw: float = .35, **params):
     """ plots a kdeplot"""
+
     if ax is None:
         fig, ax = plt.subplots(figsize=(12, 6))
 
-    if hue:
-        group_variable = hue
-        group_values, counts = np.unique(data[group_variable], return_counts=True)
+    if hue is not None:
+        if isinstance(hue, str):
+            group_variable = hue
+            group_variable_values = data[hue]
+        else:
+            group_variable = "hue"
+            group_variable_values = hue
+
+
+        if isinstance(x, str):
+            x_values = data[x]
+            x_variable = x
+        else:
+            x_variable = "x"
+
+        group_values, counts = np.unique(group_variable_values, return_counts=True)
         sort_index = np.argsort(group_values)
         group_values, counts = group_values[sort_index], counts[sort_index]
 
         if not labels:
-            labels = [f"{str(group_value).title()} ( N = {count:,})" for group_value, count in zip(group_values, counts)]
+            labels = [f"{str(group_value).title()} ( N = {count:,})"
+                      for group_value, count in zip(group_values, counts)]
 
         i = 0
+        temp_data = pd.DataFrame({group_variable: group_variable_values, x_variable: x_values})
         for group_value, label in zip(group_values, labels):
-            group_data = data.loc[data[group_variable] == group_value]
+            group_data = temp_data.loc[temp_data[group_variable] == group_value]
             single_kde_plot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label,
                             zorder=i, **params)
             i -= 1
