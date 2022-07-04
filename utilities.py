@@ -203,7 +203,8 @@ def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: 
 
     if i != n_plots - 1:
         axes.append(fig.add_subplot(gs[n_rows - 1, :]))
-    fig.tight_layout()
+
+    fig.tight_layout(rect=[0.02, 0.02, .98, .98])
     plt.subplots_adjust(wspace=wspace, hspace=hspace)
 
     return fig, axes

@@ -18,6 +18,12 @@
 		- gastric cancer
 		- liver
 
+	- Compare HLA Diversity among people and see if there is clustering in terms of expressive ability:
+		- cluster based based on graph -> make heatmap
+			- show that certain groups who cluster have higher rates of T-cell mediated autoimmunity?
+		- show separate from ethnicity
+
+
 
 UK biobank questions:
 	- how to interpret the HLA codes?

@@ -113,7 +113,7 @@ def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.nd
 
 def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax = None,
                      x: str = "grantham_divergence", OR_variable: str = "zygosity", bw: float = .2,
-                     no_illness_label: Optional[str] = None):
+                     no_illness_label: Optional[str] = None, title: str = ""):
     """"""
     
     if ax is None:
@@ -144,7 +144,7 @@ def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax 
     no_disease_distances = data[x].loc[~illness_values]
     ks_stat, ks_p_value = stats.kstest(disease_distances, no_disease_distances)
 
-    title = f"{utilities.titleize(illness)} HLA Class I Grantham Distance"
+    title = f"{utilities.titleize(illness)}{title}"
     title += f"\nKS Test: Stat={ks_stat:.03}, p={ks_p_value:.03}"
     if ks_p_value < 0.05:
         title += " **"
