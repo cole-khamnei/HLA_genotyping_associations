@@ -23,6 +23,16 @@
 			- show that certain groups who cluster have higher rates of T-cell mediated autoimmunity?
 		- show separate from ethnicity
 
+	- separate by zygosity, age, and sex for hodgins +
+	- control with cervical
+	- miniumum of grantgham distance of A,B,C (sepaate )
+
+	- autoimmunity
+		- remove known associated alleles?
+			- find way to see if it is reduced t cell repetoire or just dosing effects from known alleles
+
+
+!!!! PICK JOURNAL CLUB PRESENTATION
 
 
 UK biobank questions:
