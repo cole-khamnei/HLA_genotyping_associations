@@ -13,7 +13,7 @@ if platform.system() == 'Darwin':
 elif platform.system() == 'Windows':
     DATA_PATH = "C://Users//Cole//Documents//_drive//columbia_education//research//rabadan_lab//data"
     dir_divider = "//"
-    GRANTHAM_DISTANCE_PATH = None
+    GRANTHAM_DISTANCE_PATH = "C://Users//Cole//Documents//_drive//columbia_education//research//rabadan_lab//"
 
 else:
     raise NotImplementedError("Unsupported OS")
