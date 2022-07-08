@@ -145,7 +145,7 @@ class MedicalCodeMapping:
         for line in lines:
             tokens = line.split(",")
             if len(header) > 2:
-                end_index = 2 - len(header) 
+                end_index = 2 - len(header)
                 values.append(tokens[:1] + [";".join(tokens[1:end_index])] + tokens[end_index:])
             else:
                 values.append(tokens[:1] + [";".join(tokens[1:])])

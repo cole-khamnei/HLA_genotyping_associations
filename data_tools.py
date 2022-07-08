@@ -150,10 +150,8 @@ def load_HLA_data(HLA_allele_path: Optional[str] = None) -> pd.DataFrame:
 
     assert os.path.exists(HLA_allele_path), f"HLA Allele TSV PATH: {HLA_allele_path} does not exist."
 
-    
     HLA_alleles = pd.read_csv(HLA_allele_path, sep='\t')
     HLA_alleles = HLA_alleles.astype({"eid": str})
-
 
     drop_columns = ['icd10_cancer', 'date_cancer_diagnosis', 'date_death', 'age_at_diagnosis', 'age_at_death', 'CHL',
                     'Follicular_non_Hodgkin', 'Diffuse_non_Hodgkin', 'Diffuse_large_cell', 'Burkitt',
@@ -164,12 +162,12 @@ def load_HLA_data(HLA_allele_path: Optional[str] = None) -> pd.DataFrame:
 
     drop_columns = [column for column in HLA_alleles.columns if column in drop_columns]
     HLA_alleles = HLA_alleles.drop(drop_columns, axis=1)
-    
+
     if "zygosity" not in HLA_alleles.columns:
         HLA_alleles["zygosity"] = (HLA_alleles["A1"] == HLA_alleles["A2"]) * 1
         HLA_alleles["zygosity"] += (HLA_alleles["B1"] == HLA_alleles["B2"]) * 1
         HLA_alleles["zygosity"] += (HLA_alleles["C1"] == HLA_alleles["C2"]) * 1
-    
+
     return HLA_alleles
 
 

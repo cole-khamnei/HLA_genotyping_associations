@@ -1,7 +1,9 @@
 import os
+import sys
 
 import numpy as np
 import pandas as pd
+import scipy
 import scipy.stats as stats
 
 import matplotlib.pyplot as plt
@@ -15,6 +17,9 @@ if utilities.is_jupyter_notebook():
 else:
     from tqdm import tqdm
 
+sys.path.append(constants.GRANTHAM_DISTANCE_PATH)
+
+import grantham_distance as gd
 
 ########################################################################################################################
 ### Constants ###
@@ -26,7 +31,7 @@ else:
 ########################################################################################################################
 
 
-def calculate_OR(disease: np.ndarray, exposure: np.ndarray, 
+def calculate_OR(disease: np.ndarray, exposure: np.ndarray,
                  disease_value: Any = True, exposure_value: Any = True,
                  CI: float = 95) -> Tuple[float, float, float, float, int]:
     """ Calculates the odds, p value, lower and upper bounds."""
@@ -43,7 +48,6 @@ def calculate_OR(disease: np.ndarray, exposure: np.ndarray,
 
     odds_ratio, p_value = stats.fisher_exact(contingency_table)
 
-    
     if CI:
         standard_error = np.sqrt(np.sum(1 / np.array(contingency_table).ravel()))
         assert 100 > CI > 1, f"Given CI percent ({CI}%) is in invalid. Must be in (1, 100)"
@@ -57,10 +61,9 @@ def calculate_OR(disease: np.ndarray, exposure: np.ndarray,
     return odds_ratio, p_value, disease_exposure, lower_bound, upper_bound
 
 
-
 def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.ndarray],
-                    data: Optional[pd.DataFrame] = None, variable_baseline:
-                    Any = None, CI: Optional[float] = 95, as_text: bool = False) -> str:
+                     data: Optional[pd.DataFrame] = None, variable_baseline: Any = None,
+                     CI: Optional[float] = 95, as_text: bool = False) -> str:
     """ """
 
     if isinstance(variable, str):
@@ -83,13 +86,11 @@ def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.nd
     if variable_baseline is None:
         variable_baseline = variable_values[np.argmax(counts)]
 
-
     odds_ratio, p_value, N, lower_bound, upper_bound = calculate_OR(illness, variable != variable_baseline, CI=CI)
-
 
     if len(variable_values) > 2:
         p_value_str = f"{p_value:.2}" if "e" in str(p_value) else f"{p_value:.3f}"
-        line = f"{variable_name} != {variable_baseline}: OR: {odds_ratio:.3f} p-value: {p_value_str}" 
+        line = f"{variable_name} != {variable_baseline}: OR: {odds_ratio:.3f} p-value: {p_value_str}"
         if CI:
             line += f" 95% CI: {lower_bound:.2f} - {upper_bound:.2f}"
         line += f" N: {N:,}"
@@ -111,11 +112,11 @@ def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.nd
     return text
 
 
-def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax = None,
+def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax=None,
                      x: str = "grantham_divergence", OR_variable: str = "zygosity", bw: float = .2,
                      no_illness_label: Optional[str] = None, title: str = ""):
     """"""
-    
+
     if ax is None:
         fig, ax = plt.subplots(figsize=(14, 6))
     else:
@@ -128,17 +129,17 @@ def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax 
 
     if not no_illness_label:
         no_illness_label = "no " + illness
-        
+
     illness_labels = np.array([no_illness_label, illness])[1 * illness_values]
     utilities.kde_plot(data=data, x=x, hue=illness_labels, ax=ax, bw=bw)
-    
+
     if OR_variable:
         OR_variables = [OR_variable] if isinstance(OR_variable, str) else OR_variable
         text = ""
         for OR_variable in OR_variables:
             text += variable_OR_test(illness=illness_values, variable=OR_variable, data=data, CI=None)
 
-        ax.text(.01, .70, text, transform=ax.transAxes, va="top", ha="left", fontdict={'family' : 'monospace'})
+        ax.text(.01, .70, text, transform=ax.transAxes, va="top", ha="left", fontdict={'family': 'monospace'})
 
     disease_distances = data[x].loc[illness_values]
     no_disease_distances = data[x].loc[~illness_values]
@@ -158,8 +159,21 @@ def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax 
 
 
 ########################################################################################################################
-### HLA tools ###
+### HLA grantham distance analysis ###
 ########################################################################################################################
+
+grantham_distance = gd.GranthamDistance(gd.GRANTHAM_DISTANCE_MATRIX_PATH)
+memoized_grantham_distance = utilities.MemoizedFunction(grantham_distance.sequence_pair_distance)
+
+
+def grantham_linkage(p1, p2):
+    """"""
+    inter_person_distances = np.array([[memoized_grantham_distance._call(seq1, seq2) for seq2 in p2] for seq1 in p1])
+    row_ind, col_ind = scipy.optimize.linear_sum_assignment(inter_person_distances)
+    return inter_person_distances[row_ind, col_ind].sum()
+
+
+memoized_grantham_linkage = utilities.MemoizedFunction(grantham_linkage)
 
 
 ########################################################################################################################
@@ -183,17 +197,20 @@ def get_illness_value(data: pd.DataFrame, illness: str, base_feature: str, fuzzy
 
     features = get_multiple_features_from_base_feature(data, base_feature)
 
-    if not isinstance(illness, str):
+    if not isinstance(illness, str) or fuzzy:
         fuzzy = True
         illness_tokens = illness
-    
+
+        def fuzzy_test(s, illness_token):
+            return illness_token in s if not pd.isnull(s) else False
+
     illness_value = np.zeros(len(data))
     for feature in features:
         if not fuzzy:
             illness_value = (data[feature] == illness) | illness_value
         else:
             for illness_token in illness_tokens:
-                illness_value = (data[feature].apply(lambda s: illness_token in s if not pd.isnull(s) else False)) | illness_value
+                illness_value = data[feature].apply(fuzzy_test, args=(illness_token)) | illness_value
 
     return illness_value
 

@@ -32,6 +32,11 @@
 			- find way to see if it is reduced t cell repetoire or just dosing effects from known alleles
 
 
+	- EBV protective alleles (or hepatitis, HIV etc):
+		- look to see if these have stronger effect on EBV associated cancers
+			- subset with people who have these alleles: look at ages, sex, grantham dist,
+
+
 !!!! PICK JOURNAL CLUB PRESENTATION
 
 

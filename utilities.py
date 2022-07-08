@@ -60,7 +60,8 @@ def fuzzy_index_search(term: str, descriptions: Iterable[str], fuzzy_threshold: 
     if isinstance(term, str):
         term = term.lower()
         return [i for (i, desc) in enumerate(descriptions) if term in desc.lower()]
-        # return [i for (i, desc) in enumerate(descriptions) if fuzz.partial_ratio(term, desc.lower()) > fuzzy_threshold]
+        # return [i for (i, desc) in enumerate(descriptions)
+        #         if fuzz.partial_ratio(term, desc.lower()) > fuzzy_threshold]
 
     index_sets = [set(fuzzy_index_search(term_i, descriptions, fuzzy_threshold=fuzzy_threshold)) for term_i in term]
 
@@ -127,6 +128,28 @@ def multiprocess_pool(function, param_sets: list, n_processes: int = 4):
         return [result.get() for result in results]
 
 
+class MemoizedFunction:
+    def __init__(self, function):
+        self.function = function
+        self.memory = {}
+
+    def _call(self, *args):
+        """"""
+        key = str(args)
+        value = self.memory.get(key, None)
+
+        if not value:
+            value = self.function(*args)
+            self.memory[key] = value
+
+        return value
+
+    def __repr__(self) -> str:
+        s = f"MemoizedFunction of {str(self.function).split(' of')[0]}>\n".replace(">>", ">")
+        s += f"Current Memory: {get_size(self.memory)} Bytes"
+        return s
+
+
 ########################################################################################################################
 ### jupyternotebook utilities ###
 ########################################################################################################################
@@ -175,7 +198,7 @@ def titleize(label: str) -> str:
 
 def add_plt_labels(ax, x: Optional[str] = None, y: Optional[str] = None, title: Optional[str] = None, **kwargs) -> None:
     """ Adds plot labels"""
-    if x: 
+    if x:
         ax.set_xlabel(titleize(x))
 
     if y:
@@ -185,7 +208,8 @@ def add_plt_labels(ax, x: Optional[str] = None, y: Optional[str] = None, title: 
         ax.set_title(titleize(title))
 
 
-def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: float = 3, hspace: float = 0.3, wspace: float = .2):
+def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: float = 3,
+                   hspace: float = 0.3, wspace: float = .2):
     """ this function is such a homie"""
 
     assert n_plots > 1, f"n_plots must be greater than 1, given: {n_plots}"
@@ -224,10 +248,10 @@ def kde_smooth(values: np.ndarray, bw: Union[str, float] = "silverman", kernel: 
 
     values_min, range_ = np.min(values), np.ptp(values)
     value_lower_lim, value_upper_lim = values_min - 0.05 * range_, values_min + 1.05 * range_
-    
+
     kde = KDEpy.FFTKDE(bw=bw, kernel=kernel)
     x, y = kde.fit(values)(n_grid)
-    
+
     if clip:
         clip_min, clip_max = clip
         start_index = 0
@@ -239,23 +263,22 @@ def kde_smooth(values: np.ndarray, bw: Union[str, float] = "silverman", kernel: 
             start_index = n_grid
         else:
             clip_min = - np.inf
-        
+
         if clip_max is not None:
             append_values.append(2 * clip_max - values)
             multiplier += 1
         else:
             clip_max = np.inf
-        
+
         values = np.concatenate(append_values)
 
         x_fft, y_fft = KDEpy.FFTKDE(bw=bw, kernel=kernel).fit(values)(n_grid * multiplier)
         y_fft = y_fft * multiplier
-        
+
         if mean:
             x_fft, y_fft = x, np.sqrt(y * y_fft[start_index: start_index + n_grid])
         else:
             x_fft, y_fft = x, y_fft[start_index: start_index + n_grid]
-
 
         clipped_indices = (x_fft <= clip_min) | (x_fft >= clip_max)
         return x_fft[~clipped_indices], y_fft[~clipped_indices]
@@ -266,12 +289,12 @@ def kde_smooth(values: np.ndarray, bw: Union[str, float] = "silverman", kernel: 
 
 def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
                     shade: bool = True, bw: str = "silverman", kernel: str = "gaussian", mean: bool = True,
-                    clip: Optional[Tuple[float, float]] = None, ax = None, **params):
+                    clip: Optional[Tuple[float, float]] = None, ax=None, **params):
     """"""
     if isinstance(x, str):
         assert data is not None, "Must provide 'data'"
         x = data[x]
-    
+
     if ax is None:
         fig, ax = plt.subplots(figsize=(14, 6))
 
@@ -283,14 +306,14 @@ def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
     fill_label, line_label = (label, None) if shade else (None, label)
 
     x_, y_ = kde_smooth(x, bw=bw, mean=mean, clip=clip, kernel=kernel)
-    
+
     baseline, = ax.plot(x_, y_, **params, linewidth=1, label=line_label)
 
     if shade:
         shade_alpha = params.get("alpha", .2)
         zorder = params.get("zorder", None)
         ax.fill_between(x_, y1=y_, alpha=shade_alpha, facecolor=baseline.get_color(), label=fill_label, zorder=zorder)
-    
+
     return ax
 
 
@@ -308,7 +331,6 @@ def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None,
         else:
             group_variable = "hue"
             group_variable_values = hue
-
 
         if isinstance(x, str):
             x_values = data[x]
@@ -373,8 +395,7 @@ def sns_wrapper(function, data, x, hue: str = None, ax=None, label: str = None, 
 
 def render_mpl_table(data, col_width=3.0, row_height=0.625, font_size=14,
                      header_color='#40466e', row_colors=['#f1f1f2', 'w'], edge_color='w',
-                     bbox=[0, 0, 1, 1], header_columns=0,
-                     ax=None, fig=None, **kwargs):
+                     bbox=[0, 0, 1, 1], header_columns=0, ax=None, fig=None, **kwargs):
     """ stolen from stack overflow """
     if ax is None:
         size = (np.array(data.shape[::-1]) + np.array([0, 1])) * np.array([col_width, row_height])
@@ -386,13 +407,13 @@ def render_mpl_table(data, col_width=3.0, row_height=0.625, font_size=14,
     mpl_table.auto_set_font_size(False)
     mpl_table.set_fontsize(font_size)
 
-    for k, cell in  six.iteritems(mpl_table._cells):
+    for k, cell in six.iteritems(mpl_table._cells):
         cell.set_edgecolor(edge_color)
         if k[0] == 0 or k[1] < header_columns:
             cell.set_text_props(weight='bold', color='w')
             cell.set_facecolor(header_color)
         else:
-            cell.set_facecolor(row_colors[k[0]%len(row_colors) ])
+            cell.set_facecolor(row_colors[k[0] % len(row_colors)])
 
     return fig, ax
 
