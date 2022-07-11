@@ -36,6 +36,9 @@
 		- look to see if these have stronger effect on EBV associated cancers
 			- subset with people who have these alleles: look at ages, sex, grantham dist,
 
+	- antecedent infections:
+		- look for infections that precede illness diagnoses
+
 
 !!!! PICK JOURNAL CLUB PRESENTATION
 

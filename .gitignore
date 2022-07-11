@@ -1,0 +1,2 @@
+# Ignore ipython and python basics:
+*.DS_Store
