@@ -355,7 +355,7 @@ def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None,
             i -= 1
 
     else:
-        single_kde_plot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label)
+        single_kde_plot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label, **params)
     if label:
         ax.legend()
 
