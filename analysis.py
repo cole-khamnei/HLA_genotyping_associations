@@ -40,10 +40,10 @@ def calculate_OR(disease: np.ndarray, exposure: np.ndarray,
     exposure, no_exposure = exposure == exposure_value, exposure != exposure_value
     disease, no_disease = disease == disease_value, disease != disease_value
 
-    disease_exposure = np.sum(disease & exposure)
-    disease_no_exposure = np.sum(disease & no_exposure)
-    no_disease_exposure = np.sum(no_disease & exposure)
-    no_disease_no_exposure = np.sum(no_disease & no_exposure)
+    disease_exposure = np.count_nonzero(disease & exposure)
+    disease_no_exposure = np.count_nonzero(disease & no_exposure)
+    no_disease_exposure = np.count_nonzero(no_disease & exposure)
+    no_disease_no_exposure = np.count_nonzero(no_disease & no_exposure)
 
     contingency_table = [[disease_exposure, no_disease_exposure], [disease_no_exposure, no_disease_no_exposure]]
 
@@ -217,12 +217,12 @@ def get_illness_value(data: pd.DataFrame, illness: str, base_feature: str, fuzzy
 
 
 def get_illness_value_dx_age(data: pd.DataFrame, illness: str, base_feature: str, fuzzy: bool = False
-                            ) -> np.ndarray:
+                             ) -> np.ndarray:
     """ Finds all the individuals with a specific illness"""
-    
+
     assert base_feature in data, f"Invalid base_feature: {base_feature}"
     features = get_multiple_features_from_base_feature(data, base_feature)
-    
+
     base_feature_dx_age = base_feature.strip("_code") + "_dx_age_interpolated"
     assert base_feature_dx_age in data, f"Dx age feature not found in data '{base_feature_dx_age}'"
     dx_age_features = get_multiple_features_from_base_feature(data, base_feature_dx_age)
@@ -244,7 +244,7 @@ def get_illness_value_dx_age(data: pd.DataFrame, illness: str, base_feature: str
             feature_values = np.zeros(len(data))
             for illness_token in illness_tokens:
                 feature_values = data[feature].apply(fuzzy_test, args=(illness_token)) | feature_values
-            
+
         ages = data[feature_dx_age].values[feature_values]
         illness_dx_ages[feature_values] = ages
         illness_value = feature_values | illness_value
@@ -253,19 +253,20 @@ def get_illness_value_dx_age(data: pd.DataFrame, illness: str, base_feature: str
 
 
 def create_sampled_distribution(sampling: np.ndarray, max_value: Optional[float] = None,
-                                min_value: Optional[float] = None, bw: float = 0.05) -> Tuple[np.ndarray, np.ndarray]:
+                                min_value: Optional[float] = None, bw: float = 0.05,
+                                n_sample: int = 1000) -> Tuple[np.ndarray, np.ndarray]:
     """"""
     max_value = max_value if max_value is not None else np.max(sampling) + .05 * np.abs(np.max(sampling))
     min_value = min_value if min_value is not None else np.min(sampling) - .05 * np.abs(np.min(sampling))
 
     assert max_value >= np.max(sampling)
     assert min_value <= np.min(sampling)
-    
+
     if all(value % 1 == 0 for value in sampling):
         max_value = int(np.ceil(max_value)) + 1
         return np.arange(max_value), np.bincount(sampling, minlength=max_value) / len(sampling)
 
-    evaluate_grid = np.linspace(min_value, max_value, 1_000)
+    evaluate_grid = np.linspace(min_value, max_value, n_sample)
 
     bw = bw * np.std(sampling)
     kde = KDEpy.FFTKDE(bw=bw, kernel="gaussian")
@@ -277,39 +278,35 @@ def probability_y_greater_than_x(x_sampling: np.ndarray, y_sampling: np.ndarray)
     """"""
     max_value = np.ceil(max(np.max(x_sampling), np.max(y_sampling))) + 1
     min_value = np.floor(min(np.min(x_sampling), np.min(y_sampling))) - 1
-    
+
     y_values, y_probs = create_sampled_distribution(y_sampling, min_value=min_value, max_value=max_value)
     x_values, x_probs = create_sampled_distribution(x_sampling, min_value=min_value, max_value=max_value)
-    
-    assert all(x_values == y_values)
-    
-    p = 0
-    for y_i, y_prob in enumerate(y_probs):
-        for x_prob in x_probs[:y_i]:
-            p += y_prob * x_prob
 
-    return p
+    assert all(x_values == y_values)
+
+    return np.sum(np.append([0], np.cumsum(x_probs))[:-1] * y_probs)  # honk for vector ops
 
 
 def preceding_event_test(precursor_dx_ages, illness_dx_ages):
     """"""
-
-    precursor_dx_ages = np.array(precursor_dx_ages) if isinstance(precursor_dx_ages, pd.Series) else precursor_dx_ages
-    illness_dx_ages = np.array(illness_dx_ages) if isinstance(illness_dx_ages, pd.Series) else illness_dx_ages
+    precursor_dx_ages = precursor_dx_ages.values if isinstance(precursor_dx_ages, pd.Series) else precursor_dx_ages
+    illness_dx_ages = illness_dx_ages.values if isinstance(illness_dx_ages, pd.Series) else illness_dx_ages
 
     illness_values = illness_dx_ages >= 0
     precursor_values = precursor_dx_ages >= 0
 
     illness_and_infection = precursor_values & illness_values
-    n_with_illness_and_infection = np.sum(illness_and_infection)
-    n_with_illness_and_prior_infection = np.sum(illness_and_infection & (illness_dx_ages > precursor_dx_ages))
+    n_with_illness_and_infection = np.count_nonzero(illness_and_infection)
+    n_with_illness_and_prior_infection = np.count_nonzero(illness_and_infection & (illness_dx_ages > precursor_dx_ages))
 
     illness_ages = illness_dx_ages[illness_values]
     precursor_ages = precursor_dx_ages[precursor_values]
 
     p = probability_y_greater_than_x(precursor_ages, illness_ages)
+
     if n_with_illness_and_infection <= 2:
         return p, None
+
     r = stats.binomtest(n_with_illness_and_prior_infection, n_with_illness_and_infection, p=p)
     return p, r.pvalue
 
