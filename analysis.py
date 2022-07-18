@@ -211,7 +211,7 @@ def get_illness_value(data: pd.DataFrame, illness: str, base_feature: str, fuzzy
             illness_value = (data[feature] == illness) | illness_value
         else:
             for illness_token in illness_tokens:
-                illness_value = data[feature].apply(fuzzy_test, args=(illness_token)) | illness_value
+                illness_value = data[feature].apply(fuzzy_test, args=(illness_token,)) | illness_value
 
     return illness_value
 
