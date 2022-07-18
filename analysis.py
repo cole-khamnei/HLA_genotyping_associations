@@ -254,7 +254,7 @@ def get_illness_value_dx_age(data: pd.DataFrame, illness: str, base_feature: str
 
 def create_sampled_distribution(sampling: np.ndarray, max_value: Optional[float] = None,
                                 min_value: Optional[float] = None, bw: float = 0.05,
-                                n_sample: int = 1000) -> Tuple[np.ndarray, np.ndarray]:
+                                n_sample: int = 1000, force_kde: bool = True) -> Tuple[np.ndarray, np.ndarray]:
     """"""
     max_value = max_value if max_value is not None else np.max(sampling) + .05 * np.abs(np.max(sampling))
     min_value = min_value if min_value is not None else np.min(sampling) - .05 * np.abs(np.min(sampling))
@@ -262,13 +262,15 @@ def create_sampled_distribution(sampling: np.ndarray, max_value: Optional[float]
     assert max_value >= np.max(sampling)
     assert min_value <= np.min(sampling)
 
-    if all(value % 1 == 0 for value in sampling):
+    if not force_kde and all(value % 1 == 0 for value in sampling):
         max_value = int(np.ceil(max_value)) + 1
+        sampling = sampling.astype(int)
         return np.arange(max_value), np.bincount(sampling, minlength=max_value) / len(sampling)
 
     evaluate_grid = np.linspace(min_value, max_value, n_sample)
 
     bw = bw * np.std(sampling)
+    bw = 0.001 if bw == 0 else bw
     kde = KDEpy.FFTKDE(bw=bw, kernel="gaussian")
     y = kde.fit(sampling)(evaluate_grid)
     return evaluate_grid, y / np.sum(y)
