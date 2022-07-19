@@ -2,7 +2,6 @@
 	- probably create google drive folder with all pdfs? -> link zotero to that drive?
 
 - HLA homozygozity -> cancer + illness
-	- calculate grantham distance for all bb, lookup hospital codes for cancers + ebv associated cancers -> calculate OR
 
 	- look at HLA associations for HIV/EBV/Hepatitis/herpes simplex (A02:01 protective against EBV?)
 	- loook at all cancers for HLA / age distributions
@@ -26,6 +25,8 @@
 	- separate by zygosity, age, and sex for hodgins +
 	- control with cervical
 	- miniumum of grantham distance of A,B,C (separate )
+
+	- How to account
 
 	- autoimmunity
 		- remove known associated alleles?
