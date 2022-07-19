@@ -120,6 +120,20 @@ def get_size(obj):
 ########################################################################################################################
 
 
+def tab_shift(text: str, tab_size: int = 4) -> str:
+    tab = " " * tab_size
+    return tab + text.replace("\n", f"\n{tab}").rstrip(tab)
+
+
+def if_str_map(variable, data):
+    """"""
+    if isinstance(variable, str):
+        assert data is not None
+        return data[variable].values
+
+    return variable
+
+
 def multiprocess_pool(function, param_sets: list, n_processes: int = 4):
     """ Runs a function in parallel using the pool multiprocess"""
 
@@ -239,7 +253,8 @@ def kde_smooth(values: np.ndarray, bw: Union[str, float] = "silverman", kernel: 
     """"""
 
     if isinstance(bw, float):
-        bw = bw * np.std(values)
+        bw = bw * np.nanstd(values)
+        bw = bw if bw > 0 else 0.05
 
     values = np.array(values)
     values = values[~pd.isnull(values)]
@@ -291,9 +306,7 @@ def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
                     shade: bool = True, bw: str = "silverman", kernel: str = "gaussian", mean: bool = True,
                     clip: Optional[Tuple[float, float]] = None, ax=None, **params):
     """"""
-    if isinstance(x, str):
-        assert data is not None, "Must provide 'data'"
-        x = data[x]
+    x = if_str_map(x, data)
 
     if ax is None:
         fig, ax = plt.subplots(figsize=(14, 6))
@@ -325,18 +338,12 @@ def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None,
         fig, ax = plt.subplots(figsize=(12, 6))
 
     if hue is not None:
-        if isinstance(hue, str):
-            group_variable = hue
-            group_variable_values = data[hue]
-        else:
-            group_variable = "hue"
-            group_variable_values = hue
 
-        if isinstance(x, str):
-            x_values = data[x]
-            x_variable = x
-        else:
-            x_variable = "x"
+        group_variable_values = if_str_map(hue, data)
+        group_variable = hue if isinstance(hue, str) else "hue"
+
+        x_values = if_str_map(x, data)
+        x = x if isinstance(x, str) else "x"
 
         group_values, counts = np.unique(group_variable_values, return_counts=True)
         sort_index = np.argsort(group_values)
@@ -347,9 +354,10 @@ def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None,
                       for group_value, count in zip(group_values, counts)]
 
         i = 0
-        temp_data = pd.DataFrame({group_variable: group_variable_values, x_variable: x_values})
+        temp_data = pd.DataFrame({group_variable: group_variable_values, x: x_values})
         for group_value, label in zip(group_values, labels):
             group_data = temp_data.loc[temp_data[group_variable] == group_value]
+
             single_kde_plot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label,
                             zorder=i, **params)
             i -= 1

@@ -63,20 +63,15 @@ def calculate_OR(disease: np.ndarray, exposure: np.ndarray,
 
 
 def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.ndarray],
-                     data: Optional[pd.DataFrame] = None, variable_baseline: Any = None,
+                     data: Optional[pd.DataFrame] = None, variable_baseline: Any = None, variable_name: str = "",
                      CI: Optional[float] = 95, as_text: bool = False) -> str:
     """ """
 
     if isinstance(variable, str):
-        assert data is not None
         variable_name = variable
-        variable = data[variable]
-    else:
-        variable_name = ""
 
-    if isinstance(illness, str):
-        assert data is not None
-        illness = data[illness]
+    variable = utilities.if_str_map(variable, data)
+    illness = utilities.if_str_map(illness, data)
 
     nan_indices = pd.isnull(illness) | pd.isnull(variable)
     illness, variable = illness[~nan_indices], variable[~nan_indices]
@@ -113,9 +108,43 @@ def variable_OR_test(illness: Union[str, np.ndarray], variable: Union[str, np.nd
     return text
 
 
+def group_OR(disease, exposure, group_values, data: Optional[pd.DataFrame] = None,
+             variable_name: str = "", **params):
+    """"""
+
+    disease = utilities.if_str_map(disease, data)
+    if isinstance(exposure, str):
+        variable_name = exposure
+    exposure = utilities.if_str_map(exposure, data)
+
+    if isinstance(group_values, (tuple, list)):
+        group_value_set = [utilities.if_str_map(values, data) for values in group_values[1:]]
+        group_values = utilities.if_str_map(group_values[0], data)
+    else:
+        group_value_set = None
+
+    unique_groups = sorted(np.unique(group_values))
+
+    text = ""
+    for unique_group in unique_groups:
+        text += f"{unique_group}:\n"
+        group_index = group_values == unique_group
+        group_disease, group_exposure = disease[group_index], exposure[group_index]
+
+        if group_value_set:
+            grouped_group_value_set = [values[group_index] for values in group_value_set]
+            text += utilities.tab_shift(group_OR(group_disease, group_exposure, grouped_group_value_set,
+                                                 variable_name=variable_name, **params))
+        else:
+            text += utilities.tab_shift(variable_OR_test(group_disease, group_exposure,
+                                                         variable_name=variable_name, **params))
+
+    return text
+
+
 def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax=None,
                      x: str = "grantham_divergence", OR_variable: str = "zygosity", bw: float = .2,
-                     no_illness_label: Optional[str] = None, title: str = ""):
+                     no_illness_label: Optional[str] = None, title: str = "", **params):
     """"""
 
     if ax is None:
@@ -132,7 +161,7 @@ def variable_OR_plot(data: pd.DataFrame, illness: str, illness_feature: str, ax=
         no_illness_label = "no " + illness
 
     illness_labels = np.array([no_illness_label, illness])[1 * illness_values]
-    utilities.kde_plot(data=data, x=x, hue=illness_labels, ax=ax, bw=bw)
+    utilities.kde_plot(data=data, x=x, hue=illness_labels, ax=ax, bw=bw, **params)
 
     if OR_variable:
         OR_variables = [OR_variable] if isinstance(OR_variable, str) else OR_variable
@@ -198,20 +227,20 @@ def get_illness_value(data: pd.DataFrame, illness: str, base_feature: str, fuzzy
 
     features = get_multiple_features_from_base_feature(data, base_feature)
 
-    if not isinstance(illness, str) or fuzzy:
+    if not isinstance(illness, str):
         fuzzy = True
-        illness_tokens = illness
+        illness_tokens = [i.lower() for i in illness]
+    elif fuzzy:
+        illness_tokens = (illness.lower(),)
 
-        def fuzzy_test(s, illness_token):
-            return illness_token in s if not pd.isnull(s) else False
-
+    illness = illness.lower()
     illness_value = np.zeros(len(data))
     for feature in features:
         if not fuzzy:
-            illness_value = (data[feature] == illness) | illness_value
+            illness_value = (data[feature].str.lower() == illness) | illness_value
         else:
             for illness_token in illness_tokens:
-                illness_value = data[feature].apply(fuzzy_test, args=(illness_token,)) | illness_value
+                illness_value = (data[feature].str.contains(illness_token) == True) | illness_value
 
     return illness_value
 
@@ -237,9 +266,11 @@ def get_illness_value_dx_age(data: pd.DataFrame, illness: str, base_feature: str
     illness_value = np.zeros(len(data))
     illness_dx_ages = -99 * np.ones(len(data))
 
+    illness = illness.lower()
+
     for feature, feature_dx_age in zip(features, dx_age_features):
         if not fuzzy:
-            feature_values = data[feature] == illness
+            feature_values = data[feature].str.lower() == illness
         else:
             feature_values = np.zeros(len(data))
             for illness_token in illness_tokens:

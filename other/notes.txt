@@ -25,7 +25,7 @@
 
 	- separate by zygosity, age, and sex for hodgins +
 	- control with cervical
-	- miniumum of grantgham distance of A,B,C (sepaate )
+	- miniumum of grantham distance of A,B,C (separate )
 
 	- autoimmunity
 		- remove known associated alleles?
@@ -39,8 +39,6 @@
 	- antecedent infections:
 		- look for infections that precede illness diagnoses
 
-
-!!!! PICK JOURNAL CLUB PRESENTATION
 
 
 UK biobank questions:
