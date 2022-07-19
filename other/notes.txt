@@ -42,6 +42,20 @@
 
 
 
+- A*02:01
+	- protective against clinical EBV
+	- het/homo protective against MS
+	- homozygous protective against cervical cancer
+	- 
+
+- A*01:01
+	- homozygous risk for EBV
+	- homozygous risk for HL
+	- het/homozygous risk for MS
+
+
+
+
 UK biobank questions:
 	- how to interpret the HLA codes?
 	- difference between ICD10 cancer type (83k) and cancer code (41K entries)

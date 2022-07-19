@@ -1,5 +1,6 @@
 import os
 import sys
+import warnings
 
 import numpy as np
 import pandas as pd
@@ -50,12 +51,14 @@ def calculate_OR(disease: np.ndarray, exposure: np.ndarray,
     odds_ratio, p_value = stats.fisher_exact(contingency_table)
 
     if CI:
-        standard_error = np.sqrt(np.sum(1 / np.array(contingency_table).ravel()))
-        assert 100 > CI > 1, f"Given CI percent ({CI}%) is in invalid. Must be in (1, 100)"
-        z_score = stats.norm.ppf(CI / 100)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            standard_error = np.sqrt(np.sum(1 / np.array(contingency_table).ravel()))
+            assert 100 > CI > 1, f"Given CI percent ({CI}%) is in invalid. Must be in (1, 100)"
+            z_score = stats.norm.ppf(CI / 100)
 
-        upper_bound = np.exp(np.log(odds_ratio) + z_score * standard_error)
-        lower_bound = np.exp(np.log(odds_ratio) - z_score * standard_error)
+            upper_bound = np.exp(np.log(odds_ratio) + z_score * standard_error)
+            lower_bound = np.exp(np.log(odds_ratio) - z_score * standard_error)
     else:
         upper_bound, lower_bound = None, None
 
