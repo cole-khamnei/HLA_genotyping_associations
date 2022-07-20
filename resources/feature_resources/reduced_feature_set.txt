@@ -2,6 +2,7 @@ eid
 sex
 birth_year
 birth_month
+ethnic_background
 assessment_date
 n_cancers
 n_cancers_1.0

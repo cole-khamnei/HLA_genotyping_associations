@@ -255,7 +255,7 @@ def get_illness_value_dx_age(data: pd.DataFrame, illness: str, base_feature: str
     assert base_feature in data, f"Invalid base_feature: {base_feature}"
     features = get_multiple_features_from_base_feature(data, base_feature)
 
-    base_feature_dx_age = base_feature.strip("_code") + "_dx_age_interpolated"
+    base_feature_dx_age = base_feature.rstrip("_code") + "_dx_age_interpolated"
     assert base_feature_dx_age in data, f"Dx age feature not found in data '{base_feature_dx_age}'"
     dx_age_features = get_multiple_features_from_base_feature(data, base_feature_dx_age)
 
