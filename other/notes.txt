@@ -42,6 +42,10 @@
 
 
 
+meet notes:
+	- 
+
+
 - A*02:01
 	- protective against clinical EBV
 	- het/homo protective against MS

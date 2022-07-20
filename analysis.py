@@ -340,7 +340,7 @@ def preceding_event_test(precursor_dx_ages, illness_dx_ages):
 
     p = probability_y_greater_than_x(precursor_ages, illness_ages)
 
-    if n_with_illness_and_infection <= 2:
+    if n_with_illness_and_infection <= 1:
         return p, None
 
     r = stats.binomtest(n_with_illness_and_prior_infection, n_with_illness_and_infection, p=p)
