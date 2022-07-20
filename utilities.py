@@ -331,7 +331,8 @@ def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
 
 
 def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None, label: Optional[str] = None,
-             labels: Optional[list] = None, shade: bool = True, alpha: float = .6, bw: float = .35, **params):
+             labels: Optional[list] = None, shade: bool = True, alpha: float = .6, bw: float = .35, 
+             add_N_label: bool =False, **params):
     """ plots a kdeplot"""
 
     if ax is None:
@@ -363,6 +364,8 @@ def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None,
             i -= 1
 
     else:
+        N = len(data) if data is not None else len(x)
+        label = label + f" (N = {N:,})" if add_N_label else label
         single_kde_plot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label, **params)
     if label:
         ax.legend()
