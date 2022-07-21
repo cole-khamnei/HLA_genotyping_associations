@@ -43,7 +43,7 @@
 
 
 meet notes:
-	- 
+	- make plot of HL age DX by zygosity score (should enrich for older men)
 
 
 - A*02:01

@@ -364,8 +364,9 @@ def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None,
             i -= 1
 
     else:
-        N = len(data) if data is not None else len(x)
-        label = label + f" (N = {N:,})" if add_N_label else label
+        if label and add_N_label:
+            N = len(data) if data is not None else len(x)
+            label = label + f" (N = {N:,})"
         single_kde_plot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label, **params)
     if label:
         ax.legend()
