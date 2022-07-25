@@ -2,6 +2,7 @@ import time
 import sys
 from gc import get_referents
 import six
+import itertools
 
 from typing import Any, Iterable, List, Optional, Tuple, Union
 from types import ModuleType, FunctionType
@@ -17,9 +18,10 @@ import KDEpy
 from thefuzz import fuzz
 
 ########################################################################################################################
-### Multiprocessing ###
+### Types ###
 ########################################################################################################################
 
+Palette = Union[str, Iterable]
 
 ########################################################################################################################
 ### Random ###
@@ -210,16 +212,38 @@ def titleize(label: str) -> str:
     return label.replace("_", " ").title()
 
 
+def to_title(text: str) -> str:
+    """ Makes label into title format"""
+    title = ""
+    prev_char = " "
+    for char in text.replace("_", " "):
+        if char.isupper() or not prev_char.isalpha():
+            title += char.upper()
+        else:
+            title += char
+        prev_char = char
+    return title
+
+
 def add_plt_labels(ax, x: Optional[str] = None, y: Optional[str] = None, title: Optional[str] = None, **kwargs) -> None:
     """ Adds plot labels"""
     if x:
-        ax.set_xlabel(titleize(x))
+        ax.set_xlabel(to_title(x))
 
     if y:
-        ax.set_ylabel(titleize(y))
+        ax.set_ylabel(to_title(y))
 
     if title:
-        ax.set_title(titleize(title))
+        ax.set_title(to_title(title))
+
+
+def create_palette(palette: str) -> Iterable:
+    """ Creates a color palette, will add custom color palette checks"""
+    if isinstance(palette, str):
+        CUSTOM_PALETTES = {"custom_dark": np.array(sns.color_palette("Dark2"))[[0, 2, 5, 3, 7, 1, 4, 6]]}
+        palette = CUSTOM_PALETTES[palette.lower()] if palette.lower() in CUSTOM_PALETTES else sns.color_palette(palette)
+    
+    return itertools.cycle(palette)
 
 
 def create_subplot(n_plots: int, ncols: int = 2, width: float = 16, height_per: float = 3,
@@ -304,7 +328,7 @@ def kde_smooth(values: np.ndarray, bw: Union[str, float] = "silverman", kernel: 
 
 def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
                     shade: bool = True, bw: str = "silverman", kernel: str = "gaussian", mean: bool = True,
-                    clip: Optional[Tuple[float, float]] = None, ax=None, **params):
+                    clip: Optional[Tuple[float, float]] = None, ax=None, add_mean: bool = False, **params):
     """"""
     x = if_str_map(x, data)
 
@@ -327,12 +351,15 @@ def single_kde_plot(x: Union[np.ndarray, str], data: Optional[dict] = None,
         zorder = params.get("zorder", None)
         ax.fill_between(x_, y1=y_, alpha=shade_alpha, facecolor=baseline.get_color(), label=fill_label, zorder=zorder)
 
+    if add_mean:
+        ax.axvline(np.mean(x), linestyle="--", alpha=.4, color=baseline.get_color())
+
     return ax
 
 
 def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None, label: Optional[str] = None,
              labels: Optional[list] = None, shade: bool = True, alpha: float = .6, bw: float = .35, 
-             add_N_label: bool =False, **params):
+             add_N_label: bool =False, palette: Palette = None, **params):
     """ plots a kdeplot"""
 
     if ax is None:
@@ -354,19 +381,21 @@ def kde_plot(x, data: Optional[dict] = None, hue: Optional[str] = None, ax=None,
             labels = [f"{str(group_value).title()} ( N = {count:,})"
                       for group_value, count in zip(group_values, counts)]
 
-        i = 0
+        palette = create_palette(palette) if palette else None
         temp_data = pd.DataFrame({group_variable: group_variable_values, x: x_values})
-        for group_value, label in zip(group_values, labels):
+        for i, (group_value, label) in enumerate(zip(group_values, labels)):
             group_data = temp_data.loc[temp_data[group_variable] == group_value]
 
+            color = None if palette is None else next(palette)
+
             single_kde_plot(data=group_data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label,
-                            zorder=i, **params)
-            i -= 1
+                            zorder=-i, color=color, **params)
 
     else:
         if label and add_N_label:
             N = len(data) if data is not None else len(x)
             label = label + f" (N = {N:,})"
+
         single_kde_plot(data=data, x=x, ax=ax, shade=shade, alpha=alpha, bw=bw, label=label, **params)
     if label:
         ax.legend()

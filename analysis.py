@@ -283,6 +283,7 @@ def get_illness_value_dx_age(data: pd.DataFrame, illness: str, base_feature: str
         illness_dx_ages[feature_values] = ages
         illness_value = feature_values | illness_value
 
+    illness_value = illness_dx_ages >= 0
     return illness_value, illness_dx_ages
 
 
