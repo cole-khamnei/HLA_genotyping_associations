@@ -94,9 +94,25 @@ def decode_medical_codes(med_code_mapping: medical_code_tools.MedicalCodeMapping
     return pd.DataFrame(values)
 
 
-def load_all_biobank_components(dev_mode: bool, signifier: str = "") -> Tuple[pd.DataFrame, pd.DataFrame,
-                                                                              medical_code_tools.MedicalCodeMapping]:
+def load_all_biobank_components(dev_mode: bool, signifier: str = "", rewrite: bool = False
+                                ) -> Tuple[pd.DataFrame, pd.DataFrame, medical_code_tools.MedicalCodeMapping]:
     """ Returns the biobank data, index, and medical code mapping"""
+
+    arg_tag = f"{str(dev_mode).lower()}_{signifier.lower()}"
+    index_cache_path = os.path.join(constants.UK_BIOBANK_CACHE_PATH, f"index_{arg_tag}.pkl")
+    data_cache_path = os.path.join(constants.UK_BIOBANK_CACHE_PATH, f"data_{arg_tag}.pkl")
+    med_code_mapping_path = os.path.join(constants.UK_BIOBANK_CACHE_PATH, f"med_code_mapping_{arg_tag}.pkl")
+
+    files_exist = os.path.exists(index_cache_path) and os.path.exists(data_cache_path)
+    files_exist = files_exist and os.path.exists(med_code_mapping_path)
+
+    if not rewrite and files_exist:
+        print("Loading Biobank Index and Data from Cache")
+        with utilities.Timer() as t:
+            biobank_index = utilities.pickle_load(index_cache_path)
+            biobank_data = utilities.pickle_load(data_cache_path)
+            med_code_mapping = utilities.pickle_load(med_code_mapping_path)
+            return biobank_data, biobank_index, med_code_mapping
 
     print("Importing BioBank Index and Data:")
     with utilities.Timer() as t:
@@ -115,6 +131,11 @@ def load_all_biobank_components(dev_mode: bool, signifier: str = "") -> Tuple[pd
     med_code_mapping = medical_code_tools.MedicalCodeMapping(biobank_index)
 
     biobank_data = decode_medical_codes(med_code_mapping, biobank_data)
+
+    if rewrite or not files_exist:
+        utilities.pickle_dump(biobank_index, index_cache_path)
+        utilities.pickle_dump(biobank_data, data_cache_path)
+        utilities.pickle_dump(med_code_mapping, med_code_mapping_path)
 
     return biobank_data, biobank_index, med_code_mapping
 

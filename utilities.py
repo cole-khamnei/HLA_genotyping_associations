@@ -7,6 +7,7 @@ import itertools
 from typing import Any, Iterable, List, Optional, Tuple, Union
 from types import ModuleType, FunctionType
 
+import dill as pickle
 import matplotlib.pyplot as plt
 import multiprocess as mp
 import numpy as np
@@ -164,6 +165,18 @@ class MemoizedFunction:
         s = f"MemoizedFunction of {str(self.function).split(' of')[0]}>\n".replace(">>", ">")
         s += f"Current Memory: {get_size(self.memory)} Bytes"
         return s
+
+
+def pickle_dump(obj, path: str):
+    """"""
+    with open(path, 'wb') as pickle_handle:
+        pickle.dump(obj, pickle_handle)
+
+
+def pickle_load(path: str):
+    """"""
+    with open(path, 'rb') as pickle_handle:
+        return pickle.load(pickle_handle)
 
 
 ########################################################################################################################
