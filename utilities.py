@@ -1,3 +1,4 @@
+import os
 import time
 import sys
 from gc import get_referents
@@ -177,6 +178,18 @@ def pickle_load(path: str):
     """"""
     with open(path, 'rb') as pickle_handle:
         return pickle.load(pickle_handle)
+
+
+def cache(function, params, path: str, rewrite: bool = False):
+    """"""
+    if os.path.exists(path) and not rewrite:
+        return pickle_load(path)
+
+    obj = function(*params)
+
+    pickle_dump(obj, path)
+    return obj
+
 
 
 ########################################################################################################################

@@ -22,12 +22,6 @@
 			- show that certain groups who cluster have higher rates of T-cell mediated autoimmunity?
 		- show separate from ethnicity
 
-	- separate by zygosity, age, and sex for hodgins +
-	- control with cervical
-	- miniumum of grantham distance of A,B,C (separate )
-
-	- How to account
-
 	- autoimmunity
 		- remove known associated alleles?
 			- find way to see if it is reduced t cell repetoire or just dosing effects from known alleles
@@ -41,21 +35,7 @@
 		- look for infections that precede illness diagnoses
 
 
-
-meet notes:
-	- make plot of HL age DX by zygosity score (should enrich for older men)
-
-
-- A*02:01
-	- protective against clinical EBV
-	- het/homo protective against MS
-	- homozygous protective against cervical cancer
-	- 
-
-- A*01:01
-	- homozygous risk for EBV
-	- homozygous risk for HL
-	- het/homozygous risk for MS
+merkel cell, HNSCC, HCC liver, PBL, gastric cancer, burkitt, npc, nktcl, kaposi,
 
 
 
