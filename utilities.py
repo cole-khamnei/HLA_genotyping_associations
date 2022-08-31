@@ -263,10 +263,11 @@ def add_plt_labels(ax, x: Optional[str] = None, y: Optional[str] = None, title: 
         ax.set_title(to_title(title))
 
 
+CUSTOM_PALETTES = {"custom_dark": np.array(sns.color_palette("Dark2"))[[0, 2, 5, 3, 7, 1, 4, 6]]}
+
 def create_palette(palette: str) -> Iterable:
     """ Creates a color palette, will add custom color palette checks"""
     if isinstance(palette, str):
-        CUSTOM_PALETTES = {"custom_dark": np.array(sns.color_palette("Dark2"))[[0, 2, 5, 3, 7, 1, 4, 6]]}
         palette = CUSTOM_PALETTES[palette.lower()] if palette.lower() in CUSTOM_PALETTES else sns.color_palette(palette)
     
     return itertools.cycle(palette)

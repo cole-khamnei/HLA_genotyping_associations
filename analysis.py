@@ -349,5 +349,47 @@ def preceding_event_test(precursor_dx_ages, illness_dx_ages):
 
 
 ########################################################################################################################
+### Specific Plots ###
+########################################################################################################################
+
+
+def diagnosis_age_plot(data, illness, feature, variable, index = None, ax=None,
+                       label_map=None, hue_name=None, alternative="greater", **params):
+    """"""
+    if isinstance(illness, str):
+        illness_values, illness_dx_ages = get_illness_value_dx_age(data, illness, feature)
+    else:
+        illness_values, illness_dx_ages = illness >= 0, illness
+        illness = ""
+
+    index = illness_values if index is None else illness_values & index
+    
+    hue, variable_name = (data[variable], variable) if isinstance(variable, str) else (variable, "variable")
+    hue = np.vectorize(label_map.get)(hue)[index] if label_map else hue[index]
+    hue_name = utilities.to_title(hue_name) if hue_name else utilities.to_title(variable_name)
+    
+    fig, ax = plt.subplots(figsize=(8, 4)) if ax is None else (None, ax)
+    utilities.add_plt_labels(ax, x="Diagnosis Age", y="Density",
+                             title=utilities.to_title(f"{illness} Diagnosis Age by {hue_name}"))
+    utilities.kde_plot(illness_dx_ages[index], hue=hue, ax=ax, **params)
+    ax.legend(title=hue_name, prop={'size': 8})
+    
+    
+    illness_dx_ages = illness_dx_ages[index]
+    unique_hues = np.sort(np.unique(hue))
+    for hue_i in unique_hues[1:]:
+        ages_1, ages_i = illness_dx_ages[hue==unique_hues[0]], illness_dx_ages[hue == hue_i]
+        ks_test = stats.ks_2samp(ages_1, ages_i, alternative=alternative)
+        x_start, x_end = np.median(ages_1), np.median(ages_i)
+        y_top = ax.get_ylim()[1] / 1.05
+        ax.plot([x_start, x_end],[y_top] * 2, color="k")
+        ax.plot([x_start, x_start],[y_top * .98, y_top], color="k")
+        ax.plot([x_end, x_end],[y_top * .98, y_top], color="k")
+        ks_text = f"KS Test P: {ks_test.pvalue:.4}"
+        ax.text((x_start + x_end) / 2, y_top * 1.01, ks_text, ha="center", va="bottom", size=8)
+        ax.set_ylim(None, y_top * 1.05 * 1.1)
+
+
+########################################################################################################################
 ### End ###
 ########################################################################################################################

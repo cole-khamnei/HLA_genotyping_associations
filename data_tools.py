@@ -192,6 +192,19 @@ def load_HLA_data(HLA_allele_path: Optional[str] = None) -> pd.DataFrame:
     return HLA_alleles
 
 
+def load_biobank_data_and_HLA_data(dev_mode: bool, signifier: str, rewrite: bool = False
+                                  ) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """"""
+    (biobank_data_no_HLA_alleles, biobank_index,
+     med_code_mapping) = data_tools.load_all_biobank_components(DEV_MODE, signifier=SIGNIFIER, rewrite=False)
+    loaded = True
+    print("Integrating HLA Data")
+    with Timer() as t:
+        HLA_alleles = data_tools.load_HLA_data()
+        biobank_data = biobank_data_no_HLA_alleles.merge(HLA_alleles, how="left", on="eid")
+    return biobank_data, biobank_index
+
+
 ########################################################################################################################
 ### End ###
 ########################################################################################################################
