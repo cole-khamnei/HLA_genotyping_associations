@@ -14,6 +14,7 @@ n_treatments
 n_treatments_1.0
 n_treatments_2.0
 deprivation_index
+household_average_income
 sleep_duration
 cancer_dx
 cancer_dx_1.0
